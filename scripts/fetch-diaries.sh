@@ -53,6 +53,7 @@ import json, os, shutil, urllib.request, ssl
 NOTION_KEY = os.environ['NOTION_API_KEY']
 OUTPUT_DIR = '$OUTPUT_DIR'
 PUBLIC_DIR = '$PUBLIC_DIR'
+FORCE_ALL = os.environ.get('NOSAE_FORCE_REFRESH', '') == '1'
 ctx = ssl.create_default_context()
 
 with open(f'{OUTPUT_DIR}/diary_index.json') as f:
@@ -61,57 +62,76 @@ with open(f'{OUTPUT_DIR}/diary_index.json') as f:
 new_count = 0
 cached_count = 0
 
+def fetch_all_blocks(page_id, date):
+    all_entries = []
+    cursor = None
+    page_num = 0
+    while True:
+        page_num += 1
+        url = f'https://api.notion.com/v1/blocks/{page_id}/children?page_size=50'
+        if cursor:
+            url += f'&start_cursor={cursor}'
+        req = urllib.request.Request(url, headers={
+            'Authorization': f'Bearer {NOTION_KEY}',
+            'Notion-Version': '2025-09-03'
+        })
+        try:
+            with urllib.request.urlopen(req, context=ctx) as resp:
+                data = json.loads(resp.read())
+        except Exception as e:
+            print(f'   ⚠️  {date} (page {page_num}): {e}')
+            if page_num == 1:
+                return None
+            break
+        blocks = data.get('results', [])
+        for block in blocks:
+            t = block['type']
+            content = ''
+            if t in ['paragraph', 'heading_1', 'heading_2', 'heading_3', 'callout', 'quote', 'bulleted_list_item', 'numbered_list_item', 'to_do', 'toggle']:
+                texts = block[t].get('rich_text', [])
+                content = ''.join([rt['plain_text'] for rt in texts])
+            elif t == 'code':
+                texts = block[t]['rich_text']
+                content = ''.join([rt['plain_text'] for rt in texts])
+            elif t == 'divider':
+                content = ''
+            if content or t == 'divider':
+                all_entries.append({'type': t, 'text': content})
+        has_more = data.get('has_more', False)
+        if not has_more:
+            break
+        cursor = data.get('next_cursor')
+        if not cursor:
+            break
+    return all_entries
+
 for diary in diaries:
     page_id = diary['id']
     date = diary['date']
     outpath = f'{PUBLIC_DIR}/diary_{date}.json'
     db_path = f'{OUTPUT_DIR}/diary_{date}.json'
-    
-    # Skip if cached locally
-    if os.path.exists(outpath):
-        cached_count += 1
+    if os.path.exists(outpath) and not FORCE_ALL:
+        try:
+            with open(outpath) as f:
+                existing = json.load(f)
+            entries_count = len(existing.get('entries', []))
+            if entries_count < 50:
+                cached_count += 1
+                continue
+            print(f'   🔄 {date} ({entries_count} entries, re-checking pagination...)')
+        except:
+            pass
+    entries = fetch_all_blocks(page_id, date)
+    if entries is None:
         continue
-    
-    url = f'https://api.notion.com/v1/blocks/{page_id}/children?page_size=50'
-    req = urllib.request.Request(url, headers={
-        'Authorization': f'Bearer {NOTION_KEY}',
-        'Notion-Version': '2025-09-03'
-    })
-    
-    try:
-        with urllib.request.urlopen(req, context=ctx) as resp:
-            data = json.loads(resp.read())
-    except Exception as e:
-        print(f'   ⚠️  {date}: {e}')
-        continue
-    
-    blocks = data.get('results', [])
-    entries = []
-    for block in blocks:
-        t = block['type']
-        content = ''
-        if t in ['paragraph', 'heading_1', 'heading_2', 'heading_3', 'callout', 'quote', 'bulleted_list_item', 'numbered_list_item', 'to_do', 'toggle']:
-            texts = block[t].get('rich_text', [])
-            content = ''.join([rt['plain_text'] for rt in texts])
-        elif t == 'code':
-            texts = block[t]['rich_text']
-            content = ''.join([rt['plain_text'] for rt in texts])
-        elif t == 'divider':
-            content = ''
-        if content or t == 'divider':
-            entries.append({'type': t, 'text': content})
-    
     diary_data = {'date': date, 'title': diary['title'], 'entries': entries}
-    
     with open(outpath, 'w') as f:
         json.dump(diary_data, f, ensure_ascii=False, indent=2)
-    # Also save to data/ for reference
     shutil.copy2(outpath, db_path)
-    
     new_count += 1
     print(f'   ✅ {date} ({len(entries)} sections)')
 
-print(f'   Done! {new_count} new, {cached_count} cached')
+print(f'   Done! {new_count} new/refreshed, {cached_count} cached')
 " 2>&1
 
 echo ""

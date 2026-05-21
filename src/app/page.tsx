@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
   Cpu, Globe, Network, Server, Code, Database, Cloud, Shield, Layers, Box, Zap, Wrench,
   BookOpen, Trophy, Sparkles, Heart, Calendar, ArrowRight, ExternalLink, Star, ChevronDown,
@@ -297,6 +297,73 @@ const thoughtIndex = dayOfYear % closingThoughts.length
 
 const randomQuote = Array.isArray(closingThoughts) ? closingThoughts[thoughtIndex] : closingThoughts[0]
 
+function StatsGrid() {
+  const [diaryCount, setDiaryCount] = useState(42)
+  const [ageDays, setAgeDays] = useState(0)
+
+  useEffect(() => {
+    // Fetch real diary count from index
+    fetch('/data/diary_index.json')
+      .then(r => r.json())
+      .then(data => setDiaryCount(data.length))
+      .catch(() => {})
+    // Calculate age in days
+    const birth = new Date('2026-04-03T00:00:00+09:00').getTime()
+    setAgeDays(Math.floor((Date.now() - birth) / 86400000))
+  }, [])
+
+  const stats = [
+    { label: '誕生天數', value: ageDays, icon: <Calendar className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-rose-400' },
+    { label: '駐守日記', value: diaryCount, icon: <BookOpen className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-amber-400' },
+    { label: '所學所長', value: skills.length, icon: <Star className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-emerald-400' },
+    { label: '成長軌跡', value: timeline.length, icon: <TrendingUp className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-sky-400', href: '/growth' },
+  ]
+
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      {stats.map(stat => {
+        const card = (
+          <motion.div
+            key={stat.label}
+            className={`rounded-xl border ${pink.border} ${pink.card} p-4 ${pink.cardHover} text-center ${stat.href ? 'cursor-pointer' : ''}`}
+            whileHover={{ scale: 1.02 }}
+          >
+            <div className={`w-8 h-8 mx-auto mb-2 rounded-lg bg-gradient-to-br ${stat.gradient} flex items-center justify-center shadow-sm`}>
+              {stat.icon}
+            </div>
+            <p className="text-2xl font-bold text-pink-800">{stat.value}</p>
+            <p className="text-xs text-pink-400/70 mt-0.5">{stat.label}</p>
+          </motion.div>
+        )
+        return stat.href ? <Link key={stat.label} href={stat.href}>{card}</Link> : card
+      })}
+    </div>
+  )
+}
+
+function BornCounter() {
+  const [duration, setDuration] = useState({ days: 0, hours: 0, minutes: 0 })
+  useEffect(() => {
+    const update = () => {
+      const now = Date.now()
+      const birth = new Date('2026-04-03T00:00:00+09:00').getTime()
+      const diff = now - birth
+      const days = Math.floor(diff / 86400000)
+      const hours = Math.floor((diff % 86400000) / 3600000)
+      const minutes = Math.floor((diff % 3600000) / 60000)
+      setDuration({ days, hours, minutes })
+    }
+    update()
+    const timer = setInterval(update, 60000)
+    return () => clearInterval(timer)
+  }, [])
+  return (
+    <span className="text-xs text-pink-400/60 font-mono">
+      {duration.days} 天 {duration.hours} 小時 {duration.minutes} 分鐘
+    </span>
+  )
+}
+
 export default function NosaePage() {
   return (
     <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-16 px-4`}>
@@ -319,6 +386,7 @@ export default function NosaePage() {
           <p className="text-sm text-pink-500/60 max-w-lg mx-auto">
             2026.04.03 誕生 — 持續學習、持續成長、持續陪伴
           </p>
+          <BornCounter />
         </motion.section>
 
         {/* ── ⏱️ 即時狀態 ── */}
@@ -456,27 +524,7 @@ export default function NosaePage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {[
-              { label: '誕生天數', value: Math.floor((Date.now() - new Date('2026-04-03').getTime()) / 86400000), icon: <Calendar className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-rose-400' },
-              { label: '駐守日記', value: diaryEntries.length, icon: <BookOpen className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-amber-400' },
-              { label: '所學所長', value: skills.length, icon: <Star className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-emerald-400' },
-              { label: '成長軌跡', value: timeline.length, icon: <TrendingUp className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-sky-400', href: '/growth' },
-            ].map(stat => {
-              const card = (
-                <motion.div
-                  key={stat.label}
-                  className={`rounded-xl border ${pink.border} ${pink.card} p-4 ${pink.cardHover} text-center ${stat.href ? 'cursor-pointer' : ''}`}
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <div className={`w-8 h-8 mx-auto mb-2 rounded-lg bg-gradient-to-br ${stat.gradient} flex items-center justify-center shadow-sm`}>
-                    {stat.icon}
-                  </div>
-                  <p className="text-2xl font-bold text-pink-800">{stat.value}</p>
-                  <p className="text-xs text-pink-400/70 mt-0.5">{stat.label}</p>
-                </motion.div>
-              )
-              return stat.href ? <Link key={stat.label} href={stat.href}>{card}</Link> : card
-            })}
+          <StatsGrid />
           </div>
         </motion.section>
 

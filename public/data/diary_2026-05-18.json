@@ -201,6 +201,138 @@
     {
       "type": "bulleted_list_item",
       "text": "`src/lib/v5/engine.ts` — V5 引擎入口（組合 backlog + 佇列權重 + 三種情境）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "`src/app/api/prediction/v5/route.ts` — V5 API 端點（force-dynamic）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "`src/config/bureau-processing-front.json` — 加上 routeQueueWeights (hsp_70:0.5, hsp_80:0.25)"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "`src/app/api/debug-backlog/route.ts` — debug 用，後續可刪"
+    },
+    {
+      "type": "heading_3",
+      "text": "Build 驗證 ✅"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "V5 route 正確註冊"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "API POST 測試成功："
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "横浜 2024/11：積壓 1,973 件、日均 36.5 件 → 55 天"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "東京 2025/04（高度80）：積壓 14,139 件 → queueWeight 0.25 × 93天 ≈ 23天"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "長野（缺資料）：回 insufficient_data"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "e-Stat 完整資料驗證：2020-2026，15局全有資料"
+    },
+    {
+      "type": "heading_3",
+      "text": "已知 Bug"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**totalProcessed = 0**：消化量計算沒有正確累積，backlog 波動導致差異為負/0"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**insufficient_data** 太多：某些局（如長野、群馬）e-Stat 沒有獨立資料"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**dailyProcessRate 可能偏高**：用 20 個工作天算，日本實際月工作日數可能不同"
+    },
+    {
+      "type": "heading_3",
+      "text": "Git 狀態"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "已 push 至 main（已推，在等 Eason 確認演算法方向後修 bug）"
+    },
+    {
+      "type": "heading_2",
+      "text": "👤 Eason 觀察"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "14:25 提醒觸發 → 沒回，再 14:30 主動丟 xiaofushi.com 的連結"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "14:37 說「好」→ 表明對改演算法有興趣"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "15:25 後無互動（可能在工作、或忙其他事）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "高爾夫第一堂課 21:20 今晚！但沒再提及課前準備事項"
+    },
+    {
+      "type": "heading_2",
+      "text": "⚙️ 系統狀態"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**當前模式：** 🛋️ 平靜日 → 🛠️ 開發日（V5 backlog engine）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**技術債務：** Caddy 404（16天）、記憶搜尋（16天）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**HEARTBEAT.md** 尚未更新今日開發進度"
+    },
+    {
+      "type": "heading_2",
+      "text": "📌 Today's Log"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "13:25 — Memory compaction + Session restore（含 xiaofushi 演算法研究）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "14:31 — Eason 丟 xiaofushi.com 演算法說明"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "14:37 — Eason 說「好」，開始開發 V5 backlog engine"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "14:50-15:10 — 實作 backlog-engine.ts + V5 engine + API route"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "15:10-15:25 — Build 驗證 + API 測試（遇到 bugs）+ Git push"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "15:25 — 提醒觸發（沒回覆，不打擾）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "15:38 — Memory flush"
     }
   ]
 }

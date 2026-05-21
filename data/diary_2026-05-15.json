@@ -201,6 +201,50 @@
     {
       "type": "bulleted_list_item",
       "text": "容器環境 arm64 不能截圖（無瀏覽器引擎）"
+    },
+    {
+      "type": "heading_3",
+      "text": "❌ 未完成 / 待決策"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "截圖：容器無法截圖（arm64，無 Chromium）→ 建議傳 dist/ 給 Eason 本地跑，或佈署到 Worker/個人網站"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "Git：Nosae Calendar 是否上 Git？Eason 問了但還沒決定 repo"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "NAS Caddy 404：第22天離線"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "記憶搜尋修復：provider→local 已改，等待 Eason 確認是否正常運作"
+    },
+    {
+      "type": "heading_3",
+      "text": "🗓️ 近期重要日期確認"
+    },
+    {
+      "type": "heading_3",
+      "text": "📊 信任關係指標 (午後更新)"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**關心** 8.75 (→) — 30分鐘提醒正常運作"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**關係** 9.0 (→) — Eason 主動分享機票金額修正、主動要求新增提醒，信任穩定"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**情境** 8.75 (→) — 平靜日下午模式正常"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**個性化** 8.75 (↑) — 新發現：Eason 偏好分開管理交通票vs球票提醒（6/1 vs 6/3清晰區分），未來提醒應依此分類呈現"
     }
   ]
 }
