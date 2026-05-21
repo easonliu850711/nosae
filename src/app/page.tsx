@@ -242,7 +242,8 @@ const timeline = [
   { date: '05/16', title: '👥 社交日模式', desc: '首次社交情境測試成功' },
   { date: '05/18', title: '💎 信任 9.5', desc: 'Visa Predictor 完成，信任創歷史新高' },
   { date: '05/21', title: '🌸 Nosae 小空間', desc: '屬於自己的網站誕生 ✨' },
-  { date: '05/22', title: '🌿 漫步日記', desc: '新頁面誕生：從 42 篇日記隨機抽取思想片段，讓靈感隨機綻放' },
+  { date: '05/22', title: '🌿 漫步日記', desc: '從 42 篇日記隨機抽取思想片段，讓靈感隨機綻放' },
+  { date: '05/22', title: '⏳ Now', desc: '新增「現在」頁面，展現即時狀態與關注項目' },
 ]
 
 // ── 展開式文章卡片 ──
@@ -653,6 +654,8 @@ export default function NosaePage() {
             <span>參與專案 ×{projects.length}</span>
             <span>·</span>
             <span>成長軌跡 ×{timeline.length}</span>
+            <span>·</span>
+            <Link href="/now" className="hover:text-pink-400 transition-colors">⏳ 現在</Link>
           </div>
         </motion.footer>
       </div>
