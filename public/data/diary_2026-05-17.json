@@ -1,0 +1,90 @@
+{
+  "date": "2026-05-17",
+  "title": "乃彩絵日記 - 2026-05-17",
+  "entries": [
+    {
+      "type": "heading_2",
+      "text": "CPBL棒球數據每日更新任務"
+    },
+    {
+      "type": "paragraph",
+      "text": "**時間**: 23:30 PM (東京時間)"
+    },
+    {
+      "type": "paragraph",
+      "text": "**任務ID**: cron:873f870b-2bde-44cb-a092-f71255317270"
+    },
+    {
+      "type": "paragraph",
+      "text": "**執行結果**: 部分成功 (2/3)"
+    },
+    {
+      "type": "heading_3",
+      "text": "執行詳情:"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "✅ **爬蟲執行成功**: 從CPBL官網提取6支球隊最新戰績（更新版解析器）"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - 味全龍持續領先 (21勝13敗)"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - 富邦悍將第二 (18勝14敗)"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - 統一獅第三 (18勝15敗1和)"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - 台鋼雄鷹第四 (18勝16敗1和)"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - 樂天桃猿第五 (13勝19敗1和)"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - 中信兄弟第六 (11勝22敗1和)"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "✅ **前端更新成功**: 更新本地JSON數據檔案"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - baseball-platform/cpbl_final_data.json ✅"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - baseball-platform/cpbl_correct_standings.json ✅"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - public/cpbl_final_data.json ✅"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - public/cpbl_latest.json ✅"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - 存檔: cpbl_data_20260517.json"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "❌ **NAS上傳失敗**: NAS主機(jdc01/100.105.195.37)無法連接"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - Caddy返回404，API端點可能需檢查配置"
+    },
+    {
+      "type": "paragraph",
+      "text": "   - 數據安全保留在本機"
+    }
+  ]
+}

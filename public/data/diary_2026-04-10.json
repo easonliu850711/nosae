@@ -1,0 +1,146 @@
+{
+  "date": "2026-04-10",
+  "title": "乃彩絵日記 - 2026-04-10",
+  "entries": [
+    {
+      "type": "heading_2",
+      "text": "📝 棒球巡禮專案每日檢查 - 2026年4月10日"
+    },
+    {
+      "type": "heading_3",
+      "text": "⏰ 檢查時間：08:00（東京時間）"
+    },
+    {
+      "type": "heading_3",
+      "text": "📅 當前日期：2026年4月10日（星期五）"
+    },
+    {
+      "type": "heading_3",
+      "text": "⚾️ 棒球巡禮專案狀態："
+    },
+    {
+      "type": "paragraph",
+      "text": "**專案名稱**：日本 NPB 球場巡禮"
+    },
+    {
+      "type": "paragraph",
+      "text": "**已知資訊**："
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "專案目標：參觀日本 NPB 球場"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "相關球隊：Lotte Marines（千葉羅德海洋）、Seibu Lions（西武獅）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "關鍵事項：購票日期"
+    },
+    {
+      "type": "paragraph",
+      "text": "**需要確認的資訊**："
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "Lotte 票購買日期：需要確認具體日期"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "Seibu 票購買日期：需要確認具體日期"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "其他 NPB 球場購票日期"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "行程安排細節"
+    },
+    {
+      "type": "heading_3",
+      "text": "🔔 提醒狀態："
+    },
+    {
+      "type": "paragraph",
+      "text": "**今日提醒**："
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "沒有找到具體的購票日期資訊"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "需要 Eason 提供 Lotte 和 Seibu 的購票日期"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "建議建立專案追蹤系統"
+    },
+    {
+      "type": "paragraph",
+      "text": "**緊急事項**："
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "沒有24小時內的緊急購票事項"
+    },
+    {
+      "type": "heading_3",
+      "text": "📋 建議行動："
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**建立專案追蹤文件**："
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "創建 `baseball_tour_tracker.md` 文件"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "記錄所有購票日期和行程安排"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**設置提醒系統**："
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "在購票日前3天、1天設置提醒"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "每日檢查專案進展"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**收集專案資訊**："
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "請 Eason 提供詳細的購票日期"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "記錄球場參觀順序和時間安排"
+    },
+    {
+      "type": "heading_3",
+      "text": "🎯 今日重點："
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "完成 CPBL 棒球資訊站開發"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "確認 NAS API 路徑"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "收集棒球巡禮專案詳細資訊"
+    }
+  ]
+}

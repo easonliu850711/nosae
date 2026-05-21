@@ -1,0 +1,154 @@
+{
+  "date": "2026-05-01",
+  "title": "乃彩絵日記 - 2026-05-01",
+  "entries": [
+    {
+      "type": "heading_2",
+      "text": "🌙 深夜記憶蒸餾 (01:04)"
+    },
+    {
+      "type": "heading_3",
+      "text": "📅 日期備註"
+    },
+    {
+      "type": "paragraph",
+      "text": "**今天就是 5/1 — 永住申請截止日！**"
+    },
+    {
+      "type": "paragraph",
+      "text": "最後一次編寫的日誌是 4/29（密集開發日），4/30 無記錄。"
+    },
+    {
+      "type": "divider",
+      "text": ""
+    },
+    {
+      "type": "heading_2",
+      "text": "🔍 近期回顧 (4/25 ~ 4/29 整合)"
+    },
+    {
+      "type": "heading_3",
+      "text": "4/25 — 打球日"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ 跟小李打球（週六）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "🎫 4/26 樂天金鷹搶票前日預告"
+    },
+    {
+      "type": "heading_3",
+      "text": "4/26 — 樂天金鷹搶票 ✅"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "購票成功"
+    },
+    {
+      "type": "heading_3",
+      "text": "4/27 — 行程系統更新"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "Eason 確認五項行程：5/3 千葉看球、5/8 深谷擺攤、5/23-24 Design Fest、6/6 與唐唐吃飯、11/19-24 台灣旅行"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "Eason 更正：11/10 取消，合併到 11/19-24 台灣之旅"
+    },
+    {
+      "type": "heading_3",
+      "text": "4/28 — 互動密集日 🔥（最佳的一天）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**08:08** — Cron 腳本修復（diary_sync_master 指向新路徑）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**09:01** — 網站完整進度報告（Phase 1+2 已完成）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**10:01** — 羅德海洋 & 明星賽購票提醒 → **15:05 購票成功 ✅ ¥7,020**"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**15:10-15:40** — NPB 15 場全巡禮交通統整"
+    },
+    {
+      "type": "paragraph",
+      "text": "  - **關鍵糾正：Eason 住橫濱非東京（已永久記錄）**"
+    },
+    {
+      "type": "paragraph",
+      "text": "  - 7/3-5 關西三連戰：公司出差出錢"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**18:04** — 橫濱美食推薦（吉村家、崎陽軒、野毛小路）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**19:22** — Eason 要求完整巡禮狀況報告（待確認是否已發出）"
+    },
+    {
+      "type": "heading_3",
+      "text": "4/29 — 密集開發日 🔥"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**10:41~14:02** — eason-cosmos-v2 全站密集開發"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**完成內容:**"
+    },
+    {
+      "type": "paragraph",
+      "text": "  - Notion CMS 整合 (Phase 1) ✅"
+    },
+    {
+      "type": "paragraph",
+      "text": "  - 內容頁面 baseball + travel (Phase 2) ✅"
+    },
+    {
+      "type": "paragraph",
+      "text": "  - StarField 視覺動畫 (Phase 3) ✅"
+    },
+    {
+      "type": "paragraph",
+      "text": "  - Build 零錯誤 ✅"
+    },
+    {
+      "type": "paragraph",
+      "text": "  - 草本茶 v2 完整報告已完成"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**13:23** — 總工程師加強令（3 項深度開發待處理）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**14:02** — Eason 回「？？」待回應（之後無記錄）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**⚠️ 未完成：** GitHub push、Vercel 部署、Notion Blog 填充"
+    },
+    {
+      "type": "divider",
+      "text": ""
+    },
+    {
+      "type": "heading_2",
+      "text": "📊 技能評分複習"
+    },
+    {
+      "type": "heading_3",
+      "text": "四個核心質量系統（本週趨勢分析）"
+    }
+  ]
+}

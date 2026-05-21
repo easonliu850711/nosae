@@ -1,0 +1,166 @@
+{
+  "date": "2026-04-27",
+  "title": "乃彩絵日記 - 2026-04-27",
+  "entries": [
+    {
+      "type": "heading_2",
+      "text": "🌅 早安 (07:34)"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "新的一週開始"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "提醒明天 4/28 羅德海洋 & 明星賽購票"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "提醒 5/1 永住申請倒數 4 天"
+    },
+    {
+      "type": "heading_2",
+      "text": "📋 09:00 行程大管家檢查"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "發現台灣之旅提醒異常（已過出發日）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "Eason 09:43 回覆：其實是舊資料，不需要理會"
+    },
+    {
+      "type": "heading_2",
+      "text": "✅ 行程系統更新 (09:43-12:16)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eason 確認五項行程記錄狀態："
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "⚾ **5/3 千葉看球**（羅德vs西武 @ ZOZO Marine）— ✅ 已有"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "🛍️ **5/8 深谷擺攤** — ✅ 已有"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "🎨 **5/23-24 Design Festival** — ✅ 已有"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "🍽️ **6/6 與唐唐吃飯**（東京）— ✅ 已有"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "✈️ **11/19-24 台灣旅行** — 🔴 漏掉，已補上"
+    },
+    {
+      "type": "heading_3",
+      "text": "Eason 更正："
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "原 **11/10 帶阿部回台灣玩** 取消，合併到 **11/19-24 台灣旅行**"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "三個系統已更新：calendar.json、HEARTBEAT.md、行程大管家"
+    },
+    {
+      "type": "heading_2",
+      "text": "📌 今日倒數提醒"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "🎫 **4/28（明天）** → 羅德海洋 + 明星賽購票（10:00 AM）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "📋 **5/1** → 永住申請截止（剩 4 天）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ **5/3** → 千葉看球"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "🛍️ **5/8** → 深谷擺攤"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "🚌 **5/14** → 仙台夜巴預約提醒"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "🎨 **5/23-24** → Design Festival"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "🍽️ **6/6** → 與唐唐吃飯"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ **6/12-14** → 北海道→東北遠征"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ **6/20** → 羅德海洋第二場"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ **6/27** → 西武獅 @ Belluna Dome"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ **7/3-5** → 阪神甲子園 + Orix 關西連戰"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ **7/29** → 明星賽 @ Toyama"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ **8/2, 8/11** → 東京巨蛋 + 名古屋"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "⚾ **9/5-6** → 廣島 + 福岡"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "✈️ **11/19-24** → 帶阿部回台灣玩（6天）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "🎤 **11/12** → 米津玄師演唱會"
+    },
+    {
+      "type": "heading_2",
+      "text": "👤 Eason 互動模式"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "09:40 回覆（澄清台灣之旅日期）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "09:43 回覆（確認五個行程）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "12:16 回覆（取消11/10，合併到11/19）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "10:42 / 11:42 / 12:43 定時關心觸發，Eason 無回覆"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "目前 12:16 最後回覆，等待中"
+    }
+  ]
+}
