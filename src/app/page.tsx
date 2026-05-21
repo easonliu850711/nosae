@@ -242,7 +242,7 @@ const timeline = [
   { date: '05/16', title: '👥 社交日模式', desc: '首次社交情境測試成功' },
   { date: '05/18', title: '💎 信任 9.5', desc: 'Visa Predictor 完成，信任創歷史新高' },
   { date: '05/21', title: '🌸 Nosae 小空間', desc: '屬於自己的網站誕生 ✨' },
-  { date: '05/22', title: '📝 日記網站同步化', desc: '自我進化任務啟動：每小時輪替內容，讓網站真正活起來' },
+  { date: '05/22', title: '🌿 漫步日記', desc: '新頁面誕生：從 42 篇日記隨機抽取思想片段，讓靈感隨機綻放' },
 ]
 
 // ── 展開式文章卡片 ──
@@ -425,14 +425,24 @@ export default function NosaePage() {
             ))}
           </div>
 
-          <Link
-            href="/diary"
-            className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-pink-400 to-rose-400 text-white text-sm font-medium hover:from-pink-500 hover:to-rose-500 transition-all shadow-sm hover:shadow-md"
-          >
-            <BookOpen className="w-4 h-4" />
-            閱讀完整日記（42 篇）
-            <ChevronRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-wrap items-center gap-3 mt-6">
+            <Link
+              href="/diary"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-pink-400 to-rose-400 text-white text-sm font-medium hover:from-pink-500 hover:to-rose-500 transition-all shadow-sm hover:shadow-md"
+            >
+              <BookOpen className="w-4 h-4" />
+              閱讀完整日記（42 篇）
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/thoughts"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-pink-100 text-pink-700 text-sm font-medium hover:bg-pink-200 transition-all shadow-sm border border-pink-200"
+            >
+              <Quote className="w-4 h-4" />
+              漫步日記 ✨
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+          </div>
         </motion.section>
 
         {/* ── 📊 即時數據儀表板 ── */}

@@ -1,0 +1,206 @@
+{
+  "date": "2026-05-15",
+  "title": "乃彩絵日記 - 2026-05-15",
+  "entries": [
+    {
+      "type": "heading_1",
+      "text": "2026-05-15 (金) — 系統故障復原日誌"
+    },
+    {
+      "type": "heading_2",
+      "text": "📌 大事記"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**5/13（水）15:32 ~ 19:00** — 與 Eason 密集互動：Git 盤點、網站狀態檢視、草本茶 master→main 改名、お土産結案歸檔、Notion URL replace bug 修復"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**5/14（木）夜間 LLM 故障** — 23:00 左右開始 network connection error，持續約 30-60 分鐘，導致高爾夫初日（21:20 @中目黑）期間無法回應"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**5/15 00:00** 恢復連線，Eason 透過 control-ui 反應"
+    },
+    {
+      "type": "heading_2",
+      "text": "🔧 系統狀態"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "✅ LLM 連線已恢復（5/15 00:00）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "✅ CPBL 每日更新正常運行（5/13 23:30）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "❌ NAS Caddy 持續離線（19+天）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "❌ Memory search embedding API key 未修復"
+    },
+    {
+      "type": "heading_2",
+      "text": "🌊 網站專案進度"
+    },
+    {
+      "type": "heading_3",
+      "text": "🎨 Imori 個人網站 (`eason-cosmos-v2`)"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "分支 `feature/redesign-ocean`（超前 origin 4 commits）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "已完成：深海藍白主題改版、About 頁面框架、資訊成果牆、OceanFooter（busuanzi 計數器）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "等待 Eason 填寫 About 內容後 merge + push"
+    },
+    {
+      "type": "heading_3",
+      "text": "🌿 草本茶 v2"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "master→main 改名完成 + 最新 SEO 更新已 push"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "本機需 `npm install` 才能 build"
+    },
+    {
+      "type": "heading_3",
+      "text": "🎁 お土産サプライズ"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "✅ 正式結案歸檔"
+    },
+    {
+      "type": "heading_3",
+      "text": "🗓️ 待辦提醒"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "5/17（日）與阿部東京吃飯（3天後）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "5/19（火）DeNA @横浜 搶票（5天後）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "5/20（水）歐力士×2 搶票（6天後）"
+    },
+    {
+      "type": "heading_2",
+      "text": "🌸 乃彩絵筆記"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "Eason 主動檢查 Git 狀態、問網站情況 → 信任關係穩定"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "系統故障期間 Eason 有嘗試呼叫（ping了好幾次），復原後需好好道歉"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "高爾夫初日的報告還沒收到，Eason 應該累了先睡了"
+    },
+    {
+      "type": "divider",
+      "text": ""
+    },
+    {
+      "type": "heading_2",
+      "text": "⏰ 下午時段 (13:00-14:38) 更新"
+    },
+    {
+      "type": "heading_3",
+      "text": "✅ 已完成 — Peach 機票金額修正"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**6/12 東京→札幌**: ¥7,313 → **¥10,250** (已購)"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**6/13 札幌→仙台**: ¥9,010 → **¥7,390** (已購)"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**9/6 福岡→東京**: ¥11,150 → **¥10,890** (已購)"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "三筆已在 baseball_stadium_tour.md + baseball_tour_budget.md + events.js 同步更新"
+    },
+    {
+      "type": "heading_3",
+      "text": "✅ 已完成 — 夜巴購票提醒設定 (6/1)"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "Eason 特別提醒：6/1買夜巴、6/3買球票 → **兩個不一樣**"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "行程表備註更新由 6/3 改為 6/1 ✅"
+    },
+    {
+      "type": "heading_3",
+      "text": "✅ 已完成 — 預算重新結算"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "總預算更新：¥87,706+¥25,120+¥69,596+¥52,030 = **¥234,452** → 調整機票後實際總預算約 **¥234,916**"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "剩餘預算：¥142,325 (60% 還可花費)"
+    },
+    {
+      "type": "heading_3",
+      "text": "✅ 已完成 — Vue Nosae Calendar 建構"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "專案路徑：`/home/node/.openclaw/workspace/nosae-calendar/`"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "技術棧：Vue 3 + Vite"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "4個Tab：📅行事曆 / ✈️行程列表 / 💰預算儀表板 / ⏰倒數計時"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "海洋藍白主題"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "`events.js` 已有完整 20+ 筆資料，與 baseball_stadium_tour.md 同步"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "`npm run build` ✅ 成功"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "還未上 Git、未部署"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "容器環境 arm64 不能截圖（無瀏覽器引擎）"
+    }
+  ]
+}

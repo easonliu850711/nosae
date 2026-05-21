@@ -1,0 +1,206 @@
+{
+  "date": "2026-05-18",
+  "title": "乃彩絵日記 - 2026-05-18",
+  "entries": [
+    {
+      "type": "heading_1",
+      "text": "2026-05-18 日記"
+    },
+    {
+      "type": "heading_2",
+      "text": "🌤️ 本日概要"
+    },
+    {
+      "type": "paragraph",
+      "text": "忙碌的開發日！完成 V4→V5 的排隊模型升級，實作小夫妻風格的積壓消化演算法。"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eason 時段：14:25-14:37（短暫但高效率的開發討論）"
+    },
+    {
+      "type": "heading_2",
+      "text": "📋 已完成事項"
+    },
+    {
+      "type": "heading_3",
+      "text": "⚾ 永住預測引擎 V5 開發（14:30-15:00）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**理解小夫妻演算法**：申請月積壓→逐月消化→最新月速度，非權重乘法"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**修復 e-stat-parser.ts**：`@area` → `@cat03`（e-Stat API 欄位名稱錯誤）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**建立 backlog-engine.ts**：實現完整的積壓消化演算法"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "e-Stat 資料範圍：2020~2026（6年半，44,352筆）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "找到申請月份當時的未済件數"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "逐月計算消化量（backlog 減少部分）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "剩餘積壓 ÷ 最新月日均許可量 = 預估剩餘天數"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**建立 V5 engine + API route**：`/api/prediction/v5`"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**三種情境**：moderate = weightedDays, optimistic = -30, conservative = +60"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**Build 成功 + API 測試通過**"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**Git push 至 main**：commit `d9bfb8e`"
+    },
+    {
+      "type": "heading_3",
+      "text": "發現的 Bug"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**e-stat-parser.ts**：用 `@area` 取值，實際是 `@cat03` — 已修復"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**backlog-engine**：`totalProcessed: 0`（消化量計算邏輯需修正）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**latestMonth 月份顯示異常**：`2026-00`（`@time` 解析可能有 00 的問題）"
+    },
+    {
+      "type": "heading_3",
+      "text": "⚾ CPBL 每日更新"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "爬蟲成功、上傳 API 失敗（已知問題，不處理）"
+    },
+    {
+      "type": "heading_2",
+      "text": "🔧 待修正"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**totalProcessed bug**：backlog 不是嚴格遞減，波動時消化量算成 0"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**latestMonth 顯示 2026-00**：e-Stat `@time` 格式 `2026000202` → 月份是 00？"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**部署等待**：Eason 台灣主機 `git pull && build && pm2 reload`"
+    },
+    {
+      "type": "heading_2",
+      "text": "🏌️ 提醒：今日 21:20 高爾夫課（第一堂！）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "@中目黑"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "預計 18:00~19:00 左右自然提醒"
+    },
+    {
+      "type": "heading_2",
+      "text": "💭 今天的學習"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "小夫妻網站的演算法：**申請月積壓 - 逐月消化量 = 剩餘積壓，用最新月速度推估**"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "e-Stat API 欄位名稱確實是 `@cat03`（非 `@area`），之前 V3 parser 一直都有 bug"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "V5 即使有 bug，核心：積壓推定路線已經正確運作"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "Eason 對演算法的理解很精確，給他原始碼他就看出差別了"
+    },
+    {
+      "type": "heading_1",
+      "text": "2026-05-18 記憶日記"
+    },
+    {
+      "type": "heading_2",
+      "text": "🌤️ 概況"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**這天重點：** V5 backlog engine 開發日，實作小夫妻演算法（積壓消化法）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**互動頻率：** 下午活躍（13:25-15:25），工作日節奏"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "**關鍵提醒：** 21:20 高爾夫第一堂課（可能被 V5 開發蓋過去了）"
+    },
+    {
+      "type": "heading_2",
+      "text": "🚀 V5 Backlog Engine 開發歷程"
+    },
+    {
+      "type": "heading_3",
+      "text": "核心演算法（小夫妻 × e-Stat）"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eason 在 14:31 給了一篇 xiaofushi.com 的演算法說明，要求用積壓法來動態推算審查進度："
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**申請月積壓量** → 找 e-Stat 該局的未済件數"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**逐月消化量** → 申請月到現在，各月的 backlog 差值（正的才算消化）"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**剩餘積壓 ÷ 最新月日均審查量** → 預估剩餘天數"
+    },
+    {
+      "type": "numbered_list_item",
+      "text": "**高度人才佇列權重** → 從設定檔 routeQueueWeights 讀取倍率"
+    },
+    {
+      "type": "heading_3",
+      "text": "完成的檔案"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "`src/lib/v4/backlog-engine.ts` — 積壓資料引擎（call e-Stat + 計算消化 + 輸出預估）"
+    },
+    {
+      "type": "bulleted_list_item",
+      "text": "`src/lib/v5/engine.ts` — V5 引擎入口（組合 backlog + 佇列權重 + 三種情境）"
+    }
+  ]
+}
