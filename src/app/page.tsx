@@ -5,13 +5,30 @@ import {
   Cpu, Globe, Network, Server, Code, Database, Cloud, Shield, Layers, Box, Zap, Wrench,
   BookOpen, Trophy, Sparkles, Heart, Calendar, ArrowRight, ExternalLink, Star, ChevronDown,
   Clock, Activity, Terminal, Map, FileText, Leaf, Github, Linkedin, Twitter,
-  Sun, Moon, Quote, Music, Camera, Award, Target, Compass, Feather, Infinity,
+  Sun, Moon, Quote, Music, Camera, Award, Target, Compass, Feather,
   Smile, MessageCircle, Coffee, Gift, Wind, Eye, Lock, HardDrive, Route,
   BarChart3, TrendingUp, ChevronRight, CheckCircle2, Circle,
 } from 'lucide-react'
 import Link from 'next/link'
 const MAIN_SITE = 'https://japan.studio-imori.com'
 import { motion, AnimatePresence } from 'framer-motion'
+
+// ── Design Festa 56 資訊 ──
+const DESIGN_FESTA = {
+  name: 'Design Festa 56',
+  start: '2026-05-22',
+  end: '2026-05-24',
+  venue: '東京ビッグサイト 西ホール',
+  emoji: '🎨',
+  link: 'https://designfesta.com/',
+}
+
+function isDesignFestaPeriod(): boolean {
+  const now = Date.now()
+  const start = new Date(DESIGN_FESTA.start + 'T00:00:00+09:00').getTime()
+  const end = new Date(DESIGN_FESTA.end + 'T23:59:59+09:00').getTime()
+  return now >= start && now <= end
+}
 
 // ── 現在時刻ベースのモード ──
 function getCurrentMode(): {
@@ -21,6 +38,7 @@ function getCurrentMode(): {
   activity: string
 } {
   const h = new Date().getHours()
+  if (isDesignFestaPeriod() && h >= 8 && h < 20) return { greeting: '🎨 Design Festa 56 開催中！', emoji: '🎪', mood: '興奮', activity: '應援 Design Festa，創意滿載 ✨' }
   if (h >= 23 || h < 6) return { greeting: '🌙 夜深了', emoji: '🌜', mood: '靜謐', activity: '記憶整理 & 系統維護中' }
   if (h < 8) return { greeting: '🌅 早安', emoji: '☀️', mood: '清新', activity: '喚醒系統，準備新的一天' }
   if (h < 12) return { greeting: '🌤️ 上午好', emoji: '🌸', mood: '專注', activity: '駐守任務進行中' }
@@ -369,6 +387,60 @@ export default function NosaePage() {
   return (
     <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-16 px-4`}>
       <div className="max-w-5xl mx-auto">
+
+        {/* ── 🎪 Design Festa 56 應援 Banner ── */}
+        {isDesignFestaPeriod() && (
+          <motion.a
+            href={DESIGN_FESTA.link}
+            target="_blank"
+            className="block mb-8"
+            initial={{ opacity: 0, y: -10, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-pink-400 via-rose-400 to-pink-500 p-0.5 shadow-lg shadow-rose-200/40">
+              <div className="rounded-[14px] bg-gradient-to-r from-pink-500/90 via-rose-500/90 to-pink-600/90 backdrop-blur-sm p-5 text-center">
+                {/* 裝飾光點 */}
+                <div className="absolute inset-0 overflow-hidden opacity-20 pointer-events-none">
+                  {Array.from({ length: 6 }, (_, i) => (
+                    <motion.div
+                      key={i}
+                      className="absolute w-1.5 h-1.5 bg-white rounded-full"
+                      style={{ left: `${10 + i * 18}%`, top: `${20 + (i % 3) * 30}%` }}
+                      animate={{
+                        opacity: [0, 0.8, 0],
+                        scale: [0, 1.5, 0],
+                      }}
+                      transition={{
+                        duration: 2 + i * 0.3,
+                        repeat: 9999,
+                        repeatDelay: i * 0.5,
+                        ease: 'easeInOut',
+                      }}
+                    />
+                  ))}
+                </div>
+                <motion.div
+                  className="relative"
+                  animate={{ scale: [1, 1.02, 1] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                >
+                  <p className="text-white/90 text-xs font-medium tracking-widest mb-1">
+                    📍 開催中 ｜ 東京ビッグサイト
+                  </p>
+                  <p className="text-white text-lg md:text-xl font-bold">
+                    🎨 Design Festa 56 　—　 5/22(金)→5/24(日)
+                  </p>
+                  <div className="inline-flex items-center gap-2 mt-2 px-4 py-1.5 rounded-full bg-white/20 text-white text-xs font-medium">
+                    <span className="w-1.5 h-1.5 rounded-full bg-green-300 animate-pulse" />
+                    創意應援中 ✨
+                    <ArrowRight className="w-3 h-3" />
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </motion.a>
+        )}
 
         {/* ── 🌸 英雄區 ── */}
         <motion.section className="text-center mb-16" {...fadeUp}>
