@@ -7,7 +7,7 @@ import {
   ArrowLeft, Calendar, Clock, Sparkles, Heart, Target,
   MapPin, Activity, BookOpen, Sun, Moon, Star, Globe,
 } from 'lucide-react'
-import { ThemeToggleInline } from '@/components/NavBar'
+import ThemeToggleInline from '@/components/ThemeToggleInline'
 
 import {
   Music, Coffee, Eye, Smile, TrendingUp, Trophy,

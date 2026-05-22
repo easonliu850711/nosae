@@ -7,7 +7,7 @@ import {
   Sparkles, ArrowLeft, Heart, Shuffle, Quote,
   BookOpen, RefreshCw, MessageCircle, Coffee, Sun, Moon,
 } from 'lucide-react'
-import { ThemeToggleInline } from '@/components/NavBar'
+import ThemeToggleInline from '@/components/ThemeToggleInline'
 
 type DiaryEntry = { date: string; text: string }
 

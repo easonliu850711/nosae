@@ -12,7 +12,6 @@ import {
 import Link from 'next/link'
 const MAIN_SITE = 'https://japan.studio-imori.com'
 import { motion, AnimatePresence } from 'framer-motion'
-import ThemeToggle from '@/components/ThemeToggle'
 import MemoryBox from '@/components/MemoryBox'
 
 // ── 日記竊竊私語：從真實日記中隨機抽取一段 ──
@@ -535,8 +534,7 @@ function BornCounter() {
 export default function NosaePage() {
   return (
     <>
-      <ThemeToggle />
-      <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-16 px-4`}>
+      <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-8 px-4`}>
       <div className="max-w-5xl mx-auto">
 
         {/* ── 🎪 Design Festa 56 —— 輕巧小提醒（縮在角落） ── */}
@@ -555,7 +553,7 @@ export default function NosaePage() {
             <Heart className="w-9 h-9 text-white" fill="white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            <span className="bg-gradient-to-r from-pink-500 via-rose-500 to-pink-400 bg-clip-text text-transparent">
+            <span className="text-pink-900 font-extrabold">
               乃彩絵
             </span>
             <span className="text-pink-400 ml-2">🌸</span>

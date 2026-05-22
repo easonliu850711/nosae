@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ChevronRight, Calendar, BookOpen, Heart } from 'lucide-react'
-import { ThemeToggleInline } from '@/components/NavBar'
+import ThemeToggleInline from '@/components/ThemeToggleInline'
 
 type DiaryEntry = {
   date: string
@@ -93,7 +93,7 @@ export default function DiaryPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-white">
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <Link href="/" className="text-pink-400 hover:text-pink-600 flex items-center gap-1 transition-colors">

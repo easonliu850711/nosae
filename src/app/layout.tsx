@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
+import NavBar from '@/components/NavBar'
 
 export const metadata: Metadata = {
   title: '🌸 Nosae — 乃彩絵的小空間',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-TW" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <NavBar />
           {children}
         </ThemeProvider>
       </body>

@@ -7,7 +7,7 @@ import {
   Sparkles, Trophy, BookOpen, Heart, Star, ArrowLeft,
   Calendar, Target, TrendingUp, Layers, Filter, ChevronDown,
 } from 'lucide-react'
-import { ThemeToggleInline } from '@/components/NavBar'
+import ThemeToggleInline from '@/components/ThemeToggleInline'
 
 import {
   Zap, Code, Server, Users, Smile, Clock, BarChart3,
