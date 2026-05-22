@@ -19,6 +19,7 @@ import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
   getCurrentMode, getDailyQuote, isDesignFestaPeriod,
   DESIGN_FESTA, getFestaDayLabel, getFestaTimeDesc, getTodayDiary,
+  getFestaEveningVibes,
 } from '@/data/site-data'
 
 const MAIN_SITE = 'https://japan.studio-imori.com'
@@ -350,6 +351,61 @@ export default function NosaePage() {
           </div>
           <StatsGrid />
         </motion.section>
+
+        {/* ── 🎨 Design Festa 暮色（18:00~22:00 限定） ── */}
+        {isDesignFestaPeriod() && (() => {
+          const h = new Date().getHours()
+          if (h < 18 || h >= 22) return null
+          const eve = getFestaEveningVibes()
+          return (
+            <motion.section className="mb-16" {...fadeUp}>
+              <div className={`rounded-2xl border border-purple-200/60 bg-gradient-to-br from-purple-50/80 to-indigo-50/50 backdrop-blur-sm p-5 md:p-6 ${'shadow-lg shadow-purple-200/20'}`}>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center shadow-sm">
+                    <span className="text-lg">{eve.emoji}</span>
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-bold text-blue-800">
+                      Design Festa 56 · {getFestaDayLabel()} 暮色
+                    </h2>
+                    <p className="text-xs text-purple-500">
+                      {DESIGN_FESTA.venue} · {DESIGN_FESTA.start.replace('2026-','')}–{DESIGN_FESTA.end.replace('2026-','')}
+                    </p>
+                  </div>
+                </div>
+
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3, duration: 1.5 }}
+                  className="relative"
+                >
+                  <p className="text-base text-purple-700 font-medium italic leading-relaxed mb-2">
+                    「{eve.line}」
+                  </p>
+                  <p className="text-sm text-purple-600/80 leading-relaxed whitespace-pre-line">
+                    {eve.deep}
+                  </p>
+                </motion.div>
+
+                {/* 暮色呼吸光暈 */}
+                <motion.div
+                  className="absolute top-0 right-0 w-48 h-48 rounded-full pointer-events-none -z-0"
+                  animate={{
+                    background: [
+                      'radial-gradient(circle, rgba(167,139,250,0.08), transparent 70%)',
+                      'radial-gradient(circle, rgba(167,139,250,0.15), transparent 70%)',
+                      'radial-gradient(circle, rgba(167,139,250,0.08), transparent 70%)',
+                    ],
+                    opacity: [0.5, 0.8, 0.5],
+                  }}
+                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+                  style={{ filter: 'blur(50px)' }}
+                />
+              </div>
+            </motion.section>
+          )
+        })()}
 
         {/* ── 🛠️ 參與專案 ── */}
         <motion.section className="mb-16" {...fadeUp}>

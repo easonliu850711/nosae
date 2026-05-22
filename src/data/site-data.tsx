@@ -48,7 +48,32 @@ export function getFestaTimeDesc(): string {
   if (h < 11) return '🎪 開場準備'
   if (h < 14) return '🎨 創作交流中'
   if (h < 17) return '☕ 午後時光'
-  return '🌅 閉幕前'
+  if (h < 19) return '🌅 閉幕前·最後巡禮'
+  return '🌆 會場逐漸沉靜，一天的創作能量在夜色中發酵'
+}
+
+/* ── Design Festa 晚間餘韻 ── */
+export function getFestaEveningVibes(): { emoji: string; line: string; deep: string } {
+  const day = getFestaDayLabel()
+  if (day === '初日') {
+    return {
+      emoji: '🌆',
+      line: '初日的喧囂沉澱成琥珀色的回憶',
+      deep: '創作者們收起作品，也收起今天的靈感碎片。\n城市的某個角落，有人正在筆記本上記下明天要試的新點子。',
+    }
+  }
+  if (day === '二日目') {
+    return {
+      emoji: '🌃',
+      line: '第二天的能量在暮色中變得更醇厚',
+      deep: '交流過的眼神、交換過的名片、被觸動的創作靈感。\n夜晚的東京，每一盞燈都是一個未完的故事。',
+    }
+  }
+  return {
+    emoji: '🌟',
+    line: '最終日的尾聲，像煙火綻放前的寂靜',
+    deep: '三天積累的靈感與連結，將在每個參與者的心中繼續生長。\nDesign Festa 從未真正結束——它只是換了一種形式存在。',
+  }
 }
 
 /* ── 時間感知模式 ── */
@@ -66,13 +91,23 @@ export interface TimeMode {
 
 export function getCurrentMode(): TimeMode {
   const h = new Date().getHours()
-  if (isDesignFestaPeriod() && h >= 8 && h < 20) {
+  if (isDesignFestaPeriod() && h >= 8 && h < 18) {
     return {
       greeting: '🎨 Design Festa 56 開催中！', emoji: '🎪', mood: '興奮',
       activity: '應援 Design Festa，創意滿載 ✨',
       moodGradient: 'linear-gradient(135deg, #f472b6, #ec4899)',
       glowColor: 'rgba(236, 72, 153, 0.4)', warmth: 95,
       vibeLine: festaMessage(), miniFlag: '🎨',
+    }
+  }
+  if (isDesignFestaPeriod() && h >= 18 && h < 22) {
+    const eve = getFestaEveningVibes()
+    return {
+      greeting: '🌆 Design Festa 56 · 暮色', emoji: eve.emoji, mood: '餘韻',
+      activity: '會場漸靜，創作能量在夜色中醞釀',
+      moodGradient: 'linear-gradient(135deg, #a78bfa, #6366f1)',
+      glowColor: 'rgba(167, 139, 250, 0.35)', warmth: 55,
+      vibeLine: eve.line, miniFlag: '🌙',
     }
   }
   if (h >= 23 || h < 6) {
@@ -216,7 +251,18 @@ export function getTodayDiary(): { date: string; title: string; excerpt: string;
   const dayNames = ['日','月','火','水','木','金','土']
   const dayName = dayNames[today.getDay()]
 
+  const h = today.getHours()
   if (isDesignFestaPeriod()) {
+    if (h >= 18 && h < 22) {
+      const eve = getFestaEveningVibes()
+      return {
+        date: dateStr,
+        title: `🌆 DF56 ${getFestaDayLabel()} · 暮色餘韻`,
+        excerpt: `夕陽穿過東京ビッグサイト的落地窗，${getFestaDayLabel()}的喧囂逐漸沉澱。${eve.line}。這一天的創作能量不會消失——它會變成種子，在每個參展者的心中繼續生長。`,
+        tags: ['Design Festa', getFestaDayLabel(), '暮色', '餘韻'],
+        gradient: 'from-purple-200 to-indigo-200',
+      }
+    }
     return {
       date: dateStr,
       title: `🎪 Design Festa 56 ${getFestaDayLabel()}`,
@@ -390,6 +436,7 @@ export const timeline: TimelineItem[] = [
   { date: '05/22', title: '🌙 暗色模式', desc: '全站 5 頁支援 light/dark 一鍵切換 🎨' },
   { date: '05/22', title: '🎁 記憶盒子', desc: '藏在頁尾的神秘小盒子，隨機挖出日記中的冷門片段' },
   { date: '05/22', title: '🏗️ 程式碼重構', desc: 'page.tsx 從 1020 行拆分為可維護的模組化架構 🧱' },
+  { date: '05/22', title: '🌆 DF56·暮色頁面', desc: 'Design Festa 晚間限定的餘韻對話區塊，網站隨著時間呼吸 🌙' },
 ]
 
 /* ── 每日語錄 ── */
