@@ -110,14 +110,20 @@ export function getCurrentMode(): TimeMode {
       vibeLine: eve.line, miniFlag: '🌙',
     }
   }
-  if (isDesignFestaPeriod() && h >= 22) {
-    const eve = getFestaEveningVibes()
+  if (isDesignFestaPeriod() && (h >= 22 || h < 6)) {
+    const nightPhrases = [
+      '展場的燈一盞盞熄了，但創作的火焰在你心裡亮著 🌟',
+      '凌晨的東京ビッグサイト，寂靜中醞釀著明日的光',
+      '創作祭典的夜晚，連星星都在幫忙想靈感 ✨',
+      '深夜三點，Design Festa 的夢還在會場裡迴盪',
+    ]
+    const phrase = nightPhrases[Math.floor(Math.random() * nightPhrases.length)]
     return {
-      greeting: '🌙 Design Festa · 夜靜', emoji: '✨', mood: '沈澱',
-      activity: '會場的喧囂遠去，靈感在夜空中閃爍',
+      greeting: '🌙 DF56 · 深宵', emoji: '✨', mood: '沈澱',
+      activity: '會場沉睡，創作能量在夜色中發酵',
       moodGradient: 'linear-gradient(135deg, #312e81, #1e1b4b)',
       glowColor: 'rgba(255, 255, 255, 0.08)', warmth: 20,
-      vibeLine: '展場的燈一盞盞熄了，但創作的火焰在你心裡亮著 🌟',
+      vibeLine: phrase,
       miniFlag: '🌙',
     }
   }
