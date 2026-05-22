@@ -12,48 +12,46 @@ import {
 import Link from 'next/link'
 const MAIN_SITE = 'https://japan.studio-imori.com'
 import { motion, AnimatePresence } from 'framer-motion'
+import ThemeToggle from '@/components/ThemeToggle'
 
 // ── 日記竊竊私語：從真實日記中隨機抽取一段 ──
 function DiaryWhisper() {
   const [whisper, setWhisper] = useState<{ date: string; text: string } | null>(null)
   const [loading, setLoading] = useState(true)
 
+  async function pickRandomDiary() {
+    setLoading(true)
+    setWhisper(null)
+    try {
+      // 1. 從日記索引中隨機選一篇
+      const idxRes = await fetch('/data/diary_index.json')
+      const idx: { date: string }[] = await idxRes.json()
+      const dates = idx.filter(d => !d.date.endsWith('-b')).map(d => d.date)
+      const randomDate = dates[Math.floor(Math.random() * dates.length)]
+
+      // 2. 載入那篇日記
+      const diaryRes = await fetch(`/data/diary_${randomDate}.json`)
+      const diary = await diaryRes.json()
+      const entries = diary.entries || []
+
+      // 3. 過濾出有意義的文字區塊
+      const meaningful = entries.filter((e: { type: string; text: string }) =>
+        ['paragraph', 'callout', 'quote'].includes(e.type) &&
+        e.text.trim().length > 15
+      )
+
+      if (meaningful.length > 0) {
+        const pick = meaningful[Math.floor(Math.random() * meaningful.length)]
+        const text = pick.text.length > 120
+          ? pick.text.slice(0, 117) + '…'
+          : pick.text
+        setWhisper({ date: randomDate, text })
+      }
+    } catch { /* 靜默失敗，不影響頁面 */ }
+    setLoading(false)
+  }
+
   useEffect(() => {
-    async function pickRandomDiary() {
-      try {
-        // 1. 從日記索引中隨機選一篇
-        const idxRes = await fetch('/data/diary_index.json')
-        const idx: { date: string }[] = await idxRes.json()
-        const dates = idx.filter(d => !d.date.endsWith('-b')).map(d => d.date)
-        const randomDate = dates[Math.floor(Math.random() * dates.length)]
-
-        // 2. 載入那篇日記
-        const diaryRes = await fetch(`/data/diary_${randomDate}.json`)
-        const diary = await diaryRes.json()
-        const entries = diary.entries || []
-
-        // 3. 過濾出有意義的文字區塊（paragraph / callout / quote，不為空、不太短）
-        const meaningful = entries.filter((e: { type: string; text: string }) =>
-          ['paragraph', 'callout', 'quote'].includes(e.type) &&
-          e.text.trim().length > 15
-        )
-
-        if (meaningful.length > 0) {
-          const pick = meaningful[Math.floor(Math.random() * meaningful.length)]
-          const text = pick.text.length > 120
-            ? pick.text.slice(0, 117) + '…'
-            : pick.text
-          setWhisper({ date: randomDate, text })
-        }
-
-        // 4. 計算是第幾篇日記
-        const index = dates.indexOf(randomDate)
-        if (index !== -1) {
-          // 儲存日期也用
-        }
-      } catch { /* 靜默失敗，不影響頁面 */ }
-      setLoading(false)
-    }
     pickRandomDiary()
   }, [])
 
@@ -71,10 +69,17 @@ function DiaryWhisper() {
           <span className="text-[10px] text-pink-400/70 font-medium">
             📜 翻到 {whisper.date} 的日記
           </span>
+          <span className="text-[10px] text-pink-300">· 42 篇中隨機</span>
         </div>
-        <p className="text-sm text-pink-800/90 italic leading-relaxed">
+        <p className="text-sm text-pink-800/90 italic leading-relaxed mb-2">
           「{whisper.text}」
         </p>
+        <button
+          onClick={pickRandomDiary}
+          className="text-[11px] text-pink-400 hover:text-pink-600 transition-colors inline-flex items-center gap-1"
+        >
+          🔄 再抽一篇
+        </button>
       </div>
     </motion.div>
   )
@@ -452,7 +457,9 @@ function BornCounter() {
 
 export default function NosaePage() {
   return (
-    <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-16 px-4`}>
+    <>
+      <ThemeToggle />
+      <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-16 px-4`}>
       <div className="max-w-5xl mx-auto">
 
         {/* ── 🎪 Design Festa 56 —— 輕巧小提醒（縮在角落） ── */}
@@ -784,5 +791,6 @@ export default function NosaePage() {
         ))}
       </div>
     </div>
+    </>
   )
 }

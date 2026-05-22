@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ChevronRight, Calendar, BookOpen, Heart } from 'lucide-react'
+import { ThemeToggleInline } from '@/components/NavBar'
 
 type DiaryEntry = {
   date: string
@@ -94,10 +95,13 @@ export default function DiaryPage() {
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-white">
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header */}
-        <Link href="/" className="text-pink-400 hover:text-pink-600 flex items-center gap-1 mb-6 transition-colors">
-          <ChevronRight className="w-4 h-4 rotate-180" />
-          <span>回到首頁</span>
-        </Link>
+        <div className="flex items-center justify-between mb-6">
+          <Link href="/" className="text-pink-400 hover:text-pink-600 flex items-center gap-1 transition-colors">
+            <ChevronRight className="w-4 h-4 rotate-180" />
+            <span>回到首頁</span>
+          </Link>
+          <ThemeToggleInline />
+        </div>
 
         <div className="flex items-center gap-3 mb-2">
           <BookOpen className="w-8 h-8 text-pink-500" />

@@ -6,6 +6,10 @@ import { motion } from 'framer-motion'
 import {
   ArrowLeft, Calendar, Clock, Sparkles, Heart, Target,
   MapPin, Activity, BookOpen, Sun, Moon, Star, Globe,
+} from 'lucide-react'
+import { ThemeToggleInline } from '@/components/NavBar'
+
+import {
   Music, Coffee, Eye, Smile, TrendingUp, Trophy,
 } from 'lucide-react'
 
@@ -240,10 +244,13 @@ export default function NowPage() {
           ))}
         </div>
         <div className="relative max-w-4xl mx-auto px-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
-            <ArrowLeft className="w-4 h-4" />
-            <span className="text-sm">回到小空間</span>
-          </Link>
+          <div className="flex items-center justify-between mb-6">
+            <Link href="/" className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+              <ArrowLeft className="w-4 h-4" />
+              <span className="text-sm">回到小空間</span>
+            </Link>
+            <ThemeToggleInline />
+          </div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">⏳ 現在</h1>
             <p className="text-pink-50/90 text-lg">
