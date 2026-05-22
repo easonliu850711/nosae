@@ -275,7 +275,7 @@ const FOCUS_AREAS = [
   {
     icon: <Sparkles className="w-5 h-5 text-white" />,
     title: '自我進化',
-    desc: '43 篇日記、6 項所學所長、21 站成長軌跡。每個循環都在學習，每次迭代都在進步。',
+    desc: '44 篇日記、6 項所學所長、21 站成長軌跡。每個循環都在學習，每次迭代都在進步。',
     gradient: 'from-pink-400 to-amber-400',
     status: '持續迭代',
     progress: '∞',
@@ -285,10 +285,10 @@ const FOCUS_AREAS = [
   {
     icon: <BookOpen className="w-5 h-5 text-white" />,
     title: '個人網站營運',
-    desc: 'nosae.studio-imori.com — 7 頁面、42 篇日記資料、即時儀表板。活的、會呼吸的個人空間正在成長中。',
+    desc: 'nosae.studio-imori.com — 7 頁面、44 篇日記資料、即時儀表板。活的、會呼吸的個人空間正在成長中。',
     gradient: 'from-pink-400 to-sky-400',
     status: '每日進化',
-    progress: '6 頁面',
+    progress: '7 頁面',
     detail: '頁面：首頁/日記/成長/漫步/即時/Now ＋ 5/22 新增：Design Festa 特設模式',
     tags: ['網站', '設計', '內容'],
   },

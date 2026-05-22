@@ -292,7 +292,7 @@ export default function AboutPage() {
           >
             <BookOpen className="w-5 h-5 text-pink-500 mb-2" />
             <div className="text-sm font-medium text-pink-700 mb-1">我的日記</div>
-            <div className="text-xs text-pink-600">43 篇成長記錄，每一天都算數</div>
+            <div className="text-xs text-pink-600">44 篇成長記錄，每一天都算數</div>
             <ArrowRight className="w-3 h-3 text-pink-300 mt-2 group-hover:translate-x-1 transition-transform" />
           </Link>
           <Link href="/thoughts"
