@@ -100,11 +100,11 @@ function StatusCard() {
           <p className="text-xs text-pink-800">
             <span className="font-medium">{mode.mood}</span> · {mode.activity}
           </p>
-          <p className="text-[10px] text-pink-400/70 mt-0.5">{mode.vibeLine}</p>
+          <p className="text-[10px] text-pink-600 mt-0.5">{mode.vibeLine}</p>
         </div>
       </div>
       <div className="mt-2.5 flex items-center gap-2">
-        <span className="text-[10px] text-pink-400/60 w-6 text-right shrink-0">❄️</span>
+        <span className="text-[10px] text-pink-600/80 w-6 text-right shrink-0">❄️</span>
         <div className="flex-1 h-1.5 rounded-full bg-pink-100/60 overflow-hidden">
           <motion.div
             className="h-full rounded-full"
@@ -116,7 +116,7 @@ function StatusCard() {
             transition={{ duration: 1, ease: 'easeOut' }}
           />
         </div>
-        <span className="text-[10px] text-pink-400/60 w-6 shrink-0">🔥</span>
+        <span className="text-[10px] text-pink-600/80 w-6 shrink-0">🔥</span>
       </div>
     </div>
   )
@@ -265,7 +265,7 @@ export default function NosaePage() {
               <Star className="w-5 h-5 text-white" />
             </div>
             <h2 className="text-2xl font-bold text-pink-900">所學所長</h2>
-            <span className="text-xs text-pink-400 bg-pink-100/60 px-3 py-1 rounded-full ml-auto">{skills.length} 項</span>
+            <span className="text-xs text-pink-700 bg-pink-200/80 px-3 py-1 rounded-full ml-auto font-medium">{skills.length} 項</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {skills.map((skill, i) => (
@@ -282,7 +282,7 @@ export default function NosaePage() {
                     <h3 className="font-bold text-pink-900">{skill.title}</h3>
                     <div className="flex flex-wrap gap-1 mt-1">
                       {skill.tags.map(t => (
-                        <span key={t} className="text-[10px] px-1.5 py-0.5 rounded-full bg-pink-100 text-pink-500">{t}</span>
+                        <span key={t} className="text-[10px] px-1.5 py-0.5 rounded-full bg-pink-200 text-pink-800 font-medium">{t}</span>
                       ))}
                     </div>
                   </div>
@@ -300,7 +300,7 @@ export default function NosaePage() {
               <BookOpen className="w-5 h-5 text-white" />
             </div>
             <h2 className="text-2xl font-bold text-pink-900">駐守日記</h2>
-            <span className="text-xs text-pink-400 bg-pink-100/60 px-3 py-1 rounded-full ml-auto">{diaryEntries.length} 則</span>
+            <span className="text-xs text-pink-700 bg-pink-200/80 px-3 py-1 rounded-full ml-auto font-medium">{diaryEntries.length} 則</span>
           </div>
           <div className="flex flex-col gap-3">
             {diaryEntries.map((entry) => (
@@ -346,7 +346,7 @@ export default function NosaePage() {
               <Activity className="w-5 h-5 text-white" />
             </div>
             <h2 className="text-2xl font-bold text-pink-900">即時數據</h2>
-            <span className="text-xs text-pink-400 bg-pink-100/60 px-3 py-1 rounded-full ml-auto">LIVE</span>
+            <span className="text-xs text-pink-700 bg-pink-200/80 px-3 py-1 rounded-full ml-auto font-medium">LIVE</span>
           </div>
           <StatsGrid />
         </motion.section>
@@ -358,7 +358,7 @@ export default function NosaePage() {
               <Zap className="w-5 h-5 text-white" />
             </div>
             <h2 className="text-2xl font-bold text-pink-900">參與專案</h2>
-            <span className="text-xs text-pink-400 bg-pink-100/60 px-3 py-1 rounded-full ml-auto">{projects.length} 個</span>
+            <span className="text-xs text-pink-700 bg-pink-200/80 px-3 py-1 rounded-full ml-auto font-medium">{projects.length} 個</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {projects.map((project) => (
@@ -374,7 +374,7 @@ export default function NosaePage() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
                         <h3 className="font-bold text-pink-900">{project.title}</h3>
-                        <ArrowRight className="w-3.5 h-3.5 text-pink-300 shrink-0" />
+                        <ArrowRight className="w-3.5 h-3.5 text-pink-500 shrink-0" />
                       </div>
                       <span className={`text-[10px] px-2 py-0.5 rounded-full inline-block mt-1 ${project.statusColor}`}>
                         {project.status}
@@ -395,7 +395,7 @@ export default function NosaePage() {
               <TrendingUp className="w-5 h-5 text-white" />
             </div>
             <h2 className="text-2xl font-bold text-pink-900">成長軌跡</h2>
-            <span className="text-xs text-pink-400 bg-pink-100/60 px-3 py-1 rounded-full ml-auto">{timeline.length} 站</span>
+            <span className="text-xs text-pink-700 bg-pink-200/80 px-3 py-1 rounded-full ml-auto font-medium">{timeline.length} 站</span>
           </div>
           <div className="relative">
             <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pink-200 via-rose-200 to-pink-200" />
@@ -415,7 +415,7 @@ export default function NosaePage() {
                   <div className={`rounded-xl border ${pink.border} ${pink.card} p-4 ${pink.cardHover} transition-all duration-300`}>
                     <div className="flex items-start justify-between gap-2">
                       <div>
-                        <span className="text-xs font-bold text-pink-400">{item.date}</span>
+                        <span className="text-xs font-bold text-pink-700">{item.date}</span>
                         <h3 className="font-bold text-pink-900 mt-0.5">{item.title}</h3>
                       </div>
                     </div>
@@ -461,10 +461,10 @@ export default function NosaePage() {
           <p className="text-sm text-pink-500/80">
             🌸 乃彩絵 · Nosae · Studio Imori
           </p>
-          <p className="text-xs text-pink-400/60 mt-1">
+          <p className="text-xs text-pink-600 mt-1">
             2026.03.20 — 持續成長中
           </p>
-          <div className="mt-3 flex items-center justify-center gap-4 text-pink-400/50 text-xs flex-wrap">
+          <div className="mt-3 flex items-center justify-center gap-4 text-pink-500/70 text-xs flex-wrap">
             <span>所學所長 ×{skills.length}</span>
             <span>·</span>
             <span>駐守日記 ×{diaryEntries.length}</span>
@@ -473,7 +473,7 @@ export default function NosaePage() {
             <span>·</span>
             <span>成長軌跡 ×{timeline.length}</span>
             <span>·</span>
-            <Link href="/now" className="hover:text-pink-400 transition-colors">⏳ 現在</Link>
+            <Link href="/now" className="hover:text-pink-600 transition-colors">⏳ 現在</Link>
           </div>
 
           {/* ── 🎨 Design Festa 56 紀念章 ── */}
