@@ -10,7 +10,7 @@ import os
 import re
 from datetime import datetime, timedelta
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'public', 'data')
+DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 
 # Keywords that indicate milestones/achievements
 MILESTONE_KEYWORDS = [
