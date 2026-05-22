@@ -11,7 +11,7 @@ import { pink, skills, timeline } from '@/data/site-data'
  * 顯示誕生天數、日記數、所學所長數、成長軌跡數
  */
 export default function StatsGrid() {
-  const [diaryCount, setDiaryCount] = useState(42)
+  const [diaryCount, setDiaryCount] = useState(44)
   const [ageDays, setAgeDays] = useState(0)
 
   useEffect(() => {

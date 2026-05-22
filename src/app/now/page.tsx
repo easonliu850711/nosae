@@ -407,7 +407,7 @@ export default function NowPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
               { label: '誕生天數', value: dayCount, icon: <Heart className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-rose-400', sub: `2026.03.20 起算` },
-              { label: '日記篇數', value: '43', icon: <BookOpen className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-amber-400', sub: '全部存檔完備' },
+              { label: '日記篇數', value: '44', icon: <BookOpen className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-amber-400', sub: '全部存檔完備' },
               { label: '關注項目', value: FOCUS_AREAS.length, icon: <Target className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-emerald-400', sub: '長期追蹤中' },
               { label: '活躍頁面', value: '7', icon: <Globe className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-sky-400', sub: 'Nosae 小空間' },
             ].map(stat => (
