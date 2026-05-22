@@ -184,7 +184,7 @@ export default function GrowthPage() {
               <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center text-white mb-3`}>
                 {stat.icon}
               </div>
-              <div className="text-2xl font-bold text-pink-900">{stat.value}</div>
+              <div className="text-2xl font-bold text-blue-800">{stat.value}</div>
               <div className="text-sm text-pink-600/70">{stat.label}</div>
             </motion.div>
           ))}
@@ -195,7 +195,7 @@ export default function GrowthPage() {
       <section className="max-w-4xl mx-auto px-6 mb-6">
         <div className="bg-white/80 backdrop-blur-sm rounded-xl border border-pink-200/60 p-5">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-semibold text-pink-900 flex items-center gap-2">
+            <h2 className="font-semibold text-blue-800 flex items-center gap-2">
               <BarChart3 className="w-4 h-4" />
               分類分佈
             </h2>
@@ -295,7 +295,7 @@ export default function GrowthPage() {
                   {/* Date header */}
                   <div className="flex items-start justify-between mb-2">
                     <div>
-                      <span className="text-sm font-semibold text-pink-900">{entry.date}</span>
+                      <span className="text-sm font-semibold text-blue-800">{entry.date}</span>
                       <span className="text-xs text-pink-500 ml-2">{entry.weekday}</span>
                     </div>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-pink-100 text-pink-700">

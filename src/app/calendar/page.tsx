@@ -33,7 +33,7 @@ export default function CalendarPage() {
               <span className="text-white text-lg">📅</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-pink-900">行程大管家</h1>
+              <h1 className="text-2xl font-bold text-blue-800">行程大管家</h1>
               <p className="text-sm text-pink-500">未來行程・搶票日・棒球賽・預算管理</p>
             </div>
           </div>
