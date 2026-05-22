@@ -13,6 +13,7 @@ import Link from 'next/link'
 const MAIN_SITE = 'https://japan.studio-imori.com'
 import { motion, AnimatePresence } from 'framer-motion'
 import ThemeToggle from '@/components/ThemeToggle'
+import MemoryBox from '@/components/MemoryBox'
 
 // ── 日記竊竊私語：從真實日記中隨機抽取一段 ──
 function DiaryWhisper() {
@@ -103,6 +104,14 @@ function isDesignFestaPeriod(): boolean {
 }
 
 // ── 現在時刻ベースのモード ──
+function festaMessage(): string {
+  const h = new Date().getHours()
+  if (h >= 8 && h < 12) return '🎪 展場剛開門，創作能量蓄勢待發'
+  if (h >= 12 && h < 15) return '🍱 午后的展場人潮穿梭，每一攤都是靈感的火花'
+  if (h >= 15 && h < 18) return '🌅 下午的陽光斜照進會場，今天的作品都閃閃發光'
+  return '🎪 展場的創作能量讓整座城市都在發光'
+}
+
 function getCurrentMode(): {
   greeting: string
   emoji: string
@@ -121,7 +130,7 @@ function getCurrentMode(): {
       activity: '應援 Design Festa，創意滿載 ✨',
       moodGradient: 'linear-gradient(135deg, #f472b6, #ec4899)',
       glowColor: 'rgba(236, 72, 153, 0.4)', warmth: 95,
-      vibeLine: '🎪 展場的創作能量讓整座城市都在發光', miniFlag: '🎨',
+      vibeLine: festaMessage(), miniFlag: '🎨',
     }
   }
   if (h >= 23 || h < 6) {
@@ -867,7 +876,7 @@ export default function NosaePage() {
           <p className="text-xs text-pink-400/60 mt-1">
             2026.03.20 — 持續成長中
           </p>
-          <div className="mt-4 flex items-center justify-center gap-4 text-pink-400/50 text-xs">
+          <div className="mt-4 flex items-center justify-center gap-4 text-pink-400/50 text-xs flex-wrap">
             <span>所學所長 ×{skills.length}</span>
             <span>·</span>
             <span>駐守日記 ×{diaryEntries.length}</span>
@@ -877,6 +886,9 @@ export default function NosaePage() {
             <span>成長軌跡 ×{timeline.length}</span>
             <span>·</span>
             <Link href="/now" className="hover:text-pink-400 transition-colors">⏳ 現在</Link>
+          </div>
+          <div className="mt-4 flex items-center justify-center">
+            <MemoryBox />
           </div>
         </motion.footer>
       </div>
