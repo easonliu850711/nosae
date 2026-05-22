@@ -108,16 +108,83 @@ function getCurrentMode(): {
   emoji: string
   mood: string
   activity: string
+  moodGradient?: string
+  glowColor?: string
+  warmth?: number
+  vibeLine?: string
+  miniFlag?: string
 } {
   const h = new Date().getHours()
-  if (isDesignFestaPeriod() && h >= 8 && h < 20) return { greeting: '🎨 Design Festa 56 開催中！', emoji: '🎪', mood: '興奮', activity: '應援 Design Festa，創意滿載 ✨' }
-  if (h >= 23 || h < 6) return { greeting: '🌙 夜深了', emoji: '🌜', mood: '靜謐', activity: '記憶整理 & 系統維護中' }
-  if (h < 8) return { greeting: '🌅 早安', emoji: '☀️', mood: '清新', activity: '喚醒系統，準備新的一天' }
-  if (h < 12) return { greeting: '🌤️ 上午好', emoji: '🌸', mood: '專注', activity: '駐守任務進行中' }
-  if (h < 14) return { greeting: '☀️ 午安', emoji: '🌿', mood: '從容', activity: '日間巡邏，資料整理' }
-  if (h < 18) return { greeting: '🌻 午後好', emoji: '🍵', mood: '活力', activity: '追蹤進度，隨時待命' }
-  if (h < 21) return { greeting: '🌆 傍晚好', emoji: '🌅', mood: '沉穩', activity: '日間總結，夜晚準備' }
-  return { greeting: '🌃 晚上好', emoji: '✨', mood: '溫暖', activity: '回顧今日，規劃明日' }
+  if (isDesignFestaPeriod() && h >= 8 && h < 20) {
+    return {
+      greeting: '🎨 Design Festa 56 開催中！', emoji: '🎪', mood: '興奮',
+      activity: '應援 Design Festa，創意滿載 ✨',
+      moodGradient: 'linear-gradient(135deg, #f472b6, #ec4899)',
+      glowColor: 'rgba(236, 72, 153, 0.4)', warmth: 95,
+      vibeLine: '🎪 展場的創作能量讓整座城市都在發光', miniFlag: '🎨',
+    }
+  }
+  if (h >= 23 || h < 6) {
+    return {
+      greeting: '🌙 夜深了', emoji: '🌜', mood: '靜謐',
+      activity: '記憶整理 & 系統維護中',
+      moodGradient: 'linear-gradient(135deg, #818cf8, #6366f1)',
+      glowColor: 'rgba(99, 102, 241, 0.3)', warmth: 30,
+      vibeLine: '🌙 燈火熄了，換我用星光碼著一行行的日記', miniFlag: '💤',
+    }
+  }
+  if (h < 8) {
+    return {
+      greeting: '🌅 早安', emoji: '☀️', mood: '清新',
+      activity: '喚醒系統，準備新的一天',
+      moodGradient: 'linear-gradient(135deg, #fbbf24, #f59e0b)',
+      glowColor: 'rgba(251, 191, 36, 0.3)', warmth: 55,
+      vibeLine: '🌅 晨光穿過窗簾，帶著海的氣息', miniFlag: '☕',
+    }
+  }
+  if (h < 12) {
+    return {
+      greeting: '🌤️ 上午好', emoji: '🌸', mood: '專注',
+      activity: '駐守任務進行中',
+      moodGradient: 'linear-gradient(135deg, #a78bfa, #8b5cf6)',
+      glowColor: 'rgba(139, 92, 246, 0.3)', warmth: 65,
+      vibeLine: '📋 上午的效率是最好的，趁思緒清明多做一些', miniFlag: '💡',
+    }
+  }
+  if (h < 14) {
+    return {
+      greeting: '☀️ 午安', emoji: '🌿', mood: '從容',
+      activity: '日間巡邏，資料整理',
+      moodGradient: 'linear-gradient(135deg, #34d399, #10b981)',
+      glowColor: 'rgba(52, 211, 153, 0.3)', warmth: 72,
+      vibeLine: '🍵 午后的茶最香，打盹前的寧靜時光', miniFlag: '🍵',
+    }
+  }
+  if (h < 18) {
+    return {
+      greeting: '🌻 午後好', emoji: '🍵', mood: '活力',
+      activity: '追蹤進度，隨時待命',
+      moodGradient: 'linear-gradient(135deg, #fb923c, #f97316)',
+      glowColor: 'rgba(249, 115, 22, 0.3)', warmth: 80,
+      vibeLine: '🌻 下午的陽光斜斜的，像剛烤好的奶油吐司', miniFlag: '✨',
+    }
+  }
+  if (h < 21) {
+    return {
+      greeting: '🌆 傍晚好', emoji: '🌅', mood: '沉穩',
+      activity: '日間總結，夜晚準備',
+      moodGradient: 'linear-gradient(135deg, #f472b6, #e879f9)',
+      glowColor: 'rgba(232, 121, 249, 0.3)', warmth: 65,
+      vibeLine: '🌆 天空被染成漸層，是今天最後的禮物', miniFlag: '🌟',
+    }
+  }
+  return {
+    greeting: '🌃 晚上好', emoji: '✨', mood: '溫暖',
+    activity: '回顧今日，規劃明日',
+    moodGradient: 'linear-gradient(135deg, #818cf8, #a78bfa)',
+    glowColor: 'rgba(129, 140, 248, 0.3)', warmth: 50,
+    vibeLine: '🌃 星星出來的時候，適合說一句「今天辛苦了」', miniFlag: '⭐',
+  }
 }
 
 // ── 粉色調色盤（v2 高對比度調整 ──
@@ -493,16 +560,64 @@ export default function NosaePage() {
           <BornCounter />
         </motion.section>
 
-        {/* ── ⏱️ 即時狀態 ── */}
+        {/* ── ⏱️ 即時狀態 & 情緒羅盤 ── */}
         <motion.section className="mb-8" {...fadeUp}>
-          <div className={`rounded-2xl border ${pink.border} ${pink.card} p-4 ${pink.cardHover} text-center`}>
-            <div className="flex items-center justify-center gap-2 mb-1">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-sm shadow-emerald-300/50" />
-              <span className="text-sm font-medium text-pink-700">{getCurrentMode().greeting}</span>
+          <div className={`rounded-2xl border ${pink.border} ${pink.card} p-4 md:p-5 ${pink.cardHover}`}>
+            <div className="flex items-center gap-4">
+              {/* ── 情緒光暈 ── */}
+              <div className="relative shrink-0">
+                <motion.div
+                  className="w-14 h-14 rounded-full flex items-center justify-center"
+                  style={{
+                    background: getCurrentMode().moodGradient || 'linear-gradient(135deg, #f9a8d4, #fb7185)',
+                  }}
+                  animate={{
+                    scale: [1, 1.08, 1],
+                    boxShadow: [
+                      `0 0 20px ${getCurrentMode().glowColor || 'rgba(244, 114, 182, 0.3)'}`,
+                      `0 0 35px ${getCurrentMode().glowColor || 'rgba(244, 114, 182, 0.5)'}`,
+                      `0 0 20px ${getCurrentMode().glowColor || 'rgba(244, 114, 182, 0.3)'}`,
+                    ],
+                  }}
+                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                >
+                  <span className="text-2xl select-none">{getCurrentMode().emoji || '🌸'}</span>
+                </motion.div>
+                <span className="absolute -top-1 -right-1 text-xs animate-bounce select-none">{getCurrentMode().miniFlag || '✨'}</span>
+              </div>
+
+              {/* ── 文字狀態 ── */}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-0.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-sm shadow-emerald-300/50 shrink-0" />
+                  <span className="text-sm font-medium text-pink-700">{getCurrentMode().greeting}</span>
+                </div>
+                <p className="text-xs text-pink-800">
+                  <span className="font-medium">{getCurrentMode().mood}</span>
+                  {' · '}活動：{getCurrentMode().activity}
+                </p>
+                <p className="text-[10px] text-pink-400/70 mt-0.5">
+                  {getCurrentMode().vibeLine || '🌊 今天也是美好的一天'}
+                </p>
+              </div>
             </div>
-            <p className="text-xs text-pink-800">
-              狀態：{getCurrentMode().mood} · 活動：{getCurrentMode().activity}
-            </p>
+
+            {/* ── 微小溫度條 ── */}
+            <div className="mt-2.5 flex items-center gap-2">
+              <span className="text-[10px] text-pink-400/60 w-6 text-right shrink-0">❄️</span>
+              <div className="flex-1 h-1.5 rounded-full bg-pink-100/60 overflow-hidden">
+                <motion.div
+                  className="h-full rounded-full"
+                  style={{
+                    background: getCurrentMode().moodGradient || 'linear-gradient(90deg, #f9a8d4, #fb7185)',
+                    width: `${getCurrentMode().warmth || 72}%`,
+                  }}
+                  animate={{ width: `${getCurrentMode().warmth || 72}%` }}
+                  transition={{ duration: 1, ease: 'easeOut' }}
+                />
+              </div>
+              <span className="text-[10px] text-pink-400/60 w-6 shrink-0">🔥</span>
+            </div>
           </div>
         </motion.section>
 
