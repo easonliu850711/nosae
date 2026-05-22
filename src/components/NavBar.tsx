@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Heart, BookOpen, Quote, TrendingUp, Clock, User, Sun, Moon } from 'lucide-react'
+import { Menu, X, Heart, BookOpen, Quote, TrendingUp, Clock, CalendarDays, User, Sun, Moon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 
 const navLinks = [
@@ -14,6 +14,7 @@ const navLinks = [
   { href: '/thoughts', label: '漫步', icon: <Quote className="w-3.5 h-3.5" /> },
   { href: '/growth', label: '軌跡', icon: <TrendingUp className="w-3.5 h-3.5" /> },
   { href: '/now', label: '現在', icon: <Clock className="w-3.5 h-3.5" /> },
+  { href: '/calendar', label: '行程', icon: <CalendarDays className="w-3.5 h-3.5" /> },
 ]
 
 export default function NavBar() {
