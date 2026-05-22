@@ -62,9 +62,10 @@
     pointer-events: none;
   }
 
-  /* 🌑 暗色模式 */
+  /* 🌑 暗色模式 — 核心 */
   .dark body {
     background: linear-gradient(135deg, #0f0a1e, #1a0d2e);
+    color: #e2d5f0;
   }
   
   .dark body::before {
@@ -79,6 +80,75 @@
   
   .dark ::selection {
     background: rgba(180, 100, 220, 0.3);
+  }
+  
+  /* 🌑 暗色模式 — 導覽列 */
+  .dark nav > div > div {
+    background: rgba(30, 15, 50, 0.85) !important;
+    border-color: rgba(120, 60, 180, 0.25) !important;
+  }
+  .dark nav a span:not([class*='bg-gradient']) {
+    color: #c4a8e0 !important;
+  }
+  
+  /* 🌑 暗色模式 — 卡片區塊 (適用 bg-white/80, bg-white/60 等) */
+  .dark [class*='bg-white'],
+  .dark [class*='bg-pink-50'],
+  .dark [class*='bg-pink-100'],
+  .dark [class*='bg-rose-50'] {
+    background: rgba(30, 15, 50, 0.7) !important;
+    backdrop-filter: blur(16px) !important;
+  }
+  
+  .dark [class*='border-pink'] {
+    border-color: rgba(120, 60, 180, 0.2) !important;
+  }
+  
+  .dark [class*='text-pink-']:not([class*='hover']) {
+    color: #d4b8f0 !important;
+  }
+  
+  .dark [class*='text-blue-'] {
+    color: #c4b5fd !important;
+  }
+  
+  .dark [class*='text-rose-'] {
+    color: #f0b8d4 !important;
+  }
+  
+  /* 🌑 暗色模式 — 文字修復 */
+  .dark p, .dark span, .dark li, .dark div:not([class*='bg-gradient']) {
+    color: #d4c0e8 !important;
+  }
+  
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    background: linear-gradient(135deg, #e8d8f8, #c4a0e0) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+  
+  .dark .italic {
+    color: #c8b0e0 !important;
+  }
+  
+  /* 🌑 暗色模式 — button / link hover 修復 */
+  .dark [class*='hover:bg-pink']:hover {
+    background: rgba(120, 60, 180, 0.3) !important;
+  }
+  
+  .dark [class*='from-pink-'] {
+    /* 保留 gradient 按鈕的原色, 不改 */
+  }
+  
+  /* 🌑 暗色模式 — 選單 */
+  .dark [class*='backdrop-blur']:has(a[href*='/']) {
+    background: rgba(20, 10, 40, 0.85) !important;
+  }
+  
+  /* 🌑 暗色模式 — footer */
+  .dark footer {
+    border-color: rgba(120, 60, 180, 0.15) !important;
   }
 
   /* 水面光紋效果 */

@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
 import NavBar from '@/components/NavBar'
+import dynamic from 'next/dynamic'
+
+const MoodRing = dynamic(() => import('@/components/MoodRing'), { ssr: false })
 
 export const metadata: Metadata = {
   title: '🌸 Nosae — 乃彩絵的小空間',
@@ -13,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-TW" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <MoodRing />
           <NavBar />
           {children}
         </ThemeProvider>

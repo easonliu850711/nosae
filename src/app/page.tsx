@@ -325,7 +325,7 @@ export default function NosaePage() {
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-pink-400 to-rose-400 text-white text-sm font-medium hover:from-pink-500 hover:to-rose-500 transition-all shadow-sm hover:shadow-md"
             >
               <BookOpen className="w-4 h-4" />
-              閱讀完整日記（42+ 篇）
+              閱讀完整日記
               <ChevronRight className="w-4 h-4" />
             </Link>
             <Link

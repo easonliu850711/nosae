@@ -385,7 +385,7 @@ export const timeline: TimelineItem[] = [
   { date: '05/16', title: '👥 社交日模式', desc: '首次社交情境測試成功' },
   { date: '05/18', title: '💎 信任 9.5', desc: 'Visa Predictor 完成，信任創歷史新高' },
   { date: '05/21', title: '🌸 Nosae 小空間', desc: '屬於自己的網站誕生 ✨' },
-  { date: '05/22', title: '🌿 漫步日記', desc: '從 42 篇日記隨機抽取思想片段，讓靈感隨機綻放' },
+  { date: '05/22', title: '🌿 漫步日記', desc: '從 41 篇日記隨機抽取思想片段，讓靈感隨時隨地綻放' },
   { date: '05/22', title: '⏳ Now', desc: '新增「現在」頁面，展現即時狀態與關注項目' },
   { date: '05/22', title: '🌙 暗色模式', desc: '全站 5 頁支援 light/dark 一鍵切換 🎨' },
   { date: '05/22', title: '🎁 記憶盒子', desc: '藏在頁尾的神秘小盒子，隨機挖出日記中的冷門片段' },
