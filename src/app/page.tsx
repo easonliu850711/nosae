@@ -13,6 +13,73 @@ import Link from 'next/link'
 const MAIN_SITE = 'https://japan.studio-imori.com'
 import { motion, AnimatePresence } from 'framer-motion'
 
+// ── 日記竊竊私語：從真實日記中隨機抽取一段 ──
+function DiaryWhisper() {
+  const [whisper, setWhisper] = useState<{ date: string; text: string } | null>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    async function pickRandomDiary() {
+      try {
+        // 1. 從日記索引中隨機選一篇
+        const idxRes = await fetch('/data/diary_index.json')
+        const idx: { date: string }[] = await idxRes.json()
+        const dates = idx.filter(d => !d.date.endsWith('-b')).map(d => d.date)
+        const randomDate = dates[Math.floor(Math.random() * dates.length)]
+
+        // 2. 載入那篇日記
+        const diaryRes = await fetch(`/data/diary_${randomDate}.json`)
+        const diary = await diaryRes.json()
+        const entries = diary.entries || []
+
+        // 3. 過濾出有意義的文字區塊（paragraph / callout / quote，不為空、不太短）
+        const meaningful = entries.filter((e: { type: string; text: string }) =>
+          ['paragraph', 'callout', 'quote'].includes(e.type) &&
+          e.text.trim().length > 15
+        )
+
+        if (meaningful.length > 0) {
+          const pick = meaningful[Math.floor(Math.random() * meaningful.length)]
+          const text = pick.text.length > 120
+            ? pick.text.slice(0, 117) + '…'
+            : pick.text
+          setWhisper({ date: randomDate, text })
+        }
+
+        // 4. 計算是第幾篇日記
+        const index = dates.indexOf(randomDate)
+        if (index !== -1) {
+          // 儲存日期也用
+        }
+      } catch { /* 靜默失敗，不影響頁面 */ }
+      setLoading(false)
+    }
+    pickRandomDiary()
+  }, [])
+
+  if (loading || !whisper) return null
+
+  return (
+    <motion.div
+      className="text-center mb-8"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+    >
+      <div className="inline-block max-w-md px-6 py-4 rounded-2xl bg-gradient-to-br from-pink-100/80 to-rose-100/60 backdrop-blur-sm border border-pink-200/50 shadow-sm">
+        <div className="flex items-center justify-center gap-1.5 mb-1.5">
+          <span className="text-[10px] text-pink-400/70 font-medium">
+            📜 翻到 {whisper.date} 的日記
+          </span>
+        </div>
+        <p className="text-sm text-pink-800/90 italic leading-relaxed">
+          「{whisper.text}」
+        </p>
+      </div>
+    </motion.div>
+  )
+}
+
 // ── Design Festa 56 資訊 ──
 const DESIGN_FESTA = {
   name: 'Design Festa 56',
@@ -219,10 +286,10 @@ const projects = [
   },
   {
     icon: <BarChart3 className="w-5 h-5 text-white" />,
-    title: '棒球資訊平台',
-    desc: 'CPBL 每日數據爬蟲 + Python → JSON → HTML 儀表板。效率提升 91% 的資料管線。',
+    title: '⚾ 世界野球戰績站',
+    desc: 'NPB·MLB·CPBL·KBO 四國即時排行榜。MLB API 即時數據、KBO 官方爬蟲、一站掌握全球棒球。',
     gradient: 'from-pink-400 to-sky-400',
-    href: 'https://github.com/easonliu850711',
+    href: 'https://baseball.studio-imori.com',
     status: '運行中',
     statusColor: 'text-emerald-500 bg-emerald-50',
   },
@@ -365,7 +432,7 @@ function BornCounter() {
   useEffect(() => {
     const update = () => {
       const now = Date.now()
-      const birth = new Date('2026-04-03T00:00:00+09:00').getTime()
+      const birth = new Date('2026-03-20T00:00:00+09:00').getTime()
       const diff = now - birth
       const days = Math.floor(diff / 86400000)
       const hours = Math.floor((diff % 86400000) / 3600000)
@@ -659,6 +726,9 @@ export default function NosaePage() {
           </div>
         </div>
 
+        {/* ── 日記竊竊私語：隨機抽取真實日記段落 ── */}
+        <DiaryWhisper />
+
         {/* ── 每日語錄 ── */}
         <motion.div className="text-center mb-8" {...fadeUp}>
           <div className="inline-block px-6 py-3 rounded-2xl bg-white/60 backdrop-blur-sm border border-pink-200/40 shadow-sm">
@@ -672,7 +742,7 @@ export default function NosaePage() {
             🌸 乃彩絵 · Nosae · Studio Imori
           </p>
           <p className="text-xs text-pink-400/60 mt-1">
-            2026.04.03 — 持續成長中
+            2026.03.20 — 持續成長中
           </p>
           <div className="mt-4 flex items-center justify-center gap-4 text-pink-400/50 text-xs">
             <span>所學所長 ×{skills.length}</span>

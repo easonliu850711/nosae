@@ -115,12 +115,15 @@ for diary in diaries:
             with open(outpath) as f:
                 existing = json.load(f)
             entries_count = len(existing.get('entries', []))
-            if entries_count < 50:
+            if entries_count >= 50:
+                # File looks complete — check if the last batch had potential has_more
+                # by measuring the Notion page's block count (todo: optimization)
                 cached_count += 1
                 continue
-            print(f'   🔄 {date} ({entries_count} entries, re-checking pagination...)')
-        except:
-            pass
+            # entries < 50 means truncated — re-fetch with pagination
+            print(f'   🔄 {date} ({entries_count} entries, truncated — re-fetching with pagination...)')
+        except Exception as e:
+            print(f'   ⚠️  {date} error reading cache ({e}), re-fetching...')
     entries = fetch_all_blocks(page_id, date)
     if entries is None:
         continue
