@@ -12,6 +12,7 @@ import {
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import MemoryBox from '@/components/MemoryBox'
+import DayProgressBar from '@/components/DayProgressBar'
 import DiaryWhisper from '@/components/sections/DiaryWhisper'
 import StatsGrid from '@/components/sections/StatsGrid'
 import BornCounter from '@/components/sections/BornCounter'
@@ -542,6 +543,9 @@ export default function NosaePage() {
           <div className="mt-3 flex items-center justify-center">
             <MemoryBox />
           </div>
+
+          {/* ── ⏳ 時光流轉 — 日進度微光條 ── */}
+          <DayProgressBar />
         </motion.footer>
       </div>
 
