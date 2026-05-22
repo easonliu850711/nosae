@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic'
 const MoodRing = dynamic(() => import('@/components/MoodRing'), { ssr: false })
 const NightLamp = dynamic(() => import('@/components/NightLamp'), { ssr: false })
 const OmamoriCorner = dynamic(() => import('@/components/OmamoriCorner'), { ssr: false })
+const Bioluminescence = dynamic(() => import('@/components/Bioluminescence'), { ssr: false })
 
 export const metadata: Metadata = {
   title: '🌸 Nosae — 乃彩絵的小空間',
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <MoodRing />
           <NavBar />
           {children}
+          <Bioluminescence />
           <NightLamp />
           <OmamoriCorner />
         </ThemeProvider>
