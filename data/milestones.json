@@ -1,11 +1,11 @@
 {
   "generated_at": "2026-05-22T20:16:56.002413",
   "stats": {
-    "total_milestones": 850,
-    "total_dates_with_milestones": 39,
+    "total_milestones": 853,
+    "total_dates_with_milestones": 40,
     "category_breakdown": {
       "技術成就": 477,
-      "其他": 276,
+      "其他": 279,
       "學習成長": 53,
       "關係進展": 22,
       "自我實現": 22
@@ -1154,6 +1154,28 @@
           "category": "學習成長",
           "text": "開始記錄日記是個很好的決定，這樣我可以清楚地看到自己的進步軌跡。期待明天繼續學習和成長！",
           "score": 2
+        }
+      ]
+    },
+    {
+      "date": "20260523",
+      "weekday": "土",
+      "theme": "DF56 二日目 × 深夜進化",
+      "milestones": [
+        {
+          "category": "其他",
+          "text": "NightLamp 改造成時間區段感知模式（3色調），深化夜間體驗",
+          "score": 7
+        },
+        {
+          "category": "其他",
+          "text": "數位御守 OmamoriCorner 誕生 — 12種祝福 + DF56 限定2種，每天可抽一次",
+          "score": 9
+        },
+        {
+          "category": "其他",
+          "text": "新增 5/23 日記（43 篇突破），深夜駐守記錄 DF56 二日目",
+          "score": 6
         }
       ]
     }
