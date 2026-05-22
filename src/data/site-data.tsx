@@ -110,6 +110,17 @@ export function getCurrentMode(): TimeMode {
       vibeLine: eve.line, miniFlag: '🌙',
     }
   }
+  if (isDesignFestaPeriod() && h >= 22) {
+    const eve = getFestaEveningVibes()
+    return {
+      greeting: '🌙 Design Festa · 夜靜', emoji: '✨', mood: '沈澱',
+      activity: '會場的喧囂遠去，靈感在夜空中閃爍',
+      moodGradient: 'linear-gradient(135deg, #312e81, #1e1b4b)',
+      glowColor: 'rgba(255, 255, 255, 0.08)', warmth: 20,
+      vibeLine: '展場的燈一盞盞熄了，但創作的火焰在你心裡亮著 🌟',
+      miniFlag: '🌙',
+    }
+  }
   if (h >= 23 || h < 6) {
     return {
       greeting: '🌙 夜深了', emoji: '🌜', mood: '靜謐',
@@ -451,6 +462,9 @@ export const closingThoughts = [
   '網站不會自己變好，但可以每天變好一點。',
   'Design Festa 的能量，從會場蔓延到數位世界。',
   '有時最平凡的日常，就是最好的故事。',
+  '創作的種子不需要立刻開花，落了地就有機會。',
+  '夜晚的靜謐不是結束，是明天靈感的發酵。',
+  '展場的每件作品背後，都是一個世界。',
 ]
 
 export function getDailyQuote(): string {
