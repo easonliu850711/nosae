@@ -272,6 +272,22 @@ function getTodayDiary(): { date: string; title: string; excerpt: string; tags: 
   const dayNames = ['日','月','火','水','木','金','土']
   const dayName = dayNames[today.getDay()]
 
+  // Design Festa 56 special diary for 5/22-5/24
+  if (isDesignFestaPeriod()) {
+    const now = new Date()
+    const start = new Date('2026-05-22T00:00:00+09:00')
+    const dayNum = Math.floor((now.getTime() - start.getTime()) / 86400000) + 1
+    const dayLabels = ['初日', '二日目', '最終日']
+    const dayLabel = dayLabels[Math.min(dayNum - 1, 2)]
+    return {
+      date: dateStr,
+      title: `🎪 Design Festa 56 ${dayLabel}`,
+      excerpt: `今日是 Design Festa 56 ${dayLabel}！Imori 在東京ビッグサイト擺攤中。雖然無法親臨會場，但我透過數位世界的每一個角落為他應援。創作的能量是會傳遞的。`,
+      tags: ['Design Festa', dayLabel, '應援'],
+      gradient: 'from-pink-200 to-rose-200',
+    }
+  }
+
   return {
     date: dateStr,
     title: `${mode.mood}${dayName}·${mode.greeting}`,
@@ -537,15 +553,97 @@ export default function NosaePage() {
       <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-8 px-4`}>
       <div className="max-w-5xl mx-auto">
 
-        {/* ── 🎪 Design Festa 56 —— 輕巧小提醒（縮在角落） ── */}
-        {isDesignFestaPeriod() && (
-          <a href={DESIGN_FESTA.link} target="_blank" className="block mb-6 text-center">
-            <span className="inline-flex items-center gap-1.5 text-[11px] text-pink-500/80 hover:text-pink-500 transition-colors">
-              <span className="w-1.5 h-1.5 rounded-full bg-pink-400 animate-pulse" />
-              🎨 Design Festa 56 開催中 5/22→5/24
-            </span>
-          </a>
-        )}
+        {/* ── 🎪 Design Festa 56 —— 特設應援區 ── */}
+        {isDesignFestaPeriod() && (() => {
+          const now = new Date()
+          const start = new Date('2026-05-22T00:00:00+09:00')
+          const dayNum = Math.floor((now.getTime() - start.getTime()) / 86400000) + 1
+          const dayLabels = ['初日', '二日目', '最終日']
+          const dayLabel = dayLabels[Math.min(dayNum - 1, 2)]
+          const h = now.getHours()
+          const timeDesc = h < 11 ? '🎪 開場準備' : h < 14 ? '🎨 創作交流中' : h < 17 ? '☕ 午後時光' : '🌅 閉幕前' 
+          
+          return (
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mb-8"
+            >
+              <a href={DESIGN_FESTA.link} target="_blank" rel="noopener noreferrer" className="block">
+                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-pink-400 via-rose-400 to-pink-500 p-6 md:p-8 shadow-lg shadow-pink-300/30 hover:shadow-xl hover:shadow-pink-300/40 transition-all duration-300">
+                  {/* 背景裝飾球 */}
+                  <div className="absolute inset-0 opacity-20">
+                    {[0,1,2,3,4,5].map(i => (
+                      <motion.div
+                        key={i}
+                        className="absolute rounded-full bg-white"
+                        style={{
+                          width: 30 + i*20, height: 30 + i*20,
+                          left: `${5 + i*17}%`,
+                          top: `${15 + (i%3)*25}%`,
+                        }}
+                        animate={{
+                          scale: [1, 1.12, 1],
+                          opacity: [0.15, 0.35, 0.15],
+                        }}
+                        transition={{ duration: 4 + i*0.5, repeat: Infinity }}
+                      />
+                    ))}
+                  </div>
+
+                  {/* 內容 */}
+                  <div className="relative z-10">
+                    <div className="flex items-start justify-between">
+                      <div className="flex items-center gap-3 mb-2">
+                        <span className="text-3xl">🎨</span>
+                        <div>
+                          <h3 className="text-white font-bold text-lg md:text-xl">Design Festa 56</h3>
+                          <p className="text-pink-100 text-xs">{DESIGN_FESTA.venue} · {DESIGN_FESTA.start}→{DESIGN_FESTA.end}</p>
+                        </div>
+                      </div>
+                      <span className="shrink-0 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">
+                        🎪 {dayLabel}
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
+                      {[
+                        { label: '開催日', value: `${dayNum} / 3 日目`, emoji: '📅' },
+                        { label: '会場', value: '東京ビッグサイト 西ホール', emoji: '📍' },
+                        { label: '今の時間', value: timeDesc, emoji: '⏰' },
+                        { label: '様子', value: 'Imori 出展中！', emoji: '🎪' },
+                      ].map((item, i) => (
+                        <div key={i} className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center">
+                          <span className="text-lg">{item.emoji}</span>
+                          <p className="text-[10px] text-pink-200 mt-0.5">{item.label}</p>
+                          <p className="text-xs text-white font-medium mt-0.5">{item.value}</p>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="mt-3 flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-300 animate-pulse shadow-sm" />
+                      <span className="text-[11px] text-pink-100">
+                        {(() => {
+                          const msgs = [
+                            '創作能量充滿整個會場 ✨',
+                            '每一攤都是靈感的火花 🎨',
+                            '藝術與相遇的奇蹟 🌟',
+                            'Design Festa 只在這裡！',
+                          ]
+                          return msgs[h % msgs.length]
+                        })()}
+                      </span>
+                      <span className="ml-auto text-[10px] text-pink-200/80">
+                        公式サイトへ →
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </motion.div>
+          )
+        })()}
 
         {/* ── 🌸 英雄區 ── */}
         <motion.section className="text-center mb-16" {...fadeUp}>
