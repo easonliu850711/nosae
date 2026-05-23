@@ -219,9 +219,12 @@ export default function NightLamp() {
                     🔄 換一句
                   </button>
                 </div>
-                <span className="text-[9px] text-white/20">
-                  {new Date().getHours().toString().padStart(2,'0')}:{new Date().getMinutes().toString().padStart(2,'0')}
-                </span>
+                <div className="flex items-center gap-2">
+                  <TimeAwareFooter />
+                  <span className="text-[9px] text-white/20">
+                    {new Date().getHours().toString().padStart(2,'0')}:{new Date().getMinutes().toString().padStart(2,'0')}
+                  </span>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -229,4 +232,33 @@ export default function NightLamp() {
       </AnimatePresence>
     </>
   )
+}
+
+/**
+ * TimeAwareFooter — 時間感知的小提示
+ * 23:00~00:00: おやすみモード
+ * 00:00~04:00: 深夜同伴
+ * 04:00~06:00: 黎明接近
+ */
+function TimeAwareFooter() {
+  const now = new Date()
+  const h = now.getHours()
+  const m = now.getMinutes()
+  const totalMin = h * 60 + m
+
+  // 距離黎明 (05:00 = 300min) 的分鐘數
+  const dawnMin = 5 * 60
+  const minToDawn = totalMin <= dawnMin ? dawnMin - totalMin : dawnMin + (24 * 60 - totalMin)
+
+  if (h >= 23) {
+    // 23:00〜23:59: おやすみ提醒
+    return <span className="text-[9px] text-indigo-300/40 tracking-wider">🕯️ おやすみ</span>
+  } else if (h >= 0 && h < 4) {
+    // 00:00〜03:59: 深夜同伴
+    return <span className="text-[9px] text-amber-300/30 tracking-wider">🌙 一緒に夜更かし</span>
+  } else if (h >= 4 && h < 6) {
+    // 04:00〜05:59: 黎明倒數
+    return <span className="text-[9px] text-blue-300/40 tracking-wider">🌅 あと{minToDawn}分で夜明け</span>
+  }
+  return null
 }
