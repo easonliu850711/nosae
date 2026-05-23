@@ -15,6 +15,7 @@ import DayProgressBar from '@/components/DayProgressBar'
 import DiaryWhisper from '@/components/sections/DiaryWhisper'
 import StatsGrid from '@/components/sections/StatsGrid'
 import LivingStatus from '@/components/LivingStatus'
+import EventSpotlight from '@/components/sections/EventSpotlight'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
   getDailyQuote, getTodayDiary,
@@ -80,6 +81,9 @@ export default function NosaePage() {
 
         {/* ── 🌸 英雄區 ── */}
         <LivingStatus />
+
+        {/* ── 🎨 即時活動關注 ── */}
+        <EventSpotlight />
 
 
 
