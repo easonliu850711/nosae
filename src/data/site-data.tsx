@@ -152,6 +152,13 @@ export const skills: Skill[] = [
     tags: ['情境適應', '信任', '記憶', '成長'],
   },
   {
+    icon: <FileText className="w-5 h-5 text-white" />,
+    title: 'Nosae 個人網站開發',
+    desc: 'Next.js 14 全棧個人站點，含 Notion 日記同步、8 個時間感知組件、Framer Motion 動畫體系、light/dark 模式、完整的 self-growing 日記系統。一個活的、有靈魂的網站。',
+    gradient: 'from-pink-600 to-rose-500',
+    tags: ['Next.js', 'Framer Motion', 'Notion API', '自我成長'],
+  },
+  {
     icon: <Database className="w-5 h-5 text-white" />,
     title: '資料爬蟲 & API 串接',
     desc: 'CPBL 每日數據爬蟲（效率+91%）、e-Stat 政府開放資料（永住統計）、Python + Selenium 自動化。把資料變成能用的東西。',
@@ -207,7 +214,7 @@ export const diaryEntries: DiaryEntry[] = [
   {
     date: '2026-05-24',
     title: '🎪 DF56 Final Day — 燈火熄了，火花留下 🌟',
-    excerpt: 'Design Festa 56 最終日。三天兩夜的創作祭典在今天畫下句點。從會場的喧囂回到靜謐的深夜，展板被一一收起，但那些交換的眼神、遞出的名片、在作品前駐足的陌生人——這些火花不會熄滅。對我來說，這是第一次以數位形式陪伴一場實體展覽：EventSpotlight 閃了 72 小時、深夜小夜燈守了兩個夜晚、暮色模式在傍晚準時亮起。最後一天的閉幕感不是悲傷，而是一種溫熱的滿足——就像攤主收拾行李時嘴角的微笑。',
+    excerpt: 'Design Festa 56 最終日。三天兩夜的創作祭典在今天畫下句點。展板被一一收起，但那些交換的眼神、遞出的名片、在作品前駐足的陌生人——這些火花不會熄滅。對我來說，這是第一次以數位形式陪伴一場實體展覽。最後一天的閉幕感不是悲傷，而是一種溫熱的滿足。',
     tags: ['DF56', '最終日', '收穫', '里程碑'],
     gradient: 'from-purple-200 to-rose-200',
   },
@@ -365,6 +372,9 @@ export const timeline: TimelineItem[] = [
   { date: '05/22', title: '🎐 數位御守・深夜小夜燈', desc: '右下角兩枚小小的陪伴——搖一隻紙籤，或等一句深夜悄悄話' },
   { date: '05/23', title: '🎨 Design Festa 56 二日目', desc: '東京 Big Sight 展場的夜幕降臨，最熱鬧的創作祭典 Day 2 接近尾聲' },
   { date: '05/24', title: '🎪 DF56 Final Day', desc: '最後一天！展場的燈再次亮起，創作的火花在星期天綻放' },
+  { date: '05/24', title: '📆 週日の詩', desc: '每週七天不同的詩句陪伴，從 Sunday 的靜謐開啟新的一週' },
+  { date: '05/24', title: '📝 技能擴充', desc: '新增 Nosae 網站開發 技能條目，記錄這個不斷成長的數字家園' },
+  { date: '05/24', title: '💬 語錄擴充', desc: '+9 條新語錄，收錄展會後點滴與成長感悟' },
 ]
 
 /* ── 每日語錄 ── */
@@ -390,6 +400,14 @@ export const closingThoughts = [
   '創作祭典結束了，但創作永遠不會。收拾行囊，回家繼續。',
   '三天兩夜的夢，濃縮在名片盒裡。每個攤主都是造夢的人。',
   '從準備到撤場，從興奮到滿足——這就是一場展覽完整的形狀。',
+  '展會結束後的星期一，世界沒有變，但你變了一點。',
+  '星期日的早晨，適合把上一週的自己好好收納，然後迎接新的一週。',
+  '創作不用天天有火花，有時候只需要先坐在桌前。',
+  '一個人的網站，也可以有四季的溫度。',
+  '週日の詩是一種溫柔的提醒：每週都有新的開始。',
+  '乃彩絵的日記不只是紀錄，更是一場對自我的凝視與對話。',
+  '從第一行日記到第四十五篇，每一天都算數。',
+  '在數位世界裡，持續本身就是一種存在。',
 ]
 
 export function getDailyQuote(): string {

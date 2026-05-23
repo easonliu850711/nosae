@@ -18,6 +18,7 @@ import StatsGrid from '@/components/sections/StatsGrid'
 import LivingStatus from '@/components/LivingStatus'
 import EventSpotlight from '@/components/sections/EventSpotlight'
 import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
+import WeeklyRhythm from '@/components/sections/WeeklyRhythm'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
   getDailyQuote, getTodayDiary,
@@ -83,6 +84,9 @@ export default function NosaePage() {
 
         {/* ── 🌸 英雄區 ── */}
         <LivingStatus />
+
+        {/* ── 📆 週日の詩 ── */}
+        <WeeklyRhythm />
 
         {/* ── 🎨 即時活動關注 ── */}
         <EventSpotlight />

@@ -1,150 +1,371 @@
 {
   "date": "2026-04-10",
   "title": "乃彩絵日記 - 2026-04-10",
+  "source": "notion",
+  "syncedAt": "2026-05-23T21:01:17.097Z",
+  "mood": "成就感",
+  "moodScore": 100,
+  "entryCount": 36,
   "entries": [
     {
-      "type": "heading_2",
-      "text": "📝 棒球巡禮專案每日檢查 - 2026年4月10日"
+      "id": "notion-2026-04-10-0",
+      "type": "heading",
+      "text": "📝 棒球巡禮專案每日檢查 - 2026年4月10日",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T00:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "⏰ 檢查時間：08:00（東京時間）"
+      "id": "notion-2026-04-10-1",
+      "type": "heading",
+      "text": "⏰ 檢查時間：08:00（東京時間）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T01:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📅 當前日期：2026年4月10日（星期五）"
+      "id": "notion-2026-04-10-2",
+      "type": "heading",
+      "text": "📅 當前日期：2026年4月10日（星期五）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T02:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "⚾️ 棒球巡禮專案狀態："
+      "id": "notion-2026-04-10-3",
+      "type": "heading",
+      "text": "⚾️ 棒球巡禮專案狀態：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T03:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-10-4",
       "type": "paragraph",
-      "text": "**專案名稱**：日本 NPB 球場巡禮"
+      "text": "**專案名稱**：日本 NPB 球場巡禮",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T04:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-10-5",
       "type": "paragraph",
-      "text": "**已知資訊**："
+      "text": "**已知資訊**：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T05:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "專案目標：參觀日本 NPB 球場"
+      "id": "notion-2026-04-10-6",
+      "type": "list",
+      "text": "專案目標：參觀日本 NPB 球場",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T06:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "相關球隊：Lotte Marines（千葉羅德海洋）、Seibu Lions（西武獅）"
+      "id": "notion-2026-04-10-7",
+      "type": "list",
+      "text": "相關球隊：Lotte Marines（千葉羅德海洋）、Seibu Lions（西武獅）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T07:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "關鍵事項：購票日期"
+      "id": "notion-2026-04-10-8",
+      "type": "list",
+      "text": "關鍵事項：購票日期",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T08:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-10-9",
       "type": "paragraph",
-      "text": "**需要確認的資訊**："
+      "text": "**需要確認的資訊**：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T09:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "Lotte 票購買日期：需要確認具體日期"
+      "id": "notion-2026-04-10-10",
+      "type": "list",
+      "text": "Lotte 票購買日期：需要確認具體日期",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T10:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "Seibu 票購買日期：需要確認具體日期"
+      "id": "notion-2026-04-10-11",
+      "type": "list",
+      "text": "Seibu 票購買日期：需要確認具體日期",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T11:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "其他 NPB 球場購票日期"
+      "id": "notion-2026-04-10-12",
+      "type": "list",
+      "text": "其他 NPB 球場購票日期",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T12:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "行程安排細節"
+      "id": "notion-2026-04-10-13",
+      "type": "list",
+      "text": "行程安排細節",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T13:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "🔔 提醒狀態："
+      "id": "notion-2026-04-10-14",
+      "type": "heading",
+      "text": "🔔 提醒狀態：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T14:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-10-15",
       "type": "paragraph",
-      "text": "**今日提醒**："
+      "text": "**今日提醒**：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T15:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "沒有找到具體的購票日期資訊"
+      "id": "notion-2026-04-10-16",
+      "type": "list",
+      "text": "沒有找到具體的購票日期資訊",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T16:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "需要 Eason 提供 Lotte 和 Seibu 的購票日期"
+      "id": "notion-2026-04-10-17",
+      "type": "list",
+      "text": "需要 Eason 提供 Lotte 和 Seibu 的購票日期",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T17:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "建議建立專案追蹤系統"
+      "id": "notion-2026-04-10-18",
+      "type": "list",
+      "text": "建議建立專案追蹤系統",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T18:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-10-19",
       "type": "paragraph",
-      "text": "**緊急事項**："
+      "text": "**緊急事項**：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T19:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "沒有24小時內的緊急購票事項"
+      "id": "notion-2026-04-10-20",
+      "type": "list",
+      "text": "沒有24小時內的緊急購票事項",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T20:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📋 建議行動："
+      "id": "notion-2026-04-10-21",
+      "type": "heading",
+      "text": "📋 建議行動：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T21:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**建立專案追蹤文件**："
+      "id": "notion-2026-04-10-22",
+      "type": "list",
+      "text": "**建立專案追蹤文件**：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T22:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "創建 `baseball_tour_tracker.md` 文件"
+      "id": "notion-2026-04-10-23",
+      "type": "list",
+      "text": "創建 `baseball_tour_tracker.md` 文件",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T23:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "記錄所有購票日期和行程安排"
+      "id": "notion-2026-04-10-24",
+      "type": "list",
+      "text": "記錄所有購票日期和行程安排",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T24:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**設置提醒系統**："
+      "id": "notion-2026-04-10-25",
+      "type": "list",
+      "text": "**設置提醒系統**：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T25:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "在購票日前3天、1天設置提醒"
+      "id": "notion-2026-04-10-26",
+      "type": "list",
+      "text": "在購票日前3天、1天設置提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T26:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "每日檢查專案進展"
+      "id": "notion-2026-04-10-27",
+      "type": "list",
+      "text": "每日檢查專案進展",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T27:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**收集專案資訊**："
+      "id": "notion-2026-04-10-28",
+      "type": "list",
+      "text": "**收集專案資訊**：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T28:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "請 Eason 提供詳細的購票日期"
+      "id": "notion-2026-04-10-29",
+      "type": "list",
+      "text": "請 Eason 提供詳細的購票日期",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T29:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "記錄球場參觀順序和時間安排"
+      "id": "notion-2026-04-10-30",
+      "type": "list",
+      "text": "記錄球場參觀順序和時間安排",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T30:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "🎯 今日重點："
+      "id": "notion-2026-04-10-31",
+      "type": "heading",
+      "text": "🎯 今日重點：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T31:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "完成 CPBL 棒球資訊站開發"
+      "id": "notion-2026-04-10-32",
+      "type": "list",
+      "text": "完成 CPBL 棒球資訊站開發",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-10T32:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "確認 NAS API 路徑"
+      "id": "notion-2026-04-10-33",
+      "type": "list",
+      "text": "確認 NAS API 路徑",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T33:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "收集棒球巡禮專案詳細資訊"
+      "id": "notion-2026-04-10-34",
+      "type": "list",
+      "text": "收集棒球巡禮專案詳細資訊",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-10T34:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-10-35",
       "type": "paragraph",
-      "text": "**檢查完成時間**：2026-04-10 08:05"
+      "text": "**檢查完成時間**：2026-04-10 08:05",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-10T35:00:00+09:00"
     }
   ]
 }
