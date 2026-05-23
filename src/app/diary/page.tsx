@@ -111,7 +111,8 @@ export default function DiaryPage() {
     // Tag extraction from titles
     const tagCount: Record<string, number> = {}
     diaries.forEach(d => {
-      const t = d.title.replace('乃彩絵日記 - ', '').trim()
+	  const title = d.title ?? ''
+	  const t = title.replace('乃彩絵日記 -  ', '').trim()
       if (t && t !== d.date) {
         tagCount[t] = (tagCount[t] || 0) + 1
       }

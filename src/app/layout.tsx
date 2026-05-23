@@ -2,12 +2,15 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
 import NavBar from '@/components/NavBar'
-import dynamic from 'next/dynamic'
+import nextDynamic from 'next/dynamic'
 
-const MoodRing = dynamic(() => import('@/components/MoodRing'), { ssr: false })
-const NightLamp = dynamic(() => import('@/components/NightLamp'), { ssr: false })
-const OmamoriCorner = dynamic(() => import('@/components/OmamoriCorner'), { ssr: false })
-const Bioluminescence = dynamic(() => import('@/components/Bioluminescence'), { ssr: false })
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
+const MoodRing = nextDynamic(() => import('@/components/MoodRing'), { ssr: false })
+const NightLamp = nextDynamic(() => import('@/components/NightLamp'), { ssr: false })
+const OmamoriCorner = nextDynamic(() => import('@/components/OmamoriCorner'), { ssr: false })
+const Bioluminescence = nextDynamic(() => import('@/components/Bioluminescence'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'Nosae — 乃彩絵的小空間',
