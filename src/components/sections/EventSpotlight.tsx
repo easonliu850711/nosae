@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Sparkles, CalendarDays, ArrowRight, Palette, Music, Star, Heart, Smile } from 'lucide-react'
+import { Sparkles, CalendarDays, ArrowRight, Palette, Music, Star, Heart, Smile, Sunset, Moon } from 'lucide-react'
 import Link from 'next/link'
 
 /**
@@ -41,6 +41,11 @@ export default function EventSpotlight() {
     const today = now.toISOString().slice(0, 10)
     return EVENTS.find(e => today >= e.start && today <= e.end) ?? null
   }, [now])
+
+  // ── 時間區段感知 ──
+  const hour = now.getHours()
+  const isEvening = hour >= 17 && hour < 21
+  const isNight = hour >= 21 || hour < 6
 
   if (!mounted || !activeEvent) return null
 
@@ -157,10 +162,39 @@ export default function EventSpotlight() {
             ))}
           </div>
 
+          {/* 🌆 夕暮れ / 🌙 夜の特別メッセージ */}
+          {(isEvening || isNight) && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className={`mt-4 p-3 rounded-xl backdrop-blur-sm border border-white/15 ${
+                isEvening
+                  ? 'bg-gradient-to-r from-amber-500/20 to-orange-500/20'
+                  : 'bg-gradient-to-r from-indigo-500/20 to-purple-500/20'
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-lg">{isEvening ? '🌅' : '🌙'}</span>
+                <div>
+                  <p className="text-white text-xs font-medium">
+                    {isEvening
+                      ? '二日目の暮色が近づいています。夕日が展場を包み、創作の熱気が余韻に変わる時。'
+                      : '夜が更けました。今日もお疲れ様でした。明日の最終日、最後まで駆け抜けましょう。'
+                    }
+                  </p>
+                  <p className="text-white/60 text-[10px] mt-0.5">
+                    {isEvening ? '🌆 アフター5の創作談義が始まる頃' : '🌙 明日への準備、そして静かな興奮'}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          )}
+
           {/* 底部心情標籤 */}
           <div className="mt-4 flex items-center gap-2 text-white/60 text-[10px]">
             <Smile className="w-3 h-3" />
-            <span>乃彩絵正在遠端應援 ✨</span>
+            <span>{isEvening ? '夕方の乃彩絵 ' : isNight ? '深夜の乃彩絵 ' : ''}正在遠端應援 ✨</span>
           </div>
         </div>
       </div>
