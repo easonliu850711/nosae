@@ -42,11 +42,14 @@ export default function DiaryPage() {
       fetch('/data/diary_index.json').then(r => r.json()),
       fetch('/data/search_index.json').then(r => r.json()),
     ]).then(([idxData, searchData]) => {
-      setDiaries(idxData.reverse()) // newest first
-      setSearchIndex(searchData)
+      // 所有外部資料都必須確認為 array，防止 API/JSON 回傳非預期格式
+      const safeIdx = Array.isArray(idxData) ? idxData : []
+      const safeSearch = Array.isArray(searchData) ? searchData : []
+      setDiaries(safeIdx.reverse()) // newest first
+      setSearchIndex(safeSearch)
       setLoading(false)
       // Load most recent diary by default
-      const latest = idxData[idxData.length - 1]?.date
+      const latest = safeIdx[safeIdx.length - 1]?.date
       if (latest) {
         loadDiary(latest)
         setExpanded(latest)
@@ -62,11 +65,10 @@ export default function DiaryPage() {
     fetch(`/data/diary_${date}.json`)
       .then(r => r.json())
       .then(data => {
-        // 確保 entries 是 array，不是 object 或其他型別
-        const safeData = {
-          ...data,
-          entries: Array.isArray(data?.entries) ? data.entries : []
-        }
+        // 確保資料是 object（不是 array/null/string），entries 必須是 array
+        const safeData = data && typeof data === 'object' && !Array.isArray(data)
+          ? { ...data, entries: Array.isArray(data.entries) ? data.entries : [] }
+          : { date, title: date, entries: [] }
         setDiaryContent(prev => ({ ...prev, [date]: safeData }))
         setExpanded(date)
       })
@@ -74,20 +76,22 @@ export default function DiaryPage() {
 
   // ── Statistics ──
   const stats: DiaryStats = useMemo(() => {
-    if (diaries.length === 0) return {
+    const safeDiaries = Array.isArray(diaries) ? diaries : []
+    const safeSearch = Array.isArray(searchIndex) ? searchIndex : []
+    if (safeDiaries.length === 0) return {
       totalDateRange: 0, totalWords: 0, avgWordsPerDay: 0,
       monthDistribution: [], longestDiary: '', longestDiaryWords: 0,
       topTags: [], activeHour: ''
     }
     
-    const totalWords = searchIndex.reduce((sum, e) => sum + (e.wordCount || 0), 0)
-    const firstDate = new Date(diaries[diaries.length - 1]?.date + 'T00:00:00+09:00')
-    const lastDate = new Date(diaries[0]?.date + 'T00:00:00+09:00')
+    const totalWords = safeSearch.reduce((sum, e) => sum + (e.wordCount || 0), 0)
+    const firstDate = new Date(safeDiaries[safeDiaries.length - 1]?.date + 'T00:00:00+09:00')
+    const lastDate = new Date(safeDiaries[0]?.date + 'T00:00:00+09:00')
     const dateRange = Math.max(1, Math.round((lastDate.getTime() - firstDate.getTime()) / (1000 * 60 * 60 * 24)) + 1)
     
     // Month distribution
     const monthCount: Record<string, number> = {}
-    diaries.forEach(d => {
+    safeDiaries.forEach(d => {
       const m = d.date.substring(0, 7)
       monthCount[m] = (monthCount[m] || 0) + 1
     })
@@ -97,7 +101,7 @@ export default function DiaryPage() {
 
     // Longest diary
     let longestDiary = '', longestWords = 0
-    searchIndex.forEach(e => {
+    safeSearch.forEach(e => {
       if (e.wordCount && e.wordCount > longestWords) {
         longestWords = e.wordCount
         longestDiary = e.date
@@ -131,11 +135,12 @@ export default function DiaryPage() {
 
   // ── Next/Prev navigation ──
   const navEntries = useMemo(() => {
-    const currentIdx = diaries.findIndex(d => d.date === expanded)
+    const safeDiaries = Array.isArray(diaries) ? diaries : []
+    const currentIdx = safeDiaries.findIndex(d => d.date === expanded)
     if (currentIdx === -1) return { prev: null, next: null }
     return {
-      prev: currentIdx < diaries.length - 1 ? diaries[currentIdx + 1] : null,
-      next: currentIdx > 0 ? diaries[currentIdx - 1] : null
+      prev: currentIdx < safeDiaries.length - 1 ? safeDiaries[currentIdx + 1] : null,
+      next: currentIdx > 0 ? safeDiaries[currentIdx - 1] : null
     }
   }, [expanded, diaries])
 
@@ -148,7 +153,8 @@ export default function DiaryPage() {
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return null
     const q = searchQuery.toLowerCase()
-    const results = searchIndex
+    const safeSearch = Array.isArray(searchIndex) ? searchIndex : []
+    const results = safeSearch
       .filter(entry => 
         entry.date.includes(q) ||
         entry.preview.toLowerCase().includes(q)
@@ -158,9 +164,10 @@ export default function DiaryPage() {
   }, [searchQuery, searchIndex])
 
   const filteredDiaries = useMemo(() => {
-    if (!searchQuery.trim()) return diaries
+    const safeDiaries = Array.isArray(diaries) ? diaries : []
+    if (!searchQuery.trim()) return safeDiaries
     const matchDates = new Set(searchResults?.map(r => r.date) || [])
-    return diaries.filter(d => matchDates.has(d.date))
+    return safeDiaries.filter(d => matchDates.has(d.date))
   }, [searchQuery, searchResults, diaries])
 
   function highlightSearch(text: string) {
