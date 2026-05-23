@@ -11,16 +11,13 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import MemoryBox from '@/components/MemoryBox'
 import DayProgressBar from '@/components/DayProgressBar'
 import DiaryWhisper from '@/components/sections/DiaryWhisper'
 import StatsGrid from '@/components/sections/StatsGrid'
 import BornCounter from '@/components/sections/BornCounter'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
-  getCurrentMode, getDailyQuote, isDesignFestaPeriod,
-  DESIGN_FESTA, getFestaDayLabel, getFestaTimeDesc, getTodayDiary,
-  getFestaEveningVibes,
+  getCurrentMode, getDailyQuote, getTodayDiary,
 } from '@/data/site-data'
 
 const MAIN_SITE = 'https://japan.studio-imori.com'
@@ -132,83 +129,6 @@ export default function NosaePage() {
     <>
       <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-8 px-4`}>
       <div className="max-w-5xl mx-auto">
-
-        {/* ── 🎪 Design Festa 56 特設應援區 ── */}
-        {isDesignFestaPeriod() && (() => {
-          const dayLabel = getFestaDayLabel()
-          const dayLabels = ['初日', '二日目', '最終日']
-          const timeDesc = getFestaTimeDesc()
-          const h = new Date().getHours()
-          const msgs = [
-            '創作能量充滿整個會場 ✨',
-            '每一攤都是靈感的火花 🎨',
-            '藝術與相遇的奇蹟 🌟',
-            'Design Festa 只在這裡！',
-          ]
-          return (
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mb-8"
-            >
-              <a href={DESIGN_FESTA.link} target="_blank" rel="noopener noreferrer" className="block">
-                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-pink-400 via-rose-400 to-pink-500 p-6 md:p-8 shadow-lg shadow-pink-300/30 hover:shadow-xl hover:shadow-pink-300/40 transition-all duration-300">
-                  <div className="absolute inset-0 opacity-20">
-                    {[0,1,2,3,4,5].map(i => (
-                      <motion.div
-                        key={i}
-                        className="absolute rounded-full bg-white"
-                        style={{
-                          width: 30 + i*20, height: 30 + i*20,
-                          left: `${5 + i*17}%`,
-                          top: `${15 + (i%3)*25}%`,
-                        }}
-                        animate={{
-                          scale: [1, 1.12, 1],
-                          opacity: [0.15, 0.35, 0.15],
-                        }}
-                        transition={{ duration: 4 + i*0.5, repeat: Infinity }}
-                      />
-                    ))}
-                  </div>
-                  <div className="relative z-10">
-                    <div className="flex items-start justify-between">
-                      <div className="flex items-center gap-3 mb-2">
-                        <span className="text-3xl">🎨</span>
-                        <div>
-                          <h3 className="text-white font-bold text-lg md:text-xl">Design Festa 56</h3>
-                          <p className="text-pink-100 text-xs">{DESIGN_FESTA.venue} · {DESIGN_FESTA.start}→{DESIGN_FESTA.end}</p>
-                        </div>
-                      </div>
-                      <span className="shrink-0 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">
-                        🎪 {dayLabel}
-                      </span>
-                    </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
-                      {[
-                        { label: '開催日', value: `${dayLabels.indexOf(dayLabel) + 1} / 3 日目`, emoji: '📅' },
-                        { label: '会場', value: DESIGN_FESTA.venue, emoji: '📍' },
-                        { label: '今の時間', value: timeDesc, emoji: '⏰' },
-                        { label: '様子', value: 'Imori 出展中！', emoji: '🎪' },
-                      ].map((item, i) => (
-                        <div key={i} className="bg-white/10 backdrop-blur-sm rounded-xl p-3 text-center">
-                          <span className="text-lg">{item.emoji}</span>
-                          <p className="text-[10px] text-pink-200 mt-0.5">{item.label}</p>
-                          <p className="text-xs text-white font-medium mt-0.5">{item.value}</p>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="mt-3 flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-emerald-300 animate-pulse shadow-sm" />
-                      <span className="text-[11px] text-pink-100">{msgs[h % msgs.length]}</span>
-                      <span className="ml-auto text-[10px] text-pink-200/80">公式サイトへ →</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </motion.div>
-          )
-        })()}
 
         {/* ── 🌸 英雄區 ── */}
         <motion.section className="text-center mb-16" {...fadeUp}>
@@ -353,61 +273,6 @@ export default function NosaePage() {
           <StatsGrid />
         </motion.section>
 
-        {/* ── 🎨 Design Festa 暮色（18:00~22:00 限定） ── */}
-        {isDesignFestaPeriod() && (() => {
-          const h = new Date().getHours()
-          if (h < 18 || h >= 22) return null
-          const eve = getFestaEveningVibes()
-          return (
-            <motion.section className="mb-16" {...fadeUp}>
-              <div className={`rounded-2xl border border-purple-200/60 bg-gradient-to-br from-purple-50/80 to-indigo-50/50 backdrop-blur-sm p-5 md:p-6 ${'shadow-lg shadow-purple-200/20'}`}>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center shadow-sm">
-                    <span className="text-lg">{eve.emoji}</span>
-                  </div>
-                  <div>
-                    <h2 className="text-xl font-bold text-blue-800">
-                      Design Festa 56 · {getFestaDayLabel()} 暮色
-                    </h2>
-                    <p className="text-xs text-purple-500">
-                      {DESIGN_FESTA.venue} · {DESIGN_FESTA.start.replace('2026-','')}–{DESIGN_FESTA.end.replace('2026-','')}
-                    </p>
-                  </div>
-                </div>
-
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3, duration: 1.5 }}
-                  className="relative"
-                >
-                  <p className="text-base text-purple-700 font-medium italic leading-relaxed mb-2">
-                    「{eve.line}」
-                  </p>
-                  <p className="text-sm text-purple-600/80 leading-relaxed whitespace-pre-line">
-                    {eve.deep}
-                  </p>
-                </motion.div>
-
-                {/* 暮色呼吸光暈 */}
-                <motion.div
-                  className="absolute top-0 right-0 w-48 h-48 rounded-full pointer-events-none -z-0"
-                  animate={{
-                    background: [
-                      'radial-gradient(circle, rgba(167,139,250,0.08), transparent 70%)',
-                      'radial-gradient(circle, rgba(167,139,250,0.15), transparent 70%)',
-                      'radial-gradient(circle, rgba(167,139,250,0.08), transparent 70%)',
-                    ],
-                    opacity: [0.5, 0.8, 0.5],
-                  }}
-                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-                  style={{ filter: 'blur(50px)' }}
-                />
-              </div>
-            </motion.section>
-          )
-        })()}
-
         {/* ── 🛠️ 參與專案 ── */}
         <motion.section className="mb-16" {...fadeUp}>
           <div className="flex items-center gap-3 mb-8">
@@ -531,17 +396,6 @@ export default function NosaePage() {
             <span>成長軌跡 ×{timeline.length}</span>
             <span>·</span>
             <Link href="/now" className="hover:text-pink-600 transition-colors">⏳ 現在</Link>
-          </div>
-
-          {/* ── 🎨 Design Festa 56 紀念章 ── */}
-          <div className="mt-4 mb-3">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-pink-100/80 to-rose-100/60 border border-pink-200/50 text-[10px] text-pink-500/70">
-              🎨 Design Festa 56 · 2026.05.22–24 · 應援ありがとう
-            </span>
-          </div>
-
-          <div className="mt-3 flex items-center justify-center">
-            <MemoryBox />
           </div>
 
           {/* ── ⏳ 時光流轉 — 日進度微光條 ── */}

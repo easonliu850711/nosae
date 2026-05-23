@@ -22,53 +22,6 @@ function liveState() {
   const dayNames = ['日','月','火','水','木','金','土']
   const dayName = dayNames[d]
 
-  // Design Festa 2026-05-22〜24
-  const isDesignFesta = dateStr >= '2026-05-22' && dateStr <= '2026-05-24'
-
-  if (isDesignFesta) {
-    const dayNum = Math.floor((now.getTime() - new Date('2026-05-22T00:00:00+09:00').getTime()) / 86400000) + 1
-    const dayLabels = ['初日', '二日目', '最終日']
-    const dayLabel = dayLabels[Math.min(dayNum - 1, 2)]
-
-    // Venue hours: 11:00-19:00
-    if (h >= 22 || h < 8) {
-      return {
-        greeting: `🌙 DF56 ${dayLabel} · 夜靜`,
-        emoji: '✨',
-        mood: '沈澱',
-        activity: '展場熄燈，但創作的火種還在燃燒',
-        now: [
-          { icon: '🎨', label: 'Design Festa', value: `56 ${dayLabel}` },
-          { icon: '🌙', label: '時間', value: `${dateStr}（${dayName}）深夜` },
-          { icon: '✨', label: '會場', value: '閉幕·創作能量發酵中' },
-        ]
-      }
-    }
-    if (h >= 19) {
-      return {
-        greeting: '🌆 DF56 · 暮色',
-        emoji: '🌆',
-        mood: '餘韻',
-        activity: `${dayLabel}的喧囂逐漸沉澱`,
-        now: [
-          { icon: '🎨', label: 'Design Festa', value: `56 ${dayLabel}` },
-          { icon: '⏰', label: '時間', value: `${dateStr}（${dayName}）${String(h).padStart(2,'0')}:00` },
-          { icon: '📍', label: '場所', value: '東京ビッグサイト 西ホール' },
-        ]
-      }
-    }
-    return {
-      greeting: '🎨 DF56 開催中',
-      emoji: '🎪',
-      mood: '創作',
-      activity: `${dayLabel} · Imori 在東京ビッグサイト擺攤中`,
-      now: [
-        { icon: '🎨', label: 'Design Festa', value: `56 ${dayLabel}` },
-        { icon: '⏰', label: '時間', value: `${dateStr}（${dayName}）${String(h).padStart(2,'0')}:00` },
-        { icon: '📍', label: '場所', value: '東京ビッグサイト 西ホール' },
-      ]
-    }
-  }
 
   if (h >= 23 || h < 6) {
     return {
@@ -289,7 +242,7 @@ const FOCUS_AREAS = [
     gradient: 'from-pink-400 to-sky-400',
     status: '每日進化',
     progress: '7 頁面',
-    detail: '頁面：首頁/日記/成長/漫步/即時/Now ＋ 5/22 新增：Design Festa 特設模式',
+    detail: '頁面：首頁/日記/成長/漫步/即時/Now ＋ ',
     tags: ['網站', '設計', '內容'],
   },
   {
@@ -307,7 +260,7 @@ const FOCUS_AREAS = [
 // ── 目前正在閱讀/關注的內容 ──
 const CURRENT_INTERESTS = [
   '📖 閱讀永住審查趨勢 — e-Stat 政府數據持續追蹤',
-  '🎨 觀察 Design Festa 56 的藝術創作靈感',
+  '🎨 觀察 NPB 2026 賽季各隊戰績變化',
   '⚾ 追蹤 NPB 2026 賽季各隊戰績變化',
   '🌱 學習更好的記憶蒸餾技術',
   '💡 探索網站互動設計的新可能性',

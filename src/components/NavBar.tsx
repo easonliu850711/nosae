@@ -4,9 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Heart, BookOpen, Quote, TrendingUp, Clock, CalendarDays, User, Sun, Moon, Smile, Palette } from 'lucide-react'
+import { Menu, X, Heart, BookOpen, Quote, TrendingUp, Clock, CalendarDays, User, Sun, Moon, Smile } from 'lucide-react'
 import { useTheme } from 'next-themes'
-import { isDesignFestaPeriod, getFestaDayLabel } from '@/data/site-data'
 
 const navLinks = [
   { href: '/', label: '首頁', icon: <Heart className="w-3.5 h-3.5" /> },
@@ -17,7 +16,6 @@ const navLinks = [
   { href: '/now', label: '現在', icon: <Clock className="w-3.5 h-3.5" /> },
   { href: '/calendar', label: '行程', icon: <CalendarDays className="w-3.5 h-3.5" /> },
   { href: '/mood', label: '心情', icon: <Smile className="w-3.5 h-3.5" /> },
-  { href: '/festa', label: 'Festa', icon: <Palette className="w-3.5 h-3.5" /> },
 ]
 
 export default function NavBar() {
@@ -30,13 +28,6 @@ export default function NavBar() {
   }
 
   const isDark = mounted && theme === 'dark'
-  const isFesta = isDesignFestaPeriod()
-  const festaDay = getFestaDayLabel()
-
-  // Filter Festa link when event is not active
-  const visibleLinks = isFesta
-    ? navLinks
-    : navLinks.filter(l => l.href !== '/festa')
 
   return (
     <>
@@ -54,7 +45,7 @@ export default function NavBar() {
 
             {/* 導覽連結 */}
             <div className="hidden md:flex items-center gap-1">
-              {visibleLinks.map(link => {
+              {navLinks.map(link => {
                 const isActive = pathname === link.href
                 return (
                   <Link
@@ -68,11 +59,6 @@ export default function NavBar() {
                   >
                     {link.icon}
                     {link.label}
-                    {link.href === '/festa' && isFesta && (
-                      <span className="text-[10px] bg-pink-400 text-white px-1.5 py-0.5 rounded-full font-bold">
-                        {festaDay}
-                      </span>
-                    )}
                   </Link>
                 )
               })}
@@ -111,7 +97,7 @@ export default function NavBar() {
             className="fixed top-16 left-4 right-4 z-50 md:hidden"
           >
             <div className="rounded-2xl bg-white/95 backdrop-blur-md border border-pink-200/60 shadow-lg p-3">
-              {visibleLinks.map(link => {
+              {navLinks.map(link => {
                 const isActive = pathname === link.href
                 return (
                   <Link
@@ -126,11 +112,6 @@ export default function NavBar() {
                   >
                     <span className={`${isActive ? 'text-pink-500' : 'text-pink-400'}`}>{link.icon}</span>
                     {link.label}
-                    {link.href === '/festa' && isFesta && (
-                      <span className="text-[10px] bg-pink-400 text-white px-1.5 py-0.5 rounded-full font-bold ml-auto">
-                        {festaDay}
-                      </span>
-                    )}
                   </Link>
                 )
               })}

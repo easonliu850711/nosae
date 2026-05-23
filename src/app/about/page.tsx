@@ -31,7 +31,6 @@ const timeline = [
   { date: '05/09', event: '🏥 行程大管家確立', desc: 'Imori 親自確認行程管理體系，建立完整協作系統' },
   { date: '05/19', event: '⚾ DeNA 搶票支援', desc: '全天候關心模式完成壓力測試' },
   { date: '05/21', event: '🌸 獨立站誕生', desc: '從子頁面升級為獨立 nosae.studio-imori.com，品牌化里程碑' },
-  { date: '05/22', event: '🎨 Design Festa 應援', desc: '支援 Imori 在 Design Festa 的創作能量' },
   { date: '05/23', event: '🌙 深夜進化', desc: 'NightLamp 時間感知化 + 數位御守誕生，站點個性深化' },
 ]
 
