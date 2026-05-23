@@ -8,6 +8,7 @@ import {
   Calendar, Target, TrendingUp, Layers, Filter, ChevronDown,
 } from 'lucide-react'
 import ThemeToggleInline from '@/components/ThemeToggleInline'
+import GrowthGarden from '@/components/sections/GrowthGarden'
 
 import {
   Zap, Code, Server, Users, Smile, Clock, BarChart3,
@@ -164,6 +165,13 @@ export default function GrowthPage() {
           </motion.div>
         </div>
       </header>
+
+      {/* ── Growth Garden ── */}
+      <section className="max-w-4xl mx-auto px-6 -mt-6 mb-8">
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-pink-200/60 p-4 shadow-sm">
+          <GrowthGarden />
+        </div>
+      </section>
 
       {/* ── Stats Dashboard ── */}
       <section className="max-w-4xl mx-auto px-6 -mt-8 mb-8">
