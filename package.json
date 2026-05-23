@@ -9,7 +9,9 @@
     "start": "next start -p 4000",
     "lint": "next lint",
     "preview": "next start -p 4000",
-    "sync:nosae": "node scripts/sync-nosae-content.js"
+    "sync:nosae": "node scripts/sync-nosae-content.js",
+    "sync-diary": "node scripts/sync-notion-diary.js",
+    "sync-diary:force": "node scripts/sync-notion-diary.js --force"
   },
   "dependencies": {
     "@notionhq/client": "^1.0.4",
