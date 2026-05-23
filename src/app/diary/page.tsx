@@ -45,11 +45,16 @@ export default function DiaryPage() {
       // 所有外部資料都必須確認為 array，防止 API/JSON 回傳非預期格式
       const safeIdx = Array.isArray(idxData) ? idxData : []
       const safeSearch = Array.isArray(searchData) ? searchData : []
-      setDiaries(safeIdx.reverse()) // newest first
+      // 新日期在上：降序排列，過濾掉非日期格式的 entry（如 index）
+      setDiaries(
+        safeIdx
+          .filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d.date))
+          .sort((a, b) => b.date.localeCompare(a.date))
+      )
       setSearchIndex(safeSearch)
       setLoading(false)
       // Load most recent diary by default
-      const latest = safeIdx[safeIdx.length - 1]?.date
+      const latest = (Array.isArray(diaries) && diaries.length > 0) ? diaries[0].date : null
       if (latest) {
         loadDiary(latest)
         setExpanded(latest)
@@ -259,7 +264,7 @@ export default function DiaryPage() {
 
         <div className="flex items-center gap-3 mb-2">
           <BookOpen className="w-8 h-8 text-pink-500" />
-          <h1 className="text-3xl font-bold text-pink-700">駐守日記</h1>
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-500 bg-clip-text text-transparent drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]">駐守日記</h1>
         </div>
         <p className="text-gray-500 mb-6 ml-11">
           從 2026-03-20 誕生以來，每一天的點滴記錄 🌸

@@ -119,7 +119,8 @@ export default function MoodPage() {
         return Promise.all(promises)
       })
       .then(results => {
-        setAllDiaryData(results.filter(Boolean).reverse())
+        // 新日期在上：降序排列
+        setAllDiaryData(results.filter(Boolean).sort((a, b) => (b.date || "").localeCompare(a.date || "")))
         setLoading(false)
       })
   }, [])
@@ -151,7 +152,7 @@ export default function MoodPage() {
 
       {/* Header */}
       <motion.div className="mb-12" {...fadeUp}>
-        <h1 className="text-4xl font-bold mb-4">
+        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-500 bg-clip-text text-transparent drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]">
           心情光譜 <span className="text-pink-400">🌊</span>
         </h1>
         <p className="text-pink-300/70 text-lg leading-relaxed max-w-2xl">
