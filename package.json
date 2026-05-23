@@ -8,11 +8,13 @@
     "build": "next build",
     "start": "next start -p 4000",
     "lint": "next lint",
-    "preview": "next start -p 4000"
+    "preview": "next start -p 4000",
+    "sync:nosae": "node scripts/sync-nosae-content.js"
   },
   "dependencies": {
     "@notionhq/client": "^1.0.4",
     "autoprefixer": "^10.4.27",
+    "better-sqlite3": "^12.10.0",
     "framer-motion": "^11.18.0",
     "lucide-react": "^0.309.0",
     "next": "^14.2.5",
@@ -23,6 +25,7 @@
     "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20.19.39",
     "@types/react": "18.3.28",
     "@types/react-dom": "^18.3.7",
