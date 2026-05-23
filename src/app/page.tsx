@@ -16,6 +16,7 @@ import DiaryWhisper from '@/components/sections/DiaryWhisper'
 import StatsGrid from '@/components/sections/StatsGrid'
 import LivingStatus from '@/components/LivingStatus'
 import EventSpotlight from '@/components/sections/EventSpotlight'
+import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
   getDailyQuote, getTodayDiary,
@@ -85,7 +86,8 @@ export default function NosaePage() {
         {/* ── 🎨 即時活動關注 ── */}
         <EventSpotlight />
 
-
+        {/* ── 🕯️ 閉幕燈 — DF56 最終日限定的 Closing Luminescence ── */}
+        <ClosingLuminescence />
 
         {/* ── 💖 自我介紹 ── */}
         <motion.section className="mb-16" {...fadeUp}>
