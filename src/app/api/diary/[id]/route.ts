@@ -1,6 +1,7 @@
 import { getDb } from '@/lib/db'
 import { initSchema } from '@/lib/schema'
 
+export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
 export async function GET(
