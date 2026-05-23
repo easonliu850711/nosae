@@ -62,7 +62,12 @@ export default function DiaryPage() {
     fetch(`/data/diary_${date}.json`)
       .then(r => r.json())
       .then(data => {
-        setDiaryContent(prev => ({ ...prev, [date]: data }))
+        // 確保 entries 是 array，不是 object 或其他型別
+        const safeData = {
+          ...data,
+          entries: Array.isArray(data?.entries) ? data.entries : []
+        }
+        setDiaryContent(prev => ({ ...prev, [date]: safeData }))
         setExpanded(date)
       })
   }
@@ -449,7 +454,7 @@ export default function DiaryPage() {
                           </div>
 
                           <div className="prose prose-pink max-w-none">
-                            {renderBlocks(diaryContent[diary.date].entries)}
+                            {renderBlocks(Array.isArray(diaryContent[diary.date]?.entries) ? diaryContent[diary.date].entries : [])}
                           </div>
                           <div className="mt-4 pt-3 border-t border-pink-100 flex items-center justify-between">
                             <div className="flex items-center gap-2 text-pink-400 text-sm">
