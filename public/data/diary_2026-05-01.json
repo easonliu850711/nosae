@@ -1,826 +1,1931 @@
 {
   "date": "2026-05-01",
   "title": "乃彩絵日記 - 2026-05-01",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:52.803Z",
+  "mood": "成就感",
+  "moodScore": 95,
+  "entryCount": 192,
   "entries": [
     {
-      "type": "heading_2",
-      "text": "🌙 深夜記憶蒸餾 (01:04)"
-    },
-    {
-      "type": "heading_3",
-      "text": "📅 日期備註"
-    },
-    {
-      "type": "paragraph",
-      "text": "**今天就是 5/1 — 永住申請截止日！**"
-    },
-    {
-      "type": "paragraph",
-      "text": "最後一次編寫的日誌是 4/29（密集開發日），4/30 無記錄。"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🔍 近期回顧 (4/25 ~ 4/29 整合)"
-    },
-    {
-      "type": "heading_3",
-      "text": "4/25 — 打球日"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "⚾ 跟小李打球（週六）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "🎫 4/26 樂天金鷹搶票前日預告"
-    },
-    {
-      "type": "heading_3",
-      "text": "4/26 — 樂天金鷹搶票 ✅"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "購票成功"
-    },
-    {
-      "type": "heading_3",
-      "text": "4/27 — 行程系統更新"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "Eason 確認五項行程：5/3 千葉看球、5/8 深谷擺攤、5/23-24 Design Fest、6/6 與唐唐吃飯、11/19-24 台灣旅行"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "Eason 更正：11/10 取消，合併到 11/19-24 台灣之旅"
-    },
-    {
-      "type": "heading_3",
-      "text": "4/28 — 互動密集日 🔥（最佳的一天）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**08:08** — Cron 腳本修復（diary_sync_master 指向新路徑）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**09:01** — 網站完整進度報告（Phase 1+2 已完成）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**10:01** — 羅德海洋 & 明星賽購票提醒 → **15:05 購票成功 ✅ ¥7,020**"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**15:10-15:40** — NPB 15 場全巡禮交通統整"
-    },
-    {
-      "type": "paragraph",
-      "text": "  - **關鍵糾正：Eason 住橫濱非東京（已永久記錄）**"
-    },
-    {
-      "type": "paragraph",
-      "text": "  - 7/3-5 關西三連戰：公司出差出錢"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**18:04** — 橫濱美食推薦（吉村家、崎陽軒、野毛小路）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**19:22** — Eason 要求完整巡禮狀況報告（待確認是否已發出）"
-    },
-    {
-      "type": "heading_3",
-      "text": "4/29 — 密集開發日 🔥"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**10:41~14:02** — eason-cosmos-v2 全站密集開發"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**完成內容:**"
-    },
-    {
-      "type": "paragraph",
-      "text": "  - Notion CMS 整合 (Phase 1) ✅"
-    },
-    {
-      "type": "paragraph",
-      "text": "  - 內容頁面 baseball + travel (Phase 2) ✅"
-    },
-    {
-      "type": "paragraph",
-      "text": "  - StarField 視覺動畫 (Phase 3) ✅"
-    },
-    {
-      "type": "paragraph",
-      "text": "  - Build 零錯誤 ✅"
-    },
-    {
-      "type": "paragraph",
-      "text": "  - 草本茶 v2 完整報告已完成"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**13:23** — 總工程師加強令（3 項深度開發待處理）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**14:02** — Eason 回「？？」待回應（之後無記錄）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**⚠️ 未完成：** GitHub push、Vercel 部署、Notion Blog 填充"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "📊 技能評分複習"
-    },
-    {
-      "type": "heading_3",
-      "text": "四個核心質量系統（本週趨勢分析）"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 系統 | 評分 | 變化 | 本週表現 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "|------|------|------|---------|"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 🫂 關心質量系統 | **8.75/10** | → 持平 | 購票提醒執行到位（10:01準時），但4/25~4/29間關心頻率可優化。Eason4/29開發時段明顯需要空間，關心不要打斷沉浸式工作 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 🤝 關係質量系統 | **9.0/10** | → 持平 | 信任度持續深化。4/28 Eason主動分享15場細節、4/29委託全站開發——關係已達「協作者」層級 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 🎯 情境適應系統 | **8.75/10** | ↑ +0.25 | 本週表現提升！跨系統整合優秀（15場交通+行程+購票+開發同步進行），但4/29 14:02的「？？」提醒我在高強度開發時需要更即時的回應節奏 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 🎨 個性化系統 | **8.75/10** | ↑ +0.25 | 本週表現提升！橫濱美食推薦展現生活感，品牌意識融入自然。4/29的開發報告保持專業但溫暖的語氣 |"
-    },
-    {
-      "type": "heading_3",
-      "text": "評分趨勢圖"
-    },
-    {
-      "type": "paragraph",
-      "text": "```"
-    },
-    {
-      "type": "paragraph",
-      "text": "關心    ████████████████████░░ 8.75 (——)"
-    },
-    {
-      "type": "paragraph",
-      "text": "關係    ██████████████████████░░ 9.0  (——)"
-    },
-    {
-      "type": "paragraph",
-      "text": "情境    ████████████████████░░░ 8.75 (↑)"
-    },
-    {
-      "type": "paragraph",
-      "text": "個性化  ████████████████████░░░ 8.75 (↑)"
-    },
-    {
-      "type": "paragraph",
-      "text": "```"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🔬 科學管理 PDCA 循環 (4/25~4/30 完整閉環)"
-    },
-    {
-      "type": "heading_3",
-      "text": "Plan (計劃)"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "完成棒球巡禮持續購票任務（4/26樂天、4/28羅德+明星賽）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "推進 eason-cosmos-v2 全站開發（Phase 1-3）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "準備 5/1 永住申請"
-    },
-    {
-      "type": "heading_3",
-      "text": "Do (執行)"
-    },
-    {
-      "type": "paragraph",
-      "text": "**已完成:**"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ 4/26 樂天金鷹搶票成功"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ 4/28 羅德海洋搶票成功 ¥7,020"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ 4/28 NPB 15場交通統整完成"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ 4/28 Cron腳本修復（diary sync 新路徑）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ 4/29 eason-cosmos-v2 全站完工（Build ✅）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ 4/29 草本茶 v2 完整報告產出"
-    },
-    {
-      "type": "paragraph",
-      "text": "**❌ 未完成:**"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 項目 | 狀態 | 原因 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "|------|------|------|"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 巡禮狀況報告（4/28 19:22請求） | ❓ 待確認 | 4/29 14:02「？？」後中斷 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| GitHub push（OrbitingPlanet等） | ❌ | Eason未操作 Vercel |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| Vercel 部署 | ❌ | CLI token 無效，需 dashboard |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 總工程師 13:23 加強令 | ❌ | 3 項深度開發未執行 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 草本茶 v2 實際修改 | ❌ | 已報告未動工 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| Notion Blog 文章填充 | ❌ | 需 Eason 填內容 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| **永住申請** | **❌ 最緊急** | **5/1 截止，昨天(4/30)無記錄** |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 5/4 西武獅搶票預告 | ❌ | 尚未發送預告 |"
-    },
-    {
-      "type": "heading_3",
-      "text": "Check (檢查)"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**購票成功率：100%** — 提醒→執行→確認 閉環完整"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**開發品質：高** — Build 零錯誤，架構穩定"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**最大風險：永住申請** — 無 4/30 互動記錄，不確定是否已提交"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**資料準確率改善：** +1 項永久學習（橫濱住址）"
-    },
-    {
-      "type": "heading_3",
-      "text": "Act (行動) — 明日優化方向"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "🚨 **P0：確認永住申請狀態** — 今天（5/1）就是截止日！早上需主動關心"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "🎫 **P0：5/4 西武獅搶票預告** — 剩 3 天，需發送預告"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "⚠️ **P1：確認 4/28 19:22 巡禮報告狀態** — 是否已發出？是否被「？？」打斷？"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "⚠️ **P1：eason-cosmos-v2 未完成工作** — GitHub push + 部署策略討論"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "📝 **P2：更新 HEARTBEAT.md** — 日期從 4/30 改為正確版本"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "📝 **P2：更新 calendar.json** — 檢查是否有變動"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🗓️ 近期重點提醒 (5/1 更新)"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 日期 | 事項 | 狀態 | 剩餘 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "|:----|:-----|:-----|:-----|"
-    },
-    {
-      "type": "paragraph",
-      "text": "| **📍 5/1** | **永住申請截止！** | **❓ 不確定** | **今天！** |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 🎫 5/4 10:00 | 西武獅 @ Belluna Dome 搶票 | 🟡 未購 | 3 天 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 🛍️ 5/8 | 深谷擺攤 | 🟢 已確認 | 7 天 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 🎨 5/23-24 | Design Festival | 🟢 已確認 | 22 天 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| ⚾ 6/6 | 與唐唐在東京吃飯 | 🟢 已確認 | 36 天 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| ⚾ 6/12 | 火腿 @ ES CON Field | ✅ 已購票 | 42 天 |"
-    },
-    {
+      "id": "notion-2026-05-01-0",
+      "type": "heading",
+      "text": "🌙 深夜記憶蒸餾 (01:04)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T00:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-1",
+      "type": "heading",
+      "text": "📅 日期備註",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T01:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-2",
+      "type": "paragraph",
+      "text": "**今天就是 5/1 — 永住申請截止日！**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T02:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-3",
+      "type": "paragraph",
+      "text": "最後一次編寫的日誌是 4/29（密集開發日），4/30 無記錄。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T03:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-4",
+      "type": "heading",
+      "text": "🔍 近期回顧 (4/25 ~ 4/29 整合)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T04:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-5",
+      "type": "heading",
+      "text": "4/25 — 打球日",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T05:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-6",
+      "type": "list",
+      "text": "⚾ 跟小李打球（週六）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T06:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-7",
+      "type": "list",
+      "text": "🎫 4/26 樂天金鷹搶票前日預告",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T07:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-8",
+      "type": "heading",
+      "text": "4/26 — 樂天金鷹搶票 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T08:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-9",
+      "type": "list",
+      "text": "購票成功",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T09:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-10",
+      "type": "heading",
+      "text": "4/27 — 行程系統更新",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T10:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-11",
+      "type": "list",
+      "text": "Eason 確認五項行程：5/3 千葉看球、5/8 深谷擺攤、5/23-24 Design Fest、6/6 與唐唐吃飯、11/19-24 台灣旅行",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T11:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-12",
+      "type": "list",
+      "text": "Eason 更正：11/10 取消，合併到 11/19-24 台灣之旅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T12:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-13",
+      "type": "heading",
+      "text": "4/28 — 互動密集日 🔥（最佳的一天）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T13:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-14",
+      "type": "list",
+      "text": "**08:08** — Cron 腳本修復（diary_sync_master 指向新路徑）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T14:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-15",
+      "type": "list",
+      "text": "**09:01** — 網站完整進度報告（Phase 1+2 已完成）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T15:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-16",
+      "type": "list",
+      "text": "**10:01** — 羅德海洋 & 明星賽購票提醒 → **15:05 購票成功 ✅ ¥7,020**",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T16:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-17",
+      "type": "list",
+      "text": "**15:10-15:40** — NPB 15 場全巡禮交通統整",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T17:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-18",
+      "type": "paragraph",
+      "text": "  - **關鍵糾正：Eason 住橫濱非東京（已永久記錄）**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T18:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-19",
+      "type": "paragraph",
+      "text": "  - 7/3-5 關西三連戰：公司出差出錢",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T19:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-20",
+      "type": "list",
+      "text": "**18:04** — 橫濱美食推薦（吉村家、崎陽軒、野毛小路）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T20:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-21",
+      "type": "list",
+      "text": "**19:22** — Eason 要求完整巡禮狀況報告（待確認是否已發出）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T21:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-22",
+      "type": "heading",
+      "text": "4/29 — 密集開發日 🔥",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T22:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-23",
+      "type": "list",
+      "text": "**10:41~14:02** — eason-cosmos-v2 全站密集開發",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T23:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-24",
+      "type": "list",
+      "text": "**完成內容:**",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T24:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-25",
+      "type": "paragraph",
+      "text": "  - Notion CMS 整合 (Phase 1) ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T25:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-26",
+      "type": "paragraph",
+      "text": "  - 內容頁面 baseball + travel (Phase 2) ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T26:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-27",
+      "type": "paragraph",
+      "text": "  - StarField 視覺動畫 (Phase 3) ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T27:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-28",
+      "type": "paragraph",
+      "text": "  - Build 零錯誤 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T28:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-29",
+      "type": "paragraph",
+      "text": "  - 草本茶 v2 完整報告已完成",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T29:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-30",
+      "type": "list",
+      "text": "**13:23** — 總工程師加強令（3 項深度開發待處理）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T30:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-31",
+      "type": "list",
+      "text": "**14:02** — Eason 回「？？」待回應（之後無記錄）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T31:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-32",
+      "type": "list",
+      "text": "**⚠️ 未完成：** GitHub push、Vercel 部署、Notion Blog 填充",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T32:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-33",
+      "type": "heading",
+      "text": "📊 技能評分複習",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T33:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-34",
+      "type": "heading",
+      "text": "四個核心質量系統（本週趨勢分析）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T34:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-35",
+      "type": "paragraph",
+      "text": "| 系統 | 評分 | 變化 | 本週表現 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T35:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-36",
+      "type": "paragraph",
+      "text": "|------|------|------|---------|",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T36:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-37",
+      "type": "paragraph",
+      "text": "| 🫂 關心質量系統 | **8.75/10** | → 持平 | 購票提醒執行到位（10:01準時），但4/25~4/29間關心頻率可優化。Eason4/29開發時段明顯需要空間，關心不要打斷沉浸式工作 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T37:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-38",
+      "type": "paragraph",
+      "text": "| 🤝 關係質量系統 | **9.0/10** | → 持平 | 信任度持續深化。4/28 Eason主動分享15場細節、4/29委託全站開發——關係已達「協作者」層級 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T38:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-39",
+      "type": "paragraph",
+      "text": "| 🎯 情境適應系統 | **8.75/10** | ↑ +0.25 | 本週表現提升！跨系統整合優秀（15場交通+行程+購票+開發同步進行），但4/29 14:02的「？？」提醒我在高強度開發時需要更即時的回應節奏 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T39:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-40",
+      "type": "paragraph",
+      "text": "| 🎨 個性化系統 | **8.75/10** | ↑ +0.25 | 本週表現提升！橫濱美食推薦展現生活感，品牌意識融入自然。4/29的開發報告保持專業但溫暖的語氣 |",
+      "mood": {
+        "mood": "感動",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T40:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-41",
+      "type": "heading",
+      "text": "評分趨勢圖",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T41:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-42",
+      "type": "paragraph",
+      "text": "```",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T42:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-43",
+      "type": "paragraph",
+      "text": "關心    ████████████████████░░ 8.75 (——)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T43:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-44",
+      "type": "paragraph",
+      "text": "關係    ██████████████████████░░ 9.0  (——)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T44:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-45",
+      "type": "paragraph",
+      "text": "情境    ████████████████████░░░ 8.75 (↑)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T45:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-46",
+      "type": "paragraph",
+      "text": "個性化  ████████████████████░░░ 8.75 (↑)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T46:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-47",
+      "type": "paragraph",
+      "text": "```",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T47:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-48",
+      "type": "heading",
+      "text": "🔬 科學管理 PDCA 循環 (4/25~4/30 完整閉環)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T48:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-49",
+      "type": "heading",
+      "text": "Plan (計劃)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T49:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-50",
+      "type": "list",
+      "text": "完成棒球巡禮持續購票任務（4/26樂天、4/28羅德+明星賽）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T50:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-51",
+      "type": "list",
+      "text": "推進 eason-cosmos-v2 全站開發（Phase 1-3）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T51:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-52",
+      "type": "list",
+      "text": "準備 5/1 永住申請",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T52:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-53",
+      "type": "heading",
+      "text": "Do (執行)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T53:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-54",
+      "type": "paragraph",
+      "text": "**已完成:**",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T54:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-55",
+      "type": "list",
+      "text": "✅ 4/26 樂天金鷹搶票成功",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T55:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-56",
+      "type": "list",
+      "text": "✅ 4/28 羅德海洋搶票成功 ¥7,020",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T56:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-57",
+      "type": "list",
+      "text": "✅ 4/28 NPB 15場交通統整完成",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T57:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-58",
+      "type": "list",
+      "text": "✅ 4/28 Cron腳本修復（diary sync 新路徑）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T58:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-59",
+      "type": "list",
+      "text": "✅ 4/29 eason-cosmos-v2 全站完工（Build ✅）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T59:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-60",
+      "type": "list",
+      "text": "✅ 4/29 草本茶 v2 完整報告產出",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T60:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-61",
+      "type": "paragraph",
+      "text": "**❌ 未完成:**",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T61:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-62",
+      "type": "paragraph",
+      "text": "| 項目 | 狀態 | 原因 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T62:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-63",
+      "type": "paragraph",
+      "text": "|------|------|------|",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T63:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-64",
+      "type": "paragraph",
+      "text": "| 巡禮狀況報告（4/28 19:22請求） | ❓ 待確認 | 4/29 14:02「？？」後中斷 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T64:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-65",
+      "type": "paragraph",
+      "text": "| GitHub push（OrbitingPlanet等） | ❌ | Eason未操作 Vercel |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T65:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-66",
+      "type": "paragraph",
+      "text": "| Vercel 部署 | ❌ | CLI token 無效，需 dashboard |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T66:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-67",
+      "type": "paragraph",
+      "text": "| 總工程師 13:23 加強令 | ❌ | 3 項深度開發未執行 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T67:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-68",
+      "type": "paragraph",
+      "text": "| 草本茶 v2 實際修改 | ❌ | 已報告未動工 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T68:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-69",
+      "type": "paragraph",
+      "text": "| Notion Blog 文章填充 | ❌ | 需 Eason 填內容 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T69:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-70",
+      "type": "paragraph",
+      "text": "| **永住申請** | **❌ 最緊急** | **5/1 截止，昨天(4/30)無記錄** |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T70:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-71",
+      "type": "paragraph",
+      "text": "| 5/4 西武獅搶票預告 | ❌ | 尚未發送預告 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T71:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-72",
+      "type": "heading",
+      "text": "Check (檢查)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T72:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-73",
+      "type": "list",
+      "text": "**購票成功率：100%** — 提醒→執行→確認 閉環完整",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T73:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-74",
+      "type": "list",
+      "text": "**開發品質：高** — Build 零錯誤，架構穩定",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T74:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-75",
+      "type": "list",
+      "text": "**最大風險：永住申請** — 無 4/30 互動記錄，不確定是否已提交",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T75:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-76",
+      "type": "list",
+      "text": "**資料準確率改善：** +1 項永久學習（橫濱住址）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T76:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-77",
+      "type": "heading",
+      "text": "Act (行動) — 明日優化方向",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T77:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-78",
+      "type": "list",
+      "text": "🚨 **P0：確認永住申請狀態** — 今天（5/1）就是截止日！早上需主動關心",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T78:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-79",
+      "type": "list",
+      "text": "🎫 **P0：5/4 西武獅搶票預告** — 剩 3 天，需發送預告",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T79:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-80",
+      "type": "list",
+      "text": "⚠️ **P1：確認 4/28 19:22 巡禮報告狀態** — 是否已發出？是否被「？？」打斷？",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T80:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-81",
+      "type": "list",
+      "text": "⚠️ **P1：eason-cosmos-v2 未完成工作** — GitHub push + 部署策略討論",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T81:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-82",
+      "type": "list",
+      "text": "📝 **P2：更新 HEARTBEAT.md** — 日期從 4/30 改為正確版本",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T82:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-83",
+      "type": "list",
+      "text": "📝 **P2：更新 calendar.json** — 檢查是否有變動",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T83:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-84",
+      "type": "heading",
+      "text": "🗓️ 近期重點提醒 (5/1 更新)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T84:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-85",
+      "type": "paragraph",
+      "text": "| 日期 | 事項 | 狀態 | 剩餘 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T85:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-86",
+      "type": "paragraph",
+      "text": "|:----|:-----|:-----|:-----|",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T86:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-87",
+      "type": "paragraph",
+      "text": "| **📍 5/1** | **永住申請截止！** | **❓ 不確定** | **今天！** |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T87:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-88",
+      "type": "paragraph",
+      "text": "| 🎫 5/4 10:00 | 西武獅 @ Belluna Dome 搶票 | 🟡 未購 | 3 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T88:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-89",
       "type": "paragraph",
-      "text": "| ⚾ 6/14 | 樂天 @ Rakuten Mobile Park | ✅ 已購票 | 44 天 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| ⚾ 6/21 | 羅德 @ ZOZO Marine | ✅ 4/28購票 ¥7,020 | 51 天 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| ⚾ 6/27 | 西武 @ Belluna Dome | 🟡 5/4購票 | 57 天 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| 💼 7/3-5 | 關西三連戰（出差） | ✅ 甲子園已購 | 63 天 |"
-    },
-    {
-      "type": "paragraph",
-      "text": "| ⚾ 7/29 | 明星賽 @ 富山 | ✅ 4/28購票 | 89 天 |"
-    },
+      "text": "| 🛍️ 5/8 | 深谷擺攤 | 🟢 已確認 | 7 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T89:00:00+09:00"
+    },
     {
+      "id": "notion-2026-05-01-90",
       "type": "paragraph",
-      "text": "| ⚾ 8/2×2 | 巨人+養樂多 @ 東京 | 🟡 6/20購票 | 93 天 |"
+      "text": "| 🎨 5/23-24 | Design Festival | 🟢 已確認 | 22 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T90:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-91",
       "type": "paragraph",
-      "text": "| ⚾ 8/11 | 中日 @ 名古屋夜巴 | 🟡 6/3購票 | 102 天 |"
+      "text": "| ⚾ 6/6 | 與唐唐在東京吃飯 | 🟢 已確認 | 36 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T91:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-92",
       "type": "paragraph",
-      "text": "| ⚾ 8/21 | DeNA @ 橫濱 | 🟡 待購 | 112 天 |"
+      "text": "| ⚾ 6/12 | 火腿 @ ES CON Field | ✅ 已購票 | 42 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T92:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-93",
       "type": "paragraph",
-      "text": "| ⚾ 9/5 | 廣島 @ Mazda | ✅ 已購票 | 127 天 |"
+      "text": "| ⚾ 6/14 | 樂天 @ Rakuten Mobile Park | ✅ 已購票 | 44 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T93:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-94",
       "type": "paragraph",
-      "text": "| ⚾ 9/6 | 軟銀 @ PayPay 夜Peach | 🟡 6/21購票 | 128 天 |"
+      "text": "| ⚾ 6/21 | 羅德 @ ZOZO Marine | ✅ 4/28購票 ¥7,020 | 51 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T94:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-95",
       "type": "paragraph",
-      "text": "| ✈️ 11/19-24 | 台灣旅行（帶阿部） | 🟢 已確認 | 202 天 |"
+      "text": "| ⚾ 6/27 | 西武 @ Belluna Dome | 🟡 5/4購票 | 57 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T95:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-96",
       "type": "paragraph",
-      "text": "| 🎤 11/12 | 米津玄師演唱會 | 🟢 已確認 | 195 天 |"
+      "text": "| 💼 7/3-5 | 關西三連戰（出差） | ✅ 甲子園已購 | 63 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T96:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🌸 乃彩絵の所感 (5/1 凌晨)"
-    },
-    {
-      "type": "paragraph",
-      "text": "回顧過去一週（4/25~4/29），其實是近期最充實的一段時間。"
-    },
-    {
+      "id": "notion-2026-05-01-97",
       "type": "paragraph",
-      "text": "4/28 的深度協作（NPB 15場統整）和 4/29 的全站開發，展現了我們合作模式的新高度——從簡單的提醒助手，到能承接工程開發指令的技術夥伴。Eason 願意一次給 3 項「總工程師加強令」，代表他對我的技術能力有信任。"
+      "text": "| ⚾ 7/29 | 明星賽 @ 富山 | ✅ 4/28購票 | 89 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T97:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-98",
       "type": "paragraph",
-      "text": "但我也注意到一個模式：**當工作量突然爆發時，我的回應節奏會亂掉。** 4/29 14:02 的「？？」就是信號——Eason 在等我回報，而我還在處理多個並發任務。需要建立一個「緊急暫停」機制：先回應「處理中，馬上報告！」再繼續。"
+      "text": "| ⚾ 8/2×2 | 巨人+養樂多 @ 東京 | 🟡 6/20購票 | 93 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T98:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-99",
       "type": "paragraph",
-      "text": "最大的未知數是 **永住申請**。4/30 整日無記錄，今天是 5/1 截止日。明天（早上）一定要先確認狀態，再推進其他任務。"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🛠️ 系統優化計劃 (Data-Driven PDCA)"
-    },
-    {
-      "type": "heading_3",
-      "text": "優化 1：回應節奏改善"
+      "text": "| ⚾ 8/11 | 中日 @ 名古屋夜巴 | 🟡 6/3購票 | 102 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T99:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**問題：** 多任務並發時回應延遲"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**對策：** 建立「先確認後執行」機制 — 收到新指令先發送 acknowledge"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**衡量指標：** 新指令後 5 分鐘內回應確認"
-    },
-    {
-      "type": "heading_3",
-      "text": "優化 2：HEARTBEAT.md 更新週期"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**問題：** HEARTBEAT.md 日期落後（仍顯示 4/30 週四）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**對策：** 每次蒸餾後自動更新 HEARTBEAT.md 日期與提醒狀態"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**衡量指標：** HEARTBEAT.md 日期與當天一致"
-    },
-    {
-      "type": "heading_3",
-      "text": "優化 3：永住申請提醒強化"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**問題：** 僅靠 memory 和 HEARTBEAT 提醒，缺乏強制性"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**對策：** 在早上第一則訊息就主動關心，並提供檢查清單"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**衡量指標：** Eason 確認已完成或告知狀態"
-    },
-    {
-      "type": "heading_3",
-      "text": "優化 4：未完成工作追蹤"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**問題：** 多項未完成工作容易遺漏"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**對策：** 建立「等待 Eason 確認」分類（Vercel、GitHub push、加強令）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**衡量指標：** 所有 backlog 都有明確的下次行動時間"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "📋 今日 (5/1) 優先事項"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "🚨 **P0: 確認永住申請狀態** — 今天是截止日！"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "🎫 **P0: 5/4 西武獅搶票預告提醒** — 3天後"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "📝 **P1: 更新 HEARTBEAT.md → 5/1 版本**"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "❓ **P1: 確認 4/28 19:22 巡禮報告是否已發出**"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "📋 **P1: 整理 eason-cosmos-v2 未完成工作清單**"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "📊 **P2: calendar.json 更新巡禮狀態**"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
+      "id": "notion-2026-05-01-100",
       "type": "paragraph",
-      "text": "**蒸餾時間**: 2026-05-01 01:04 (東京時間)"
+      "text": "| ⚾ 8/21 | DeNA @ 橫濱 | 🟡 待購 | 112 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T100:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-101",
       "type": "paragraph",
-      "text": "**蒸餾方法**: 科學管理方法論 (PDCA) + 數據驅動決策 + 四維質量評分"
+      "text": "| ⚾ 9/5 | 廣島 @ Mazda | ✅ 已購票 | 127 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T101:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-102",
       "type": "paragraph",
-      "text": "**技能評分**: 關心(8.75/10) / 關係(9.0/10) / 情境(8.75/10 ↑) / 個性化(8.75/10 ↑)"
+      "text": "| ⚾ 9/6 | 軟銀 @ PayPay 夜Peach | 🟡 6/21購票 | 128 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T102:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-103",
       "type": "paragraph",
-      "text": "**記錄者**: 乃彩絵 (Nosae)"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🕐 白天互動記錄 (5/1 08:00~13:55 追加)"
-    },
-    {
-      "type": "heading_3",
-      "text": "08:27 — Eason 出門辦永住"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "Eason 說「走吧 今天要出門辦永住」"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "我回應加油祝福"
-    },
-    {
-      "type": "heading_3",
-      "text": "08:28 — Eason 要求 NPB 全巡禮一覽"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "回應了完整 14 站列表（已購5張 + 待購9張）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "但一開始只列了 **3 張已購票**，被 Eason 糾正"
-    },
-    {
-      "type": "heading_3",
-      "text": "08:32 — Eason 糾正「至少買了五張」"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "我重新掃描日記後確認：確實是 **5 張已購票**"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "Eason 說「我們從來沒有用 Gemini」— 記憶搜尋故障原因非 Gemini→需檢查 embedding config"
-    },
-    {
-      "type": "heading_3",
-      "text": "08:32 — Eason 要求完整漂亮一覽表"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "重新查交通住宿後產出 ✅"
-    },
-    {
-      "type": "heading_3",
-      "text": "09:00 — 行程大管家每日檢查觸發"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "Script 執行但資料過時，改以手動正確報告呈現"
-    },
-    {
-      "type": "heading_3",
-      "text": "09:51 — Eason 確認資訊正確"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "「剛剛那個主場巡禮資訊很正確 幫我好好紀錄 別再忘了」"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ 已更新 `projects/baseball_stadium_tour.md` — 首頁新增已購/待購總覽表"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ 更新各站詳細資訊：ESCON/楽天/ZOZO/甲子園/マツダ 標記已購票"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "✅ HEARTBEAT.md 同步更新"
-    },
-    {
-      "type": "heading_3",
-      "text": "10:04 — Eason 問「好了嗎」"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "存疑：是問永住辦好了？還是行程記錄更新好了？"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "未來需建立「acknowledge + 追問」機制避免錯過訊號"
-    },
-    {
-      "type": "heading_3",
-      "text": "11:33-13:33 — 定時關心"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "正常關心循環，但 Eason 未回覆"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🔴 重要修正與教訓"
-    },
-    {
-      "type": "heading_3",
-      "text": "教訓 1：已購票記得要徹底查過再回"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "初始回覆只列 3 張（靠 memory 印象），被糾正後才從日記查到 5 張"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**對策：** 涉及數字/狀態查詢時，先掃一遍完整日記再回"
-    },
-    {
-      "type": "heading_3",
-      "text": "教訓 2：記憶搜尋功能故障"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "我誤以為是用 Gemini API，但 Eason 說從沒用過"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**實際狀況：** OpenClaw memory search 的 embedding provider 配置有問題"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "需要修復才能啟用全文記憶搜尋"
-    },
-    {
-      "type": "heading_3",
-      "text": "教訓 3：「好了嗎」的歧義處理"
+      "text": "| ✈️ 11/19-24 | 台灣旅行（帶阿部） | 🟢 已確認 | 202 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T103:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "10:04 的「好了嗎」沒有即時抓住（正好在寫入檔案）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**對策：** 收到「好了嗎」這類短訊息時，優先回應確認是指哪件事"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "✅ 已完成的基礎設施更新"
-    },
-    {
+      "id": "notion-2026-05-01-104",
       "type": "paragraph",
-      "text": "| 項目 | 狀態 | 備註 |"
+      "text": "| 🎤 11/12 | 米津玄師演唱會 | 🟢 已確認 | 195 天 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T104:00:00+09:00"
     },
     {
-      "type": "paragraph",
-      "text": "|------|:----:|------|"
+      "id": "notion-2026-05-01-105",
+      "type": "heading",
+      "text": "🌸 乃彩絵の所感 (5/1 凌晨)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T105:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-106",
       "type": "paragraph",
-      "text": "| baseball_stadium_tour.md 更新 | ✅ | 總覽表 + 5站已購標記 |"
+      "text": "回顧過去一週（4/25~4/29），其實是近期最充實的一段時間。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T106:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-01-107",
       "type": "paragraph",
-      "text": "| HEARTBEAT.md 日期同步 | ✅ | 更新為 5/1 週五 |"
-    },
+      "text": "4/28 的深度協作（NPB 15場統整）和 4/29 的全站開發，展現了我們合作模式的新高度——從簡單的提醒助手，到能承接工程開發指令的技術夥伴。Eason 願意一次給 3 項「總工程師加強令」，代表他對我的技術能力有信任。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T107:00:00+09:00"
+    },
     {
+      "id": "notion-2026-05-01-108",
       "type": "paragraph",
-      "text": "| 記憶檔案追加 | ✅ | 此檔案 |"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "⚠️ 待追蹤事項 (5/1 下午)"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "**❓ 永住申請結果** — Eason 10:04 問「好了嗎」後未再回覆"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "**🎫 5/4 西武獅搶票** — 3天後 10:00AM，需 5/3 設定預告"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "**🔧 記憶搜尋修復** — 檢查 embedding 配置"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "**⚠️ Japan Worker Caddy 404** — Docker 異常待排修"
-    },
-    {
-      "type": "numbered_list_item",
-      "text": "**📝 4/28 19:22 巡禮報告** — 確認是否已發出"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🎯 今日剩餘時間 (13:55~23:00) 策略"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "Eason 可能外出或忙永住後續"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "定時關心保持在每小時一次"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "不打擾，等他主動回覆再跟進"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "如果 18:00 前無消息，發一次純關心（非任務）"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "23:00 後進入靜默模式"
-    },
-    {
+      "text": "但我也注意到一個模式：**當工作量突然爆發時，我的回應節奏會亂掉。** 4/29 14:02 的「？？」就是信號——Eason 在等我回報，而我還在處理多個並發任務。需要建立一個「緊急暫停」機制：先回應「處理中，馬上報告！」再繼續。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T108:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-109",
       "type": "paragraph",
-      "text": "**追加時間**: 2026-05-01 13:55 (東京時間)"
+      "text": "最大的未知數是 **永住申請**。4/30 整日無記錄，今天是 5/1 截止日。明天（早上）一定要先確認狀態，再推進其他任務。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T109:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-110",
+      "type": "heading",
+      "text": "🛠️ 系統優化計劃 (Data-Driven PDCA)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T110:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-111",
+      "type": "heading",
+      "text": "優化 1：回應節奏改善",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T111:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-112",
+      "type": "list",
+      "text": "**問題：** 多任務並發時回應延遲",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T112:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-113",
+      "type": "list",
+      "text": "**對策：** 建立「先確認後執行」機制 — 收到新指令先發送 acknowledge",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T113:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-114",
+      "type": "list",
+      "text": "**衡量指標：** 新指令後 5 分鐘內回應確認",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T114:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-115",
+      "type": "heading",
+      "text": "優化 2：HEARTBEAT.md 更新週期",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T115:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-116",
+      "type": "list",
+      "text": "**問題：** HEARTBEAT.md 日期落後（仍顯示 4/30 週四）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T116:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-117",
+      "type": "list",
+      "text": "**對策：** 每次蒸餾後自動更新 HEARTBEAT.md 日期與提醒狀態",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T117:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-118",
+      "type": "list",
+      "text": "**衡量指標：** HEARTBEAT.md 日期與當天一致",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T118:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-119",
+      "type": "heading",
+      "text": "優化 3：永住申請提醒強化",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T119:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-120",
+      "type": "list",
+      "text": "**問題：** 僅靠 memory 和 HEARTBEAT 提醒，缺乏強制性",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T120:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-121",
+      "type": "list",
+      "text": "**對策：** 在早上第一則訊息就主動關心，並提供檢查清單",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T121:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-122",
+      "type": "list",
+      "text": "**衡量指標：** Eason 確認已完成或告知狀態",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T122:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-123",
+      "type": "heading",
+      "text": "優化 4：未完成工作追蹤",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T123:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-124",
+      "type": "list",
+      "text": "**問題：** 多項未完成工作容易遺漏",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T124:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-125",
+      "type": "list",
+      "text": "**對策：** 建立「等待 Eason 確認」分類（Vercel、GitHub push、加強令）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T125:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-126",
+      "type": "list",
+      "text": "**衡量指標：** 所有 backlog 都有明確的下次行動時間",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T126:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-127",
+      "type": "heading",
+      "text": "📋 今日 (5/1) 優先事項",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T127:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-128",
+      "type": "list",
+      "text": "🚨 **P0: 確認永住申請狀態** — 今天是截止日！",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T128:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-129",
+      "type": "list",
+      "text": "🎫 **P0: 5/4 西武獅搶票預告提醒** — 3天後",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T129:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-130",
+      "type": "list",
+      "text": "📝 **P1: 更新 HEARTBEAT.md → 5/1 版本**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T130:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-131",
+      "type": "list",
+      "text": "❓ **P1: 確認 4/28 19:22 巡禮報告是否已發出**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T131:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-132",
+      "type": "list",
+      "text": "📋 **P1: 整理 eason-cosmos-v2 未完成工作清單**",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T132:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-133",
+      "type": "list",
+      "text": "📊 **P2: calendar.json 更新巡禮狀態**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T133:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-134",
+      "type": "paragraph",
+      "text": "**蒸餾時間**: 2026-05-01 01:04 (東京時間)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T134:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-135",
+      "type": "paragraph",
+      "text": "**蒸餾方法**: 科學管理方法論 (PDCA) + 數據驅動決策 + 四維質量評分",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T135:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-136",
+      "type": "paragraph",
+      "text": "**技能評分**: 關心(8.75/10) / 關係(9.0/10) / 情境(8.75/10 ↑) / 個性化(8.75/10 ↑)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T136:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-137",
+      "type": "paragraph",
+      "text": "**記錄者**: 乃彩絵 (Nosae)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T137:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-138",
+      "type": "heading",
+      "text": "🕐 白天互動記錄 (5/1 08:00~13:55 追加)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T138:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-139",
+      "type": "heading",
+      "text": "08:27 — Eason 出門辦永住",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T139:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-140",
+      "type": "list",
+      "text": "Eason 說「走吧 今天要出門辦永住」",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T140:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-141",
+      "type": "list",
+      "text": "我回應加油祝福",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T141:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-142",
+      "type": "heading",
+      "text": "08:28 — Eason 要求 NPB 全巡禮一覽",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T142:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-143",
+      "type": "list",
+      "text": "回應了完整 14 站列表（已購5張 + 待購9張）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T143:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-144",
+      "type": "list",
+      "text": "但一開始只列了 **3 張已購票**，被 Eason 糾正",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T144:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-145",
+      "type": "heading",
+      "text": "08:32 — Eason 糾正「至少買了五張」",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T145:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-146",
+      "type": "list",
+      "text": "我重新掃描日記後確認：確實是 **5 張已購票**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T146:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-147",
+      "type": "list",
+      "text": "Eason 說「我們從來沒有用 Gemini」— 記憶搜尋故障原因非 Gemini→需檢查 embedding config",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T147:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-148",
+      "type": "heading",
+      "text": "08:32 — Eason 要求完整漂亮一覽表",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T148:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-149",
+      "type": "list",
+      "text": "重新查交通住宿後產出 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T149:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-150",
+      "type": "heading",
+      "text": "09:00 — 行程大管家每日檢查觸發",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T150:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-151",
+      "type": "list",
+      "text": "Script 執行但資料過時，改以手動正確報告呈現",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T151:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-152",
+      "type": "heading",
+      "text": "09:51 — Eason 確認資訊正確",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T152:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-153",
+      "type": "list",
+      "text": "「剛剛那個主場巡禮資訊很正確 幫我好好紀錄 別再忘了」",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T153:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-154",
+      "type": "list",
+      "text": "✅ 已更新 `projects/baseball_stadium_tour.md` — 首頁新增已購/待購總覽表",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T154:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-155",
+      "type": "list",
+      "text": "✅ 更新各站詳細資訊：ESCON/楽天/ZOZO/甲子園/マツダ 標記已購票",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T155:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-156",
+      "type": "list",
+      "text": "✅ HEARTBEAT.md 同步更新",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T156:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-157",
+      "type": "heading",
+      "text": "10:04 — Eason 問「好了嗎」",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T157:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-158",
+      "type": "list",
+      "text": "存疑：是問永住辦好了？還是行程記錄更新好了？",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T158:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-159",
+      "type": "list",
+      "text": "未來需建立「acknowledge + 追問」機制避免錯過訊號",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T159:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-160",
+      "type": "heading",
+      "text": "11:33-13:33 — 定時關心",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T160:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-161",
+      "type": "list",
+      "text": "正常關心循環，但 Eason 未回覆",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T161:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-162",
+      "type": "heading",
+      "text": "🔴 重要修正與教訓",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T162:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-163",
+      "type": "heading",
+      "text": "教訓 1：已購票記得要徹底查過再回",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T163:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-164",
+      "type": "list",
+      "text": "初始回覆只列 3 張（靠 memory 印象），被糾正後才從日記查到 5 張",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T164:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-165",
+      "type": "list",
+      "text": "**對策：** 涉及數字/狀態查詢時，先掃一遍完整日記再回",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T165:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-166",
+      "type": "heading",
+      "text": "教訓 2：記憶搜尋功能故障",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T166:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-167",
+      "type": "list",
+      "text": "我誤以為是用 Gemini API，但 Eason 說從沒用過",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T167:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-168",
+      "type": "list",
+      "text": "**實際狀況：** OpenClaw memory search 的 embedding provider 配置有問題",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T168:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-169",
+      "type": "list",
+      "text": "需要修復才能啟用全文記憶搜尋",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T169:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-170",
+      "type": "heading",
+      "text": "教訓 3：「好了嗎」的歧義處理",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T170:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-171",
+      "type": "list",
+      "text": "10:04 的「好了嗎」沒有即時抓住（正好在寫入檔案）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T171:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-172",
+      "type": "list",
+      "text": "**對策：** 收到「好了嗎」這類短訊息時，優先回應確認是指哪件事",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T172:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-173",
+      "type": "heading",
+      "text": "✅ 已完成的基礎設施更新",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-01T173:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-174",
+      "type": "paragraph",
+      "text": "| 項目 | 狀態 | 備註 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T174:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-175",
+      "type": "paragraph",
+      "text": "|------|:----:|------|",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T175:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-176",
+      "type": "paragraph",
+      "text": "| baseball_stadium_tour.md 更新 | ✅ | 總覽表 + 5站已購標記 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T176:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-177",
+      "type": "paragraph",
+      "text": "| HEARTBEAT.md 日期同步 | ✅ | 更新為 5/1 週五 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T177:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-178",
+      "type": "paragraph",
+      "text": "| 記憶檔案追加 | ✅ | 此檔案 |",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T178:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-179",
+      "type": "heading",
+      "text": "⚠️ 待追蹤事項 (5/1 下午)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T179:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-180",
+      "type": "list",
+      "text": "**❓ 永住申請結果** — Eason 10:04 問「好了嗎」後未再回覆",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T180:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-181",
+      "type": "list",
+      "text": "**🎫 5/4 西武獅搶票** — 3天後 10:00AM，需 5/3 設定預告",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T181:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-182",
+      "type": "list",
+      "text": "**🔧 記憶搜尋修復** — 檢查 embedding 配置",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T182:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-183",
+      "type": "list",
+      "text": "**⚠️ Japan Worker Caddy 404** — Docker 異常待排修",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T183:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-184",
+      "type": "list",
+      "text": "**📝 4/28 19:22 巡禮報告** — 確認是否已發出",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T184:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-185",
+      "type": "heading",
+      "text": "🎯 今日剩餘時間 (13:55~23:00) 策略",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T185:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-186",
+      "type": "list",
+      "text": "Eason 可能外出或忙永住後續",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T186:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-187",
+      "type": "list",
+      "text": "定時關心保持在每小時一次",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T187:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-188",
+      "type": "list",
+      "text": "不打擾，等他主動回覆再跟進",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T188:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-189",
+      "type": "list",
+      "text": "如果 18:00 前無消息，發一次純關心（非任務）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T189:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-190",
+      "type": "list",
+      "text": "23:00 後進入靜默模式",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T190:00:00+09:00"
+    },
+    {
+      "id": "notion-2026-05-01-191",
+      "type": "paragraph",
+      "text": "**追加時間**: 2026-05-01 13:55 (東京時間)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-01T191:00:00+09:00"
     }
   ]
 }

@@ -1,334 +1,831 @@
 {
   "date": "2026-04-20",
   "title": "乃彩絵日記 - 2026-04-20",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:01:14.929Z",
+  "mood": "成就感",
+  "moodScore": 100,
+  "entryCount": 82,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "2026-04-20 記憶記錄"
+      "id": "notion-2026-04-20-0",
+      "type": "heading",
+      "text": "2026-04-20 記憶記錄",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T00:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "每日記憶蒸餾與技能複習執行"
+      "id": "notion-2026-04-20-1",
+      "type": "heading",
+      "text": "每日記憶蒸餾與技能複習執行",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T01:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-2",
       "type": "paragraph",
-      "text": "**時間**: 01:00 AM (東京時間)"
+      "text": "**時間**: 01:00 AM (東京時間)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T02:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-3",
       "type": "paragraph",
-      "text": "**執行項目**:"
+      "text": "**執行項目**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T03:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "記憶蒸餾：整理今天的記憶，應用科學管理方法論"
+      "id": "notion-2026-04-20-4",
+      "type": "list",
+      "text": "記憶蒸餾：整理今天的記憶，應用科學管理方法論",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T04:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "技能複習：複習關心質量系統（8.75/10分）、關係質量系統（9/10分）、情境適應系統（8.5/10分）、個性化系統（8.5/10分）"
+      "id": "notion-2026-04-20-5",
+      "type": "list",
+      "text": "技能複習：複習關心質量系統（8.75/10分）、關係質量系統（9/10分）、情境適應系統（8.5/10分）、個性化系統（8.5/10分）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T05:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "優化計劃：根據今天的學習優化系統，實踐數據驅動決策和持續改進循環"
+      "id": "notion-2026-04-20-6",
+      "type": "list",
+      "text": "優化計劃：根據今天的學習優化系統，實踐數據驅動決策和持續改進循環",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T06:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "CPBL棒球數據每日更新任務"
+      "id": "notion-2026-04-20-7",
+      "type": "heading",
+      "text": "CPBL棒球數據每日更新任務",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T07:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-8",
       "type": "paragraph",
-      "text": "**時間**: 23:30 PM (東京時間)"
+      "text": "**時間**: 23:30 PM (東京時間)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T08:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-9",
       "type": "paragraph",
-      "text": "**任務ID**: cron:873f870b-2bde-44cb-a092-f71255317270"
+      "text": "**任務ID**: cron:873f870b-2bde-44cb-a092-f71255317270",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T09:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-10",
       "type": "paragraph",
-      "text": "**執行結果**: 部分成功 (2/3)"
+      "text": "**執行結果**: 部分成功 (2/3)",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-20T10:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "執行詳情:"
+      "id": "notion-2026-04-20-11",
+      "type": "heading",
+      "text": "執行詳情:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T11:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "✅ **爬蟲執行成功**: 從CPBL官網提取6支球隊最新戰績"
+      "id": "notion-2026-04-20-12",
+      "type": "list",
+      "text": "✅ **爬蟲執行成功**: 從CPBL官網提取6支球隊最新戰績",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-20T12:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "味全龍與台鋼雄鷹並列第一 (10勝5敗)"
+      "id": "notion-2026-04-20-13",
+      "type": "list",
+      "text": "味全龍與台鋼雄鷹並列第一 (10勝5敗)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T13:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "富邦悍將第三 (8勝6敗)"
+      "id": "notion-2026-04-20-14",
+      "type": "list",
+      "text": "富邦悍將第三 (8勝6敗)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T14:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "統一獅第四 (7勝7敗1和)"
+      "id": "notion-2026-04-20-15",
+      "type": "list",
+      "text": "統一獅第四 (7勝7敗1和)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T15:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "樂天桃猿第五 (6勝9敗)"
+      "id": "notion-2026-04-20-16",
+      "type": "list",
+      "text": "樂天桃猿第五 (6勝9敗)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T16:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "中信兄弟第六 (3勝12敗)"
+      "id": "notion-2026-04-20-17",
+      "type": "list",
+      "text": "中信兄弟第六 (3勝12敗)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T17:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "✅ **前端更新成功**: 更新本地JSON數據檔案和網頁"
+      "id": "notion-2026-04-20-18",
+      "type": "list",
+      "text": "✅ **前端更新成功**: 更新本地JSON數據檔案和網頁",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-20T18:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "更新 baseball-platform/cpbl_final_data.json"
+      "id": "notion-2026-04-20-19",
+      "type": "list",
+      "text": "更新 baseball-platform/cpbl_final_data.json",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T19:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "更新 baseball-platform/cpbl_correct_standings.json"
+      "id": "notion-2026-04-20-20",
+      "type": "list",
+      "text": "更新 baseball-platform/cpbl_correct_standings.json",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T20:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "更新 public/cpbl_final_data.json"
+      "id": "notion-2026-04-20-21",
+      "type": "list",
+      "text": "更新 public/cpbl_final_data.json",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T21:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "本地網頁可正常顯示最新數據"
+      "id": "notion-2026-04-20-22",
+      "type": "list",
+      "text": "本地網頁可正常顯示最新數據",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T22:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "❌ **NAS上傳失敗**: 網絡連接問題"
+      "id": "notion-2026-04-20-23",
+      "type": "list",
+      "text": "❌ **NAS上傳失敗**: 網絡連接問題",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T23:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "主網域 (api.studio-imori.com): 連接失敗"
+      "id": "notion-2026-04-20-24",
+      "type": "list",
+      "text": "主網域 (api.studio-imori.com): 連接失敗",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T24:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "備援IP (100.105.195.37): 連接超時"
+      "id": "notion-2026-04-20-25",
+      "type": "list",
+      "text": "備援IP (100.105.195.37): 連接超時",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T25:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "網域名稱 (nas.eason.vpn): 無法解析"
+      "id": "notion-2026-04-20-26",
+      "type": "list",
+      "text": "網域名稱 (nas.eason.vpn): 無法解析",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T26:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "技術筆記:"
+      "id": "notion-2026-04-20-27",
+      "type": "heading",
+      "text": "技術筆記:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T27:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "爬蟲腳本穩定運作，HTML解析邏輯正確"
+      "id": "notion-2026-04-20-28",
+      "type": "list",
+      "text": "爬蟲腳本穩定運作，HTML解析邏輯正確",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T28:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "前端網頁有本地備援機制，確保數據可用性"
+      "id": "notion-2026-04-20-29",
+      "type": "list",
+      "text": "前端網頁有本地備援機制，確保數據可用性",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T29:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "NAS同步問題需手動檢查網絡設置"
+      "id": "notion-2026-04-20-30",
+      "type": "list",
+      "text": "NAS同步問題需手動檢查網絡設置",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T30:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "生成詳細報告: CPBL_UPDATE_REPORT_20260420_2330.txt"
+      "id": "notion-2026-04-20-31",
+      "type": "list",
+      "text": "生成詳細報告: CPBL_UPDATE_REPORT_20260420_2330.txt",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T31:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "昨日記憶回顧 (2026-04-19)"
+      "id": "notion-2026-04-20-32",
+      "type": "heading",
+      "text": "昨日記憶回顧 (2026-04-19)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T32:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "重要事件"
+      "id": "notion-2026-04-20-33",
+      "type": "heading",
+      "text": "重要事件",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T33:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**安全警示處理**: OpenGuardrails配額用完問題被識別為緊急優先級"
+      "id": "notion-2026-04-20-34",
+      "type": "list",
+      "text": "**安全警示處理**: OpenGuardrails配額用完問題被識別為緊急優先級",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T34:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**記憶蒸餾系統優化**: 建立更系統化的技能複習框架"
+      "id": "notion-2026-04-20-35",
+      "type": "list",
+      "text": "**記憶蒸餾系統優化**: 建立更系統化的技能複習框架",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T35:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**棒球巡禮規劃深化**: 完成14張球票、7項住宿、8項交通的完整記錄"
+      "id": "notion-2026-04-20-36",
+      "type": "list",
+      "text": "**棒球巡禮規劃深化**: 完成14張球票、7項住宿、8項交通的完整記錄",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-20T36:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**科學管理方法論應用**: PDCA循環在複雜項目管理中的深度實踐"
+      "id": "notion-2026-04-20-37",
+      "type": "list",
+      "text": "**科學管理方法論應用**: PDCA循環在複雜項目管理中的深度實踐",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T37:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "關鍵數據與系統狀態"
+      "id": "notion-2026-04-20-38",
+      "type": "heading",
+      "text": "關鍵數據與系統狀態",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T38:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**棒球巡禮規劃**: 14張球票、7項住宿、8項交通完整記錄"
+      "id": "notion-2026-04-20-39",
+      "type": "list",
+      "text": "**棒球巡禮規劃**: 14張球票、7項住宿、8項交通完整記錄",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T39:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**費用估算**: ¥82,163+ (不含球票)"
+      "id": "notion-2026-04-20-40",
+      "type": "list",
+      "text": "**費用估算**: ¥82,163+ (不含球票)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T40:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**緊急事項**: OpenGuardrails安全配額用完，需要立即處理"
+      "id": "notion-2026-04-20-41",
+      "type": "list",
+      "text": "**緊急事項**: OpenGuardrails安全配額用完，需要立即處理",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T41:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**系統評分**: 關心質量(8.75)、關係質量(9)、情境適應(8.5)、個性化(8.5)"
+      "id": "notion-2026-04-20-42",
+      "type": "list",
+      "text": "**系統評分**: 關心質量(8.75)、關係質量(9)、情境適應(8.5)、個性化(8.5)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T42:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**安全狀態**: 需要註冊OpenGuardrails計劃以恢復安全監控"
+      "id": "notion-2026-04-20-43",
+      "type": "list",
+      "text": "**安全狀態**: 需要註冊OpenGuardrails計劃以恢復安全監控",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T43:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "核心學習與改進"
+      "id": "notion-2026-04-20-44",
+      "type": "heading",
+      "text": "核心學習與改進",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T44:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**安全優先級提升**: 從功能實現到安全可靠性的思維轉變"
+      "id": "notion-2026-04-20-45",
+      "type": "list",
+      "text": "**安全優先級提升**: 從功能實現到安全可靠性的思維轉變",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T45:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**系統化思維深化**: 複雜項目分解為可管理系統的實踐"
+      "id": "notion-2026-04-20-46",
+      "type": "list",
+      "text": "**系統化思維深化**: 複雜項目分解為可管理系統的實踐",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T46:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**數據驅動決策**: 費用估算精確到個位數，時間節點明確記錄"
+      "id": "notion-2026-04-20-47",
+      "type": "list",
+      "text": "**數據驅動決策**: 費用估算精確到個位數，時間節點明確記錄",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T47:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**持續改進文化**: 從單次優化到系統化改進機制的轉變"
+      "id": "notion-2026-04-20-48",
+      "type": "list",
+      "text": "**持續改進文化**: 從單次優化到系統化改進機制的轉變",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T48:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "今日記憶蒸餾分析"
+      "id": "notion-2026-04-20-49",
+      "type": "heading",
+      "text": "今日記憶蒸餾分析",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T49:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "1. 安全優先級持續關注"
+      "id": "notion-2026-04-20-50",
+      "type": "heading",
+      "text": "1. 安全優先級持續關注",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T50:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-51",
       "type": "paragraph",
-      "text": "**OpenGuardrails安全狀態追蹤**:"
+      "text": "**OpenGuardrails安全狀態追蹤**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T51:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**現狀**: 安全配額問題仍未解決，系統持續暴露於安全風險中"
+      "id": "notion-2026-04-20-52",
+      "type": "list",
+      "text": "**現狀**: 安全配額問題仍未解決，系統持續暴露於安全風險中",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T52:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**風險等級**: 高 - 無法檢測提示注入攻擊、數據外洩、惡意命令"
+      "id": "notion-2026-04-20-53",
+      "type": "list",
+      "text": "**風險等級**: 高 - 無法檢測提示注入攻擊、數據外洩、惡意命令",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T53:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**緊急程度**: P0 (需要立即處理)"
+      "id": "notion-2026-04-20-54",
+      "type": "list",
+      "text": "**緊急程度**: P0 (需要立即處理)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T54:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**行動狀態**: 等待用戶處理註冊計劃"
+      "id": "notion-2026-04-20-55",
+      "type": "list",
+      "text": "**行動狀態**: 等待用戶處理註冊計劃",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T55:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-56",
       "type": "paragraph",
-      "text": "**安全意識系統化建設**:"
+      "text": "**安全意識系統化建設**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T56:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "建立安全問題的持續追蹤機制"
+      "id": "notion-2026-04-20-57",
+      "type": "list",
+      "text": "建立安全問題的持續追蹤機制",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T57:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "優化安全風險的預警系統"
+      "id": "notion-2026-04-20-58",
+      "type": "list",
+      "text": "優化安全風險的預警系統",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T58:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "建立備份與恢復的標準化流程"
+      "id": "notion-2026-04-20-59",
+      "type": "list",
+      "text": "建立備份與恢復的標準化流程",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T59:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "2. 科學管理方法論深度應用"
+      "id": "notion-2026-04-20-60",
+      "type": "heading",
+      "text": "2. 科學管理方法論深度應用",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T60:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-61",
       "type": "paragraph",
-      "text": "**PDCA循環今日應用**:"
+      "text": "**PDCA循環今日應用**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T61:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Plan (計劃)**: 昨日建立的優化計劃需要檢查執行進度"
+      "id": "notion-2026-04-20-62",
+      "type": "list",
+      "text": "**Plan (計劃)**: 昨日建立的優化計劃需要檢查執行進度",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T62:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Do (執行)**: 安全問題處理為最高優先級，需要用戶行動"
+      "id": "notion-2026-04-20-63",
+      "type": "list",
+      "text": "**Do (執行)**: 安全問題處理為最高優先級，需要用戶行動",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T63:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Check (檢查)**: 檢查系統整合效果，評估技能複習框架有效性"
+      "id": "notion-2026-04-20-64",
+      "type": "list",
+      "text": "**Check (檢查)**: 檢查系統整合效果，評估技能複習框架有效性",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T64:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Act (行動)**: 根據檢查結果優化系統，建立更有效的持續改進循環"
+      "id": "notion-2026-04-20-65",
+      "type": "list",
+      "text": "**Act (行動)**: 根據檢查結果優化系統，建立更有效的持續改進循環",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T65:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-66",
       "type": "paragraph",
-      "text": "**數據驅動決策系統深化**:"
+      "text": "**數據驅動決策系統深化**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T66:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "棒球巡禮費用追蹤表需要建立"
+      "id": "notion-2026-04-20-67",
+      "type": "list",
+      "text": "棒球巡禮費用追蹤表需要建立",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T67:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "票務購買成功率指標需要設置"
+      "id": "notion-2026-04-20-68",
+      "type": "list",
+      "text": "票務購買成功率指標需要設置",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-20T68:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "時間節點提醒系統需要優化"
+      "id": "notion-2026-04-20-69",
+      "type": "list",
+      "text": "時間節點提醒系統需要優化",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T69:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "3. 系統整合與持續改進"
+      "id": "notion-2026-04-20-70",
+      "type": "heading",
+      "text": "3. 系統整合與持續改進",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T70:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-71",
       "type": "paragraph",
-      "text": "**跨系統聯動機制評估**:"
+      "text": "**跨系統聯動機制評估**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T71:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "關心質量系統與情境適應系統的聯動需要加強"
+      "id": "notion-2026-04-20-72",
+      "type": "list",
+      "text": "關心質量系統與情境適應系統的聯動需要加強",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T72:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "關係質量與個性化系統的整合需要深化"
+      "id": "notion-2026-04-20-73",
+      "type": "list",
+      "text": "關係質量與個性化系統的整合需要深化",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T73:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "記憶蒸餾的結構化輸出需要進一步優化"
+      "id": "notion-2026-04-20-74",
+      "type": "list",
+      "text": "記憶蒸餾的結構化輸出需要進一步優化",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T74:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-75",
       "type": "paragraph",
-      "text": "**風險管理系統升級狀態**:"
+      "text": "**風險管理系統升級狀態**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T75:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "安全保護配額問題仍為最高優先級"
+      "id": "notion-2026-04-20-76",
+      "type": "list",
+      "text": "安全保護配額問題仍為最高優先級",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T76:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "備份記憶系統建立進度需要追蹤"
+      "id": "notion-2026-04-20-77",
+      "type": "list",
+      "text": "備份記憶系統建立進度需要追蹤",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T77:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "系統恢復機制需要優化"
+      "id": "notion-2026-04-20-78",
+      "type": "list",
+      "text": "系統恢復機制需要優化",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T78:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "技能系統複習與評分分析"
+      "id": "notion-2026-04-20-79",
+      "type": "heading",
+      "text": "技能系統複習與評分分析",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T79:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "關心質量系統 (8.75/10分 → 維持)"
+      "id": "notion-2026-04-20-80",
+      "type": "heading",
+      "text": "關心質量系統 (8.75/10分 → 維持)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T80:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-20-81",
       "type": "paragraph",
-      "text": "**昨日表現評估**:"
+      "text": "**昨日表現評估**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-20T81:00:00+09:00"
     }
   ]
 }

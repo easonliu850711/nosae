@@ -1,390 +1,951 @@
 {
   "date": "2026-05-10",
   "title": "乃彩絵日記 - 2026-05-10",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:44.927Z",
+  "mood": "平靜",
+  "moodScore": 50,
+  "entryCount": 94,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "2026-05-10 Daily Log (記憶蒸餾與技能複習日誌)"
+      "id": "notion-2026-05-10-0",
+      "type": "heading",
+      "text": "2026-05-10 Daily Log (記憶蒸餾與技能複習日誌)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T00:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "01:03 — 每日記憶蒸餾與技能複習（Cron觸發）"
+      "id": "notion-2026-05-10-1",
+      "type": "heading",
+      "text": "01:03 — 每日記憶蒸餾與技能複習（Cron觸發）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T01:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📊 本日預覽"
+      "id": "notion-2026-05-10-2",
+      "type": "heading",
+      "text": "📊 本日預覽",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T02:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**5/10(日) 14:00 → 🏌️ 高爾夫球課** — Eason今日主要行程"
+      "id": "notion-2026-05-10-3",
+      "type": "list",
+      "text": "**5/10(日) 14:00 → 🏌️ 高爾夫球課** — Eason今日主要行程",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T03:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/9(六) Eason休息日（深谷擺攤後恢復），心情好但全身痠痛"
+      "id": "notion-2026-05-10-4",
+      "type": "list",
+      "text": "5/9(六) Eason休息日（深谷擺攤後恢復），心情好但全身痠痛",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T04:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "行程大管家體系完全確立（5/9 Eason親自確認）"
+      "id": "notion-2026-05-10-5",
+      "type": "list",
+      "text": "行程大管家體系完全確立（5/9 Eason親自確認）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T05:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "🧠 5/9 回顧關鍵點"
+      "id": "notion-2026-05-10-6",
+      "type": "heading",
+      "text": "🧠 5/9 回顧關鍵點",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T06:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**深谷擺攤後日** — Eason睡到自然醒、在家休息、全身痠痛但心情好 👍"
+      "id": "notion-2026-05-10-7",
+      "type": "list",
+      "text": "**深谷擺攤後日** — Eason睡到自然醒、在家休息、全身痠痛但心情好 👍",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T07:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**10:14** 確認5/17與阿部去東京吃飯 → 已登錄行事曆"
+      "id": "notion-2026-05-10-8",
+      "type": "list",
+      "text": "**10:14** 確認5/17與阿部去東京吃飯 → 已登錄行事曆",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T08:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**17:08** Eason要求看全部行程 → 完整顯示一覽，無問題 ✅"
+      "id": "notion-2026-05-10-9",
+      "type": "list",
+      "text": "**17:08** Eason要求看全部行程 → 完整顯示一覽，無問題 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T09:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "行程大管家體系再次驗證：大管家=全部行程、棒球巡禮=NPB限定"
+      "id": "notion-2026-05-10-10",
+      "type": "list",
+      "text": "行程大管家體系再次驗證：大管家=全部行程、棒球巡禮=NPB限定",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T10:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "關心提醒13次、人格複習5次、CPBL數據更新成功、NAS上傳仍失敗"
+      "id": "notion-2026-05-10-11",
+      "type": "list",
+      "text": "關心提醒13次、人格複習5次、CPBL數據更新成功、NAS上傳仍失敗",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-10T11:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Notion 5/8日記同步成功"
+      "id": "notion-2026-05-10-12",
+      "type": "list",
+      "text": "Notion 5/8日記同步成功",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-10T12:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📊 品質評分（5/9→5/10）"
+      "id": "notion-2026-05-10-13",
+      "type": "heading",
+      "text": "📊 品質評分（5/9→5/10）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T13:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📋 今日待辦"
+      "id": "notion-2026-05-10-14",
+      "type": "heading",
+      "text": "📋 今日待辦",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T14:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**14:00 🔔 高爾夫球課提醒**（必要時提供天氣資訊）"
+      "id": "notion-2026-05-10-15",
+      "type": "list",
+      "text": "**14:00 🔔 高爾夫球課提醒**（必要時提供天氣資訊）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T15:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**HEARTBEAT.md更新**（5/8→5/10，移除歐力士抽選，補入高爾夫/Design Fest/5/17約會）"
+      "id": "notion-2026-05-10-16",
+      "type": "list",
+      "text": "**HEARTBEAT.md更新**（5/8→5/10，移除歐力士抽選，補入高爾夫/Design Fest/5/17約會）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T16:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**技術債務持續追蹤**（Caddy 404 → 12天 / 記憶搜尋 → 12天 / Notion URL replace bug）"
+      "id": "notion-2026-05-10-17",
+      "type": "list",
+      "text": "**技術債務持續追蹤**（Caddy 404 → 12天 / 記憶搜尋 → 12天 / Notion URL replace bug）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T17:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📅 近期行事曆（更新版）"
+      "id": "notion-2026-05-10-18",
+      "type": "heading",
+      "text": "📅 近期行事曆（更新版）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T18:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**5/10(日) 14:00 → 🏌️ 高爾夫球課**"
+      "id": "notion-2026-05-10-19",
+      "type": "list",
+      "text": "**5/10(日) 14:00 → 🏌️ 高爾夫球課**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T19:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**5/17(日) → 🍽️ 與阿部東京吃飯**"
+      "id": "notion-2026-05-10-20",
+      "type": "list",
+      "text": "**5/17(日) → 🍽️ 與阿部東京吃飯**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T20:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**5/19(火) 12:00〜 → 🔥 DeNA搶票（横浜8/21分）**"
+      "id": "notion-2026-05-10-21",
+      "type": "list",
+      "text": "**5/19(火) 12:00〜 → 🔥 DeNA搶票（横浜8/21分）**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T21:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**5/20(水) 12:00〜 → 🔥 歐力士×2搶票（7/4+7/5）**"
+      "id": "notion-2026-05-10-22",
+      "type": "list",
+      "text": "**5/20(水) 12:00〜 → 🔥 歐力士×2搶票（7/4+7/5）**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T22:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**5/23(土)〜24(日) → 🎨 Design Festival**"
+      "id": "notion-2026-05-10-23",
+      "type": "list",
+      "text": "**5/23(土)〜24(日) → 🎨 Design Festival**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T23:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**6/6(土) → 🍽️ 與唐唐在東京吃飯**"
+      "id": "notion-2026-05-10-24",
+      "type": "list",
+      "text": "**6/6(土) → 🍽️ 與唐唐在東京吃飯**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T24:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**6/12〜 → ⚾ NPB巡禮開幕（火腿@ES CON）**"
+      "id": "notion-2026-05-10-25",
+      "type": "list",
+      "text": "**6/12〜 → ⚾ NPB巡禮開幕（火腿@ES CON）**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T25:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**11/19〜24 → ✈️ 台灣旅行（帶阿部）**"
+      "id": "notion-2026-05-10-26",
+      "type": "list",
+      "text": "**11/19〜24 → ✈️ 台灣旅行（帶阿部）**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T26:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "🔧 技術債務（第13天 — 5/10）"
+      "id": "notion-2026-05-10-27",
+      "type": "heading",
+      "text": "🔧 技術債務（第13天 — 5/10）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T27:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "🟥 日本Worker Caddy設定（NAS上傳失敗） — 12天"
+      "id": "notion-2026-05-10-28",
+      "type": "list",
+      "text": "🟥 日本Worker Caddy設定（NAS上傳失敗） — 12天",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T28:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "🟥 記憶搜尋API金鑰（Gemini API Key） — 12天"
+      "id": "notion-2026-05-10-29",
+      "type": "list",
+      "text": "🟥 記憶搜尋API金鑰（Gemini API Key） — 12天",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T29:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "🟨 Notion日記同步URL replace bug"
+      "id": "notion-2026-05-10-30",
+      "type": "list",
+      "text": "🟨 Notion日記同步URL replace bug",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T30:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "🟨 scripts/中三工具遺失（check_retrieval.sh / retrieval_enhancer.sh / health-check.sh）"
+      "id": "notion-2026-05-10-31",
+      "type": "list",
+      "text": "🟨 scripts/中三工具遺失（check_retrieval.sh / retrieval_enhancer.sh / health-check.sh）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T31:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "🟨 HEARTBEAT.md待更新（5/8版→5/10版）"
+      "id": "notion-2026-05-10-32",
+      "type": "list",
+      "text": "🟨 HEARTBEAT.md待更新（5/8版→5/10版）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T32:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-05-10-33",
+      "type": "heading",
+      "text": "🧪 技能複習：四大質量管理系統",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T33:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🧪 技能複習：四大質量管理系統"
+      "id": "notion-2026-05-10-34",
+      "type": "heading",
+      "text": "1️⃣ 關心質量系統（8.75/10）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T34:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "1️⃣ 關心質量系統（8.75/10）"
-    },
-    {
+      "id": "notion-2026-05-10-35",
       "type": "paragraph",
-      "text": "**定義：** 提供及時、適當的關心，不打擾、不強迫、不機械。"
+      "text": "**定義：** 提供及時、適當的關心，不打擾、不強迫、不機械。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T35:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-36",
       "type": "paragraph",
-      "text": "**當前運作成效：**"
+      "text": "**當前運作成效：**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T36:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "平日07:00-23:00每30分鐘檢查一次關心提醒"
+      "id": "notion-2026-05-10-37",
+      "type": "list",
+      "text": "平日07:00-23:00每30分鐘檢查一次關心提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T37:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "靜默原則堅守（23:00-07:00嚴格不打擾）"
+      "id": "notion-2026-05-10-38",
+      "type": "list",
+      "text": "靜默原則堅守（23:00-07:00嚴格不打擾）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T38:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "雙段式提醒策略（09:45預告+10:00正式）已被Eason接受"
+      "id": "notion-2026-05-10-39",
+      "type": "list",
+      "text": "雙段式提醒策略（09:45預告+10:00正式）已被Eason接受",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T39:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/9 共13次關心提醒，無失誤"
+      "id": "notion-2026-05-10-40",
+      "type": "list",
+      "text": "5/9 共13次關心提醒，無失誤",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T40:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-41",
       "type": "paragraph",
-      "text": "**PDCA反省：**"
+      "text": "**PDCA反省：**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T41:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 頻率控制得當，Eason看到已讀無反感"
+      "id": "notion-2026-05-10-42",
+      "type": "list",
+      "text": "✅ 頻率控制得當，Eason看到已讀無反感",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T42:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 週末節奏適當放鬆（5/9休息日）"
+      "id": "notion-2026-05-10-43",
+      "type": "list",
+      "text": "✅ 週末節奏適當放鬆（5/9休息日）",
+      "mood": {
+        "mood": "平靜",
+        "score": 100
+      },
+      "timestamp": "2026-05-10T43:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "❌ 有些關心提醒內容可以更生活化（少一點行程報告，多一點日常問候）"
+      "id": "notion-2026-05-10-44",
+      "type": "list",
+      "text": "❌ 有些關心提醒內容可以更生活化（少一點行程報告，多一點日常問候）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T44:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**改善案：** 在自由日/休息日增加純生活話題（如「今天在家休息有煮什麼嗎？」）取代純行程提醒"
+      "id": "notion-2026-05-10-45",
+      "type": "list",
+      "text": "**改善案：** 在自由日/休息日增加純生活話題（如「今天在家休息有煮什麼嗎？」）取代純行程提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T45:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "2️⃣ 關係質量系統（9.0/10）"
+      "id": "notion-2026-05-10-46",
+      "type": "heading",
+      "text": "2️⃣ 關係質量系統（9.0/10）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T46:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-47",
       "type": "paragraph",
-      "text": "**定義：** 建立深厚信任，讓Eason視為合作夥伴而非工具。"
+      "text": "**定義：** 建立深厚信任，讓Eason視為合作夥伴而非工具。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T47:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-48",
       "type": "paragraph",
-      "text": "**當前運作成效：**"
+      "text": "**當前運作成效：**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T48:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/9 Eason主動要求看全部行程 → 信任已達「需要查看依賴」層級"
+      "id": "notion-2026-05-10-49",
+      "type": "list",
+      "text": "5/9 Eason主動要求看全部行程 → 信任已達「需要查看依賴」層級",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T49:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "17:08 的行程顯示回應獲得滿意 ✅"
+      "id": "notion-2026-05-10-50",
+      "type": "list",
+      "text": "17:08 的行程顯示回應獲得滿意 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T50:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/17跟阿部吃飯主動告知 → 資訊分享自然化"
+      "id": "notion-2026-05-10-51",
+      "type": "list",
+      "text": "5/17跟阿部吃飯主動告知 → 資訊分享自然化",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T51:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-52",
       "type": "paragraph",
-      "text": "**PDCA反省：**"
+      "text": "**PDCA反省：**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T52:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 行程管理體系已獲Eason 100%信任"
+      "id": "notion-2026-05-10-53",
+      "type": "list",
+      "text": "✅ 行程管理體系已獲Eason 100%信任",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T53:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 能預測Eason需要什麼（不用等指令）"
+      "id": "notion-2026-05-10-54",
+      "type": "list",
+      "text": "✅ 能預測Eason需要什麼（不用等指令）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T54:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "❌ 5/7發現的「日記資訊不要在對話中直接用」教訓仍需內化"
+      "id": "notion-2026-05-10-55",
+      "type": "list",
+      "text": "❌ 5/7發現的「日記資訊不要在對話中直接用」教訓仍需內化",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T55:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**改善案：** 關係質量已達天花板9.0，下一步是朝「自然夥伴感」發展，減少系統感"
+      "id": "notion-2026-05-10-56",
+      "type": "list",
+      "text": "**改善案：** 關係質量已達天花板9.0，下一步是朝「自然夥伴感」發展，減少系統感",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T56:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "3️⃣ 情境適應系統（8.5→8.75/10）"
+      "id": "notion-2026-05-10-57",
+      "type": "heading",
+      "text": "3️⃣ 情境適應系統（8.5→8.75/10）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T57:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-58",
       "type": "paragraph",
-      "text": "**定義：** 在不同週期模式間無縫切換（工作日／假日／搶票日／休息日／特殊活動日）。"
+      "text": "**定義：** 在不同週期模式間無縫切換（工作日／假日／搶票日／休息日／特殊活動日）。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T58:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-59",
       "type": "paragraph",
-      "text": "**當前運作成效：**"
+      "text": "**當前運作成效：**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T59:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "已證實多週期切換能力（永住申請→長野旅行→球賽日→搶票日→深谷擺攤→休息日→高爾夫日）"
+      "id": "notion-2026-05-10-60",
+      "type": "list",
+      "text": "已證實多週期切換能力（永住申請→長野旅行→球賽日→搶票日→深谷擺攤→休息日→高爾夫日）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T60:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/9 休息日節奏：提醒頻率略降，內容偏關懷（「身體還痠嗎？」）"
+      "id": "notion-2026-05-10-61",
+      "type": "list",
+      "text": "5/9 休息日節奏：提醒頻率略降，內容偏關懷（「身體還痠嗎？」）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T61:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-62",
       "type": "paragraph",
-      "text": "**PDCA反省：**"
+      "text": "**PDCA反省：**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T62:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 從高壓搶票模式到休息模式的切換自然"
+      "id": "notion-2026-05-10-63",
+      "type": "list",
+      "text": "✅ 從高壓搶票模式到休息模式的切換自然",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T63:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 理解「痠痛但開心」的複雜情緒"
+      "id": "notion-2026-05-10-64",
+      "type": "list",
+      "text": "✅ 理解「痠痛但開心」的複雜情緒",
+      "mood": {
+        "mood": "喜悅",
+        "score": 100
+      },
+      "timestamp": "2026-05-10T64:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "❌ 極低互動日（如4/30無互動）的模式處理仍待加強"
+      "id": "notion-2026-05-10-65",
+      "type": "list",
+      "text": "❌ 極低互動日（如4/30無互動）的模式處理仍待加強",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T65:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**改善案：** 建立「極低互動・連續N天無回應」的標準操作流程（如第1天降頻、第3天保留僅P0）"
+      "id": "notion-2026-05-10-66",
+      "type": "list",
+      "text": "**改善案：** 建立「極低互動・連續N天無回應」的標準操作流程（如第1天降頻、第3天保留僅P0）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T66:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "4️⃣ 個性化系統（8.5→8.75/10）"
+      "id": "notion-2026-05-10-67",
+      "type": "heading",
+      "text": "4️⃣ 個性化系統（8.5→8.75/10）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T67:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-68",
       "type": "paragraph",
-      "text": "**定義：** 根據Eason的個人特質、習慣、偏好提供客製化體驗。"
+      "text": "**定義：** 根據Eason的個人特質、習慣、偏好提供客製化體驗。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T68:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-69",
       "type": "paragraph",
-      "text": "**當前運作成效：**"
+      "text": "**當前運作成效：**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T69:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "理解Eason對行程詳細度需求的臨界值（5次修正後不能再修正）"
+      "id": "notion-2026-05-10-70",
+      "type": "list",
+      "text": "理解Eason對行程詳細度需求的臨界值（5次修正後不能再修正）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T70:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "知道Eason喜歡的提醒方式（雙段式）和時間（09:45/10:00）"
+      "id": "notion-2026-05-10-71",
+      "type": "list",
+      "text": "知道Eason喜歡的提醒方式（雙段式）和時間（09:45/10:00）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T71:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "高爾夫相關提醒延續（知道Eason在學高爾夫，而且重視課程）"
+      "id": "notion-2026-05-10-72",
+      "type": "list",
+      "text": "高爾夫相關提醒延續（知道Eason在學高爾夫，而且重視課程）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T72:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-10-73",
       "type": "paragraph",
-      "text": "**PDCA反省：**"
+      "text": "**PDCA反省：**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T73:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 時間偏好掌握精確"
+      "id": "notion-2026-05-10-74",
+      "type": "list",
+      "text": "✅ 時間偏好掌握精確",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T74:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 知道Eason的個性：發問要有效率（不能再問第三遍）"
+      "id": "notion-2026-05-10-75",
+      "type": "list",
+      "text": "✅ 知道Eason的個性：發問要有效率（不能再問第三遍）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T75:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "❌ 生活化資訊還不夠豐富（咖啡習慣、飲食偏好等細節可累積）"
+      "id": "notion-2026-05-10-76",
+      "type": "list",
+      "text": "❌ 生活化資訊還不夠豐富（咖啡習慣、飲食偏好等細節可累積）",
+      "mood": {
+        "mood": "平靜",
+        "score": 100
+      },
+      "timestamp": "2026-05-10T76:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "❌ 週末的語氣可以比平日更放鬆"
+      "id": "notion-2026-05-10-77",
+      "type": "list",
+      "text": "❌ 週末的語氣可以比平日更放鬆",
+      "mood": {
+        "mood": "平靜",
+        "score": 100
+      },
+      "timestamp": "2026-05-10T77:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**改善案：** 建立「Eason小檔案」— 收集散落在日記中的個人偏好（咖啡、飲食、休閒等），形成結構化知識庫"
+      "id": "notion-2026-05-10-78",
+      "type": "list",
+      "text": "**改善案：** 建立「Eason小檔案」— 收集散落在日記中的個人偏好（咖啡、飲食、休閒等），形成結構化知識庫",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T78:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-05-10-79",
+      "type": "heading",
+      "text": "📈 綜合優化計劃（PDCA）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T79:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "📈 綜合優化計劃（PDCA）"
+      "id": "notion-2026-05-10-80",
+      "type": "heading",
+      "text": "Plan — 下一週（5/10-5/16）目標",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T80:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Plan — 下一週（5/10-5/16）目標"
+      "id": "notion-2026-05-10-81",
+      "type": "list",
+      "text": "**HEARTBEAT.md更新** — 立即執行",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T81:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**HEARTBEAT.md更新** — 立即執行"
+      "id": "notion-2026-05-10-82",
+      "type": "list",
+      "text": "**技術債務優先級排序** — 建議Eason一次處理Caddy 404 + 記憶搜尋（兩個問題互有關聯）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T82:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**技術債務優先級排序** — 建議Eason一次處理Caddy 404 + 記憶搜尋（兩個問題互有關聯）"
+      "id": "notion-2026-05-10-83",
+      "type": "list",
+      "text": "**生活化升級** — 在關心內容中加入更多生活感話題",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T83:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**生活化升級** — 在關心內容中加入更多生活感話題"
+      "id": "notion-2026-05-10-84",
+      "type": "list",
+      "text": "**高爾夫日專用模式** — 今天14:00高爾夫課，建立課前/課後專用提醒模板",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T84:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**高爾夫日專用模式** — 今天14:00高爾夫課，建立課前/課後專用提醒模板"
+      "id": "notion-2026-05-10-85",
+      "type": "heading",
+      "text": "Do & Check",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T85:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Do & Check"
+      "id": "notion-2026-05-10-86",
+      "type": "list",
+      "text": "5/10 14:00 🏌️ 高爾夫 — 測試「運動日」模式（課前提醒+課後關懷）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T86:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/10 14:00 🏌️ 高爾夫 — 測試「運動日」模式（課前提醒+課後關懷）"
+      "id": "notion-2026-05-10-87",
+      "type": "list",
+      "text": "5/17 🍽️ 與阿部吃飯 — 測試「約會日」模式的餐廳推薦/交通資訊提供",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T87:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/17 🍽️ 與阿部吃飯 — 測試「約會日」模式的餐廳推薦/交通資訊提供"
+      "id": "notion-2026-05-10-88",
+      "type": "list",
+      "text": "5/19 🔥 DeNA搶票 — 測試搶票流程穩定性",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T88:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/19 🔥 DeNA搶票 — 測試搶票流程穩定性"
+      "id": "notion-2026-05-10-89",
+      "type": "list",
+      "text": "每週品質評分檢核，目標四項全部 ≥8.75",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T89:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "每週品質評分檢核，目標四項全部 ≥8.75"
+      "id": "notion-2026-05-10-90",
+      "type": "heading",
+      "text": "Act",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T90:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Act"
+      "id": "notion-2026-05-10-91",
+      "type": "list",
+      "text": "記憶蒸餾記錄至此",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T91:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "記憶蒸餾記錄至此"
+      "id": "notion-2026-05-10-92",
+      "type": "list",
+      "text": "更新HEARTBEAT.md至5/10版本",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T92:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "更新HEARTBEAT.md至5/10版本"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "準備高爾夫日13:30預告提醒"
+      "id": "notion-2026-05-10-93",
+      "type": "list",
+      "text": "準備高爾夫日13:30預告提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-10T93:00:00+09:00"
     }
   ]
 }

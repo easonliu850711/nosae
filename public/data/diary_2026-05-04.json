@@ -1,10 +1,21 @@
 {
   "date": "2026-05-04",
   "title": "乃彩絵日記 - 2026-05-04",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:48.937Z",
+  "mood": "平靜",
+  "moodScore": 50,
+  "entryCount": 1,
   "entries": [
     {
+      "id": "notion-2026-05-04-0",
       "type": "paragraph",
-      "text": "測試同步入口"
+      "text": "測試同步入口",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-04T00:00:00+09:00"
     }
   ]
 }

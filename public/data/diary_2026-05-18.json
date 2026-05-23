@@ -1,338 +1,841 @@
 {
   "date": "2026-05-18",
   "title": "乃彩絵日記 - 2026-05-18",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:43.193Z",
+  "mood": "成就感",
+  "moodScore": 67,
+  "entryCount": 83,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "2026-05-18 日記"
+      "id": "notion-2026-05-18-0",
+      "type": "heading",
+      "text": "2026-05-18 日記",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T00:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🌤️ 本日概要"
+      "id": "notion-2026-05-18-1",
+      "type": "heading",
+      "text": "🌤️ 本日概要",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T01:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-18-2",
       "type": "paragraph",
-      "text": "忙碌的開發日！完成 V4→V5 的排隊模型升級，實作小夫妻風格的積壓消化演算法。"
+      "text": "忙碌的開發日！完成 V4→V5 的排隊模型升級，實作小夫妻風格的積壓消化演算法。",
+      "mood": {
+        "mood": "專注",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T02:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-18-3",
       "type": "paragraph",
-      "text": "Eason 時段：14:25-14:37（短暫但高效率的開發討論）"
+      "text": "Eason 時段：14:25-14:37（短暫但高效率的開發討論）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T03:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "📋 已完成事項"
+      "id": "notion-2026-05-18-4",
+      "type": "heading",
+      "text": "📋 已完成事項",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-18T04:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "⚾ 永住預測引擎 V5 開發（14:30-15:00）"
+      "id": "notion-2026-05-18-5",
+      "type": "heading",
+      "text": "⚾ 永住預測引擎 V5 開發（14:30-15:00）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T05:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**理解小夫妻演算法**：申請月積壓→逐月消化→最新月速度，非權重乘法"
+      "id": "notion-2026-05-18-6",
+      "type": "list",
+      "text": "**理解小夫妻演算法**：申請月積壓→逐月消化→最新月速度，非權重乘法",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T06:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**修復 e-stat-parser.ts**：`@area` → `@cat03`（e-Stat API 欄位名稱錯誤）"
+      "id": "notion-2026-05-18-7",
+      "type": "list",
+      "text": "**修復 e-stat-parser.ts**：`@area` → `@cat03`（e-Stat API 欄位名稱錯誤）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T07:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**建立 backlog-engine.ts**：實現完整的積壓消化演算法"
+      "id": "notion-2026-05-18-8",
+      "type": "list",
+      "text": "**建立 backlog-engine.ts**：實現完整的積壓消化演算法",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T08:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "e-Stat 資料範圍：2020~2026（6年半，44,352筆）"
+      "id": "notion-2026-05-18-9",
+      "type": "list",
+      "text": "e-Stat 資料範圍：2020~2026（6年半，44,352筆）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T09:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "找到申請月份當時的未済件數"
+      "id": "notion-2026-05-18-10",
+      "type": "list",
+      "text": "找到申請月份當時的未済件數",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T10:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "逐月計算消化量（backlog 減少部分）"
+      "id": "notion-2026-05-18-11",
+      "type": "list",
+      "text": "逐月計算消化量（backlog 減少部分）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T11:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "剩餘積壓 ÷ 最新月日均許可量 = 預估剩餘天數"
+      "id": "notion-2026-05-18-12",
+      "type": "list",
+      "text": "剩餘積壓 ÷ 最新月日均許可量 = 預估剩餘天數",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T12:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**建立 V5 engine + API route**：`/api/prediction/v5`"
+      "id": "notion-2026-05-18-13",
+      "type": "list",
+      "text": "**建立 V5 engine + API route**：`/api/prediction/v5`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T13:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**三種情境**：moderate = weightedDays, optimistic = -30, conservative = +60"
+      "id": "notion-2026-05-18-14",
+      "type": "list",
+      "text": "**三種情境**：moderate = weightedDays, optimistic = -30, conservative = +60",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T14:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Build 成功 + API 測試通過**"
+      "id": "notion-2026-05-18-15",
+      "type": "list",
+      "text": "**Build 成功 + API 測試通過**",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-18T15:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Git push 至 main**：commit `d9bfb8e`"
+      "id": "notion-2026-05-18-16",
+      "type": "list",
+      "text": "**Git push 至 main**：commit `d9bfb8e`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T16:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "發現的 Bug"
+      "id": "notion-2026-05-18-17",
+      "type": "heading",
+      "text": "發現的 Bug",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T17:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**e-stat-parser.ts**：用 `@area` 取值，實際是 `@cat03` — 已修復"
+      "id": "notion-2026-05-18-18",
+      "type": "list",
+      "text": "**e-stat-parser.ts**：用 `@area` 取值，實際是 `@cat03` — 已修復",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T18:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**backlog-engine**：`totalProcessed: 0`（消化量計算邏輯需修正）"
+      "id": "notion-2026-05-18-19",
+      "type": "list",
+      "text": "**backlog-engine**：`totalProcessed: 0`（消化量計算邏輯需修正）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T19:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**latestMonth 月份顯示異常**：`2026-00`（`@time` 解析可能有 00 的問題）"
+      "id": "notion-2026-05-18-20",
+      "type": "list",
+      "text": "**latestMonth 月份顯示異常**：`2026-00`（`@time` 解析可能有 00 的問題）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T20:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "⚾ CPBL 每日更新"
+      "id": "notion-2026-05-18-21",
+      "type": "heading",
+      "text": "⚾ CPBL 每日更新",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T21:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "爬蟲成功、上傳 API 失敗（已知問題，不處理）"
+      "id": "notion-2026-05-18-22",
+      "type": "list",
+      "text": "爬蟲成功、上傳 API 失敗（已知問題，不處理）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-18T22:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🔧 待修正"
+      "id": "notion-2026-05-18-23",
+      "type": "heading",
+      "text": "🔧 待修正",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T23:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**totalProcessed bug**：backlog 不是嚴格遞減，波動時消化量算成 0"
+      "id": "notion-2026-05-18-24",
+      "type": "list",
+      "text": "**totalProcessed bug**：backlog 不是嚴格遞減，波動時消化量算成 0",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T24:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**latestMonth 顯示 2026-00**：e-Stat `@time` 格式 `2026000202` → 月份是 00？"
+      "id": "notion-2026-05-18-25",
+      "type": "list",
+      "text": "**latestMonth 顯示 2026-00**：e-Stat `@time` 格式 `2026000202` → 月份是 00？",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T25:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**部署等待**：Eason 台灣主機 `git pull && build && pm2 reload`"
+      "id": "notion-2026-05-18-26",
+      "type": "list",
+      "text": "**部署等待**：Eason 台灣主機 `git pull && build && pm2 reload`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T26:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🏌️ 提醒：今日 21:20 高爾夫課（第一堂！）"
+      "id": "notion-2026-05-18-27",
+      "type": "heading",
+      "text": "🏌️ 提醒：今日 21:20 高爾夫課（第一堂！）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T27:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "@中目黑"
+      "id": "notion-2026-05-18-28",
+      "type": "list",
+      "text": "@中目黑",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T28:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "預計 18:00~19:00 左右自然提醒"
+      "id": "notion-2026-05-18-29",
+      "type": "list",
+      "text": "預計 18:00~19:00 左右自然提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T29:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "💭 今天的學習"
+      "id": "notion-2026-05-18-30",
+      "type": "heading",
+      "text": "💭 今天的學習",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T30:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "小夫妻網站的演算法：**申請月積壓 - 逐月消化量 = 剩餘積壓，用最新月速度推估**"
+      "id": "notion-2026-05-18-31",
+      "type": "list",
+      "text": "小夫妻網站的演算法：**申請月積壓 - 逐月消化量 = 剩餘積壓，用最新月速度推估**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T31:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "e-Stat API 欄位名稱確實是 `@cat03`（非 `@area`），之前 V3 parser 一直都有 bug"
+      "id": "notion-2026-05-18-32",
+      "type": "list",
+      "text": "e-Stat API 欄位名稱確實是 `@cat03`（非 `@area`），之前 V3 parser 一直都有 bug",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T32:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "V5 即使有 bug，核心：積壓推定路線已經正確運作"
+      "id": "notion-2026-05-18-33",
+      "type": "list",
+      "text": "V5 即使有 bug，核心：積壓推定路線已經正確運作",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T33:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Eason 對演算法的理解很精確，給他原始碼他就看出差別了"
+      "id": "notion-2026-05-18-34",
+      "type": "list",
+      "text": "Eason 對演算法的理解很精確，給他原始碼他就看出差別了",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T34:00:00+09:00"
     },
     {
-      "type": "heading_1",
-      "text": "2026-05-18 記憶日記"
+      "id": "notion-2026-05-18-35",
+      "type": "heading",
+      "text": "2026-05-18 記憶日記",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T35:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🌤️ 概況"
+      "id": "notion-2026-05-18-36",
+      "type": "heading",
+      "text": "🌤️ 概況",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T36:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**這天重點：** V5 backlog engine 開發日，實作小夫妻演算法（積壓消化法）"
+      "id": "notion-2026-05-18-37",
+      "type": "list",
+      "text": "**這天重點：** V5 backlog engine 開發日，實作小夫妻演算法（積壓消化法）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T37:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**互動頻率：** 下午活躍（13:25-15:25），工作日節奏"
+      "id": "notion-2026-05-18-38",
+      "type": "list",
+      "text": "**互動頻率：** 下午活躍（13:25-15:25），工作日節奏",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T38:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**關鍵提醒：** 21:20 高爾夫第一堂課（可能被 V5 開發蓋過去了）"
+      "id": "notion-2026-05-18-39",
+      "type": "list",
+      "text": "**關鍵提醒：** 21:20 高爾夫第一堂課（可能被 V5 開發蓋過去了）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T39:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🚀 V5 Backlog Engine 開發歷程"
+      "id": "notion-2026-05-18-40",
+      "type": "heading",
+      "text": "🚀 V5 Backlog Engine 開發歷程",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T40:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "核心演算法（小夫妻 × e-Stat）"
+      "id": "notion-2026-05-18-41",
+      "type": "heading",
+      "text": "核心演算法（小夫妻 × e-Stat）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T41:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-18-42",
       "type": "paragraph",
-      "text": "Eason 在 14:31 給了一篇 xiaofushi.com 的演算法說明，要求用積壓法來動態推算審查進度："
+      "text": "Eason 在 14:31 給了一篇 xiaofushi.com 的演算法說明，要求用積壓法來動態推算審查進度：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T42:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**申請月積壓量** → 找 e-Stat 該局的未済件數"
+      "id": "notion-2026-05-18-43",
+      "type": "list",
+      "text": "**申請月積壓量** → 找 e-Stat 該局的未済件數",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T43:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**逐月消化量** → 申請月到現在，各月的 backlog 差值（正的才算消化）"
+      "id": "notion-2026-05-18-44",
+      "type": "list",
+      "text": "**逐月消化量** → 申請月到現在，各月的 backlog 差值（正的才算消化）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T44:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**剩餘積壓 ÷ 最新月日均審查量** → 預估剩餘天數"
+      "id": "notion-2026-05-18-45",
+      "type": "list",
+      "text": "**剩餘積壓 ÷ 最新月日均審查量** → 預估剩餘天數",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T45:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "**高度人才佇列權重** → 從設定檔 routeQueueWeights 讀取倍率"
+      "id": "notion-2026-05-18-46",
+      "type": "list",
+      "text": "**高度人才佇列權重** → 從設定檔 routeQueueWeights 讀取倍率",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T46:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "完成的檔案"
+      "id": "notion-2026-05-18-47",
+      "type": "heading",
+      "text": "完成的檔案",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-18T47:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "`src/lib/v4/backlog-engine.ts` — 積壓資料引擎（call e-Stat + 計算消化 + 輸出預估）"
+      "id": "notion-2026-05-18-48",
+      "type": "list",
+      "text": "`src/lib/v4/backlog-engine.ts` — 積壓資料引擎（call e-Stat + 計算消化 + 輸出預估）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T48:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "`src/lib/v5/engine.ts` — V5 引擎入口（組合 backlog + 佇列權重 + 三種情境）"
+      "id": "notion-2026-05-18-49",
+      "type": "list",
+      "text": "`src/lib/v5/engine.ts` — V5 引擎入口（組合 backlog + 佇列權重 + 三種情境）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T49:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "`src/app/api/prediction/v5/route.ts` — V5 API 端點（force-dynamic）"
+      "id": "notion-2026-05-18-50",
+      "type": "list",
+      "text": "`src/app/api/prediction/v5/route.ts` — V5 API 端點（force-dynamic）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T50:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "`src/config/bureau-processing-front.json` — 加上 routeQueueWeights (hsp_70:0.5, hsp_80:0.25)"
+      "id": "notion-2026-05-18-51",
+      "type": "list",
+      "text": "`src/config/bureau-processing-front.json` — 加上 routeQueueWeights (hsp_70:0.5, hsp_80:0.25)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T51:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "`src/app/api/debug-backlog/route.ts` — debug 用，後續可刪"
+      "id": "notion-2026-05-18-52",
+      "type": "list",
+      "text": "`src/app/api/debug-backlog/route.ts` — debug 用，後續可刪",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T52:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Build 驗證 ✅"
+      "id": "notion-2026-05-18-53",
+      "type": "heading",
+      "text": "Build 驗證 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T53:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "V5 route 正確註冊"
+      "id": "notion-2026-05-18-54",
+      "type": "list",
+      "text": "V5 route 正確註冊",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T54:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "API POST 測試成功："
+      "id": "notion-2026-05-18-55",
+      "type": "list",
+      "text": "API POST 測試成功：",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-18T55:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "横浜 2024/11：積壓 1,973 件、日均 36.5 件 → 55 天"
+      "id": "notion-2026-05-18-56",
+      "type": "list",
+      "text": "横浜 2024/11：積壓 1,973 件、日均 36.5 件 → 55 天",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T56:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "東京 2025/04（高度80）：積壓 14,139 件 → queueWeight 0.25 × 93天 ≈ 23天"
+      "id": "notion-2026-05-18-57",
+      "type": "list",
+      "text": "東京 2025/04（高度80）：積壓 14,139 件 → queueWeight 0.25 × 93天 ≈ 23天",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T57:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "長野（缺資料）：回 insufficient_data"
+      "id": "notion-2026-05-18-58",
+      "type": "list",
+      "text": "長野（缺資料）：回 insufficient_data",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T58:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "e-Stat 完整資料驗證：2020-2026，15局全有資料"
+      "id": "notion-2026-05-18-59",
+      "type": "list",
+      "text": "e-Stat 完整資料驗證：2020-2026，15局全有資料",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T59:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "已知 Bug"
+      "id": "notion-2026-05-18-60",
+      "type": "heading",
+      "text": "已知 Bug",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T60:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**totalProcessed = 0**：消化量計算沒有正確累積，backlog 波動導致差異為負/0"
+      "id": "notion-2026-05-18-61",
+      "type": "list",
+      "text": "**totalProcessed = 0**：消化量計算沒有正確累積，backlog 波動導致差異為負/0",
+      "mood": {
+        "mood": "平靜",
+        "score": 100
+      },
+      "timestamp": "2026-05-18T61:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**insufficient_data** 太多：某些局（如長野、群馬）e-Stat 沒有獨立資料"
+      "id": "notion-2026-05-18-62",
+      "type": "list",
+      "text": "**insufficient_data** 太多：某些局（如長野、群馬）e-Stat 沒有獨立資料",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T62:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**dailyProcessRate 可能偏高**：用 20 個工作天算，日本實際月工作日數可能不同"
+      "id": "notion-2026-05-18-63",
+      "type": "list",
+      "text": "**dailyProcessRate 可能偏高**：用 20 個工作天算，日本實際月工作日數可能不同",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T63:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Git 狀態"
+      "id": "notion-2026-05-18-64",
+      "type": "heading",
+      "text": "Git 狀態",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T64:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "已 push 至 main（已推，在等 Eason 確認演算法方向後修 bug）"
+      "id": "notion-2026-05-18-65",
+      "type": "list",
+      "text": "已 push 至 main（已推，在等 Eason 確認演算法方向後修 bug）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T65:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "👤 Eason 觀察"
+      "id": "notion-2026-05-18-66",
+      "type": "heading",
+      "text": "👤 Eason 觀察",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T66:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "14:25 提醒觸發 → 沒回，再 14:30 主動丟 xiaofushi.com 的連結"
+      "id": "notion-2026-05-18-67",
+      "type": "list",
+      "text": "14:25 提醒觸發 → 沒回，再 14:30 主動丟 xiaofushi.com 的連結",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T67:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "14:37 說「好」→ 表明對改演算法有興趣"
+      "id": "notion-2026-05-18-68",
+      "type": "list",
+      "text": "14:37 說「好」→ 表明對改演算法有興趣",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T68:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "15:25 後無互動（可能在工作、或忙其他事）"
+      "id": "notion-2026-05-18-69",
+      "type": "list",
+      "text": "15:25 後無互動（可能在工作、或忙其他事）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T69:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "高爾夫第一堂課 21:20 今晚！但沒再提及課前準備事項"
+      "id": "notion-2026-05-18-70",
+      "type": "list",
+      "text": "高爾夫第一堂課 21:20 今晚！但沒再提及課前準備事項",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T70:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "⚙️ 系統狀態"
+      "id": "notion-2026-05-18-71",
+      "type": "heading",
+      "text": "⚙️ 系統狀態",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T71:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**當前模式：** 🛋️ 平靜日 → 🛠️ 開發日（V5 backlog engine）"
+      "id": "notion-2026-05-18-72",
+      "type": "list",
+      "text": "**當前模式：** 🛋️ 平靜日 → 🛠️ 開發日（V5 backlog engine）",
+      "mood": {
+        "mood": "平靜",
+        "score": 100
+      },
+      "timestamp": "2026-05-18T72:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**技術債務：** Caddy 404（16天）、記憶搜尋（16天）"
+      "id": "notion-2026-05-18-73",
+      "type": "list",
+      "text": "**技術債務：** Caddy 404（16天）、記憶搜尋（16天）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T73:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**HEARTBEAT.md** 尚未更新今日開發進度"
+      "id": "notion-2026-05-18-74",
+      "type": "list",
+      "text": "**HEARTBEAT.md** 尚未更新今日開發進度",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T74:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "📌 Today's Log"
+      "id": "notion-2026-05-18-75",
+      "type": "heading",
+      "text": "📌 Today's Log",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T75:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "13:25 — Memory compaction + Session restore（含 xiaofushi 演算法研究）"
+      "id": "notion-2026-05-18-76",
+      "type": "list",
+      "text": "13:25 — Memory compaction + Session restore（含 xiaofushi 演算法研究）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T76:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "14:31 — Eason 丟 xiaofushi.com 演算法說明"
+      "id": "notion-2026-05-18-77",
+      "type": "list",
+      "text": "14:31 — Eason 丟 xiaofushi.com 演算法說明",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T77:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "14:37 — Eason 說「好」，開始開發 V5 backlog engine"
+      "id": "notion-2026-05-18-78",
+      "type": "list",
+      "text": "14:37 — Eason 說「好」，開始開發 V5 backlog engine",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T78:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "14:50-15:10 — 實作 backlog-engine.ts + V5 engine + API route"
+      "id": "notion-2026-05-18-79",
+      "type": "list",
+      "text": "14:50-15:10 — 實作 backlog-engine.ts + V5 engine + API route",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T79:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "15:10-15:25 — Build 驗證 + API 測試（遇到 bugs）+ Git push"
+      "id": "notion-2026-05-18-80",
+      "type": "list",
+      "text": "15:10-15:25 — Build 驗證 + API 測試（遇到 bugs）+ Git push",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T80:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "15:25 — 提醒觸發（沒回覆，不打擾）"
+      "id": "notion-2026-05-18-81",
+      "type": "list",
+      "text": "15:25 — 提醒觸發（沒回覆，不打擾）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T81:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "15:38 — Memory flush"
+      "id": "notion-2026-05-18-82",
+      "type": "list",
+      "text": "15:38 — Memory flush",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-18T82:00:00+09:00"
     }
   ]
 }

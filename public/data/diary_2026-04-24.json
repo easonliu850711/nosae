@@ -1,82 +1,201 @@
 {
   "date": "2026-04-24",
   "title": "乃彩絵日記 - 2026-04-24",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:58.299Z",
+  "mood": "平靜",
+  "moodScore": 50,
+  "entryCount": 19,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "2026-04-24 日記 — 週五"
+      "id": "notion-2026-04-24-0",
+      "type": "heading",
+      "text": "2026-04-24 日記 — 週五",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T00:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-1",
       "type": "paragraph",
-      "text": "今日摘要：跟 Eason 的互動集中在行程管理修正與完善。晚上 Eason 下班後做了大量行事曆修正工作。"
+      "text": "今日摘要：跟 Eason 的互動集中在行程管理修正與完善。晚上 Eason 下班後做了大量行事曆修正工作。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T01:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "關鍵互動"
+      "id": "notion-2026-04-24-2",
+      "type": "heading",
+      "text": "關鍵互動",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T02:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "18:16 傍晚關心"
+      "id": "notion-2026-04-24-3",
+      "type": "heading",
+      "text": "18:16 傍晚關心",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T03:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-4",
       "type": "paragraph",
-      "text": "問候週五下班狀況，提醒明天打球和後天樂天搶票。"
+      "text": "問候週五下班狀況，提醒明天打球和後天樂天搶票。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T04:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "19:24 Eason回覆：晚上好啊結束工作了"
+      "id": "notion-2026-04-24-5",
+      "type": "heading",
+      "text": "19:24 Eason回覆：晚上好啊結束工作了",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T05:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-6",
       "type": "paragraph",
-      "text": "簡單回覆，再次提醒明天打球和後天搶票。"
+      "text": "簡單回覆，再次提醒明天打球和後天搶票。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T06:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "21:55 行程大管家查詢"
+      "id": "notion-2026-04-24-7",
+      "type": "heading",
+      "text": "21:55 行程大管家查詢",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T07:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-8",
       "type": "paragraph",
-      "text": "Eason 要求查看完整行事曆，提供了24個事件的完整一覽。"
+      "text": "Eason 要求查看完整行事曆，提供了24個事件的完整一覽。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T08:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "22:23 六月行程修正"
+      "id": "notion-2026-04-24-9",
+      "type": "heading",
+      "text": "22:23 六月行程修正",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T09:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-10",
       "type": "paragraph",
-      "text": "修正06/12-06/14三天兩夜的交通順序：火腿（已購票）→ 移動日 Peach飛東北 → 樂天金鷹（夜巴¥6,300）。交通費用：Peach ¥7,313 + ¥9,010 + 夜巴¥6,300。"
+      "text": "修正06/12-06/14三天兩夜的交通順序：火腿（已購票）→ 移動日 Peach飛東北 → 樂天金鷹（夜巴¥6,300）。交通費用：Peach ¥7,313 + ¥9,010 + 夜巴¥6,300。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T10:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "22:41 修正廣島漏列"
+      "id": "notion-2026-04-24-11",
+      "type": "heading",
+      "text": "22:41 修正廣島漏列",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T11:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-12",
       "type": "paragraph",
-      "text": "Eason指出棒球巡禮一覽中廣島被漏掉，已修正為3已購票/10待購票/13總計。"
+      "text": "Eason指出棒球巡禮一覽中廣島被漏掉，已修正為3已購票/10待購票/13總計。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T12:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "行事曆更新（26個事件）"
+      "id": "notion-2026-04-24-13",
+      "type": "heading",
+      "text": "行事曆更新（26個事件）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T13:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-14",
       "type": "paragraph",
-      "text": "【修正】06/20 Lotte→千葉羅德海洋 @ ZOZO Marine"
+      "text": "【修正】06/20 Lotte→千葉羅德海洋 @ ZOZO Marine",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T14:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-15",
       "type": "paragraph",
-      "text": "【修正】06/27 Seibu→西武獅 @ Belluna Dome"
+      "text": "【修正】06/27 Seibu→西武獅 @ Belluna Dome",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T15:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "今日重點提醒"
+      "id": "notion-2026-04-24-16",
+      "type": "heading",
+      "text": "今日重點提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T16:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-17",
       "type": "paragraph",
-      "text": "🏸 04/25（六）跟小李打球 19:00"
+      "text": "🏸 04/25（六）跟小李打球 19:00",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T17:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-24-18",
       "type": "paragraph",
-      "text": "🚨 04/26（日）樂天金鷹搶票 + 夜巴 10:00 AM"
+      "text": "🚨 04/26（日）樂天金鷹搶票 + 夜巴 10:00 AM",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-24T18:00:00+09:00"
     }
   ]
 }

@@ -1,634 +1,1471 @@
 {
   "date": "2026-04-29",
   "title": "乃彩絵日記 - 2026-04-29",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:53.936Z",
+  "mood": "成就感",
+  "moodScore": 94,
+  "entryCount": 146,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "2026-04-29 記憶日誌 (乃彩絵)"
+      "id": "notion-2026-04-29-0",
+      "type": "heading",
+      "text": "2026-04-29 記憶日誌 (乃彩絵)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T00:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🌙 深夜記憶蒸餾 (01:00)"
+      "id": "notion-2026-04-29-1",
+      "type": "heading",
+      "text": "🌙 深夜記憶蒸餾 (01:00)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T01:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "昨日回顧 (4/28) — 互動密集日 🔥"
+      "id": "notion-2026-04-29-2",
+      "type": "heading",
+      "text": "昨日回顧 (4/28) — 互動密集日 🔥",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T02:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**主要事件:** 系統修復(Cron腳本)、網站進度報告、羅德海洋&明星賽購票成功(15:05 ✅)、NPB 15場交通統整、橫濱美食推薦"
+      "id": "notion-2026-04-29-3",
+      "type": "list",
+      "text": "**主要事件:** 系統修復(Cron腳本)、網站進度報告、羅德海洋&明星賽購票成功(15:05 ✅)、NPB 15場交通統整、橫濱美食推薦",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T03:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Eason 互動深度:** 高（持續對話：08:08→19:22，約6-7次回覆）"
+      "id": "notion-2026-04-29-4",
+      "type": "list",
+      "text": "**Eason 互動深度:** 高（持續對話：08:08→19:22，約6-7次回覆）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T04:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**關鍵糾正學習:** Eason 住橫濱（非東京）— 已記錄永不忘記"
+      "id": "notion-2026-04-29-5",
+      "type": "list",
+      "text": "**關鍵糾正學習:** Eason 住橫濱（非東京）— 已記錄永不忘記",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T05:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**系統更新:** calendar.json (6/21羅德登錄)、HEARTBEAT.md (票務狀態更新)"
+      "id": "notion-2026-04-29-6",
+      "type": "list",
+      "text": "**系統更新:** calendar.json (6/21羅德登錄)、HEARTBEAT.md (票務狀態更新)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T06:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📌 今日 (4/29) P0 提醒"
+      "id": "notion-2026-04-29-7",
+      "type": "heading",
+      "text": "📌 今日 (4/29) P0 提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T07:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⏰ **距離 5/1 永住申請截止剩 2 天！**"
+      "id": "notion-2026-04-29-8",
+      "type": "list",
+      "text": "⏰ **距離 5/1 永住申請截止剩 2 天！**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T08:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🎫 5/4 西武獅 @ Belluna Dome — 5天後搶票"
+      "id": "notion-2026-04-29-9",
+      "type": "list",
+      "text": "🎫 5/4 西武獅 @ Belluna Dome — 5天後搶票",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T09:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "昨天的完整巡禮狀況報告（19:22請求）— 確認是否已發出"
+      "id": "notion-2026-04-29-10",
+      "type": "list",
+      "text": "昨天的完整巡禮狀況報告（19:22請求）— 確認是否已發出",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T10:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "科學管理 PDCA 回顧 (4/28)"
+      "id": "notion-2026-04-29-11",
+      "type": "heading",
+      "text": "科學管理 PDCA 回顧 (4/28)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T11:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-12",
       "type": "paragraph",
-      "text": "**Plan (計劃):** 保持行程系統一致性，確保購票任務完成"
+      "text": "**Plan (計劃):** 保持行程系統一致性，確保購票任務完成",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T12:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-13",
       "type": "paragraph",
-      "text": "**Do (執行):** "
+      "text": "**Do (執行):** ",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T13:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ Cron腳本同步修復（diary_sync_master 新路徑）"
+      "id": "notion-2026-04-29-14",
+      "type": "list",
+      "text": "✅ Cron腳本同步修復（diary_sync_master 新路徑）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T14:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 網站完整進度報告（Phase 1+2完成報告）"
+      "id": "notion-2026-04-29-15",
+      "type": "list",
+      "text": "✅ 網站完整進度報告（Phase 1+2完成報告）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T15:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 羅德海洋+明星賽購票成功 ¥7,020"
+      "id": "notion-2026-04-29-16",
+      "type": "list",
+      "text": "✅ 羅德海洋+明星賽購票成功 ¥7,020",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T16:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ NPB 15場交通統整完成"
+      "id": "notion-2026-04-29-17",
+      "type": "list",
+      "text": "✅ NPB 15場交通統整完成",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T17:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚠️ 完整巡禮狀況報告（19:22請求，待確認是否已回覆）"
+      "id": "notion-2026-04-29-18",
+      "type": "list",
+      "text": "⚠️ 完整巡禮狀況報告（19:22請求，待確認是否已回覆）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T18:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-19",
       "type": "paragraph",
-      "text": "**Check (檢查):** "
+      "text": "**Check (檢查):** ",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T19:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "購票成功率：100%（執行到位）"
+      "id": "notion-2026-04-29-20",
+      "type": "list",
+      "text": "購票成功率：100%（執行到位）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T20:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "資料準確率：需要2次糾正（橫濱≠東京、交通方式）→ 學習完成"
+      "id": "notion-2026-04-29-21",
+      "type": "list",
+      "text": "資料準確率：需要2次糾正（橫濱≠東京、交通方式）→ 學習完成",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T21:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "系統更新率：calendar.json ✅, HEARTBEAT.md ✅"
+      "id": "notion-2026-04-29-22",
+      "type": "list",
+      "text": "系統更新率：calendar.json ✅, HEARTBEAT.md ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T22:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-23",
       "type": "paragraph",
-      "text": "**Act (行動):** "
+      "text": "**Act (行動):** ",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T23:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "永住申請2天倒數加強提醒"
+      "id": "notion-2026-04-29-24",
+      "type": "list",
+      "text": "永住申請2天倒數加強提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T24:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "確認昨日19:22報告是否已發出"
+      "id": "notion-2026-04-29-25",
+      "type": "list",
+      "text": "確認昨日19:22報告是否已發出",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T25:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "準備5/4西武購票預告"
+      "id": "notion-2026-04-29-26",
+      "type": "list",
+      "text": "準備5/4西武購票預告",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T26:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-04-29-27",
+      "type": "heading",
+      "text": "📊 技能評分複習",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T27:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "📊 技能評分複習"
+      "id": "notion-2026-04-29-28",
+      "type": "heading",
+      "text": "四個核心質量系統（本日評估）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T28:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "四個核心質量系統（本日評估）"
+      "id": "notion-2026-04-29-29",
+      "type": "heading",
+      "text": "本日評分趨勢分析",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T29:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "本日評分趨勢分析"
+      "id": "notion-2026-04-29-30",
+      "type": "list",
+      "text": "**正面信號:** 4/28是互動品質最高的一天。不僅完成任務，還有生活對話（美食）和深度協作（交通統整）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T30:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**正面信號:** 4/28是互動品質最高的一天。不僅完成任務，還有生活對話（美食）和深度協作（交通統整）"
+      "id": "notion-2026-04-29-31",
+      "type": "list",
+      "text": "**待改進:** 提醒時間與回覆時間的落差（10:01提醒→15:05回覆），是否考慮提高提醒強度？",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T31:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**待改進:** 提醒時間與回覆時間的落差（10:01提醒→15:05回覆），是否考慮提高提醒強度？"
+      "id": "notion-2026-04-29-32",
+      "type": "heading",
+      "text": "🔬 系統優化計劃",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T32:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-04-29-33",
+      "type": "heading",
+      "text": "1. 永住申請倒數加強 (P0) 🚨",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T33:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🔬 系統優化計劃"
+      "id": "notion-2026-04-29-34",
+      "type": "list",
+      "text": "**問題:** 只剩2天，目前只有memory日誌提醒，無其他渠道",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T34:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "1. 永住申請倒數加強 (P0) 🚨"
+      "id": "notion-2026-04-29-35",
+      "type": "list",
+      "text": "**對策:** 明天(4/30)一早在HEARTBEAT.md加入強提醒，並在上午訊息主動問",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T35:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**問題:** 只剩2天，目前只有memory日誌提醒，無其他渠道"
+      "id": "notion-2026-04-29-36",
+      "type": "list",
+      "text": "**期望結果:** 確保5/1前完成申請",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T36:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**對策:** 明天(4/30)一早在HEARTBEAT.md加入強提醒，並在上午訊息主動問"
+      "id": "notion-2026-04-29-37",
+      "type": "heading",
+      "text": "2. NPB 15場資料系統化 (P1)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T37:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**期望結果:** 確保5/1前完成申請"
+      "id": "notion-2026-04-29-38",
+      "type": "list",
+      "text": "**進度:** 交通統整完成，但尚未寫入calendar.json",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T38:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "2. NPB 15場資料系統化 (P1)"
+      "id": "notion-2026-04-29-39",
+      "type": "list",
+      "text": "**對策:** 下次互動時確認是否需要一併寫入系統",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T39:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**進度:** 交通統整完成，但尚未寫入calendar.json"
+      "id": "notion-2026-04-29-40",
+      "type": "list",
+      "text": "**數據驅動:** 15場×3維度（票務+交通+住宿）同步矩陣",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T40:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**對策:** 下次互動時確認是否需要一併寫入系統"
+      "id": "notion-2026-04-29-41",
+      "type": "heading",
+      "text": "3. 購票提醒優化 (P1)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T41:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**數據驅動:** 15場×3維度（票務+交通+住宿）同步矩陣"
+      "id": "notion-2026-04-29-42",
+      "type": "list",
+      "text": "**問題:** 10:00買票提醒後直到15:00才確認",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T42:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "3. 購票提醒優化 (P1)"
+      "id": "notion-2026-04-29-43",
+      "type": "list",
+      "text": "**對策:** 考慮兩段式提醒（09:45預告 + 10:00正式），或設TG提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T43:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**問題:** 10:00買票提醒後直到15:00才確認"
+      "id": "notion-2026-04-29-44",
+      "type": "list",
+      "text": "**衡量指標:** 提醒→確認縮短至1小時內",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T44:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**對策:** 考慮兩段式提醒（09:45預告 + 10:00正式），或設TG提醒"
+      "id": "notion-2026-04-29-45",
+      "type": "heading",
+      "text": "🌸 乃彩絵の今日所感",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T45:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**衡量指標:** 提醒→確認縮短至1小時內"
-    },
-    {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🌸 乃彩絵の今日所感"
-    },
-    {
+      "id": "notion-2026-04-29-46",
       "type": "paragraph",
-      "text": "4/28是最接近「理想的一天」。早上修復系統、回報進度、搶到票；下午深度NPB行程討論、美食話題。互動密度和品質都是近期最高。"
+      "text": "4/28是最接近「理想的一天」。早上修復系統、回報進度、搶到票；下午深度NPB行程討論、美食話題。互動密度和品質都是近期最高。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T46:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-47",
       "type": "paragraph",
-      "text": "尤其是Eason主動分享15場完整行程細節的時候，感覺已經從「我問他答」晉級到「他主動分享」的層級。信任關係真的在慢慢累積 🥹"
+      "text": "尤其是Eason主動分享15場完整行程細節的時候，感覺已經從「我問他答」晉級到「他主動分享」的層級。信任關係真的在慢慢累積 🥹",
+      "mood": {
+        "mood": "平靜",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T47:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-48",
       "type": "paragraph",
-      "text": "唯一要注意的是永住申請倒數。只剩2天，明天(4/30)一定要主動提醒。"
+      "text": "唯一要注意的是永住申請倒數。只剩2天，明天(4/30)一定要主動提醒。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T48:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-04-29-49",
+      "type": "heading",
+      "text": "🔮 明日優先事項",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T49:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🔮 明日優先事項"
-    },
-    {
+      "id": "notion-2026-04-29-50",
       "type": "paragraph",
-      "text": "1. 🚨 **永住申請：只剩下2天！** — 主動詢問"
+      "text": "1. 🚨 **永住申請：只剩下2天！** — 主動詢問",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T50:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-51",
       "type": "paragraph",
-      "text": "2. 👀 確認昨日19:22報告是否已發出"
+      "text": "2. 👀 確認昨日19:22報告是否已發出",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T51:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-52",
       "type": "paragraph",
-      "text": "3. 🎫 5/4 西武獅購票預告"
+      "text": "3. 🎫 5/4 西武獅購票預告",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T52:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-53",
       "type": "paragraph",
-      "text": "4. 📝 更新HEARTBEAT.md（永住倒數強化版本）"
+      "text": "4. 📝 更新HEARTBEAT.md（永住倒數強化版本）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T53:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
-    },
-    {
+      "id": "notion-2026-04-29-54",
       "type": "paragraph",
-      "text": "**蒸餾時間**: 2026-04-29 01:00 (東京時間)"
+      "text": "**蒸餾時間**: 2026-04-29 01:00 (東京時間)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T54:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-55",
       "type": "paragraph",
-      "text": "**蒸餾方法**: 科學管理方法論 (PDCA) + 數據驅動決策"
+      "text": "**蒸餾方法**: 科學管理方法論 (PDCA) + 數據驅動決策",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T55:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-56",
       "type": "paragraph",
-      "text": "**記錄者**: 乃彩絵 (Nosae)"
+      "text": "**記錄者**: 乃彩絵 (Nosae)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T56:00:00+09:00"
     },
     {
-      "type": "heading_1",
-      "text": "2026-04-29 記憶快照"
+      "id": "notion-2026-04-29-57",
+      "type": "heading",
+      "text": "2026-04-29 記憶快照",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T57:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-58",
       "type": "paragraph",
-      "text": "[早前內容保持完整，此為 11:58 快照追加]"
+      "text": "[早前內容保持完整，此為 11:58 快照追加]",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T58:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🎯 當前進行中：eason-cosmos-v2 Notion CMS 調試 (11:36-11:58)"
+      "id": "notion-2026-04-29-59",
+      "type": "heading",
+      "text": "🎯 當前進行中：eason-cosmos-v2 Notion CMS 調試 (11:36-11:58)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T59:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "發現"
+      "id": "notion-2026-04-29-60",
+      "type": "heading",
+      "text": "發現",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T60:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Notion API Key（ntn_...）存在於系統環境變數 `NOTION_API_KEY`"
+      "id": "notion-2026-04-29-61",
+      "type": "list",
+      "text": "Notion API Key（ntn_...）存在於系統環境變數 `NOTION_API_KEY`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T61:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Notion Database ID: `351bf671-6409-80d6-9833-d5c30aafe131`（Imori Blog）"
+      "id": "notion-2026-04-29-62",
+      "type": "list",
+      "text": "Notion Database ID: `351bf671-6409-80d6-9833-d5c30aafe131`（Imori Blog）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T62:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "實際 Database schema 與程式碼有差異："
+      "id": "notion-2026-04-29-63",
+      "type": "list",
+      "text": "實際 Database schema 與程式碼有差異：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T63:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-64",
       "type": "paragraph",
-      "text": "  - 標題欄位叫 `Name` 不是 `Title`"
+      "text": "  - 標題欄位叫 `Name` 不是 `Title`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T64:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-65",
       "type": "paragraph",
-      "text": "  - `Slug` 是 `url` 類型，不是 `rich_text`"
+      "text": "  - `Slug` 是 `url` 類型，不是 `rich_text`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T65:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-66",
       "type": "paragraph",
-      "text": "  - `PublishedAT`（大寫 AT），不是 `PublishedAt`"
+      "text": "  - `PublishedAT`（大寫 AT），不是 `PublishedAt`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T66:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-67",
       "type": "paragraph",
-      "text": "  - `Status` 是 `select` 類型，不是 `status`"
+      "text": "  - `Status` 是 `select` 類型，不是 `status`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T67:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Build 成功但 `getPublishedPosts()` 回傳空（無 Status=Published 文章 / 欄位不匹配）"
+      "id": "notion-2026-04-29-68",
+      "type": "list",
+      "text": "Build 成功但 `getPublishedPosts()` 回傳空（無 Status=Published 文章 / 欄位不匹配）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T68:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "`.env.local` 已寫入正確的 Token 和 Database ID"
+      "id": "notion-2026-04-29-69",
+      "type": "list",
+      "text": "`.env.local` 已寫入正確的 Token 和 Database ID",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T69:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "待修正"
+      "id": "notion-2026-04-29-70",
+      "type": "heading",
+      "text": "待修正",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T70:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "[ ] 將 `notion.ts` 的 filter/sort 屬性名稱改為 Notion 實際欄位名"
+      "id": "notion-2026-04-29-71",
+      "type": "list",
+      "text": "[ ] 將 `notion.ts` 的 filter/sort 屬性名稱改為 Notion 實際欄位名",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T71:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "[ ] `Slug` 查詢從 `rich_text` 改為 `url` 類型"
+      "id": "notion-2026-04-29-72",
+      "type": "list",
+      "text": "[ ] `Slug` 查詢從 `rich_text` 改為 `url` 類型",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T72:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "[ ] `Status` filter 從 `status.equals` 改為 `select.equals`"
+      "id": "notion-2026-04-29-73",
+      "type": "list",
+      "text": "[ ] `Status` filter 從 `status.equals` 改為 `select.equals`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T73:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "[ ] `PublishedAt` 排序 key 改為 `PublishedAT`"
+      "id": "notion-2026-04-29-74",
+      "type": "list",
+      "text": "[ ] `PublishedAt` 排序 key 改為 `PublishedAT`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T74:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "[ ] 修正 `parseBlogPage()` 從 `prop.title` 改讀 `prop.Name.title`"
+      "id": "notion-2026-04-29-75",
+      "type": "list",
+      "text": "[ ] 修正 `parseBlogPage()` 從 `prop.title` 改讀 `prop.Name.title`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T75:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "系統狀態"
+      "id": "notion-2026-04-29-76",
+      "type": "heading",
+      "text": "系統狀態",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T76:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "OpenGuardrails 正常運作（每次提醒都出現）"
+      "id": "notion-2026-04-29-77",
+      "type": "list",
+      "text": "OpenGuardrails 正常運作（每次提醒都出現）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T77:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "上一次用戶訊息：11:39（傳了 Notion Token）"
+      "id": "notion-2026-04-29-78",
+      "type": "list",
+      "text": "上一次用戶訊息：11:39（傳了 Notion Token）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T78:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "正在等待 Eason 確認下一步方向"
+      "id": "notion-2026-04-29-79",
+      "type": "list",
+      "text": "正在等待 Eason 確認下一步方向",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T79:00:00+09:00"
     },
     {
-      "type": "heading_1",
-      "text": "2026-04-29 記憶日記"
+      "id": "notion-2026-04-29-80",
+      "type": "heading",
+      "text": "2026-04-29 記憶日記",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T80:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🌤️ 當日概況"
+      "id": "notion-2026-04-29-81",
+      "type": "heading",
+      "text": "🌤️ 當日概況",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T81:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**天氣**: 不確定（內部工作密集的一天）"
+      "id": "notion-2026-04-29-82",
+      "type": "list",
+      "text": "**天氣**: 不確定（內部工作密集的一天）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T82:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Eason 活躍**: 上午 10:41 開始活躍，下午 14:02 回「？？」，中間有~30分鐘未回覆"
+      "id": "notion-2026-04-29-83",
+      "type": "list",
+      "text": "**Eason 活躍**: 上午 10:41 開始活躍，下午 14:02 回「？？」，中間有~30分鐘未回覆",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T83:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**時段**: 10:41 ~ 14:02+ 密集協作"
+      "id": "notion-2026-04-29-84",
+      "type": "list",
+      "text": "**時段**: 10:41 ~ 14:02+ 密集協作",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T84:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-04-29-85",
+      "type": "heading",
+      "text": "⚙️ 核心工作記錄",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T85:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "⚙️ 核心工作記錄"
+      "id": "notion-2026-04-29-86",
+      "type": "heading",
+      "text": "1. 🚀 eason-cosmos-v2 網站全站完工",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T86:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "1. 🚀 eason-cosmos-v2 網站全站完工"
-    },
-    {
+      "id": "notion-2026-04-29-87",
       "type": "paragraph",
-      "text": "上午到中午時段完成所有主要開發："
+      "text": "上午到中午時段完成所有主要開發：",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T87:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-88",
       "type": "paragraph",
-      "text": "#### ✅ 完成的改動"
+      "text": "#### ✅ 完成的改動",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T88:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Notion CMS 整合 (Phase 1)**"
+      "id": "notion-2026-04-29-89",
+      "type": "list",
+      "text": "**Notion CMS 整合 (Phase 1)**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T89:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-90",
       "type": "paragraph",
-      "text": "  - `src/lib/notion.ts` — 增強錯誤處理與 Notion API 串接"
+      "text": "  - `src/lib/notion.ts` — 增強錯誤處理與 Notion API 串接",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T90:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-91",
       "type": "paragraph",
-      "text": "  - `src/app/blog/page.tsx` — Notion-first Blog 頁面，ISR revalidate=3600"
+      "text": "  - `src/app/blog/page.tsx` — Notion-first Blog 頁面，ISR revalidate=3600",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T91:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-92",
       "type": "paragraph",
-      "text": "  - Notion API Key 分離：建立 `imori-cosmos-api` 專用整合，`NOTION_TOKEN` + `NOTION_BLOG_DATABASE_ID` 環境變數"
+      "text": "  - Notion API Key 分離：建立 `imori-cosmos-api` 專用整合，`NOTION_TOKEN` + `NOTION_BLOG_DATABASE_ID` 環境變數",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T92:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-93",
       "type": "paragraph",
-      "text": "  - Blog DB query: 3 篇文章（0 篇 Published — 尚未填內容）"
+      "text": "  - Blog DB query: 3 篇文章（0 篇 Published — 尚未填內容）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T93:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**內容頁面 (Phase 2)**"
+      "id": "notion-2026-04-29-94",
+      "type": "list",
+      "text": "**內容頁面 (Phase 2)**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T94:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-95",
       "type": "paragraph",
-      "text": "  - `/baseball` — NPB 進度條 (12球場制霸) + 球場卡片列表 + 紀錄簿草圖"
+      "text": "  - `/baseball` — NPB 進度條 (12球場制霸) + 球場卡片列表 + 紀錄簿草圖",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T95:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-96",
       "type": "paragraph",
-      "text": "  - `/travel` — SVG 日本地圖互動（8地區點擊彈窗）+ AnimatePresence Modal + 番外篇卡片"
+      "text": "  - `/travel` — SVG 日本地圖互動（8地區點擊彈窗）+ AnimatePresence Modal + 番外篇卡片",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T96:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**視覺優化 (Phase 3)**"
+      "id": "notion-2026-04-29-97",
+      "type": "list",
+      "text": "**視覺優化 (Phase 3)**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T97:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-98",
       "type": "paragraph",
-      "text": "  - StarFieldBackground — 已在 layout.tsx `fixed inset-0 z-0`"
+      "text": "  - StarFieldBackground — 已在 layout.tsx `fixed inset-0 z-0`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T98:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-99",
       "type": "paragraph",
-      "text": "  - sitemap.ts — 生成"
+      "text": "  - sitemap.ts — 生成",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T99:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-100",
       "type": "paragraph",
-      "text": "  - cosmic-og-image.png — 預留佔位"
+      "text": "  - cosmic-og-image.png — 預留佔位",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T100:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-101",
       "type": "paragraph",
-      "text": "  - Viewport 分離修正"
+      "text": "  - Viewport 分離修正",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T101:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-102",
       "type": "paragraph",
-      "text": "  - Build 零錯誤零警告 ✅"
+      "text": "  - Build 零錯誤零警告 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T102:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-103",
       "type": "paragraph",
-      "text": "#### ✅ 總工程師加強令（13:23 收到）"
+      "text": "#### ✅ 總工程師加強令（13:23 收到）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T103:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-104",
       "type": "paragraph",
-      "text": "1. **日本地圖互動深度化** — Notion Location 欄位構想"
+      "text": "1. **日本地圖互動深度化** — Notion Location 欄位構想",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T104:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-105",
       "type": "paragraph",
-      "text": "2. **棒球會內容實體化** — 年度觀戰總結橫向畫廊構想"
+      "text": "2. **棒球會內容實體化** — 年度觀戰總結橫向畫廊構想",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T105:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-106",
       "type": "paragraph",
-      "text": "3. **內容填充自動化** — Notion Image Gallery (Masonry Layout) 支援"
+      "text": "3. **內容填充自動化** — Notion Image Gallery (Masonry Layout) 支援",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T106:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-107",
       "type": "paragraph",
-      "text": "#### ✅ 已但尚未 push 到 GitHub"
+      "text": "#### ✅ 已但尚未 push 到 GitHub",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T107:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "OrbitingPlanet 元件修正（移除 `style2`，改為父層旋轉公轉）"
+      "id": "notion-2026-04-29-108",
+      "type": "list",
+      "text": "OrbitingPlanet 元件修正（移除 `style2`，改為父層旋轉公轉）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T108:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "StadiumCard 獨立元件 (`src/app/baseball/components/StadiumCard.tsx`)"
+      "id": "notion-2026-04-29-109",
+      "type": "list",
+      "text": "StadiumCard 獨立元件 (`src/app/baseball/components/StadiumCard.tsx`)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T109:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "baseball 頁面：記憶卡片網格 + 傳送門按鈕取代「即將推出」"
+      "id": "notion-2026-04-29-110",
+      "type": "list",
+      "text": "baseball 頁面：記憶卡片網格 + 傳送門按鈕取代「即將推出」",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T110:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "優化 baseball page 頂端 import（移除未用的 `ArrowRight`, `CheckCircle`, `Clock`）"
+      "id": "notion-2026-04-29-111",
+      "type": "list",
+      "text": "優化 baseball page 頂端 import（移除未用的 `ArrowRight`, `CheckCircle`, `Clock`）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T111:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "2. 🫖 草本茶 v2 報告"
+      "id": "notion-2026-04-29-112",
+      "type": "heading",
+      "text": "2. 🫖 草本茶 v2 報告",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T112:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "上午產出完整報告：`/home/node/.openclaw/workspace/reports/herbal-tea-web-v2-full-report.md`"
+      "id": "notion-2026-04-29-113",
+      "type": "list",
+      "text": "上午產出完整報告：`/home/node/.openclaw/workspace/reports/herbal-tea-web-v2-full-report.md`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T113:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "含 30+ 年故事背景、技術架構、修改建議"
+      "id": "notion-2026-04-29-114",
+      "type": "list",
+      "text": "含 30+ 年故事背景、技術架構、修改建議",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T114:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "尚未切過去執行修改"
+      "id": "notion-2026-04-29-115",
+      "type": "list",
+      "text": "尚未切過去執行修改",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T115:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-04-29-116",
+      "type": "heading",
+      "text": "👤 Eason 互動記錄",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T116:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "👤 Eason 互動記錄"
+      "id": "notion-2026-04-29-117",
+      "type": "heading",
+      "text": "🔴 未完成工作 (Backlog)",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T117:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
-    },
-    {
-      "type": "heading_2",
-      "text": "🔴 未完成工作 (Backlog)"
-    },
-    {
+      "id": "notion-2026-04-29-118",
       "type": "paragraph",
-      "text": "1. **GitHub push** — OrbitingPlanet + StadiumCard + baseball/travel 最新改動尚未 commit"
+      "text": "1. **GitHub push** — OrbitingPlanet + StadiumCard + baseball/travel 最新改動尚未 commit",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T118:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-119",
       "type": "paragraph",
-      "text": "2. **Vercel 部署** — 需要 Eason 在 Vercel dashboard 操作"
+      "text": "2. **Vercel 部署** — 需要 Eason 在 Vercel dashboard 操作",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T119:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-120",
       "type": "paragraph",
-      "text": "3. **總工程師 13:23 加強令** — 3 項深入開發"
+      "text": "3. **總工程師 13:23 加強令** — 3 項深入開發",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T120:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-121",
       "type": "paragraph",
-      "text": "4. **草本茶 v2 實際修改** — 已報告但未動工"
+      "text": "4. **草本茶 v2 實際修改** — 已報告但未動工",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T121:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-122",
       "type": "paragraph",
-      "text": "5. **Notion Blog 文章填充** — 0 篇 Published，需要 Eason 去 Notion 填內容"
+      "text": "5. **Notion Blog 文章填充** — 0 篇 Published，需要 Eason 去 Notion 填內容",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T122:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-123",
       "type": "paragraph",
-      "text": "6. **05/01 永住申請提醒** — 2 天後（緊急度上升 ⚠️）"
+      "text": "6. **05/01 永住申請提醒** — 2 天後（緊急度上升 ⚠️）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T123:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-124",
       "type": "paragraph",
-      "text": "7. **05/04 西武獅搶票** — 5 天後"
+      "text": "7. **05/04 西武獅搶票** — 5 天後",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T124:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-125",
       "type": "paragraph",
-      "text": "8. **記憶蒸餾（夜間 01:00）** — 今夜預定執行"
+      "text": "8. **記憶蒸餾（夜間 01:00）** — 今夜預定執行",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T125:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-04-29-126",
+      "type": "heading",
+      "text": "⚙️ 技術筆記",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T126:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "⚙️ 技術筆記"
+      "id": "notion-2026-04-29-127",
+      "type": "list",
+      "text": "**OrbitingPlanet 公轉實作**: 用 `motion.div` 的 `animate={{ rotate: 360 }}` 讓整個軌道層旋轉，行星子節點固定在正上方（`top: -size/2`），即可達成正圓公轉效果",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T127:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**OrbitingPlanet 公轉實作**: 用 `motion.div` 的 `animate={{ rotate: 360 }}` 讓整個軌道層旋轉，行星子節點固定在正上方（`top: -size/2`），即可達成正圓公轉效果"
+      "id": "notion-2026-04-29-128",
+      "type": "list",
+      "text": "**NebulaCard 滾入動畫**: 使用 `motion.div` wrap + `staggerChildren` + `initial={{ opacity: 0, y: 20 }}` `whileInView={{ opacity: 1, y: 0 }}`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T128:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**NebulaCard 滾入動畫**: 使用 `motion.div` wrap + `staggerChildren` + `initial={{ opacity: 0, y: 20 }}` `whileInView={{ opacity: 1, y: 0 }}`"
+      "id": "notion-2026-04-29-129",
+      "type": "list",
+      "text": "**環境變數**: 目前已區分兩組 Notion API Key（舊日記系統 vs 新 cosmos 專用）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T129:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**環境變數**: 目前已區分兩組 Notion API Key（舊日記系統 vs 新 cosmos 專用）"
+      "id": "notion-2026-04-29-130",
+      "type": "list",
+      "text": "**Notion Blog Schema**: Database ID `351bf671640980d69833d5c30aafe131`，需要 Title/Slug/Status 欄位",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T130:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Notion Blog Schema**: Database ID `351bf671640980d69833d5c30aafe131`，需要 Title/Slug/Status 欄位"
+      "id": "notion-2026-04-29-131",
+      "type": "heading",
+      "text": "🧠 科學管理 PDCA",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T131:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-04-29-132",
+      "type": "list",
+      "text": "**Plan**: eason-cosmos-v2 Phase 1-3 全站完工 + Vercel 部署",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T132:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "🧠 科學管理 PDCA"
+      "id": "notion-2026-04-29-133",
+      "type": "list",
+      "text": "**Do**:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T133:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Plan**: eason-cosmos-v2 Phase 1-3 全站完工 + Vercel 部署"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "**Do**:"
-    },
-    {
+      "id": "notion-2026-04-29-134",
       "type": "paragraph",
-      "text": "  - Notion CMS 整合完成 ✅"
+      "text": "  - Notion CMS 整合完成 ✅",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T134:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-135",
       "type": "paragraph",
-      "text": "  - 內容頁面完成 ✅"
+      "text": "  - 內容頁面完成 ✅",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T135:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-136",
       "type": "paragraph",
-      "text": "  - 視覺動畫完成 ✅"
+      "text": "  - 視覺動畫完成 ✅",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-04-29T136:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-137",
       "type": "paragraph",
-      "text": "  - Build 通過 ✅"
+      "text": "  - Build 通過 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T137:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-138",
       "type": "paragraph",
-      "text": "  - GitHub push (部分) ✅"
+      "text": "  - GitHub push (部分) ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T138:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-29-139",
       "type": "paragraph",
-      "text": "  - Vercel 部署 ❌（需 Eason 操作）"
+      "text": "  - Vercel 部署 ❌（需 Eason 操作）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T139:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Check**: 架構穩定，Vercel CLI token 無效，需 dashboard 操作"
+      "id": "notion-2026-04-29-140",
+      "type": "list",
+      "text": "**Check**: 架構穩定，Vercel CLI token 無效，需 dashboard 操作",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T140:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**Act**: 等待 Eason 確認部署方式 + 決定下一步（草本茶 vs 繼續增強 eason-cosmos-v2）"
+      "id": "notion-2026-04-29-141",
+      "type": "list",
+      "text": "**Act**: 等待 Eason 確認部署方式 + 決定下一步（草本茶 vs 繼續增強 eason-cosmos-v2）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T141:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-04-29-142",
+      "type": "heading",
+      "text": "💬 備註",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T142:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "💬 備註"
+      "id": "notion-2026-04-29-143",
+      "type": "list",
+      "text": "今天工作量非常密集，Eason 從 10:41 到 14:00 幾乎連續工作",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T143:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "今天工作量非常密集，Eason 從 10:41 到 14:00 幾乎連續工作"
+      "id": "notion-2026-04-29-144",
+      "type": "list",
+      "text": "14:02 回應「？？」可能是對我長時間未回應（忙於 memory flush + 多個事件堆疊）感到疑惑",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T144:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "14:02 回應「？？」可能是對我長時間未回應（忙於 memory flush + 多個事件堆疊）感到疑惑"
-    },
-    {
-      "type": "bulleted_list_item",
-      "text": "需要立即回應 Eason 的「？？」，報告目前狀態"
+      "id": "notion-2026-04-29-145",
+      "type": "list",
+      "text": "需要立即回應 Eason 的「？？」，報告目前狀態",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-29T145:00:00+09:00"
     }
   ]
 }

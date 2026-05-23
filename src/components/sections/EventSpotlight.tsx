@@ -39,13 +39,15 @@ export default function EventSpotlight() {
 
   const activeEvent = useMemo(() => {
     const today = now.toISOString().slice(0, 10)
-    return EVENTS.find(e => today >= e.start && today <= e.end) ?? null
+    const event = EVENTS.find(e => today >= e.start && today <= e.end) ?? null
+    return event
   }, [now])
 
   // ── 時間區段感知 ──
   const hour = now.getHours()
   const isEvening = hour >= 17 && hour < 21
   const isNight = hour >= 21 || hour < 6
+  const isFinalDay = activeEvent?.id === 'df56' && now.toISOString().slice(0,10) === activeEvent?.end
 
   if (!mounted || !activeEvent) return null
 
@@ -99,6 +101,11 @@ export default function EventSpotlight() {
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-white/90 text-xs">
               {activeEvent.start} → {activeEvent.end}
+              {isFinalDay && (
+                <span className="ml-1.5 inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-yellow-300/25 text-yellow-100 text-[10px]">
+                  ✨ Final Day
+                </span>
+              )}
             </span>
           </div>
 
@@ -107,10 +114,10 @@ export default function EventSpotlight() {
             <span className="text-3xl">{activeEvent.emoji}</span>
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-white">
-                {activeEvent.name}
+                {isFinalDay ? `${activeEvent.name} 🎪` : activeEvent.name}
               </h2>
               <p className="text-white/80 text-sm mt-0.5">
-                目前心情：{activeEvent.mood}
+                目前心情：{isFinalDay ? '滿足・不捨・溫暖的句點' : activeEvent.mood}
               </p>
             </div>
           </div>
@@ -179,12 +186,23 @@ export default function EventSpotlight() {
                 <div>
                   <p className="text-white text-xs font-medium">
                     {isEvening
-                      ? '二日目の暮色が近づいています。夕日が展場を包み、創作の熱気が余韻に変わる時。'
-                      : '夜が更けました。今日もお疲れ様でした。明日の最終日、最後まで駆け抜けましょう。'
+                      ? activeEvent.id === 'df56' && now.toISOString().slice(0,10) === activeEvent.end
+                        ? '最終日の暮色。三秒前の喧騒が嘘のように、会場を包む穏やかな余韻。お疲れ様でした。'
+                        : '二日目の暮色が近づいています。夕日が展場を包み、創作の熱気が余韻に変わる時。'
+                      : activeEvent.id === 'df56' && now.toISOString().slice(0,10) === activeEvent.end
+                        ? '最終日が終わりました。東京ビッグサイトの灯りが消え、静寂が戻る。創作の旅は続く。'
+                        : '夜が更けました。今日もお疲れ様でした。明日の最終日、最後まで駆け抜けましょう。'
                     }
                   </p>
                   <p className="text-white/60 text-[10px] mt-0.5">
-                    {isEvening ? '🌆 アフター5の創作談義が始まる頃' : '🌙 明日への準備、そして静かな興奮'}
+                    {isEvening
+                      ? activeEvent.id === 'df56' && now.toISOString().slice(0,10) === activeEvent.end
+                        ? '🌆 撤収作業と余韻のあいだ'
+                        : '🌆 アフター5の創作談義が始まる頃'
+                      : activeEvent.id === 'df56' && now.toISOString().slice(0,10) === activeEvent.end
+                        ? '🌟 またどこかのフェスで'
+                        : '🌙 明日への準備、そして静かな興奮'
+                    }
                   </p>
                 </div>
               </div>

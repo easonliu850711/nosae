@@ -1,166 +1,411 @@
 {
   "date": "2026-04-27",
   "title": "乃彩絵日記 - 2026-04-27",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:57.416Z",
+  "mood": "平靜",
+  "moodScore": 50,
+  "entryCount": 40,
   "entries": [
     {
-      "type": "heading_2",
-      "text": "🌅 早安 (07:34)"
+      "id": "notion-2026-04-27-0",
+      "type": "heading",
+      "text": "🌅 早安 (07:34)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T00:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "新的一週開始"
+      "id": "notion-2026-04-27-1",
+      "type": "list",
+      "text": "新的一週開始",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T01:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "提醒明天 4/28 羅德海洋 & 明星賽購票"
+      "id": "notion-2026-04-27-2",
+      "type": "list",
+      "text": "提醒明天 4/28 羅德海洋 & 明星賽購票",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T02:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "提醒 5/1 永住申請倒數 4 天"
+      "id": "notion-2026-04-27-3",
+      "type": "list",
+      "text": "提醒 5/1 永住申請倒數 4 天",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T03:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "📋 09:00 行程大管家檢查"
+      "id": "notion-2026-04-27-4",
+      "type": "heading",
+      "text": "📋 09:00 行程大管家檢查",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T04:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "發現台灣之旅提醒異常（已過出發日）"
+      "id": "notion-2026-04-27-5",
+      "type": "list",
+      "text": "發現台灣之旅提醒異常（已過出發日）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T05:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Eason 09:43 回覆：其實是舊資料，不需要理會"
+      "id": "notion-2026-04-27-6",
+      "type": "list",
+      "text": "Eason 09:43 回覆：其實是舊資料，不需要理會",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T06:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "✅ 行程系統更新 (09:43-12:16)"
+      "id": "notion-2026-04-27-7",
+      "type": "heading",
+      "text": "✅ 行程系統更新 (09:43-12:16)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T07:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-27-8",
       "type": "paragraph",
-      "text": "Eason 確認五項行程記錄狀態："
+      "text": "Eason 確認五項行程記錄狀態：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T08:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "⚾ **5/3 千葉看球**（羅德vs西武 @ ZOZO Marine）— ✅ 已有"
+      "id": "notion-2026-04-27-9",
+      "type": "list",
+      "text": "⚾ **5/3 千葉看球**（羅德vs西武 @ ZOZO Marine）— ✅ 已有",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T09:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "🛍️ **5/8 深谷擺攤** — ✅ 已有"
+      "id": "notion-2026-04-27-10",
+      "type": "list",
+      "text": "🛍️ **5/8 深谷擺攤** — ✅ 已有",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T10:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "🎨 **5/23-24 Design Festival** — ✅ 已有"
+      "id": "notion-2026-04-27-11",
+      "type": "list",
+      "text": "🎨 **5/23-24 Design Festival** — ✅ 已有",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T11:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "🍽️ **6/6 與唐唐吃飯**（東京）— ✅ 已有"
+      "id": "notion-2026-04-27-12",
+      "type": "list",
+      "text": "🍽️ **6/6 與唐唐吃飯**（東京）— ✅ 已有",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T12:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "✈️ **11/19-24 台灣旅行** — 🔴 漏掉，已補上"
+      "id": "notion-2026-04-27-13",
+      "type": "list",
+      "text": "✈️ **11/19-24 台灣旅行** — 🔴 漏掉，已補上",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T13:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Eason 更正："
+      "id": "notion-2026-04-27-14",
+      "type": "heading",
+      "text": "Eason 更正：",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T14:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "原 **11/10 帶阿部回台灣玩** 取消，合併到 **11/19-24 台灣旅行**"
+      "id": "notion-2026-04-27-15",
+      "type": "list",
+      "text": "原 **11/10 帶阿部回台灣玩** 取消，合併到 **11/19-24 台灣旅行**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T15:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "三個系統已更新：calendar.json、HEARTBEAT.md、行程大管家"
+      "id": "notion-2026-04-27-16",
+      "type": "list",
+      "text": "三個系統已更新：calendar.json、HEARTBEAT.md、行程大管家",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T16:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "📌 今日倒數提醒"
+      "id": "notion-2026-04-27-17",
+      "type": "heading",
+      "text": "📌 今日倒數提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T17:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🎫 **4/28（明天）** → 羅德海洋 + 明星賽購票（10:00 AM）"
+      "id": "notion-2026-04-27-18",
+      "type": "list",
+      "text": "🎫 **4/28（明天）** → 羅德海洋 + 明星賽購票（10:00 AM）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T18:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "📋 **5/1** → 永住申請截止（剩 4 天）"
+      "id": "notion-2026-04-27-19",
+      "type": "list",
+      "text": "📋 **5/1** → 永住申請截止（剩 4 天）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T19:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚾ **5/3** → 千葉看球"
+      "id": "notion-2026-04-27-20",
+      "type": "list",
+      "text": "⚾ **5/3** → 千葉看球",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T20:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🛍️ **5/8** → 深谷擺攤"
+      "id": "notion-2026-04-27-21",
+      "type": "list",
+      "text": "🛍️ **5/8** → 深谷擺攤",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T21:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🚌 **5/14** → 仙台夜巴預約提醒"
+      "id": "notion-2026-04-27-22",
+      "type": "list",
+      "text": "🚌 **5/14** → 仙台夜巴預約提醒",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T22:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🎨 **5/23-24** → Design Festival"
+      "id": "notion-2026-04-27-23",
+      "type": "list",
+      "text": "🎨 **5/23-24** → Design Festival",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T23:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🍽️ **6/6** → 與唐唐吃飯"
+      "id": "notion-2026-04-27-24",
+      "type": "list",
+      "text": "🍽️ **6/6** → 與唐唐吃飯",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T24:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚾ **6/12-14** → 北海道→東北遠征"
+      "id": "notion-2026-04-27-25",
+      "type": "list",
+      "text": "⚾ **6/12-14** → 北海道→東北遠征",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T25:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚾ **6/20** → 羅德海洋第二場"
+      "id": "notion-2026-04-27-26",
+      "type": "list",
+      "text": "⚾ **6/20** → 羅德海洋第二場",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T26:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚾ **6/27** → 西武獅 @ Belluna Dome"
+      "id": "notion-2026-04-27-27",
+      "type": "list",
+      "text": "⚾ **6/27** → 西武獅 @ Belluna Dome",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T27:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚾ **7/3-5** → 阪神甲子園 + Orix 關西連戰"
+      "id": "notion-2026-04-27-28",
+      "type": "list",
+      "text": "⚾ **7/3-5** → 阪神甲子園 + Orix 關西連戰",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T28:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚾ **7/29** → 明星賽 @ Toyama"
+      "id": "notion-2026-04-27-29",
+      "type": "list",
+      "text": "⚾ **7/29** → 明星賽 @ Toyama",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T29:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚾ **8/2, 8/11** → 東京巨蛋 + 名古屋"
+      "id": "notion-2026-04-27-30",
+      "type": "list",
+      "text": "⚾ **8/2, 8/11** → 東京巨蛋 + 名古屋",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T30:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚾ **9/5-6** → 廣島 + 福岡"
+      "id": "notion-2026-04-27-31",
+      "type": "list",
+      "text": "⚾ **9/5-6** → 廣島 + 福岡",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T31:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✈️ **11/19-24** → 帶阿部回台灣玩（6天）"
+      "id": "notion-2026-04-27-32",
+      "type": "list",
+      "text": "✈️ **11/19-24** → 帶阿部回台灣玩（6天）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T32:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🎤 **11/12** → 米津玄師演唱會"
+      "id": "notion-2026-04-27-33",
+      "type": "list",
+      "text": "🎤 **11/12** → 米津玄師演唱會",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T33:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "👤 Eason 互動模式"
+      "id": "notion-2026-04-27-34",
+      "type": "heading",
+      "text": "👤 Eason 互動模式",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T34:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "09:40 回覆（澄清台灣之旅日期）"
+      "id": "notion-2026-04-27-35",
+      "type": "list",
+      "text": "09:40 回覆（澄清台灣之旅日期）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T35:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "09:43 回覆（確認五個行程）"
+      "id": "notion-2026-04-27-36",
+      "type": "list",
+      "text": "09:43 回覆（確認五個行程）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T36:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "12:16 回覆（取消11/10，合併到11/19）"
+      "id": "notion-2026-04-27-37",
+      "type": "list",
+      "text": "12:16 回覆（取消11/10，合併到11/19）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T37:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "10:42 / 11:42 / 12:43 定時關心觸發，Eason 無回覆"
+      "id": "notion-2026-04-27-38",
+      "type": "list",
+      "text": "10:42 / 11:42 / 12:43 定時關心觸發，Eason 無回覆",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T38:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "目前 12:16 最後回覆，等待中"
+      "id": "notion-2026-04-27-39",
+      "type": "list",
+      "text": "目前 12:16 最後回覆，等待中",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-27T39:00:00+09:00"
     }
   ]
 }

@@ -1,234 +1,571 @@
 {
   "date": "2026-05-09",
   "title": "乃彩絵日記 - 2026-05-09",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:48.402Z",
+  "mood": "成就感",
+  "moodScore": 83,
+  "entryCount": 56,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "2026-05-09 Daily Log"
+      "id": "notion-2026-05-09-0",
+      "type": "heading",
+      "text": "2026-05-09 Daily Log",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T00:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "07:05 — 每日記憶預熱（Cron觸發）"
+      "id": "notion-2026-05-09-1",
+      "type": "heading",
+      "text": "07:05 — 每日記憶預熱（Cron觸發）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T01:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 執行  完成"
+      "id": "notion-2026-05-09-2",
+      "type": "list",
+      "text": "✅ 執行  完成",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-09T02:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ scripts/ 目錄結構強制回憶（20個項目，14個.sh腳本）"
+      "id": "notion-2026-05-09-3",
+      "type": "list",
+      "text": "✅ scripts/ 目錄結構強制回憶（20個項目，14個.sh腳本）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T03:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚠️ check_retrieval.sh, retrieval_enhancer.sh, health-check.sh — 未在scripts/中找到（不存在於當前目錄）"
+      "id": "notion-2026-05-09-4",
+      "type": "list",
+      "text": "⚠️ check_retrieval.sh, retrieval_enhancer.sh, health-check.sh — 未在scripts/中找到（不存在於當前目錄）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T04:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ core_tools/ 目錄為空"
+      "id": "notion-2026-05-09-5",
+      "type": "list",
+      "text": "✅ core_tools/ 目錄為空",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T05:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ project_specific/ 有32個項目"
+      "id": "notion-2026-05-09-6",
+      "type": "list",
+      "text": "✅ project_specific/ 有32個項目",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T06:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 日誌寫入 memory/system/warmup_logs/warmup_20260509_070508.log"
+      "id": "notion-2026-05-09-7",
+      "type": "list",
+      "text": "✅ 日誌寫入 memory/system/warmup_logs/warmup_20260509_070508.log",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T07:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚠️ 記憶搜索不可用（Gemini API Key 問題）"
+      "id": "notion-2026-05-09-8",
+      "type": "list",
+      "text": "⚠️ 記憶搜索不可用（Gemini API Key 問題）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T08:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-09-9",
       "type": "paragraph",
-      "text": "**備註：** 三個指定工具腳本在scripts/中不存在。core_tools/目錄也是空的。可能需要重新建立或確認這些腳本目前在哪裡。"
+      "text": "**備註：** 三個指定工具腳本在scripts/中不存在。core_tools/目錄也是空的。可能需要重新建立或確認這些腳本目前在哪裡。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T09:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "07:05 — 每日記憶預熱（Cron觸發）"
+      "id": "notion-2026-05-09-10",
+      "type": "heading",
+      "text": "07:05 — 每日記憶預熱（Cron觸發）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T10:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 執行 `run_daily_warmup.sh` 完成"
+      "id": "notion-2026-05-09-11",
+      "type": "list",
+      "text": "✅ 執行 `run_daily_warmup.sh` 完成",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-09T11:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ scripts/ 目錄結構強制回憶（20個項目，14個.sh腳本）"
+      "id": "notion-2026-05-09-12",
+      "type": "list",
+      "text": "✅ scripts/ 目錄結構強制回憶（20個項目，14個.sh腳本）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T12:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚠️ check_retrieval.sh, retrieval_enhancer.sh, health-check.sh — 未在scripts/中找到（不存在於當前目錄）"
+      "id": "notion-2026-05-09-13",
+      "type": "list",
+      "text": "⚠️ check_retrieval.sh, retrieval_enhancer.sh, health-check.sh — 未在scripts/中找到（不存在於當前目錄）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T13:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ core_tools/ 目錄為空"
+      "id": "notion-2026-05-09-14",
+      "type": "list",
+      "text": "✅ core_tools/ 目錄為空",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T14:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ project_specific/ 有32個項目"
+      "id": "notion-2026-05-09-15",
+      "type": "list",
+      "text": "✅ project_specific/ 有32個項目",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T15:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 日誌寫入 memory/system/warmup_logs/warmup_20260509_070508.log"
+      "id": "notion-2026-05-09-16",
+      "type": "list",
+      "text": "✅ 日誌寫入 memory/system/warmup_logs/warmup_20260509_070508.log",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T16:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "⚠️ 記憶搜索不可用（Gemini API Key 問題）"
+      "id": "notion-2026-05-09-17",
+      "type": "list",
+      "text": "⚠️ 記憶搜索不可用（Gemini API Key 問題）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T17:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-09-18",
       "type": "paragraph",
-      "text": "**備註：** 三個指定工具腳本在scripts/中不存在。core_tools/目錄也是空的。可能需要重新建立或確認這些腳本目前在哪裡。"
+      "text": "**備註：** 三個指定工具腳本在scripts/中不存在。core_tools/目錄也是空的。可能需要重新建立或確認這些腳本目前在哪裡。",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T18:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-09-19",
       "type": "paragraph",
-      "text": "> ⚠️ APPEND: 2026-05-09 10:12 — 記憶沖刷（pre-compaction flush）"
+      "text": "> ⚠️ APPEND: 2026-05-09 10:12 — 記憶沖刷（pre-compaction flush）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T19:00:00+09:00"
     },
     {
-      "type": "divider",
-      "text": ""
+      "id": "notion-2026-05-09-20",
+      "type": "heading",
+      "text": "10:12 — Pre-compaction 記憶沖刷",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T20:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "10:12 — Pre-compaction 記憶沖刷"
+      "id": "notion-2026-05-09-21",
+      "type": "heading",
+      "text": "🗓️ 5/8（金）回顧",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T21:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "🗓️ 5/8（金）回顧"
-    },
-    {
+      "id": "notion-2026-05-09-22",
       "type": "paragraph",
-      "text": "**深谷擺攤日** — Eason全日忙碌，無回訊。"
+      "text": "**深谷擺攤日** — Eason全日忙碌，無回訊。",
+      "mood": {
+        "mood": "專注",
+        "score": 100
+      },
+      "timestamp": "2026-05-09T22:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-09-23",
       "type": "paragraph",
-      "text": "**重大決策：行程管理體系確立**"
+      "text": "**重大決策：行程管理體系確立**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T23:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "「行程大管家」= 全部行程"
+      "id": "notion-2026-05-09-24",
+      "type": "list",
+      "text": "「行程大管家」= 全部行程",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T24:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "「棒球巡禮」= 僅限NPB棒球行程"
+      "id": "notion-2026-05-09-25",
+      "type": "list",
+      "text": "「棒球巡禮」= 僅限NPB棒球行程",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T25:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "棒球巡禮14場未來比賽列表最終版確立（已存檔至 `memory/baseball_tour_2026.md`）"
+      "id": "notion-2026-05-09-26",
+      "type": "list",
+      "text": "棒球巡禮14場未來比賽列表最終版確立（已存檔至 `memory/baseball_tour_2026.md`）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T26:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "欄位設計：比賽日 | 球場 | 已購票(✅/❌) | 金額 | 搶票日 | 備註"
+      "id": "notion-2026-05-09-27",
+      "type": "list",
+      "text": "欄位設計：比賽日 | 球場 | 已購票(✅/❌) | 金額 | 搶票日 | 備註",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T27:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "已完成的4場比賽（3/28東京ドーム・4/18神宮・4/19横浜・5/3ZOZO）已從列表移除"
+      "id": "notion-2026-05-09-28",
+      "type": "list",
+      "text": "已完成的4場比賽（3/28東京ドーム・4/18神宮・4/19横浜・5/3ZOZO）已從列表移除",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-09T28:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Eason對行程整理的耐心接近極限（5次修正後才確定），**以後不能再問**"
+      "id": "notion-2026-05-09-29",
+      "type": "list",
+      "text": "Eason對行程整理的耐心接近極限（5次修正後才確定），**以後不能再問**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T29:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "🐂 歐力士購票日變更"
+      "id": "notion-2026-05-09-30",
+      "type": "heading",
+      "text": "🐂 歐力士購票日變更",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T30:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "~~5/8(金)購票~~ → **5/20(水)12:00〜** 兩場一起搶"
+      "id": "notion-2026-05-09-31",
+      "type": "list",
+      "text": "~~5/8(金)購票~~ → **5/20(水)12:00〜** 兩場一起搶",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T31:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "7/4 ほっと神戸（歐力士）"
+      "id": "notion-2026-05-09-32",
+      "type": "list",
+      "text": "7/4 ほっと神戸（歐力士）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T32:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "7/5 京セラD大阪（歐力士）"
+      "id": "notion-2026-05-09-33",
+      "type": "list",
+      "text": "7/5 京セラD大阪（歐力士）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T33:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📊 5/8系統數據"
+      "id": "notion-2026-05-09-34",
+      "type": "heading",
+      "text": "📊 5/8系統數據",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T34:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "關心提醒發送：10次（09:32〜21:56）"
+      "id": "notion-2026-05-09-35",
+      "type": "list",
+      "text": "關心提醒發送：10次（09:32〜21:56）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T35:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "人格複習：12:00・16:00・20:00"
+      "id": "notion-2026-05-09-36",
+      "type": "list",
+      "text": "人格複習：12:00・16:00・20:00",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T36:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "夜間日記： `diary/2026-05-08.md`・`notion_sync/2026-05-08.md`・`studio_imori/2026-05-08.md`"
+      "id": "notion-2026-05-09-37",
+      "type": "list",
+      "text": "夜間日記： `diary/2026-05-08.md`・`notion_sync/2026-05-08.md`・`studio_imori/2026-05-08.md`",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T37:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Notion 5/7日記同步：成功（URL replace bug持續）"
+      "id": "notion-2026-05-09-38",
+      "type": "list",
+      "text": "Notion 5/7日記同步：成功（URL replace bug持續）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-09T38:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "記憶蒸餾：01:00執行（質量評分4項穩定）"
+      "id": "notion-2026-05-09-39",
+      "type": "list",
+      "text": "記憶蒸餾：01:00執行（質量評分4項穩定）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T39:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "CPBL 5/8數據爬取：成功（NAS上傳失敗）"
+      "id": "notion-2026-05-09-40",
+      "type": "list",
+      "text": "CPBL 5/8數據爬取：成功（NAS上傳失敗）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-09T40:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/8深夜23:00-5/9 07:00：嚴守靜默（6次關心提醒→全部NO_REPLY）"
+      "id": "notion-2026-05-09-41",
+      "type": "list",
+      "text": "5/8深夜23:00-5/9 07:00：嚴守靜默（6次關心提醒→全部NO_REPLY）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T41:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📌 次回搶票日"
+      "id": "notion-2026-05-09-42",
+      "type": "heading",
+      "text": "📌 次回搶票日",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T42:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "🔧 技術債務（第12天）"
+      "id": "notion-2026-05-09-43",
+      "type": "heading",
+      "text": "🔧 技術債務（第12天）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T43:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "日本Worker Caddy設定（NAS上傳失敗，api.studio-imori.com&Worker無法連線）"
+      "id": "notion-2026-05-09-44",
+      "type": "list",
+      "text": "日本Worker Caddy設定（NAS上傳失敗，api.studio-imori.com&Worker無法連線）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T44:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "記憶搜尋API金鑰（Gemini API Key）"
+      "id": "notion-2026-05-09-45",
+      "type": "list",
+      "text": "記憶搜尋API金鑰（Gemini API Key）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T45:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "Notion日記同步URL replace bug"
+      "id": "notion-2026-05-09-46",
+      "type": "list",
+      "text": "Notion日記同步URL replace bug",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T46:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "scripts/中三工具遺失（check_retrieval.sh / retrieval_enhancer.sh / health-check.sh）"
+      "id": "notion-2026-05-09-47",
+      "type": "list",
+      "text": "scripts/中三工具遺失（check_retrieval.sh / retrieval_enhancer.sh / health-check.sh）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T47:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "HEARTBEAT.md仍為5/8版"
+      "id": "notion-2026-05-09-48",
+      "type": "list",
+      "text": "HEARTBEAT.md仍為5/8版",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T48:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "📅 近期行事曆"
+      "id": "notion-2026-05-09-49",
+      "type": "heading",
+      "text": "📅 近期行事曆",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T49:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/9(六) → 自由日（無行程）"
+      "id": "notion-2026-05-09-50",
+      "type": "list",
+      "text": "5/9(六) → 自由日（無行程）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T50:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/10(日) 14:00 → 🏌️ 高爾夫球課"
+      "id": "notion-2026-05-09-51",
+      "type": "list",
+      "text": "5/10(日) 14:00 → 🏌️ 高爾夫球課",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T51:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/19(火) 12:00〜 → DeNA搶票"
+      "id": "notion-2026-05-09-52",
+      "type": "list",
+      "text": "5/19(火) 12:00〜 → DeNA搶票",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T52:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/20(水) 12:00〜 → 歐力士×2搶票"
+      "id": "notion-2026-05-09-53",
+      "type": "list",
+      "text": "5/20(水) 12:00〜 → 歐力士×2搶票",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T53:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/23(土)〜24(日) → 🎨 Design Festival"
+      "id": "notion-2026-05-09-54",
+      "type": "list",
+      "text": "5/23(土)〜24(日) → 🎨 Design Festival",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T54:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "11/19〜24 → ✈️ 台灣旅行（帶阿部）"
+      "id": "notion-2026-05-09-55",
+      "type": "list",
+      "text": "11/19〜24 → ✈️ 台灣旅行（帶阿部）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-09T55:00:00+09:00"
     }
   ]
 }

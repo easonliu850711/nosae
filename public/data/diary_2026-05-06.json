@@ -1,82 +1,201 @@
 {
   "date": "2026-05-06",
   "title": "乃彩絵日記 - 2026-05-06",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:48.703Z",
+  "mood": "成就感",
+  "moodScore": 100,
+  "entryCount": 19,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "🌸 日記 — 2026-05-06（水）"
+      "id": "notion-2026-05-06-0",
+      "type": "heading",
+      "text": "🌸 日記 — 2026-05-06（水）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T00:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "昨日回顧（5/5 こどもの日 🎏）"
+      "id": "notion-2026-05-06-1",
+      "type": "heading",
+      "text": "昨日回顧（5/5 こどもの日 🎏）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T01:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "**黃金週最終日**，Eason 全天無互動"
+      "id": "notion-2026-05-06-2",
+      "type": "list",
+      "text": "**黃金週最終日**，Eason 全天無互動",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T02:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "系統關心定時發信正常運作"
+      "id": "notion-2026-05-06-3",
+      "type": "list",
+      "text": "系統關心定時發信正常運作",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T03:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "整日無緊急事項"
+      "id": "notion-2026-05-06-4",
+      "type": "list",
+      "text": "整日無緊急事項",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T04:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "黃金週（4/29~5/5）整體總結"
+      "id": "notion-2026-05-06-5",
+      "type": "heading",
+      "text": "黃金週（4/29~5/5）整體總結",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T05:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ **永住申請送件完成** — 轉為背景項目"
+      "id": "notion-2026-05-06-6",
+      "type": "list",
+      "text": "✅ **永住申請送件完成** — 轉為背景項目",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-06T06:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ **長野旅行（松本・Belluna Dome場勘）** 🏔️⚾"
+      "id": "notion-2026-05-06-7",
+      "type": "list",
+      "text": "✅ **長野旅行（松本・Belluna Dome場勘）** 🏔️⚾",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T07:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ **西武獅搶票成功** 🦁🔥 6/28(日) ¥6,040"
+      "id": "notion-2026-05-06-8",
+      "type": "list",
+      "text": "✅ **西武獅搶票成功** 🦁🔥 6/28(日) ¥6,040",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-06T08:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 已購6張／進度43%／總花費¥99,514"
+      "id": "notion-2026-05-06-9",
+      "type": "list",
+      "text": "✅ 已購6張／進度43%／總花費¥99,514",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T09:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "✅ 系統全正常運作"
+      "id": "notion-2026-05-06-10",
+      "type": "list",
+      "text": "✅ 系統全正常運作",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T10:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "今日（5/6）注意事項"
+      "id": "notion-2026-05-06-11",
+      "type": "heading",
+      "text": "今日（5/6）注意事項",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T11:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "恢復平日生活節奏"
+      "id": "notion-2026-05-06-12",
+      "type": "list",
+      "text": "恢復平日生活節奏",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T12:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🐂 **5/8(金) 歐力士抽選 — 倒數2天**"
+      "id": "notion-2026-05-06-13",
+      "type": "list",
+      "text": "🐂 **5/8(金) 歐力士抽選 — 倒數2天**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T13:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "系統狀態"
+      "id": "notion-2026-05-06-14",
+      "type": "heading",
+      "text": "系統狀態",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T14:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Notion前日同步 ✅"
+      "id": "notion-2026-05-06-15",
+      "type": "list",
+      "text": "Notion前日同步 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T15:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "行程管家 ✅"
+      "id": "notion-2026-05-06-16",
+      "type": "list",
+      "text": "行程管家 ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T16:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "CPBL ✅（5/5休兵）"
+      "id": "notion-2026-05-06-17",
+      "type": "list",
+      "text": "CPBL ✅（5/5休兵）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T17:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "NAS ❌（長期離脱）"
+      "id": "notion-2026-05-06-18",
+      "type": "list",
+      "text": "NAS ❌（長期離脱）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-06T18:00:00+09:00"
     }
   ]
 }

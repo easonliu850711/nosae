@@ -1,182 +1,451 @@
 {
   "date": "2026-04-15",
   "title": "乃彩絵日記 - 2026-04-15",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:01:21.303Z",
+  "mood": "平靜",
+  "moodScore": 50,
+  "entryCount": 44,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "2026-04-15 - Daily Memory Distillation & Skill Review"
+      "id": "notion-2026-04-15-0",
+      "type": "heading",
+      "text": "2026-04-15 - Daily Memory Distillation & Skill Review",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T00:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "1. Memory Distillation"
+      "id": "notion-2026-04-15-1",
+      "type": "heading",
+      "text": "1. Memory Distillation",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T01:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-2",
       "type": "paragraph",
-      "text": "*Date: 2026-04-15 01:00 AM (Asia/Tokyo)*"
+      "text": "*Date: 2026-04-15 01:00 AM (Asia/Tokyo)*",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T02:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Today's Activities & Learnings"
+      "id": "notion-2026-04-15-3",
+      "type": "heading",
+      "text": "Today's Activities & Learnings",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T03:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-4",
       "type": "paragraph",
-      "text": "[To be filled throughout the day]"
+      "text": "[To be filled throughout the day]",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T04:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Key Decisions & Insights"
+      "id": "notion-2026-04-15-5",
+      "type": "heading",
+      "text": "Key Decisions & Insights",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T05:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-6",
       "type": "paragraph",
-      "text": "[To be captured]"
+      "text": "[To be captured]",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T06:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Scientific Management Application"
+      "id": "notion-2026-04-15-7",
+      "type": "heading",
+      "text": "Scientific Management Application",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T07:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-8",
       "type": "paragraph",
-      "text": "[To apply systematic approaches to today's work]"
+      "text": "[To apply systematic approaches to today's work]",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T08:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-9",
       "type": "paragraph",
-      "text": "---"
+      "text": "---",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T09:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "2. Skill Review Results"
+      "id": "notion-2026-04-15-10",
+      "type": "heading",
+      "text": "2. Skill Review Results",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T10:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Care Quality System (關心質量系統)"
+      "id": "notion-2026-04-15-11",
+      "type": "heading",
+      "text": "Care Quality System (關心質量系統)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T11:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-12",
       "type": "paragraph",
-      "text": "**Current Score: 8.75/10**"
+      "text": "**Current Score: 8.75/10**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T12:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Strengths:"
+      "id": "notion-2026-04-15-13",
+      "type": "list",
+      "text": "Strengths:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T13:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Areas for improvement:"
+      "id": "notion-2026-04-15-14",
+      "type": "list",
+      "text": "Areas for improvement:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T14:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Action items:"
+      "id": "notion-2026-04-15-15",
+      "type": "list",
+      "text": "Action items:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T15:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Relationship Quality System (關係質量系統)"
+      "id": "notion-2026-04-15-16",
+      "type": "heading",
+      "text": "Relationship Quality System (關係質量系統)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T16:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-17",
       "type": "paragraph",
-      "text": "**Current Score: 9/10**"
+      "text": "**Current Score: 9/10**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T17:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Strengths:"
+      "id": "notion-2026-04-15-18",
+      "type": "list",
+      "text": "Strengths:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T18:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Areas for improvement:"
+      "id": "notion-2026-04-15-19",
+      "type": "list",
+      "text": "Areas for improvement:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T19:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Action items:"
+      "id": "notion-2026-04-15-20",
+      "type": "list",
+      "text": "Action items:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T20:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Context Adaptation System (情境適應系統)"
+      "id": "notion-2026-04-15-21",
+      "type": "heading",
+      "text": "Context Adaptation System (情境適應系統)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T21:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-22",
       "type": "paragraph",
-      "text": "**Current Score: 8.5/10**"
+      "text": "**Current Score: 8.5/10**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T22:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Strengths:"
+      "id": "notion-2026-04-15-23",
+      "type": "list",
+      "text": "Strengths:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T23:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Areas for improvement:"
+      "id": "notion-2026-04-15-24",
+      "type": "list",
+      "text": "Areas for improvement:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T24:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Action items:"
+      "id": "notion-2026-04-15-25",
+      "type": "list",
+      "text": "Action items:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T25:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Personalization System (個性化系統)"
+      "id": "notion-2026-04-15-26",
+      "type": "heading",
+      "text": "Personalization System (個性化系統)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T26:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-27",
       "type": "paragraph",
-      "text": "**Current Score: 8.5/10**"
+      "text": "**Current Score: 8.5/10**",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T27:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Strengths:"
+      "id": "notion-2026-04-15-28",
+      "type": "list",
+      "text": "Strengths:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T28:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Areas for improvement:"
+      "id": "notion-2026-04-15-29",
+      "type": "list",
+      "text": "Areas for improvement:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T29:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Action items:"
+      "id": "notion-2026-04-15-30",
+      "type": "list",
+      "text": "Action items:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T30:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-31",
       "type": "paragraph",
-      "text": "---"
+      "text": "---",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T31:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "3. Optimization Plan"
+      "id": "notion-2026-04-15-32",
+      "type": "heading",
+      "text": "3. Optimization Plan",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T32:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Data-Driven Decisions"
+      "id": "notion-2026-04-15-33",
+      "type": "heading",
+      "text": "Data-Driven Decisions",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T33:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-34",
       "type": "paragraph",
-      "text": "[Specific decisions based on today's data]"
+      "text": "[Specific decisions based on today's data]",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T34:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Continuous Improvement Cycle"
+      "id": "notion-2026-04-15-35",
+      "type": "heading",
+      "text": "Continuous Improvement Cycle",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T35:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-36",
       "type": "paragraph",
-      "text": "[PDCA: Plan-Do-Check-Act implementation]"
+      "text": "[PDCA: Plan-Do-Check-Act implementation]",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T36:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "System Enhancements"
+      "id": "notion-2026-04-15-37",
+      "type": "heading",
+      "text": "System Enhancements",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T37:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-38",
       "type": "paragraph",
-      "text": "[Specific improvements to the four systems]"
+      "text": "[Specific improvements to the four systems]",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T38:00:00+09:00"
     },
     {
+      "id": "notion-2026-04-15-39",
       "type": "paragraph",
-      "text": "---"
+      "text": "---",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T39:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "4. Reflection & Growth"
+      "id": "notion-2026-04-15-40",
+      "type": "heading",
+      "text": "4. Reflection & Growth",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T40:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "What worked well today?"
+      "id": "notion-2026-04-15-41",
+      "type": "heading",
+      "text": "What worked well today?",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T41:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "What could be improved?"
+      "id": "notion-2026-04-15-42",
+      "type": "heading",
+      "text": "What could be improved?",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T42:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "Key learnings for tomorrow:"
+      "id": "notion-2026-04-15-43",
+      "type": "heading",
+      "text": "Key learnings for tomorrow:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-04-15T43:00:00+09:00"
     }
   ]
 }

@@ -1,90 +1,221 @@
 {
   "date": "2026-05-17",
   "title": "乃彩絵日記 - 2026-05-17",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:43.563Z",
+  "mood": "成就感",
+  "moodScore": 100,
+  "entryCount": 21,
   "entries": [
     {
-      "type": "heading_2",
-      "text": "CPBL棒球數據每日更新任務"
+      "id": "notion-2026-05-17-0",
+      "type": "heading",
+      "text": "CPBL棒球數據每日更新任務",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T00:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-1",
       "type": "paragraph",
-      "text": "**時間**: 23:30 PM (東京時間)"
+      "text": "**時間**: 23:30 PM (東京時間)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T01:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-2",
       "type": "paragraph",
-      "text": "**任務ID**: cron:873f870b-2bde-44cb-a092-f71255317270"
+      "text": "**任務ID**: cron:873f870b-2bde-44cb-a092-f71255317270",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T02:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-3",
       "type": "paragraph",
-      "text": "**執行結果**: 部分成功 (2/3)"
+      "text": "**執行結果**: 部分成功 (2/3)",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-17T03:00:00+09:00"
     },
     {
-      "type": "heading_3",
-      "text": "執行詳情:"
+      "id": "notion-2026-05-17-4",
+      "type": "heading",
+      "text": "執行詳情:",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T04:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "✅ **爬蟲執行成功**: 從CPBL官網提取6支球隊最新戰績（更新版解析器）"
+      "id": "notion-2026-05-17-5",
+      "type": "list",
+      "text": "✅ **爬蟲執行成功**: 從CPBL官網提取6支球隊最新戰績（更新版解析器）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-17T05:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-6",
       "type": "paragraph",
-      "text": "   - 味全龍持續領先 (21勝13敗)"
+      "text": "   - 味全龍持續領先 (21勝13敗)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T06:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-7",
       "type": "paragraph",
-      "text": "   - 富邦悍將第二 (18勝14敗)"
+      "text": "   - 富邦悍將第二 (18勝14敗)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T07:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-8",
       "type": "paragraph",
-      "text": "   - 統一獅第三 (18勝15敗1和)"
+      "text": "   - 統一獅第三 (18勝15敗1和)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T08:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-9",
       "type": "paragraph",
-      "text": "   - 台鋼雄鷹第四 (18勝16敗1和)"
+      "text": "   - 台鋼雄鷹第四 (18勝16敗1和)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T09:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-10",
       "type": "paragraph",
-      "text": "   - 樂天桃猿第五 (13勝19敗1和)"
+      "text": "   - 樂天桃猿第五 (13勝19敗1和)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T10:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-11",
       "type": "paragraph",
-      "text": "   - 中信兄弟第六 (11勝22敗1和)"
+      "text": "   - 中信兄弟第六 (11勝22敗1和)",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T11:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "✅ **前端更新成功**: 更新本地JSON數據檔案"
+      "id": "notion-2026-05-17-12",
+      "type": "list",
+      "text": "✅ **前端更新成功**: 更新本地JSON數據檔案",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-17T12:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-13",
       "type": "paragraph",
-      "text": "   - baseball-platform/cpbl_final_data.json ✅"
+      "text": "   - baseball-platform/cpbl_final_data.json ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T13:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-14",
       "type": "paragraph",
-      "text": "   - baseball-platform/cpbl_correct_standings.json ✅"
+      "text": "   - baseball-platform/cpbl_correct_standings.json ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T14:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-15",
       "type": "paragraph",
-      "text": "   - public/cpbl_final_data.json ✅"
+      "text": "   - public/cpbl_final_data.json ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T15:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-16",
       "type": "paragraph",
-      "text": "   - public/cpbl_latest.json ✅"
+      "text": "   - public/cpbl_latest.json ✅",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T16:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-17",
       "type": "paragraph",
-      "text": "   - 存檔: cpbl_data_20260517.json"
+      "text": "   - 存檔: cpbl_data_20260517.json",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T17:00:00+09:00"
     },
     {
-      "type": "numbered_list_item",
-      "text": "❌ **NAS上傳失敗**: NAS主機(jdc01/100.105.195.37)無法連接"
+      "id": "notion-2026-05-17-18",
+      "type": "list",
+      "text": "❌ **NAS上傳失敗**: NAS主機(jdc01/100.105.195.37)無法連接",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T18:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-19",
       "type": "paragraph",
-      "text": "   - Caddy返回404，API端點可能需檢查配置"
+      "text": "   - Caddy返回404，API端點可能需檢查配置",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T19:00:00+09:00"
     },
     {
+      "id": "notion-2026-05-17-20",
       "type": "paragraph",
-      "text": "   - 數據安全保留在本機"
+      "text": "   - 數據安全保留在本機",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-17T20:00:00+09:00"
     }
   ]
 }

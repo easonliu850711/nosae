@@ -1,74 +1,181 @@
 {
   "date": "2026-05-12",
   "title": "乃彩絵日記 - 2026-05-12",
+  "source": "notion",
+  "syncedAt": "2026-05-23T15:00:44.339Z",
+  "mood": "成就感",
+  "moodScore": 100,
+  "entryCount": 17,
   "entries": [
     {
-      "type": "heading_1",
-      "text": "2026-05-12 (火) 記憶快照"
+      "id": "notion-2026-05-12-0",
+      "type": "heading",
+      "text": "2026-05-12 (火) 記憶快照",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T00:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "本日執行記錄（09:30截止）"
+      "id": "notion-2026-05-12-1",
+      "type": "heading",
+      "text": "本日執行記錄（09:30截止）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T01:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "新登錄行程（5/11 Eason互動）"
+      "id": "notion-2026-05-12-2",
+      "type": "heading",
+      "text": "新登錄行程（5/11 Eason互動）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T02:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🏌️ 每週四 21:20 高爾夫課 @中目黑（5/14起）"
+      "id": "notion-2026-05-12-3",
+      "type": "list",
+      "text": "🏌️ 每週四 21:20 高爾夫課 @中目黑（5/14起）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T03:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🏢 5/31(日) APM年度維護（Eason負責人，已規劃完成）"
+      "id": "notion-2026-05-12-4",
+      "type": "list",
+      "text": "🏢 5/31(日) APM年度維護（Eason負責人，已規劃完成）",
+      "mood": {
+        "mood": "成就感",
+        "score": 100
+      },
+      "timestamp": "2026-05-12T04:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "🏢 6/5(金) 公司ESG活動"
+      "id": "notion-2026-05-12-5",
+      "type": "list",
+      "text": "🏢 6/5(金) 公司ESG活動",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T05:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "5/17(日) 🍽️ 跟阿部吃飯"
+      "id": "notion-2026-05-12-6",
+      "type": "list",
+      "text": "5/17(日) 🍽️ 跟阿部吃飯",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T06:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "修正：西武獅 6/27削除 → 6/28のみ"
+      "id": "notion-2026-05-12-7",
+      "type": "list",
+      "text": "修正：西武獅 6/27削除 → 6/28のみ",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T07:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "系統狀態"
+      "id": "notion-2026-05-12-8",
+      "type": "heading",
+      "text": "系統狀態",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T08:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "HEARTBEAT.md：第12天未更新（5/8版）"
+      "id": "notion-2026-05-12-9",
+      "type": "list",
+      "text": "HEARTBEAT.md：第12天未更新（5/8版）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T09:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "NAS (jdc01)：15+天離線（port 80/8001無法連線）"
+      "id": "notion-2026-05-12-10",
+      "type": "list",
+      "text": "NAS (jdc01)：15+天離線（port 80/8001無法連線）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T10:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "3工具缺失：check_retrieval.sh・retrieval_enhancer.sh・health-check.sh"
+      "id": "notion-2026-05-12-11",
+      "type": "list",
+      "text": "3工具缺失：check_retrieval.sh・retrieval_enhancer.sh・health-check.sh",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T11:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "Notion同步腳本URL解析有小bug（不影響功能）"
+      "id": "notion-2026-05-12-12",
+      "type": "list",
+      "text": "Notion同步腳本URL解析有小bug（不影響功能）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T12:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "CPBL：5/11無賽事，味全龍.621領先"
+      "id": "notion-2026-05-12-13",
+      "type": "list",
+      "text": "CPBL：5/11無賽事，味全龍.621領先",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T13:00:00+09:00"
     },
     {
-      "type": "heading_2",
-      "text": "Eason互動摘要（5/11 13:31〜22:04）"
+      "id": "notion-2026-05-12-14",
+      "type": "heading",
+      "text": "Eason互動摘要（5/11 13:31〜22:04）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T14:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "11次對話（高爾夫→行程登錄→修正→預定顯示→健身→全行程確認）"
+      "id": "notion-2026-05-12-15",
+      "type": "list",
+      "text": "11次對話（高爾夫→行程登錄→修正→預定顯示→健身→全行程確認）",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T15:00:00+09:00"
     },
     {
-      "type": "bulleted_list_item",
-      "text": "晚上健身21:49回家，22:04確認所有行程無誤"
+      "id": "notion-2026-05-12-16",
+      "type": "list",
+      "text": "晚上健身21:49回家，22:04確認所有行程無誤",
+      "mood": {
+        "mood": "平靜",
+        "score": 50
+      },
+      "timestamp": "2026-05-12T16:00:00+09:00"
     }
   ]
 }
