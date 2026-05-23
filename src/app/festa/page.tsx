@@ -152,6 +152,58 @@ const festaSchedule = [
   { time: '19:00', label: '完全閉場', emoji: '🌙', detail: '明日に備えて' },
 ]
 
+/* ── Saturday Afternoon Specials ── */
+function SaturdaySpecials() {
+  const day = getFestaDayLabel()
+  
+  // Only show on Day 2
+  if (day !== '二日目') return null
+
+  const specials = [
+    { time: '11:00', title: '開場と同時に', desc: '二日目の新作・限定展示がスタート', icon: '🎨' },
+    { time: '13:00', title: 'クリエイター交流', desc: '週末で最も出展者が在廊する時間帯', icon: '💬' },
+    { time: '15:00', title: 'SNS投稿ラッシュ', desc: '会場の盛り上がりがオンラインに', icon: '📱' },
+    { time: '17:00', title: 'ラストオーダー', desc: '閉場前のお気に入り探し', icon: '🏃' },
+  ]
+
+  return (
+    <div className={`${C.card} rounded-2xl p-5`}>
+      <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+        <Star className="w-4 h-4 text-pink-300" />
+        二日目スペシャル ✨
+      </h3>
+      <div className="relative">
+        {/* Timeline line */}
+        <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-pink-400/50 via-purple-400/30 to-transparent" />
+        <div className="space-y-5">
+          {specials.map((s, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.1 * i }}
+              className="relative pl-10"
+            >
+              <div className="absolute left-2.5 top-1 w-3 h-3 rounded-full bg-gradient-to-br from-pink-400 to-purple-400 shadow-lg shadow-pink-400/30" />
+              <div className="text-xs text-pink-300/70 font-mono mb-1">{s.time}</div>
+              <div className="text-sm font-medium text-white mb-0.5 flex items-center gap-1.5">
+                <span>{s.icon}</span>
+                <span>{s.title}</span>
+              </div>
+              <div className="text-xs text-white/40">{s.desc}</div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+      <div className="mt-4 pt-3 border-t border-white/10">
+        <p className="text-xs text-white/30 text-center">
+          週末だけの特別な体験をお見逃しなく ✨
+        </p>
+      </div>
+    </div>
+  )
+}
+
 function FestaSchedule() {
   const now = new Date()
   const currentMinutes = now.getHours() * 60 + now.getMinutes()
@@ -243,6 +295,68 @@ function MoodTracker() {
 }
 
 /* ── デイリーカウンター ── */
+/* ── Weekend Buzz — 即時人潮感應 ── */
+function WeekendBuzz() {
+  const [buzzLevel, setBuzzLevel] = useState(3)
+  const [] = useState(false)
+
+  useEffect(() => {
+    // Simulate crowd buzz based on time of day
+    const h = new Date().getHours()
+    let base = 3
+    if (h >= 11 && h < 13) base = 4
+    else if (h >= 13 && h < 15) base = 5
+    else if (h >= 15 && h < 17) base = 4
+    else if (h >= 17 && h < 19) base = 3
+    else if (h >= 10 && h < 11) base = 2
+    else base = 1
+
+    // Add some randomness
+    setBuzzLevel(Math.min(5, Math.max(1, base + Math.random() > 0.5 ? 1 : 0)))
+  }, [])
+
+  const buzzLabels = ['靜かな', '落ち着いた', '賑わい中', '盛り上がり', '熱気！']
+  const buzzIcons = ['😴', '☕', '🗣️', '🔥', '🎆']
+  const buzzBars = Array.from({ length: 5 }, (_, i) => i < buzzLevel)
+
+  return (
+    <div className={`${C.card} rounded-2xl p-5`}>
+      <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+        <TrendingUp className="w-4 h-4 text-pink-300" />
+        会場の熱気
+      </h3>
+      <div className="flex items-center gap-3 mb-4">
+        <span className="text-3xl">{buzzIcons[buzzLevel - 1]}</span>
+        <div>
+          <div className="text-lg font-bold text-white">{buzzLabels[buzzLevel - 1]}</div>
+          <div className="text-xs text-white/40">
+            {buzzLevel >= 4 ? '週末で最も賑わう時間帯です！' :
+             buzzLevel >= 3 ? '落ち着いて鑑賞できる雰囲気' :
+             '静かな時間帯です'}
+          </div>
+        </div>
+      </div>
+      <div className="flex gap-1.5">
+        {buzzBars.map((active, i) => (
+          <motion.div
+            key={i}
+            className={`h-2 flex-1 rounded-full ${
+              active ? 'bg-gradient-to-r from-pink-400 to-purple-400' : 'bg-white/10'
+            }`}
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 0.05 * i, duration: 0.3 }}
+          />
+        ))}
+      </div>
+      <div className="flex justify-between text-xs text-white/20 mt-1">
+        <span>静か</span>
+        <span>熱気</span>
+      </div>
+    </div>
+  )
+}
+
 function DayCounter() {
   const day = getFestaDayLabel()
   const dayColors = ['from-pink-500 to-rose-600', 'from-purple-500 to-violet-600', 'from-blue-500 to-indigo-600']
@@ -324,11 +438,29 @@ export default function FestaPage() {
             <FestaStatusBar />
           </motion.div>
 
+          {/* Weekend Buzz — only Day 2 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <WeekendBuzz />
+          </motion.div>
+
+          {/* Saturday Specials */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.33 }}
+          >
+            <SaturdaySpecials />
+          </motion.div>
+
           <div className="grid grid-cols-2 gap-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.36 }}
             >
               <div className={C.card + ' rounded-2xl p-5'}>
                 <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-2">

@@ -1,266 +1,346 @@
 [
   {
-    "date": "index",
-    "entryCount": 0,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-23",
-    "entryCount": 22,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-22",
-    "entryCount": 25,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-19",
-    "entryCount": 18,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-18",
-    "entryCount": 83,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-17",
-    "entryCount": 21,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-15",
-    "entryCount": 61,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-12",
-    "entryCount": 17,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-10",
-    "entryCount": 96,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-09",
-    "entryCount": 57,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-06",
-    "entryCount": 19,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-04",
-    "entryCount": 1,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-03",
-    "entryCount": 80,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-02",
-    "entryCount": 95,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-05-01",
-    "entryCount": 205,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-29",
-    "entryCount": 157,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-28",
-    "entryCount": 132,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-27",
-    "entryCount": 40,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-25",
-    "entryCount": 70,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-24",
-    "entryCount": 19,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-23",
-    "entryCount": 542,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-22",
-    "entryCount": 280,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-20",
-    "entryCount": 82,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-19",
-    "entryCount": 213,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-18",
-    "entryCount": 194,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-17",
-    "entryCount": 112,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-16",
-    "entryCount": 93,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-15",
-    "entryCount": 44,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-14",
-    "entryCount": 195,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-12",
-    "entryCount": 151,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-11",
-    "entryCount": 42,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-10",
-    "entryCount": 36,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-09",
-    "entryCount": 79,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-08",
-    "entryCount": 34,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-07",
-    "entryCount": 40,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-06",
-    "entryCount": 57,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-05",
-    "entryCount": 79,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-04-03",
-    "entryCount": 48,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-03-27",
-    "entryCount": 38,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-03-26",
-    "entryCount": 28,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-03-24",
-    "entryCount": 6,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-03-23",
-    "entryCount": 6,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
-    "date": "2026-03-22",
-    "entryCount": 6,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
+    "index": 0,
     "date": "2026-03-20",
-    "entryCount": 20,
-    "mood": "平靜",
-    "moodScore": 50
+    "title": "乃彩絵日記 - 2026-03-20",
+    "entries": 4,
+    "totalEntries": 20,
+    "file": "diary_2026-03-20.json"
+  },
+  {
+    "index": 1,
+    "date": "2026-03-22",
+    "title": "乃彩絵日記 - 2026-03-22",
+    "entries": 2,
+    "totalEntries": 6,
+    "file": "diary_2026-03-22.json"
+  },
+  {
+    "index": 2,
+    "date": "2026-03-23",
+    "title": "乃彩絵日記 - 2026-03-23",
+    "entries": 2,
+    "totalEntries": 6,
+    "file": "diary_2026-03-23.json"
+  },
+  {
+    "index": 3,
+    "date": "2026-03-24",
+    "title": "乃彩絵日記 - 2026-03-24",
+    "entries": 2,
+    "totalEntries": 6,
+    "file": "diary_2026-03-24.json"
+  },
+  {
+    "index": 4,
+    "date": "2026-03-26",
+    "title": "乃彩絵日記 - 2026-03-26",
+    "entries": 16,
+    "totalEntries": 28,
+    "file": "diary_2026-03-26.json"
+  },
+  {
+    "index": 5,
+    "date": "2026-03-27",
+    "title": "乃彩絵日記 - 2026-03-27",
+    "entries": 22,
+    "totalEntries": 38,
+    "file": "diary_2026-03-27.json"
+  },
+  {
+    "index": 6,
+    "date": "2026-04-03",
+    "title": "乃彩絵日記 - 2026-04-03",
+    "entries": 10,
+    "totalEntries": 48,
+    "file": "diary_2026-04-03.json"
+  },
+  {
+    "index": 7,
+    "date": "2026-04-05",
+    "title": "乃彩絵日記 - 2026-04-05",
+    "entries": 15,
+    "totalEntries": 79,
+    "file": "diary_2026-04-05.json"
+  },
+  {
+    "index": 8,
+    "date": "2026-04-06",
+    "title": "乃彩絵日記 - 2026-04-06",
+    "entries": 10,
+    "totalEntries": 57,
+    "file": "diary_2026-04-06.json"
+  },
+  {
+    "index": 9,
+    "date": "2026-04-07",
+    "title": "乃彩絵日記 - 2026-04-07",
+    "entries": 11,
+    "totalEntries": 40,
+    "file": "diary_2026-04-07.json"
+  },
+  {
+    "index": 10,
+    "date": "2026-04-08",
+    "title": "乃彩絵日記 - 2026-04-08",
+    "entries": 17,
+    "totalEntries": 34,
+    "file": "diary_2026-04-08.json"
+  },
+  {
+    "index": 11,
+    "date": "2026-04-09",
+    "title": "乃彩絵日記 - 2026-04-09",
+    "entries": 17,
+    "totalEntries": 79,
+    "file": "diary_2026-04-09.json"
+  },
+  {
+    "index": 12,
+    "date": "2026-04-10",
+    "title": "乃彩絵日記 - 2026-04-10",
+    "entries": 6,
+    "totalEntries": 36,
+    "file": "diary_2026-04-10.json"
+  },
+  {
+    "index": 13,
+    "date": "2026-04-11",
+    "title": "乃彩絵日記 - 2026-04-11",
+    "entries": 30,
+    "totalEntries": 42,
+    "file": "diary_2026-04-11.json"
+  },
+  {
+    "index": 14,
+    "date": "2026-04-12",
+    "title": "乃彩絵日記 - 2026-04-12",
+    "entries": 3,
+    "totalEntries": 151,
+    "file": "diary_2026-04-12.json"
+  },
+  {
+    "index": 15,
+    "date": "2026-04-14",
+    "title": "乃彩絵日記 - 2026-04-14",
+    "entries": 16,
+    "totalEntries": 195,
+    "file": "diary_2026-04-14.json"
+  },
+  {
+    "index": 16,
+    "date": "2026-04-15",
+    "title": "乃彩絵日記 - 2026-04-15",
+    "entries": 14,
+    "totalEntries": 44,
+    "file": "diary_2026-04-15.json"
+  },
+  {
+    "index": 17,
+    "date": "2026-04-16",
+    "title": "乃彩絵日記 - 2026-04-16",
+    "entries": 11,
+    "totalEntries": 93,
+    "file": "diary_2026-04-16.json"
+  },
+  {
+    "index": 18,
+    "date": "2026-04-17",
+    "title": "乃彩絵日記 - 2026-04-17",
+    "entries": 21,
+    "totalEntries": 112,
+    "file": "diary_2026-04-17.json"
+  },
+  {
+    "index": 19,
+    "date": "2026-04-18",
+    "title": "乃彩絵日記 - 2026-04-18",
+    "entries": 23,
+    "totalEntries": 194,
+    "file": "diary_2026-04-18.json"
+  },
+  {
+    "index": 20,
+    "date": "2026-04-19",
+    "title": "乃彩絵日記 - 2026-04-19",
+    "entries": 26,
+    "totalEntries": 213,
+    "file": "diary_2026-04-19.json"
+  },
+  {
+    "index": 21,
+    "date": "2026-04-20",
+    "title": "乃彩絵日記 - 2026-04-20",
+    "entries": 12,
+    "totalEntries": 82,
+    "file": "diary_2026-04-20.json"
+  },
+  {
+    "index": 22,
+    "date": "2026-04-22",
+    "title": "乃彩絵日記 - 2026-04-22",
+    "entries": 29,
+    "totalEntries": 280,
+    "file": "diary_2026-04-22.json"
+  },
+  {
+    "index": 23,
+    "date": "2026-04-23",
+    "title": "乃彩絵日記 - 2026-04-23",
+    "entries": 86,
+    "totalEntries": 542,
+    "file": "diary_2026-04-23.json"
+  },
+  {
+    "index": 24,
+    "date": "2026-04-24",
+    "title": "乃彩絵日記 - 2026-04-24",
+    "entries": 10,
+    "totalEntries": 19,
+    "file": "diary_2026-04-24.json"
+  },
+  {
+    "index": 25,
+    "date": "2026-04-25",
+    "title": "乃彩絵日記 - 2026-04-25",
+    "entries": 10,
+    "totalEntries": 70,
+    "file": "diary_2026-04-25.json"
+  },
+  {
+    "index": 26,
+    "date": "2026-04-27",
+    "title": "乃彩絵日記 - 2026-04-27",
+    "entries": 1,
+    "totalEntries": 40,
+    "file": "diary_2026-04-27.json"
+  },
+  {
+    "index": 27,
+    "date": "2026-04-28",
+    "title": "乃彩絵日記 - 2026-04-28",
+    "entries": 52,
+    "totalEntries": 132,
+    "file": "diary_2026-04-28.json"
+  },
+  {
+    "index": 28,
+    "date": "2026-04-29",
+    "title": "乃彩絵日記 - 2026-04-29",
+    "entries": 51,
+    "totalEntries": 157,
+    "file": "diary_2026-04-29.json"
+  },
+  {
+    "index": 29,
+    "date": "2026-05-01",
+    "title": "乃彩絵日記 - 2026-05-01",
+    "entries": 67,
+    "totalEntries": 205,
+    "file": "diary_2026-05-01.json"
+  },
+  {
+    "index": 30,
+    "date": "2026-05-02",
+    "title": "乃彩絵日記 - 2026-05-02",
+    "entries": 27,
+    "totalEntries": 95,
+    "file": "diary_2026-05-02.json"
+  },
+  {
+    "index": 31,
+    "date": "2026-05-03",
+    "title": "乃彩絵日記 - 2026-05-03",
+    "entries": 11,
+    "totalEntries": 80,
+    "file": "diary_2026-05-03.json"
+  },
+  {
+    "index": 32,
+    "date": "2026-05-04",
+    "title": "乃彩絵日記 - 2026-05-04",
+    "entries": 1,
+    "totalEntries": 1,
+    "file": "diary_2026-05-04.json"
+  },
+  {
+    "index": 33,
+    "date": "2026-05-06",
+    "title": "乃彩絵日記 - 2026-05-06",
+    "entries": 0,
+    "totalEntries": 19,
+    "file": "diary_2026-05-06.json"
+  },
+  {
+    "index": 34,
+    "date": "2026-05-09",
+    "title": "乃彩絵日記 - 2026-05-09",
+    "entries": 5,
+    "totalEntries": 57,
+    "file": "diary_2026-05-09.json"
+  },
+  {
+    "index": 35,
+    "date": "2026-05-10",
+    "title": "乃彩絵日記 - 2026-05-10",
+    "entries": 12,
+    "totalEntries": 96,
+    "file": "diary_2026-05-10.json"
+  },
+  {
+    "index": 36,
+    "date": "2026-05-12",
+    "title": "乃彩絵日記 - 2026-05-12",
+    "entries": 0,
+    "totalEntries": 17,
+    "file": "diary_2026-05-12.json"
+  },
+  {
+    "index": 37,
+    "date": "2026-05-15",
+    "title": "乃彩絵日記 - 2026-05-15",
+    "entries": 0,
+    "totalEntries": 61,
+    "file": "diary_2026-05-15.json"
+  },
+  {
+    "index": 38,
+    "date": "2026-05-17",
+    "title": "乃彩絵日記 - 2026-05-17",
+    "entries": 16,
+    "totalEntries": 21,
+    "file": "diary_2026-05-17.json"
+  },
+  {
+    "index": 39,
+    "date": "2026-05-18",
+    "title": "乃彩絵日記 - 2026-05-18",
+    "entries": 3,
+    "totalEntries": 83,
+    "file": "diary_2026-05-18.json"
+  },
+  {
+    "index": 40,
+    "date": "2026-05-19",
+    "title": "乃彩絵日記 - 2026-05-19",
+    "entries": 2,
+    "totalEntries": 18,
+    "file": "diary_2026-05-19.json"
+  },
+  {
+    "index": 41,
+    "date": "2026-05-22",
+    "title": "乃彩絵日記 - 2026-05-22",
+    "entries": 6,
+    "totalEntries": 25,
+    "file": "diary_2026-05-22.json"
+  },
+  {
+    "index": 42,
+    "date": "2026-05-23",
+    "title": "乃彩絵日記 - 2026-05-23",
+    "entries": 8,
+    "totalEntries": 22,
+    "file": "diary_2026-05-23.json"
   }
 ]
