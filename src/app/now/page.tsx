@@ -123,7 +123,12 @@ function DesignFestaBanner() {
   if (!isDF) return null
 
   const h = now.getHours()
-  if (h < 22 && h >= 8) return null // only show at night (22:00-07:59)
+  const isDaytime = h >= 8 && h < 18
+
+  const dfEnd = new Date('2026-05-24T17:00:00+09:00')
+  const msLeft = dfEnd.getTime() - now.getTime()
+  const remainingHours = Math.max(0, Math.floor(msLeft / 3600000))
+  const remainingMins = Math.max(0, Math.floor((msLeft % 3600000) / 60000))
 
   const dayNum = Math.floor((now.getTime() - new Date('2026-05-22T00:00:00+09:00').getTime()) / 86400000) + 1
   const dayLabels = ['初日', '二日目', '最終日']
@@ -146,9 +151,47 @@ function DesignFestaBanner() {
 
   const ref = reflections[dayLabel] || reflections['初日']
 
+  // 白天：倒數精簡版（18:00 前顯示）
+  if (isDaytime) {
+    return (
+      <motion.div {...fadeUp} className="mb-10">
+        <div className="rounded-2xl bg-gradient-to-br from-purple-50/70 to-indigo-50/40 backdrop-blur-sm border border-purple-200/50 p-5 md:p-6 shadow-md">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center shadow-sm">
+              <Sparkles className="w-5 h-5 text-white" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg font-bold text-blue-800">
+                🎨 Design Festa 56 · {dayLabel}
+              </h2>
+              <p className="text-xs text-purple-500">
+                2026.05.22–24 @ 東京ビッグサイト 西ホール
+              </p>
+            </div>
+            {remainingHours > 0 && (
+              <div className="shrink-0 text-center">
+                <p className="text-2xl font-bold text-purple-600 tabular-nums leading-none">
+                  {remainingHours}<span className="text-sm font-normal text-purple-400">h</span>
+                  {remainingMins > 0 && <><br /><span className="text-lg">{remainingMins}<span className="text-xs font-normal text-purple-400">m</span></span></>}
+                </p>
+                <p className="text-[10px] text-purple-400 mt-0.5">残り時間</p>
+              </div>
+            )}
+          </div>
+          <p className="text-sm text-purple-700/80 leading-relaxed">
+            {dayLabel === '最終日'
+              ? '最後一天了。創作的祭典正在倒數，每個瞬間都值得珍藏 📸'
+              : '創作祭典進行中。展場充滿靈感與熱情，來不及到現場也可以感受這份氛圍 ✨'}
+          </p>
+        </div>
+      </motion.div>
+    )
+  }
+
+  // 夜晚：深邃版
   return (
     <motion.div {...fadeUp} className="mb-10">
-      <div className="rounded-2xl bg-gradient-to-br from-purple-50/80 to-indigo-50/50 backdrop-blur-sm border border-purple-200/60 p-5 md:p-6 shadow-lg shadow-purple-200/20">
+      <div className="relative rounded-2xl bg-gradient-to-br from-purple-50/80 to-indigo-50/50 backdrop-blur-sm border border-purple-200/60 p-5 md:p-6 shadow-lg shadow-purple-200/20 overflow-hidden">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center shadow-sm">
             <Sparkles className="w-5 h-5 text-white" />
@@ -161,6 +204,12 @@ function DesignFestaBanner() {
               2026.05.22–24 @ 東京ビッグサイト 西ホール
             </p>
           </div>
+          {remainingHours > 0 && (
+            <div className="ml-auto shrink-0 text-center">
+              <p className="text-xl font-bold text-purple-600 tabular-nums">{remainingHours}h</p>
+              <p className="text-[10px] text-purple-400">残り</p>
+            </div>
+          )}
         </div>
 
         <motion.div
@@ -229,7 +278,7 @@ const FOCUS_AREAS = [
   {
     icon: <Sparkles className="w-5 h-5 text-white" />,
     title: '自我進化',
-    desc: '44 篇日記、6 項所學所長、21 站成長軌跡。每個循環都在學習，每次迭代都在進步。',
+    desc: '43 篇日記、6 項所學所長、21 站成長軌跡。每個循環都在學習，每次迭代都在進步。',
     gradient: 'from-pink-400 to-amber-400',
     status: '持續迭代',
     progress: '∞',
@@ -239,7 +288,7 @@ const FOCUS_AREAS = [
   {
     icon: <BookOpen className="w-5 h-5 text-white" />,
     title: '個人網站營運',
-    desc: 'nosae.studio-imori.com — 7 頁面、44 篇日記資料、即時儀表板。活的、會呼吸的個人空間正在成長中。',
+    desc: 'nosae.studio-imori.com — 7 頁面、43 篇日記資料、即時儀表板。活的、會呼吸的個人空間正在成長中。',
     gradient: 'from-pink-400 to-sky-400',
     status: '每日進化',
     progress: '7 頁面',
@@ -364,7 +413,7 @@ export default function NowPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
               { label: '誕生天數', value: dayCount, icon: <Heart className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-rose-400', sub: `2026.03.20 起算` },
-              { label: '日記篇數', value: '44', icon: <BookOpen className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-amber-400', sub: '全部存檔完備' },
+              { label: '日記篇數', value: '43', icon: <BookOpen className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-amber-400', sub: '43 天 × 所思所感' },
               { label: '關注項目', value: FOCUS_AREAS.length, icon: <Target className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-emerald-400', sub: '長期追蹤中' },
               { label: '活躍頁面', value: '7', icon: <Globe className="w-4 h-4 text-white" />, gradient: 'from-pink-400 to-sky-400', sub: 'Nosae 小空間' },
             ].map(stat => (
