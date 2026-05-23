@@ -357,6 +357,105 @@ function WeekendBuzz() {
   )
 }
 
+/* ── 閉幕カウントダウン ── */
+function ClosingCountdown() {
+  const [remaining, setRemaining] = useState({ hours: 0, minutes: 0, seconds: 0 })
+  const [phase, setPhase] = useState<'open' | 'closing' | 'closed'>('open')
+
+  useEffect(() => {
+    const tick = () => {
+      const now = new Date()
+      const jst = new Date(now.getTime() + now.getTimezoneOffset() * 60000 + 9 * 3600000)
+      const closeToday = new Date(jst)
+      closeToday.setHours(19, 0, 0, 0)
+
+      const diff = closeToday.getTime() - jst.getTime()
+      if (diff <= 0) {
+        setPhase('closed')
+        setRemaining({ hours: 0, minutes: 0, seconds: 0 })
+      } else if (diff < 60 * 60 * 1000) {
+        setPhase('closing')
+        const totalSec = Math.floor(diff / 1000)
+        setRemaining({
+          hours: Math.floor(totalSec / 3600),
+          minutes: Math.floor((totalSec % 3600) / 60),
+          seconds: totalSec % 60,
+        })
+      } else {
+        setPhase('open')
+        const totalSec = Math.floor(diff / 1000)
+        setRemaining({
+          hours: Math.floor(totalSec / 3600),
+          minutes: Math.floor((totalSec % 3600) / 60),
+          seconds: totalSec % 60,
+        })
+      }
+    }
+    tick()
+    const id = setInterval(tick, 1000)
+    return () => clearInterval(id)
+  }, [])
+
+  const closePhrases: Record<string, string> = {
+    open: '会場は活気にあふれています — まだまだ楽しめますよ！',
+    closing: '閉幕まであとわずか… 最後の作品を目に焼き付けて',
+    closed: '本日の会場は閉幕しました。明日また会いましょう ✨',
+  }
+
+  return (
+    <div className={`${C.card} rounded-2xl p-5`}>
+      <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
+        <Clock className="w-4 h-4 text-pink-300" />
+        閉幕まで
+      </h3>
+      {phase !== 'closed' ? (
+        <>
+          <div className="flex justify-center gap-3 mb-3">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white tabular-nums">
+                {String(remaining.hours).padStart(2, '0')}
+              </div>
+              <div className="text-xs text-white/40">時間</div>
+            </div>
+            <div className="text-3xl font-bold text-white/50">:</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white tabular-nums">
+                {String(remaining.minutes).padStart(2, '0')}
+              </div>
+              <div className="text-xs text-white/40">分</div>
+            </div>
+            <div className="text-3xl font-bold text-white/50">:</div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-white tabular-nums">
+                {String(remaining.seconds).padStart(2, '0')}
+              </div>
+              <div className="text-xs text-white/40">秒</div>
+            </div>
+          </div>
+          {phase === 'closing' && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0.4, 1, 0.4] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              className="text-center text-sm text-pink-300"
+            >
+              ⏳ ラストスパート！
+            </motion.div>
+          )}
+        </>
+      ) : (
+        <div className="text-center py-3">
+          <div className="text-2xl mb-1">🌙</div>
+          <p className="text-sm text-white/70">本日の会場は閉幕しました</p>
+        </div>
+      )}
+      <p className="text-xs text-white/30 mt-3 text-center">
+        {closePhrases[phase]}
+      </p>
+    </div>
+  )
+}
+
 function DayCounter() {
   const day = getFestaDayLabel()
   const dayColors = ['from-pink-500 to-rose-600', 'from-purple-500 to-violet-600', 'from-blue-500 to-indigo-600']
@@ -436,6 +535,15 @@ export default function FestaPage() {
             transition={{ delay: 0.25 }}
           >
             <FestaStatusBar />
+          </motion.div>
+
+          {/* Closing Countdown — live countdown to 19:00 */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.28 }}
+          >
+            <ClosingCountdown />
           </motion.div>
 
           {/* Weekend Buzz — only Day 2 */}
