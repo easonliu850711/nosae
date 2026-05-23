@@ -53,8 +53,11 @@ export default function DiaryPage() {
       )
       setSearchIndex(safeSearch)
       setLoading(false)
-      // Load most recent diary by default
-      const latest = (Array.isArray(diaries) && diaries.length > 0) ? diaries[0].date : null
+      // Load most recent diary by default (use the sorted data directly, not diaries state)
+      const sortedDiaries = safeIdx
+        .filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d.date))
+        .sort((a, b) => b.date.localeCompare(a.date))
+      const latest = sortedDiaries.length > 0 ? sortedDiaries[0].date : null
       if (latest) {
         loadDiary(latest)
         setExpanded(latest)
