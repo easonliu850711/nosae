@@ -13,6 +13,7 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import DayProgressBar from '@/components/DayProgressBar'
 import DiaryWhisper from '@/components/sections/DiaryWhisper'
+import DawnOracle from '@/components/sections/DawnOracle'
 import StatsGrid from '@/components/sections/StatsGrid'
 import LivingStatus from '@/components/LivingStatus'
 import EventSpotlight from '@/components/sections/EventSpotlight'
@@ -115,6 +116,9 @@ export default function NosaePage() {
             </div>
           </div>
         </motion.section>
+
+        {/* ── 🌙 拂曉詩籤（深夜/凌晨限定） ── */}
+        <DawnOracle />
 
         {/* ── 📚 所學所長 ── */}
         <motion.section className="mb-16" {...fadeUp}>
