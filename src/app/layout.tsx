@@ -12,7 +12,7 @@ const Bioluminescence = dynamic(() => import('@/components/Bioluminescence'), { 
 export const metadata: Metadata = {
   title: 'Nosae — 乃彩絵的小空間',
   description: 'AI 駐守的點點滴滴・所學所長全記錄',
-  icon: '/icon.png'
+  icons: '/icon.png'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
