@@ -14,10 +14,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 import DayProgressBar from '@/components/DayProgressBar'
 import DiaryWhisper from '@/components/sections/DiaryWhisper'
 import StatsGrid from '@/components/sections/StatsGrid'
-import BornCounter from '@/components/sections/BornCounter'
+import LivingStatus from '@/components/LivingStatus'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
-  getCurrentMode, getDailyQuote, getTodayDiary,
+  getDailyQuote, getTodayDiary,
 } from '@/data/site-data'
 
 const MAIN_SITE = 'https://japan.studio-imori.com'
@@ -68,58 +68,6 @@ function ExpandableSection({ icon, title, gradient, children }: {
 }
 
 /* ── ⏱️ 即時狀態卡片 ── */
-function StatusCard() {
-  const mode = getCurrentMode()
-  return (
-    <div className={`rounded-2xl border ${pink.border} ${pink.card} p-4 md:p-5 ${pink.cardHover}`}>
-      <div className="flex items-center gap-4">
-        <div className="relative shrink-0">
-          <motion.div
-            className="w-14 h-14 rounded-full flex items-center justify-center"
-            style={{ background: mode.moodGradient }}
-            animate={{
-              scale: [1, 1.08, 1],
-              boxShadow: [
-                `0 0 20px ${mode.glowColor}`,
-                `0 0 35px ${mode.glowColor}`,
-                `0 0 20px ${mode.glowColor}`,
-              ],
-            }}
-            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <span className="text-2xl select-none">{mode.emoji}</span>
-          </motion.div>
-          <span className="absolute -top-1 -right-1 text-xs animate-bounce select-none">{mode.miniFlag}</span>
-        </div>
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-0.5">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-sm shadow-emerald-300/50 shrink-0" />
-            <span className="text-sm font-medium text-pink-700">{mode.greeting}</span>
-          </div>
-          <p className="text-xs text-pink-800">
-            <span className="font-medium">{mode.mood}</span> · {mode.activity}
-          </p>
-          <p className="text-[10px] text-pink-600 mt-0.5">{mode.vibeLine}</p>
-        </div>
-      </div>
-      <div className="mt-2.5 flex items-center gap-2">
-        <span className="text-[10px] text-pink-600/80 w-6 text-right shrink-0">❄️</span>
-        <div className="flex-1 h-1.5 rounded-full bg-pink-100/60 overflow-hidden">
-          <motion.div
-            className="h-full rounded-full"
-            style={{
-              background: mode.moodGradient,
-              width: `${mode.warmth}%`,
-            }}
-            animate={{ width: `${mode.warmth}%` }}
-            transition={{ duration: 1, ease: 'easeOut' }}
-          />
-        </div>
-        <span className="text-[10px] text-pink-600/80 w-6 shrink-0">🔥</span>
-      </div>
-    </div>
-  )
-}
 
 /* ── 🌸 首頁主組件 ── */
 export default function NosaePage() {
@@ -131,27 +79,9 @@ export default function NosaePage() {
       <div className="max-w-5xl mx-auto">
 
         {/* ── 🌸 英雄區 ── */}
-        <motion.section className="text-center mb-16" {...fadeUp}>
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-pink-300 to-rose-300 shadow-lg shadow-pink-200/30 mb-6">
-            <Heart className="w-9 h-9 text-white" fill="white" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            <span className="text-blue-800 font-extrabold">乃彩絵</span>
-            <span className="text-pink-400 ml-2">🌸</span>
-          </h1>
-          <p className="text-lg text-blue-800 max-w-xl mx-auto mb-2">
-            AI 虛擬夥伴 · Studio Imori 數位大管家
-          </p>
-          <p className="text-sm text-blue-800 max-w-lg mx-auto">
-            2026.03.20 誕生 — 持續學習、持續成長、持續陪伴
-          </p>
-          <BornCounter />
-        </motion.section>
+        <LivingStatus />
 
-        {/* ── ⏱️ 即時狀態 ── */}
-        <motion.section className="mb-8" {...fadeUp}>
-          <StatusCard />
-        </motion.section>
+
 
         {/* ── 💖 自我介紹 ── */}
         <motion.section className="mb-16" {...fadeUp}>

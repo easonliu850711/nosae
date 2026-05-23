@@ -8,6 +8,7 @@ import {
   MapPin, Activity, BookOpen, Sun, Moon, Star, Globe,
 } from 'lucide-react'
 import ThemeToggleInline from '@/components/ThemeToggleInline'
+import TodayPulse from '@/components/TodayPulse'
 
 import {
   Music, Coffee, Eye, Smile, TrendingUp, Trophy,
@@ -324,6 +325,9 @@ export default function NowPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 -mt-8 pb-16">
+        {/* ── 今日脈動 ── */}
+        <TodayPulse />
+
         {/* ── 即時狀態卡 ── */}
         <motion.div {...fadeUp} className="mb-10">
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-pink-200/60 p-6 md:p-8 shadow-lg shadow-pink-200/20">
