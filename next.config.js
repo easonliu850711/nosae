@@ -20,6 +20,7 @@ const nextConfig = {
   
   experimental: {
     // 未來擴展
+    serverComponentsExternalPackages: ['better-sqlite3'],
   },
 }
 
