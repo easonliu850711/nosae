@@ -1,33 +1,27 @@
 [
   {
-    "date": "index",
-    "entryCount": 0,
-    "mood": "平靜",
-    "moodScore": 50
-  },
-  {
     "date": "2026-05-23",
     "entryCount": 22,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 65
   },
   {
     "date": "2026-05-22",
     "entryCount": 25,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 56
   },
   {
     "date": "2026-05-19",
     "entryCount": 18,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 53
   },
   {
     "date": "2026-05-18",
     "entryCount": 83,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 53
   },
   {
     "date": "2026-05-17",
@@ -39,25 +33,25 @@
     "date": "2026-05-15",
     "entryCount": 61,
     "mood": "平靜",
-    "moodScore": 50
+    "moodScore": 53
   },
   {
     "date": "2026-05-12",
     "entryCount": 17,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 53
   },
   {
     "date": "2026-05-10",
     "entryCount": 96,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "反思",
+    "moodScore": 62
   },
   {
     "date": "2026-05-09",
     "entryCount": 57,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "溫馨",
+    "moodScore": 65
   },
   {
     "date": "2026-05-06",
@@ -75,67 +69,67 @@
     "date": "2026-05-03",
     "entryCount": 80,
     "mood": "平靜",
-    "moodScore": 50
+    "moodScore": 56
   },
   {
     "date": "2026-05-02",
     "entryCount": 95,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "反思",
+    "moodScore": 59
   },
   {
     "date": "2026-05-01",
     "entryCount": 205,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 77
   },
   {
     "date": "2026-04-29",
     "entryCount": 157,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 62
   },
   {
     "date": "2026-04-28",
     "entryCount": 132,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 62
   },
   {
     "date": "2026-04-27",
     "entryCount": 40,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 53
   },
   {
     "date": "2026-04-25",
     "entryCount": 70,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 68
   },
   {
     "date": "2026-04-24",
     "entryCount": 19,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 53
   },
   {
     "date": "2026-04-23",
     "entryCount": 542,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 100
   },
   {
     "date": "2026-04-22",
     "entryCount": 280,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "創意",
+    "moodScore": 74
   },
   {
     "date": "2026-04-20",
     "entryCount": 82,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "喜悅",
+    "moodScore": 56
   },
   {
     "date": "2026-04-19",
@@ -152,98 +146,98 @@
   {
     "date": "2026-04-17",
     "entryCount": 112,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 53
   },
   {
     "date": "2026-04-16",
     "entryCount": 93,
     "mood": "平靜",
-    "moodScore": 50
+    "moodScore": 53
   },
   {
     "date": "2026-04-15",
     "entryCount": 44,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "反思",
+    "moodScore": 80
   },
   {
     "date": "2026-04-14",
     "entryCount": 195,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 62
   },
   {
     "date": "2026-04-12",
     "entryCount": 151,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "懷念",
+    "moodScore": 56
   },
   {
     "date": "2026-04-11",
     "entryCount": 42,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "興奮",
+    "moodScore": 53
   },
   {
     "date": "2026-04-10",
     "entryCount": 36,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 53
   },
   {
     "date": "2026-04-09",
     "entryCount": 79,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "懷念",
+    "moodScore": 62
   },
   {
     "date": "2026-04-08",
     "entryCount": 34,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 53
   },
   {
     "date": "2026-04-07",
     "entryCount": 40,
     "mood": "平靜",
-    "moodScore": 50
+    "moodScore": 56
   },
   {
     "date": "2026-04-06",
     "entryCount": 57,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 56
   },
   {
     "date": "2026-04-05",
     "entryCount": 79,
     "mood": "平靜",
-    "moodScore": 50
+    "moodScore": 59
   },
   {
     "date": "2026-04-03",
     "entryCount": 48,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "喜悅",
+    "moodScore": 59
   },
   {
     "date": "2026-03-27",
     "entryCount": 38,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 65
   },
   {
     "date": "2026-03-26",
     "entryCount": 28,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "興奮",
+    "moodScore": 56
   },
   {
     "date": "2026-03-24",
     "entryCount": 6,
-    "mood": "平靜",
-    "moodScore": 50
+    "mood": "專注",
+    "moodScore": 53
   },
   {
     "date": "2026-03-23",
@@ -260,6 +254,12 @@
   {
     "date": "2026-03-20",
     "entryCount": 20,
+    "mood": "興奮",
+    "moodScore": 53
+  },
+  {
+    "date": "index",
+    "entryCount": 0,
     "mood": "平靜",
     "moodScore": 50
   }

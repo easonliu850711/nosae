@@ -9,6 +9,7 @@ export const revalidate = 0
 
 const MoodRing = nextDynamic(() => import('@/components/MoodRing'), { ssr: false })
 const NightLamp = nextDynamic(() => import('@/components/NightLamp'), { ssr: false })
+const EveningLamp = nextDynamic(() => import('@/components/EveningLamp'), { ssr: false })
 const OmamoriCorner = nextDynamic(() => import('@/components/OmamoriCorner'), { ssr: false })
 const Bioluminescence = nextDynamic(() => import('@/components/Bioluminescence'), { ssr: false })
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Bioluminescence />
           <NightLamp />
+          <EveningLamp />
           <OmamoriCorner />
         </ThemeProvider>
       </body>
