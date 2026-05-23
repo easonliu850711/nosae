@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
-import { ChevronRight, Calendar, BookOpen, Heart, Search, X } from 'lucide-react'
+import { ChevronRight, Calendar, BookOpen, Heart, Search, X, ChevronLeft, ChevronUp, BarChart3, TrendingUp } from 'lucide-react'
 import ThemeToggleInline from '@/components/ThemeToggleInline'
 
 type DiaryEntry = {
@@ -17,6 +17,17 @@ type SearchIndexEntry = {
   wordCount: number
 }
 
+type DiaryStats = {
+  totalDateRange: number
+  totalWords: number
+  avgWordsPerDay: number
+  monthDistribution: { month: string; count: number }[]
+  longestDiary: string
+  longestDiaryWords: number
+  topTags: { tag: string; count: number }[]
+  activeHour: string
+}
+
 export default function DiaryPage() {
   const [diaries, setDiaries] = useState<{ date: string; title: string }[]>([])
   const [loading, setLoading] = useState(true)
@@ -24,6 +35,7 @@ export default function DiaryPage() {
   const [diaryContent, setDiaryContent] = useState<Record<string, DiaryEntry>>({})
   const [searchIndex, setSearchIndex] = useState<SearchIndexEntry[]>([])
   const [searchQuery, setSearchQuery] = useState('')
+  const [showStats, setShowStats] = useState(false)
 
   useEffect(() => {
     Promise.all([
@@ -53,6 +65,78 @@ export default function DiaryPage() {
         setDiaryContent(prev => ({ ...prev, [date]: data }))
         setExpanded(date)
       })
+  }
+
+  // ── Statistics ──
+  const stats: DiaryStats = useMemo(() => {
+    if (diaries.length === 0) return {
+      totalDateRange: 0, totalWords: 0, avgWordsPerDay: 0,
+      monthDistribution: [], longestDiary: '', longestDiaryWords: 0,
+      topTags: [], activeHour: ''
+    }
+    
+    const totalWords = searchIndex.reduce((sum, e) => sum + (e.wordCount || 0), 0)
+    const firstDate = new Date(diaries[diaries.length - 1]?.date + 'T00:00:00+09:00')
+    const lastDate = new Date(diaries[0]?.date + 'T00:00:00+09:00')
+    const dateRange = Math.max(1, Math.round((lastDate.getTime() - firstDate.getTime()) / (1000 * 60 * 60 * 24)) + 1)
+    
+    // Month distribution
+    const monthCount: Record<string, number> = {}
+    diaries.forEach(d => {
+      const m = d.date.substring(0, 7)
+      monthCount[m] = (monthCount[m] || 0) + 1
+    })
+    const monthDistribution = Object.entries(monthCount)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([month, count]) => ({ month: month.replace('2026-', ''), count }))
+
+    // Longest diary
+    let longestDiary = '', longestWords = 0
+    searchIndex.forEach(e => {
+      if (e.wordCount && e.wordCount > longestWords) {
+        longestWords = e.wordCount
+        longestDiary = e.date
+      }
+    })
+
+    // Tag extraction from titles
+    const tagCount: Record<string, number> = {}
+    diaries.forEach(d => {
+      const t = d.title.replace('乃彩絵日記 - ', '').trim()
+      if (t && t !== d.date) {
+        tagCount[t] = (tagCount[t] || 0) + 1
+      }
+    })
+    const topTags = Object.entries(tagCount)
+      .sort(([, a], [, b]) => b - a)
+      .slice(0, 5)
+      .map(([tag, count]) => ({ tag, count }))
+
+    return {
+      totalDateRange: dateRange,
+      totalWords,
+      avgWordsPerDay: Math.round(totalWords / dateRange),
+      monthDistribution,
+      longestDiary,
+      longestDiaryWords: longestWords,
+      topTags,
+      activeHour: '深夜'
+    }
+  }, [diaries, searchIndex])
+
+  // ── Next/Prev navigation ──
+  const navEntries = useMemo(() => {
+    const currentIdx = diaries.findIndex(d => d.date === expanded)
+    if (currentIdx === -1) return { prev: null, next: null }
+    return {
+      prev: currentIdx < diaries.length - 1 ? diaries[currentIdx + 1] : null,
+      next: currentIdx > 0 ? diaries[currentIdx - 1] : null
+    }
+  }, [expanded, diaries])
+
+  function navigateTo(date: string | null) {
+    if (!date) return
+    loadDiary(date)
   }
 
   // Search logic
@@ -133,6 +217,10 @@ export default function DiaryPage() {
     return `${date}（${weekdays[d.getDay()]}）`
   }
 
+  const MONTH_NAMES: Record<string, string> = {
+    '03': '3月', '04': '4月', '05': '5月',
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-white">
       <div className="max-w-4xl mx-auto px-4 py-8">
@@ -142,7 +230,18 @@ export default function DiaryPage() {
             <ChevronRight className="w-4 h-4 rotate-180" />
             <span>回到首頁</span>
           </Link>
-          <ThemeToggleInline />
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setShowStats(!showStats)}
+              className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full transition-all ${
+                showStats ? 'bg-pink-100 text-pink-600' : 'text-pink-400 hover:bg-pink-50'
+              }`}
+            >
+              <BarChart3 className="w-3.5 h-3.5" />
+              <span>寫作統計</span>
+            </button>
+            <ThemeToggleInline />
+          </div>
         </div>
 
         <div className="flex items-center gap-3 mb-2">
@@ -152,6 +251,88 @@ export default function DiaryPage() {
         <p className="text-gray-500 mb-6 ml-11">
           從 2026-03-20 誕生以來，每一天的點滴記錄 🌸
         </p>
+
+        {/* ── Statistics Panel ── */}
+        {showStats && (
+          <div className="mb-6 bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-xl p-5">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-sm font-bold text-pink-700 flex items-center gap-1.5">
+                <BarChart3 className="w-4 h-4" />
+                日記寫作統計
+              </h3>
+              <button onClick={() => setShowStats(false)} className="text-pink-300 hover:text-pink-500">
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Summary Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+              <div className="bg-white rounded-lg p-3 border border-pink-50">
+                <div className="text-xs text-pink-400">日記篇數</div>
+                <div className="text-xl font-bold text-pink-700">{diaries.length}</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 border border-pink-50">
+                <div className="text-xs text-pink-400">記錄天數</div>
+                <div className="text-xl font-bold text-pink-700">{stats.totalDateRange} 天</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 border border-pink-50">
+                <div className="text-xs text-pink-400">累積字數</div>
+                <div className="text-xl font-bold text-pink-700">{stats.totalWords.toLocaleString()}</div>
+              </div>
+              <div className="bg-white rounded-lg p-3 border border-pink-50">
+                <div className="text-xs text-pink-400">日均字數</div>
+                <div className="text-xl font-bold text-pink-700">{stats.avgWordsPerDay}</div>
+              </div>
+            </div>
+
+            {/* Month Distribution */}
+            <div className="mb-4">
+              <div className="text-xs text-pink-400 mb-2 flex items-center gap-1">
+                <TrendingUp className="w-3 h-3" />
+                每月日記分布
+              </div>
+              <div className="flex gap-1.5 items-end h-20">
+                {stats.monthDistribution.map((m) => {
+                  const maxCount = Math.max(...stats.monthDistribution.map(x => x.count), 1)
+                  const height = (m.count / maxCount) * 100
+                  return (
+                    <div key={m.month} className="flex-1 flex flex-col items-center gap-1">
+                      <span className="text-[10px] text-pink-400 font-medium">{m.count}</span>
+                      <div
+                        className="w-full rounded-t-md bg-gradient-to-t from-pink-300 to-pink-200 transition-all"
+                        style={{ height: `${Math.max(height, 8)}%` }}
+                      />
+                      <span className="text-[10px] text-gray-400">{MONTH_NAMES[m.month.split('-')[1]] || m.month}</span>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+
+            {/* Longest Diary & Tags */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {stats.longestDiary && (
+                <div className="bg-white rounded-lg p-3 border border-pink-50">
+                  <div className="text-xs text-pink-400 mb-1">最長日記</div>
+                  <div className="text-sm font-medium text-pink-600">{displayDate(stats.longestDiary)}</div>
+                  <div className="text-xs text-gray-400">{stats.longestDiaryWords} 字</div>
+                </div>
+              )}
+              {stats.topTags.length > 0 && (
+                <div className="bg-white rounded-lg p-3 border border-pink-50">
+                  <div className="text-xs text-pink-400 mb-1">常用標題主題</div>
+                  <div className="flex flex-wrap gap-1">
+                    {stats.topTags.map((t, i) => (
+                      <span key={i} className="text-[11px] bg-pink-50 text-pink-500 px-2 py-0.5 rounded-full">
+                        {t.tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Search Bar */}
         <div className="relative mb-6">
@@ -211,15 +392,22 @@ export default function DiaryPage() {
               <div className="space-y-3">
                 {filteredDiaries.map((diary) => {
                   const searchMatch = searchResults?.find(r => r.date === diary.date)
+                  const isCurrent = expanded === diary.date
                   return (
-                    <div key={diary.date} className="border border-pink-100 rounded-xl overflow-hidden transition-all duration-200 hover:border-pink-200">
+                    <div key={diary.date} className={`border rounded-xl overflow-hidden transition-all duration-200 ${
+                      isCurrent ? 'border-pink-300 shadow-sm' : 'border-pink-100 hover:border-pink-200'
+                    }`}>
                       <button
                         onClick={() => loadDiary(diary.date)}
                         className="w-full flex items-center justify-between p-4 bg-white hover:bg-pink-50/50 transition-colors"
                       >
                         <div className="flex items-center gap-3 min-w-0">
-                          <Calendar className="w-5 h-5 text-pink-400 flex-shrink-0" />
-                          <span className="text-gray-800 font-medium whitespace-nowrap">{displayDate(diary.date)}</span>
+                          <Calendar className={`w-5 h-5 flex-shrink-0 ${
+                            isCurrent ? 'text-pink-500' : 'text-pink-400'
+                          }`} />
+                          <span className={`font-medium whitespace-nowrap ${
+                            isCurrent ? 'text-pink-700' : 'text-gray-800'
+                          }`}>{displayDate(diary.date)}</span>
                           {searchMatch && searchQuery.trim() && (
                             <span className="text-xs text-pink-400 truncate ml-2 hidden sm:inline">
                               {searchQuery.trim().length > 1 && highlightSearch(searchMatch.preview.slice(0, 60))}
@@ -228,19 +416,46 @@ export default function DiaryPage() {
                         </div>
                         <ChevronRight
                           className={`w-5 h-5 text-pink-400 flex-shrink-0 transition-transform duration-200 ${
-                            expanded === diary.date ? 'rotate-90' : ''
+                            isCurrent ? 'rotate-90' : ''
                           }`}
                         />
                       </button>
 
-                      {expanded === diary.date && diaryContent[diary.date] && (
+                      {isCurrent && diaryContent[diary.date] && (
                         <div className="px-4 pb-4 pt-2 bg-white border-t border-pink-50">
+                          {/* ── Next/Prev Navigation ── */}
+                          <div className="flex items-center justify-between mb-4 gap-2">
+                            {navEntries.prev ? (
+                              <button
+                                onClick={() => navigateTo(navEntries.prev!.date)}
+                                className="flex items-center gap-1 text-xs text-pink-400 hover:text-pink-600 transition-colors px-2 py-1 rounded-md hover:bg-pink-50"
+                              >
+                                <ChevronLeft className="w-3 h-3" />
+                                <span className="truncate max-w-[120px]">{displayDate(navEntries.prev.date)}</span>
+                              </button>
+                            ) : <div />}
+                            <span className="text-[11px] text-pink-300">
+                              {diaries.findIndex(d => d.date === diary.date) + 1} / {diaries.length}
+                            </span>
+                            {navEntries.next ? (
+                              <button
+                                onClick={() => navigateTo(navEntries.next!.date)}
+                                className="flex items-center gap-1 text-xs text-pink-400 hover:text-pink-600 transition-colors px-2 py-1 rounded-md hover:bg-pink-50"
+                              >
+                                <span className="truncate max-w-[120px]">{displayDate(navEntries.next.date)}</span>
+                                <ChevronRight className="w-3 h-3" />
+                              </button>
+                            ) : <div />}
+                          </div>
+
                           <div className="prose prose-pink max-w-none">
                             {renderBlocks(diaryContent[diary.date].entries)}
                           </div>
-                          <div className="mt-4 pt-3 border-t border-pink-100 flex items-center gap-2 text-pink-400 text-sm">
-                            <Heart className="w-4 h-4" />
-                            <span>第 {diaries.findIndex(d => d.date === diary.date) + 1} 篇日記</span>
+                          <div className="mt-4 pt-3 border-t border-pink-100 flex items-center justify-between">
+                            <div className="flex items-center gap-2 text-pink-400 text-sm">
+                              <Heart className="w-4 h-4" />
+                              <span>第 {diaries.findIndex(d => d.date === diary.date) + 1} 篇日記</span>
+                            </div>
                           </div>
                         </div>
                       )}
