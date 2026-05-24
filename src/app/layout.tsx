@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
 import NavBar from '@/components/NavBar'
+import VisitorCounter from '@/components/VisitorCounter'
 import nextDynamic from 'next/dynamic'
 
 export const dynamic = 'force-dynamic'
@@ -33,6 +34,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <EveningLamp />
           <OmamoriCorner />
         </ThemeProvider>
+        <footer className="text-center py-6 border-t border-white/10 bg-gradient-to-b from-transparent to-black/20">
+          <div className="max-w-5xl mx-auto px-4">
+            <p className="text-[11px] text-black/30 dark:text-white/25 tracking-wider">
+              🌸 乃彩絵 · &copy; {new Date().getFullYear()} Studio Imori
+              <span className="mx-2">·</span>
+              <VisitorCounter />
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   )

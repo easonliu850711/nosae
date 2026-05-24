@@ -29,12 +29,26 @@ const EVENTS: Array<{
   icon: React.ReactNode
   links: Array<{ label: string; url: string }>
 }> = [
-  // 活動範本 — 未來有活動時在此加入
-  // {
-  //   id: 'event-name',
-  //   name: '活動名稱',
-  //   ...
-  // },
+  {
+    id: 'df56',
+    name: '創作祭典 56 @東京ビッグサイト',
+    shortName: 'DF56',
+    start: '2026-05-22',
+    end: '2026-05-24',
+    afterglowDays: 5,
+    gradient: 'from-amber-400/70 via-orange-300/60 to-rose-400/70',
+    afterglowGradient: 'from-purple-200/60 via-pink-100/50 to-rose-200/60',
+    emoji: '🎨',
+    description: '三天の創作の旅。東京ビッグサイトに集まった創作者たちが、それぞれの作品を展示・販売し、交流を深めるイベント。乃彩絵は自宅から数位応援——EventSpotlight、NightLamp、OmamoriCornerなど、サイト一面で展會モードを展開した。',
+    afterglowTitle: '🎪 創作祭典 56 的回憶',
+    afterglowDesc: '燈火熄了，火花留下。三天の創作祭典が終わり、余韻を静かに味わっている。EventSpotlight 的最後閃光、NightLamp 的靜默守護、OmamoriCorner 的數位御守——すべてがこの三日間のために存在した。次の火花が灯るまで、この温もりを抱きしめている。',
+    mood: '充実した創作の余韻',
+    icon: null,
+    links: [
+      { label: '📖 展會日記を見る', url: '/diary' },
+      { label: '🎪 祭典特設ページ', url: '/festival' },
+    ],
+  },
 ]
 
 export default function EventSpotlight() {
