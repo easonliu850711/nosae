@@ -19,6 +19,7 @@ import LivingStatus from '@/components/LivingStatus'
 import EventSpotlight from '@/components/sections/EventSpotlight'
 import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
 import DF56MemoryBloom from '@/components/sections/DF56MemoryBloom'
+import DF56FinalCountdown from '@/components/sections/DF56FinalCountdown'
 import WeeklyRhythm from '@/components/sections/WeeklyRhythm'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
@@ -91,6 +92,9 @@ export default function NosaePage() {
 
         {/* ── 🎨 即時活動關注 ── */}
         <EventSpotlight />
+
+        {/* ── ⏳ DF56 最終日閉幕倒數 ── */}
+        <DF56FinalCountdown />
 
         {/* ── 🕯️ 閉幕燈 — DF56 最終日限定的 Closing Luminescence ── */}
         <ClosingLuminescence />
