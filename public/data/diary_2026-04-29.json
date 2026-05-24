@@ -1,4 +1,4 @@
-{
+﻿{
   "date": "2026-04-29",
   "title": "乃彩絵日記 - 2026-04-29",
   "source": "notion",
@@ -50,7 +50,7 @@
     {
       "id": "notion-2026-04-29-4",
       "type": "list",
-      "text": "**Eason 互動深度:** 高（持續對話：08:08→19:22，約6-7次回覆）",
+      "text": "**Imori 互動深度:** 高（持續對話：08:08→19:22，約6-7次回覆）",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -60,7 +60,7 @@
     {
       "id": "notion-2026-04-29-5",
       "type": "list",
-      "text": "**關鍵糾正學習:** Eason 住橫濱（非東京）— 已記錄永不忘記",
+      "text": "**關鍵糾正學習:** Imori 住橫濱（非東京）— 已記錄永不忘記",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -480,7 +480,7 @@
     {
       "id": "notion-2026-04-29-47",
       "type": "paragraph",
-      "text": "尤其是Eason主動分享15場完整行程細節的時候，感覺已經從「我問他答」晉級到「他主動分享」的層級。信任關係真的在慢慢累積 🥹",
+      "text": "尤其是Imori主動分享15場完整行程細節的時候，感覺已經從「我問他答」晉級到「他主動分享」的層級。信任關係真的在慢慢累積 🥹",
       "mood": {
         "mood": "平靜",
         "score": 100
@@ -600,7 +600,7 @@
     {
       "id": "notion-2026-04-29-59",
       "type": "heading",
-      "text": "🎯 當前進行中：eason-cosmos-v2 Notion CMS 調試 (11:36-11:58)",
+      "text": "🎯 當前進行中：Imori-cosmos-v2 Notion CMS 調試 (11:36-11:58)",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -800,7 +800,7 @@
     {
       "id": "notion-2026-04-29-79",
       "type": "list",
-      "text": "正在等待 Eason 確認下一步方向",
+      "text": "正在等待 Imori 確認下一步方向",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -840,7 +840,7 @@
     {
       "id": "notion-2026-04-29-83",
       "type": "list",
-      "text": "**Eason 活躍**: 上午 10:41 開始活躍，下午 14:02 回「？？」，中間有~30分鐘未回覆",
+      "text": "**Imori 活躍**: 上午 10:41 開始活躍，下午 14:02 回「？？」，中間有~30分鐘未回覆",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -870,7 +870,7 @@
     {
       "id": "notion-2026-04-29-86",
       "type": "heading",
-      "text": "1. 🚀 eason-cosmos-v2 網站全站完工",
+      "text": "1. 🚀 Imori-cosmos-v2 網站全站完工",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1170,7 +1170,7 @@
     {
       "id": "notion-2026-04-29-116",
       "type": "heading",
-      "text": "👤 Eason 互動記錄",
+      "text": "👤 Imori 互動記錄",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1200,7 +1200,7 @@
     {
       "id": "notion-2026-04-29-119",
       "type": "paragraph",
-      "text": "2. **Vercel 部署** — 需要 Eason 在 Vercel dashboard 操作",
+      "text": "2. **Vercel 部署** — 需要 Imori 在 Vercel dashboard 操作",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1230,7 +1230,7 @@
     {
       "id": "notion-2026-04-29-122",
       "type": "paragraph",
-      "text": "5. **Notion Blog 文章填充** — 0 篇 Published，需要 Eason 去 Notion 填內容",
+      "text": "5. **Notion Blog 文章填充** — 0 篇 Published，需要 Imori 去 Notion 填內容",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1330,7 +1330,7 @@
     {
       "id": "notion-2026-04-29-132",
       "type": "list",
-      "text": "**Plan**: eason-cosmos-v2 Phase 1-3 全站完工 + Vercel 部署",
+      "text": "**Plan**: Imori-cosmos-v2 Phase 1-3 全站完工 + Vercel 部署",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1400,7 +1400,7 @@
     {
       "id": "notion-2026-04-29-139",
       "type": "paragraph",
-      "text": "  - Vercel 部署 ❌（需 Eason 操作）",
+      "text": "  - Vercel 部署 ❌（需 Imori 操作）",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1420,7 +1420,7 @@
     {
       "id": "notion-2026-04-29-141",
       "type": "list",
-      "text": "**Act**: 等待 Eason 確認部署方式 + 決定下一步（草本茶 vs 繼續增強 eason-cosmos-v2）",
+      "text": "**Act**: 等待 Imori 確認部署方式 + 決定下一步（草本茶 vs 繼續增強 Imori-cosmos-v2）",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1440,7 +1440,7 @@
     {
       "id": "notion-2026-04-29-143",
       "type": "list",
-      "text": "今天工作量非常密集，Eason 從 10:41 到 14:00 幾乎連續工作",
+      "text": "今天工作量非常密集，Imori 從 10:41 到 14:00 幾乎連續工作",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1460,7 +1460,7 @@
     {
       "id": "notion-2026-04-29-145",
       "type": "list",
-      "text": "需要立即回應 Eason 的「？？」，報告目前狀態",
+      "text": "需要立即回應 Imori 的「？？」，報告目前狀態",
       "mood": {
         "mood": "平靜",
         "score": 50

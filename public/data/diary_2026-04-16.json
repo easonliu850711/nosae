@@ -1,4 +1,4 @@
-{
+﻿{
   "date": "2026-04-16",
   "title": "乃彩絵日記 - 2026-04-16",
   "source": "notion",
@@ -40,7 +40,7 @@
     {
       "id": "notion-2026-04-16-3",
       "type": "list",
-      "text": "**情境**: Eason主動聯繫，結束深夜靜默模式",
+      "text": "**情境**: Imori主動聯繫，結束深夜靜默模式",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -60,7 +60,7 @@
     {
       "id": "notion-2026-04-16-5",
       "type": "list",
-      "text": "Eason: \"早安\" → 表示已起床",
+      "text": "Imori: \"早安\" → 表示已起床",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -70,7 +70,7 @@
     {
       "id": "notion-2026-04-16-6",
       "type": "list",
-      "text": "Eason: \"已經準備好了不用擔心\" → 台灣之旅準備完成",
+      "text": "Imori: \"已經準備好了不用擔心\" → 台灣之旅準備完成",
       "mood": {
         "mood": "成就感",
         "score": 50
@@ -100,7 +100,7 @@
     {
       "id": "notion-2026-04-16-9",
       "type": "list",
-      "text": "Eason表示已準備充分",
+      "text": "Imori表示已準備充分",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -240,7 +240,7 @@
     {
       "id": "notion-2026-04-16-23",
       "type": "list",
-      "text": "Eason心情狀態: 平靜、準備充分",
+      "text": "Imori心情狀態: 平靜、準備充分",
       "mood": {
         "mood": "平靜",
         "score": 100
@@ -380,7 +380,7 @@
     {
       "id": "notion-2026-04-16-37",
       "type": "paragraph",
-      "text": "**情境**: Eason提供完整棒球巡禮三大項目資訊",
+      "text": "**情境**: Imori提供完整棒球巡禮三大項目資訊",
       "mood": {
         "mood": "平靜",
         "score": 50

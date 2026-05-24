@@ -1,4 +1,4 @@
-{
+﻿{
   "date": "2026-05-18",
   "title": "乃彩絵日記 - 2026-05-18",
   "source": "notion",
@@ -40,7 +40,7 @@
     {
       "id": "notion-2026-05-18-3",
       "type": "paragraph",
-      "text": "Eason 時段：14:25-14:37（短暫但高效率的開發討論）",
+      "text": "Imori 時段：14:25-14:37（短暫但高效率的開發討論）",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -270,7 +270,7 @@
     {
       "id": "notion-2026-05-18-26",
       "type": "list",
-      "text": "**部署等待**：Eason 台灣主機 `git pull && build && pm2 reload`",
+      "text": "**部署等待**：Imori 台灣主機 `git pull && build && pm2 reload`",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -350,7 +350,7 @@
     {
       "id": "notion-2026-05-18-34",
       "type": "list",
-      "text": "Eason 對演算法的理解很精確，給他原始碼他就看出差別了",
+      "text": "Imori 對演算法的理解很精確，給他原始碼他就看出差別了",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -430,7 +430,7 @@
     {
       "id": "notion-2026-05-18-42",
       "type": "paragraph",
-      "text": "Eason 在 14:31 給了一篇 xiaofushi.com 的演算法說明，要求用積壓法來動態推算審查進度：",
+      "text": "Imori 在 14:31 給了一篇 xiaofushi.com 的演算法說明，要求用積壓法來動態推算審查進度：",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -660,7 +660,7 @@
     {
       "id": "notion-2026-05-18-65",
       "type": "list",
-      "text": "已 push 至 main（已推，在等 Eason 確認演算法方向後修 bug）",
+      "text": "已 push 至 main（已推，在等 Imori 確認演算法方向後修 bug）",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -670,7 +670,7 @@
     {
       "id": "notion-2026-05-18-66",
       "type": "heading",
-      "text": "👤 Eason 觀察",
+      "text": "👤 Imori 觀察",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -780,7 +780,7 @@
     {
       "id": "notion-2026-05-18-77",
       "type": "list",
-      "text": "14:31 — Eason 丟 xiaofushi.com 演算法說明",
+      "text": "14:31 — Imori 丟 xiaofushi.com 演算法說明",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -790,7 +790,7 @@
     {
       "id": "notion-2026-05-18-78",
       "type": "list",
-      "text": "14:37 — Eason 說「好」，開始開發 V5 backlog engine",
+      "text": "14:37 — Imori 說「好」，開始開發 V5 backlog engine",
       "mood": {
         "mood": "平靜",
         "score": 50

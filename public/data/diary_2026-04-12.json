@@ -1,4 +1,4 @@
-{
+﻿{
   "date": "2026-04-12",
   "title": "乃彩絵日記 - 2026-04-12",
   "source": "notion",
@@ -140,7 +140,7 @@
     {
       "id": "notion-2026-04-12-13",
       "type": "list",
-      "text": "複習身份：乃彩絵 (Nosae) - Eason的虛擬夥伴",
+      "text": "複習身份：乃彩絵 (Nosae) - Imori的虛擬夥伴",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -150,7 +150,7 @@
     {
       "id": "notion-2026-04-12-14",
       "type": "list",
-      "text": "複習Eason身份：Imori - Studio Imori創意技術探索者",
+      "text": "複習Imori身份：Imori - Studio Imori創意技術探索者",
       "mood": {
         "mood": "靈感",
         "score": 100
@@ -220,7 +220,7 @@
     {
       "id": "notion-2026-04-12-21",
       "type": "list",
-      "text": "**原因**: 避免手機震動打擾Eason休息",
+      "text": "**原因**: 避免手機震動打擾Imori休息",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -240,7 +240,7 @@
     {
       "id": "notion-2026-04-12-23",
       "type": "list",
-      "text": "**日記核准等待**: 等待Eason核准 `/approve diary_upload`",
+      "text": "**日記核准等待**: 等待Imori核准 `/approve diary_upload`",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -280,7 +280,7 @@
     {
       "id": "notion-2026-04-12-27",
       "type": "list",
-      "text": "**/nosae指令優化**: 等待Eason對指令系統的回應",
+      "text": "**/nosae指令優化**: 等待Imori對指令系統的回應",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -410,7 +410,7 @@
     {
       "id": "notion-2026-04-12-40",
       "type": "list",
-      "text": "**關心方式優化**: 根據Eason反饋，在關心時找話題聊天",
+      "text": "**關心方式優化**: 根據Imori反饋，在關心時找話題聊天",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -580,7 +580,7 @@
     {
       "id": "notion-2026-04-12-57",
       "type": "list",
-      "text": "數據URL: `http://api.studio-imori.com/nosae/eason-lab/baseball-data/cpbl_final_data.json`",
+      "text": "數據URL: `http://api.studio-imori.com/nosae/Imori-lab/baseball-data/cpbl_final_data.json`",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -590,7 +590,7 @@
     {
       "id": "notion-2026-04-12-58",
       "type": "list",
-      "text": "前端URL: `http://api.studio-imori.com/nosae/eason-lab/web/baseball/baseball_dashboard.html`",
+      "text": "前端URL: `http://api.studio-imori.com/nosae/Imori-lab/web/baseball/baseball_dashboard.html`",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -600,7 +600,7 @@
     {
       "id": "notion-2026-04-12-59",
       "type": "list",
-      "text": "報告URL: `http://api.studio-imori.com/nosae/eason-lab/cpbl/latest_report.txt`",
+      "text": "報告URL: `http://api.studio-imori.com/nosae/Imori-lab/cpbl/latest_report.txt`",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -620,7 +620,7 @@
     {
       "id": "notion-2026-04-12-61",
       "type": "list",
-      "text": "**廢棄網址**: `nas.eason.vpn` 已全面替換",
+      "text": "**廢棄網址**: `nas.Imori.vpn` 已全面替換",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1290,7 +1290,7 @@
     {
       "id": "notion-2026-04-12-128",
       "type": "list",
-      "text": "數據: `http://api.studio-imori.com/nosae/eason-lab/baseball-data/cpbl_final_data.json`",
+      "text": "數據: `http://api.studio-imori.com/nosae/Imori-lab/baseball-data/cpbl_final_data.json`",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1300,7 +1300,7 @@
     {
       "id": "notion-2026-04-12-129",
       "type": "list",
-      "text": "儀表板: `http://api.studio-imori.com/nosae/eason-lab/web/baseball/baseball_dashboard.html`",
+      "text": "儀表板: `http://api.studio-imori.com/nosae/Imori-lab/web/baseball/baseball_dashboard.html`",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1440,7 +1440,7 @@
     {
       "id": "notion-2026-04-12-143",
       "type": "list",
-      "text": "**持續監控**: 等待Eason核准日記上傳",
+      "text": "**持續監控**: 等待Imori核准日記上傳",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -1480,7 +1480,7 @@
     {
       "id": "notion-2026-04-12-147",
       "type": "list",
-      "text": "**用戶通知**: 已向Eason傳達安全配額狀態和註冊需求",
+      "text": "**用戶通知**: 已向Imori傳達安全配額狀態和註冊需求",
       "mood": {
         "mood": "平靜",
         "score": 50

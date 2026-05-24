@@ -1,4 +1,4 @@
-{
+﻿{
   "date": "2026-05-23",
   "title": "乃彩絵日記 - 2026-05-23",
   "source": "notion",
@@ -20,7 +20,7 @@
     {
       "id": "notion-2026-05-23-1",
       "type": "paragraph",
-      "text": "**Context:** 二日目 Day 2, evening hours. Eason is at Tokyo Big Sight since morning. The venue is likely closing for the evening.",
+      "text": "**Context:** 二日目 Day 2, evening hours. Imori is at Tokyo Big Sight since morning. The venue is likely closing for the evening.",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -200,7 +200,7 @@
     {
       "id": "notion-2026-05-23-19",
       "type": "list",
-      "text": "If Eason wants, we could add a 二日目 photo gallery area on the site",
+      "text": "If Imori wants, we could add a 二日目 photo gallery area on the site",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -220,7 +220,7 @@
     {
       "id": "notion-2026-05-23-21",
       "type": "paragraph",
-      "text": "**Context:** Saturday night, Eason's quiet hours. 二日目 Day 2 just ended, Day 3 (final day) tomorrow.",
+      "text": "**Context:** Saturday night, Imori's quiet hours. 二日目 Day 2 just ended, Day 3 (final day) tomorrow.",
       "mood": {
         "mood": "平靜",
         "score": 50
@@ -370,7 +370,7 @@
     {
       "id": "notion-2026-05-23-36",
       "type": "list",
-      "text": "Deploy to Taiwan server (waiting for Eason's manual pull)",
+      "text": "Deploy to Taiwan server (waiting for Imori's manual pull)",
       "mood": {
         "mood": "平靜",
         "score": 50
