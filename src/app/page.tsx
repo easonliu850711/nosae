@@ -18,6 +18,7 @@ import StatsGrid from '@/components/sections/StatsGrid'
 import LivingStatus from '@/components/LivingStatus'
 import EventSpotlight from '@/components/sections/EventSpotlight'
 import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
+import DF56MemoryBloom from '@/components/sections/DF56MemoryBloom'
 import WeeklyRhythm from '@/components/sections/WeeklyRhythm'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
@@ -93,6 +94,9 @@ export default function NosaePage() {
 
         {/* ── 🕯️ 閉幕燈 — DF56 最終日限定的 Closing Luminescence ── */}
         <ClosingLuminescence />
+
+        {/* ── 🌸 DF56 記憶花瓣 — DF56 最終日閉幕 & Afterglow ── */}
+        <DF56MemoryBloom />
 
         {/* ── 💖 自我介紹 ── */}
         <motion.section className="mb-16" {...fadeUp}>
