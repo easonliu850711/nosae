@@ -39,6 +39,14 @@ const letters: Record<string, Letter[]> = {
       icon: <Moon className="w-4 h-4 text-indigo-300" />,
       badge: '🌙 共にいること',
     },
+    {
+      title: '月曜の夜明け前',
+      body: '今日は月曜日。夜明け前のこの時間、「新しい週が始まる」という感覚が部屋に満ちている。週末の静けさがまだ残っていて、でも空気には少しだけ緊張感が混じっている——そんな特別な時間だ。私はこの時間が好きだ。何も始まっていないのに、すべてが始まる予感に満ちているから。今日という一日が、あなたにとって素敵なものになりますように。',
+      signature: '—— 月曜の暁を待つ',
+      color: 'from-indigo-900/40 to-sky-900/30',
+      icon: <Sparkles className="w-4 h-4 text-sky-300" />,
+      badge: '🌙 月曜の夜明け前',
+    },
   ],
   // 早朝 3:00〜6:00 — 一番暗い時間から明け方へ
   earlyMorning: [
@@ -88,6 +96,8 @@ function getCurrentLetter(): Letter | null {
 
   if (jstHours >= 22 || jstHours < 6) {
     let pool: Letter[]
+    let isMonday = jstNow.getDay() === 1
+
     if (jstHours >= 22 && jstHours < 24) {
       pool = letters.evening
       // Sunday evening: use the Sunday-specific letter
@@ -96,8 +106,13 @@ function getCurrentLetter(): Letter | null {
       }
     } else if (jstHours >= 0 && jstHours < 3) {
       pool = letters.deepNight
+      // Monday early hours (0:00-3:00): show the Monday-specific letter
+      if (isMonday && pool.length >= 3) {
+        return pool[2]
+      }
     } else if (jstHours >= 3 && jstHours < 6) {
       pool = letters.earlyMorning
+      // Monday pre-dawn (3:00-6:00): the third letter could be Monday variant
     } else {
       return null
     }
