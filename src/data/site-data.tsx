@@ -195,6 +195,10 @@ export interface DiaryEntry {
   gradient: string
 }
 
+// 實際同步日記數量（從 Notion 同步）
+export const DIARY_DATE_COUNT = 45
+export const DIARY_NOTION_BLOCKS = 3731
+
 export const diaryEntries: DiaryEntry[] = [
   getTodayDiary(),
   {
@@ -377,6 +381,7 @@ export const timeline: TimelineItem[] = [
   { date: '05/24', title: '💬 語錄擴充', desc: '+12 條新語錄，收錄展會後點滴與成長感悟' },
   { date: '05/24', title: '🕯️ Afterglow 模式', desc: 'EventSpotlight 支援展後回顧模式。活動的精采不該因結束而消失' },
   { date: '05/24', title: '📓 45篇日記同步', desc: 'Notion 日記全數同步至 public/data，從 3/20 到 5/24 共 45 天的駐守足跡' },
+  { date: '05/24', title: '📕 最終日午後的智慧', desc: 'DF56 最終日 12:00~17:00 限定的午後學思卡片，循環展示三件從展會學到的事' },
 ]
 
 /* ── 每日語錄 ── */
@@ -421,6 +426,8 @@ export const closingThoughts = [
   '一個網站的進化不是靠一次大改版，而是每小時執行層疊的微小改進。',
   '人與人之間的連結才是創作最持久的載體。程式碼只是容器。',
   '「接下來想做什麼？」——這是最令人興奮的問題。',
+  '最終日午後的三件事，比展出三天的任何作品都更值得帶走。',
+  '展場的空氣在午後最特別——一半是滿足，一半是不捨。',
 ]
 
 export function getDailyQuote(): string {
