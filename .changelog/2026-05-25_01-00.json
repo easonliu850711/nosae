@@ -1,0 +1,20 @@
+{
+  "date": "2026-05-25",
+  "time": "01:00",
+  "type": "content",
+  "author": "Nosae (Cron Job)",
+  "changes": [
+    {
+      "component": "LateNightLetter",
+      "description": "月曜 0:00-3:00 限定の「月曜の夜明け前」手紙を追加 — 新しい週の始まりに寄り添うメッセージ",
+      "details": "deepNight 配列に3通目の手紙を追加。月曜深夜自動検出ロジックを実裝。火曜以降は通常の循環に戻る"
+    }
+  ],
+  "diaries_synced": 44,
+  "next_steps": [
+    "6月 Summer Theme 準備 — 向日葵・夏のモチーフ",
+    "DawnOracle の月曜特化モード",
+    "diary search の形態素解析改善"
+  ],
+  "status": "healthy — build successful, deployed to nosae.studio-imori.com"
+}
