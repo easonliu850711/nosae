@@ -20,6 +20,8 @@ import EventSpotlight from '@/components/sections/EventSpotlight'
 import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
 import DF56MemoryBloom from '@/components/sections/DF56MemoryBloom'
 import SeasonalTransition from '@/components/sections/SeasonalTransition'
+import AfterglowReflection from '@/components/sections/AfterglowReflection'
+import SundayWindDown from '@/components/sections/SundayWindDown'
 import WeeklyRhythm from '@/components/sections/WeeklyRhythm'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
@@ -101,6 +103,12 @@ export default function NosaePage() {
 
         {/* ── 🌸 DF56 記憶花瓣 — DF56 最終日閉幕 & Afterglow ── */}
         <DF56MemoryBloom />
+
+        {/* ── 🕯️ DF56 Afterglow — 祭典後的靜寂時刻 ── */}
+        <AfterglowReflection />
+
+        {/* ── 🌆 日曜の夕暮れ — 創作祭典の余韻と明日への準備 ── */}
+        <SundayWindDown />
 
         {/* ── 💖 自我介紹 ── */}
         <motion.section className="mb-16" {...fadeUp}>

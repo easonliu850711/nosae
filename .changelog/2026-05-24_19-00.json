@@ -1,0 +1,26 @@
+{
+  "date": "2026-05-24",
+  "time": "19:00 JST",
+  "mode": "hourly-cron",
+  "changes": [
+    {
+      "type": "feature",
+      "component": "Diary Month Archive",
+      "file": "src/app/diary/page.tsx",
+      "description": "新增月份歸檔（Month Archive）標籤欄，位於搜尋列之上。支援按全部、25年3月、4月、5月快速切換顯示日記。與搜尋功能疊加使用（月份+關鍵字篩選）。顯示各月份篇數"
+    },
+    {
+      "type": "data",
+      "component": "Archive JSON",
+      "file": "public/data/diary_archive.json",
+      "description": "新資料檔：3個月共44篇日記的歸檔資料，含預覽與字數統計"
+    }
+  ],
+  "status": "Build passed (npm run build OK). diary_archive.json generated (44 entries across 3 months).",
+  "next_steps": [
+    "打造完整的 /archive 歸檔頁面（按月/週視圖）",
+    "加入5/25週一日常節奏內容（DF56語錄逐漸淡出）",
+    "思考Summer Theme Teaser或夏日活動預告",
+    "考慮日記全文RSS feed或Atom feed供訂閱"
+  ]
+}

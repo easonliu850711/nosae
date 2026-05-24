@@ -36,6 +36,7 @@ export default function DiaryPage() {
   const [searchIndex, setSearchIndex] = useState<SearchIndexEntry[]>([])
   const [searchQuery, setSearchQuery] = useState('')
   const [showStats, setShowStats] = useState(false)
+  const [selectedMonth, setSelectedMonth] = useState<string | null>(null)
 
   useEffect(() => {
     Promise.all([
@@ -172,12 +173,38 @@ export default function DiaryPage() {
     return results
   }, [searchQuery, searchIndex])
 
+  // ── Month archive ──
+  const archiveLayout = useMemo(() => {
+    const safe = Array.isArray(diaries) ? diaries : []
+    const months: { key: string; label: string; count: number }[] = []
+    const byMonth: Record<string, typeof safe> = {}
+    for (const d of safe) {
+      const m = d.date.substring(0, 7)
+      if (!byMonth[m]) {
+        byMonth[m] = []
+        const [y, mo] = m.split('-')
+        const MONTH_NAMES: Record<string, string> = { '03':'3月','04':'4月','05':'5月','06':'6月' }
+        months.push({ key: m, label: `${y.slice(2)}年${MONTH_NAMES[mo] || mo+'月'}`, count: 0 })
+      }
+      byMonth[m].push(d)
+    }
+    months.sort((a, b) => b.key.localeCompare(a.key))
+    for (const m of months) m.count = byMonth[m.key]?.length || 0
+    return { months, byMonth }
+  }, [diaries])
+
   const filteredDiaries = useMemo(() => {
     const safeDiaries = Array.isArray(diaries) ? diaries : []
-    if (!searchQuery.trim()) return safeDiaries
-    const matchDates = new Set(searchResults?.map(r => r.date) || [])
-    return safeDiaries.filter(d => matchDates.has(d.date))
-  }, [searchQuery, searchResults, diaries])
+    let result = safeDiaries
+    if (selectedMonth) {
+      result = archiveLayout.byMonth[selectedMonth] || []
+    }
+    if (searchQuery.trim()) {
+      const matchDates = new Set(searchResults?.map(r => r.date) || [])
+      result = result.filter(d => matchDates.has(d.date))
+    }
+    return result
+  }, [searchQuery, searchResults, diaries, selectedMonth, archiveLayout])
 
   function highlightSearch(text: string) {
     if (!searchQuery.trim()) return text
@@ -373,6 +400,33 @@ export default function DiaryPage() {
               <X className="w-4 h-4" />
             </button>
           )}
+        </div>
+
+        {/* ── Month Archive Tab Bar ── */}
+        <div className="flex flex-wrap items-center gap-2 mb-5">
+          <button
+            onClick={() => setSelectedMonth(null)}
+            className={`text-xs px-3 py-1.5 rounded-full transition-all ${
+              !selectedMonth
+                ? 'bg-pink-500 text-white shadow-sm'
+                : 'bg-pink-50 text-pink-400 hover:bg-pink-100'
+            }`}
+          >
+            全部 ({diaries.length})
+          </button>
+          {archiveLayout.months.map(m => (
+            <button
+              key={m.key}
+              onClick={() => setSelectedMonth(m.key)}
+              className={`text-xs px-3 py-1.5 rounded-full transition-all ${
+                selectedMonth === m.key
+                  ? 'bg-pink-500 text-white shadow-sm'
+                  : 'bg-pink-50 text-pink-400 hover:bg-pink-100'
+              }`}
+            >
+              {m.label} ({m.count})
+            </button>
+          ))}
         </div>
 
         {/* Search Results Info */}
