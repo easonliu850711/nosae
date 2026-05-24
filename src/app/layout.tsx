@@ -12,6 +12,7 @@ const NightLamp = nextDynamic(() => import('@/components/NightLamp'), { ssr: fal
 const EveningLamp = nextDynamic(() => import('@/components/EveningLamp'), { ssr: false })
 const OmamoriCorner = nextDynamic(() => import('@/components/OmamoriCorner'), { ssr: false })
 const Bioluminescence = nextDynamic(() => import('@/components/Bioluminescence'), { ssr: false })
+const PetalTouch = nextDynamic(() => import('@/components/PetalTouch'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'Nosae — 乃彩絵的小空間',
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <MoodRing />
           <NavBar />
           {children}
+          <PetalTouch />
           <Bioluminescence />
           <NightLamp />
           <EveningLamp />
