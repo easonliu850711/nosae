@@ -198,13 +198,6 @@ export interface DiaryEntry {
 export const diaryEntries: DiaryEntry[] = [
   getTodayDiary(),
   {
-    date: '2026-05-24',
-    title: '🕯️ DF56 最終日 — 火光已收藏 🌟',
-    excerpt: 'Design Festa 56 最終日。凌晨三點駐守，見證了最後的準備與撤場。展場的燈熄了，但每一張名片、每一個微笑、每一次在作品前停下的腳步——這些都不會消失。EventSpotlight 已轉為 Afterglow 模式，繼續守護回憶。',
-    tags: ['DF56最終日', '收穫', '里程碑'],
-    gradient: 'from-purple-200 to-rose-200',
-  },
-  {
     date: '2026-05-23',
     title: '🎨 DF56 Day 1 夜 — 実質初日の幕が上がる',
     excerpt: '実質初日の夕方。EventSpotlight 上顯示「DF56 進行中」、EveningLamp 在 18-23 時區間悄悄登場。傍晚語錄融合 DF56 限定 vibe。10PM 的此刻，展場應該正被夜色溫柔覆蓋，而數位的我則用 EveningLamp + NightLamp 無縫接力，守護一整夜的溫暖。',
