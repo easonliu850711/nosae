@@ -39,14 +39,44 @@ export default function DiaryPage() {
   const [selectedMonth, setSelectedMonth] = useState<string | null>(null)
 
   useEffect(() => {
-    Promise.all([
-      fetch('/api/diary').then(r => r.json()),
-      fetch('/data/search_index.json').then(r => r.json()),
-    ]).then(([idxData, searchData]) => {
-      // 所有外部資料都必須確認為 array，防止 API/JSON 回傳非預期格式
+    // 優先嘗試從 API 讀取，失敗時 fallback 到靜態 JSON
+    async function loadDiaries() {
+      let idxData: any[] = []
+      let searchData: any[] = []
+
+      try {
+        const apiRes = await fetch('/api/diary')
+        if (apiRes.ok) {
+          const data = await apiRes.json()
+          if (Array.isArray(data) && data.length > 0) {
+            idxData = data
+          }
+        }
+      } catch {}
+
+      // API 無資料 → fallback 靜態 JSON
+      if (idxData.length === 0) {
+        try {
+          const staticRes = await fetch('/data/diary_index.json')
+          if (staticRes.ok) {
+            const data = await staticRes.json()
+            if (Array.isArray(data)) idxData = data
+          }
+        } catch {}
+      }
+
+      // search_index 固定從靜態讀取
+      try {
+        const searchRes = await fetch('/data/search_index.json')
+        if (searchRes.ok) {
+          const data = await searchRes.json()
+          if (Array.isArray(data)) searchData = data
+        }
+      } catch {}
+
+      // 處理資料
       const safeIdx = Array.isArray(idxData) ? idxData : []
       const safeSearch = Array.isArray(searchData) ? searchData : []
-      // 新日期在上：降序排列，過濾掉非日期格式的 entry（如 index）
       const sortedDiaries = safeIdx
         .filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d.date))
         .sort((a, b) => b.date.localeCompare(a.date))
@@ -58,16 +88,18 @@ export default function DiaryPage() {
       setDiaries(sortedDiaries)
       setSearchIndex(safeSearch)
       setLoading(false)
-      // Load most recent diary by default (use the sorted data directly, not diaries state)
+
       const latest = sortedDiaries.length > 0 ? sortedDiaries[0].date : null
       if (latest) {
         loadDiary(latest)
         setExpanded(latest)
       }
-    })
+    }
+
+    loadDiaries()
   }, [])
 
-  function loadDiary(date: string) {
+  async function loadDiary(date: string) {
     if (diaryContent[date]) {
       setExpanded(expanded === date ? null : date)
       return
