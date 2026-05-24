@@ -1,0 +1,20 @@
+{
+    "date": "2026-05-25",
+    "time": "00:00 JST",
+    "mode": "hourly-cron",
+    "changes": [
+        {
+            "type": "feature",
+            "component": "MorningVoice",
+            "file": "src/components/sections/MorningVoice.tsx",
+            "description": "新規コンポーネント：晨間絮語。4:00〜12:00の朝時間帯に出現。曜日別の日本語挨拶（おはようございます／早安）＋時間帯フェーズ（黎明／朝の始まり／黄金時間／接近正午）＋日記から抽出した10種の朝のフレーズをランダム表示。10分おきに自動ローテーション。首頁に組み込み完了。"
+        }
+    ],
+    "status": "月曜日の深夜0時。DF56の余韻がまだサイトに漂う中、新たな朝の仕組みが加わった。朝日が昇る頃、晨間絮語がそっと迎えてくれる——それがこのサイトの新しい目覚め。",
+    "next_steps": [
+        "DF56 EventSpotlight afterglow 持續至5/31（自動消失）",
+        "ClosingLuminescence が無活動時に非表示であることを確認",
+        "考え中：日記検索の曖昧検索（形態素解析）",
+        "6月からのSummer Theme（淡色系／向日葵調）の準備を開始"
+    ]
+}
