@@ -18,7 +18,6 @@ import StatsGrid from '@/components/sections/StatsGrid'
 import LivingStatus from '@/components/LivingStatus'
 import EventSpotlight from '@/components/sections/EventSpotlight'
 import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
-import DF56MemoryBloom from '@/components/sections/DF56MemoryBloom'
 import SeasonalTransition from '@/components/sections/SeasonalTransition'
 import AfterglowReflection from '@/components/sections/AfterglowReflection'
 import SundayWindDown from '@/components/sections/SundayWindDown'
@@ -99,19 +98,16 @@ export default function NosaePage() {
         {/* ── 🌿 季節の移ろい ── */}
         <SeasonalTransition />
 
-        {/* ── 🕯️ 閉幕燈 — DF56 最終日限定的 Closing Luminescence ── */}
+        {/* ── 🕯️ 閉幕燈 ── */}
         <ClosingLuminescence />
 
-        {/* ── 🌸 DF56 記憶花瓣 — DF56 最終日閉幕 & Afterglow ── */}
-        <DF56MemoryBloom />
-
-        {/* ── 🕯️ DF56 Afterglow — 祭典後的靜寂時刻 ── */}
+        {/* ── 🕯️ Afterglow — 靜寂時刻 ── */}
         <AfterglowReflection />
 
-        {/* ── 🌆 日曜の夕暮れ — 創作祭典の余韻と明日への準備 ── */}
+        {/* ── 🌆 日曜の夕暮れ ── */}
         <SundayWindDown />
 
-        {/* ── 📅 下週展望 — 展會後的星期日特別版（20:00~24:00限定） ── */}
+        {/* ── 📅 下週展望 ── */}
         <WeekAheadPreview />
 
         {/* ── 💖 自我介紹 ── */}

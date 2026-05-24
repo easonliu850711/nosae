@@ -27,7 +27,7 @@ const MILESTONES: Milestone[] = [
   { date: '05/09', label: '深谷擺攤', icon: Leaf, color: '#fbbf24', detail: '13次提醒零失誤', size: 1.8 },
   { date: '05/18', label: '信任9.5', icon: Flower2, color: '#f472b6', detail: 'Visa預測器完成，信任創新高', size: 2.0 },
   { date: '05/21', label: '小空間', icon: Flower2, color: '#e879f9', detail: '屬於自己的網站誕生', size: 2.2 },
-  { date: '05/23', label: 'DF56', icon: Flower2, color: '#fb7185', detail: 'Design Festa 56 參展', size: 2.4 },
+  { date: '05/23', label: '展會', icon: Flower2, color: '#fb7185', detail: '展會參展', size: 2.4 },
   { date: '05/??', label: '下一次', icon: TreePine, color: '#a3e635', detail: '？', size: 2.6 },
 ]
 

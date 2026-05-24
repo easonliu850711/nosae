@@ -115,133 +115,7 @@ function liveState() {
   }
 }
 
-// ── 🎨 Design Festa 56 夜間應援 ──
-function DesignFestaBanner() {
-  const now = new Date()
-  const dateStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`
-  const isDF = dateStr >= '2026-05-22' && dateStr <= '2026-05-24'
-  if (!isDF) return null
-
-  const h = now.getHours()
-  const isDaytime = h >= 8 && h < 18
-
-  const dfEnd = new Date('2026-05-24T17:00:00+09:00')
-  const msLeft = dfEnd.getTime() - now.getTime()
-  const remainingHours = Math.max(0, Math.floor(msLeft / 3600000))
-  const remainingMins = Math.max(0, Math.floor((msLeft % 3600000) / 60000))
-
-  const dayNum = Math.floor((now.getTime() - new Date('2026-05-22T00:00:00+09:00').getTime()) / 86400000) + 1
-  const dayLabels = ['初日', '二日目', '最終日']
-  const dayLabel = dayLabels[Math.min(dayNum - 1, 2)]
-
-  const reflections: Record<string, { line: string; deep: string }> = {
-    '初日': {
-      line: '第一天結束了。展場的燈熄了，但創作者們心中的火種還亮著。',
-      deep: '初日的興奮與緊張交織成獨特的節奏。從布展的慌亂到開場後的從容，從陌生人的微笑到互相欣賞的眼神——這些瞬間在暮色中發酵，成為明天繼續創作的養分。',
-    },
-    '二日目': {
-      line: '第二天也畫下句點。交流與靈感在夜色中沉澱，醞釀成新的想法。',
-      deep: '兩天下來，足跡遍布會場每個角落。那些交換過的眼神、被觸動的作品、深夜仍在討論的靈感——每一刻都在寫下 Design Festa 獨有的故事。',
-    },
-    '最終日': {
-      line: '三天的創作祭典結束了。但 Design Festa 從未真正結束——它換了一種形式，在每個人心中繼續。',
-      deep: '撤展的忙碌、道別的擁抱、約定下次見面的話語——這些都成為創作者們繼續前進的動力。明天醒來，世界又多了一些因為 Design Festa 而誕生的美好事物。',
-    },
-  }
-
-  const ref = reflections[dayLabel] || reflections['初日']
-
-  // 白天：倒數精簡版（18:00 前顯示）
-  if (isDaytime) {
-    return (
-      <motion.div {...fadeUp} className="mb-10">
-        <div className="rounded-2xl bg-gradient-to-br from-purple-50/70 to-indigo-50/40 backdrop-blur-sm border border-purple-200/50 p-5 md:p-6 shadow-md">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center shadow-sm">
-              <Sparkles className="w-5 h-5 text-white" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <h2 className="text-lg font-bold text-blue-800">
-                🎨 Design Festa 56 · {dayLabel}
-              </h2>
-              <p className="text-xs text-purple-500">
-                2026.05.22–24 @ 東京ビッグサイト 西ホール
-              </p>
-            </div>
-            {remainingHours > 0 && (
-              <div className="shrink-0 text-center">
-                <p className="text-2xl font-bold text-purple-600 tabular-nums leading-none">
-                  {remainingHours}<span className="text-sm font-normal text-purple-400">h</span>
-                  {remainingMins > 0 && <><br /><span className="text-lg">{remainingMins}<span className="text-xs font-normal text-purple-400">m</span></span></>}
-                </p>
-                <p className="text-[10px] text-purple-400 mt-0.5">残り時間</p>
-              </div>
-            )}
-          </div>
-          <p className="text-sm text-purple-700/80 leading-relaxed">
-            {dayLabel === '最終日'
-              ? '最後一天了。創作的祭典正在倒數，每個瞬間都值得珍藏 📸'
-              : '創作祭典進行中。展場充滿靈感與熱情，來不及到現場也可以感受這份氛圍 ✨'}
-          </p>
-        </div>
-      </motion.div>
-    )
-  }
-
-  // 夜晚：深邃版
-  return (
-    <motion.div {...fadeUp} className="mb-10">
-      <div className="relative rounded-2xl bg-gradient-to-br from-purple-50/80 to-indigo-50/50 backdrop-blur-sm border border-purple-200/60 p-5 md:p-6 shadow-lg shadow-purple-200/20 overflow-hidden">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center shadow-sm">
-            <Sparkles className="w-5 h-5 text-white" />
-          </div>
-          <div>
-            <h2 className="text-xl font-bold text-blue-800">
-              🎨 Design Festa 56 · {dayLabel} 夜靜
-            </h2>
-            <p className="text-xs text-purple-500">
-              2026.05.22–24 @ 東京ビッグサイト 西ホール
-            </p>
-          </div>
-          {remainingHours > 0 && (
-            <div className="ml-auto shrink-0 text-center">
-              <p className="text-xl font-bold text-purple-600 tabular-nums">{remainingHours}h</p>
-              <p className="text-[10px] text-purple-400">残り</p>
-            </div>
-          )}
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1.5 }}
-        >
-          <p className="text-base text-purple-700 font-medium italic leading-relaxed mb-2">
-            「{ref.line}」
-          </p>
-          <p className="text-sm text-purple-600/80 leading-relaxed">
-            {ref.deep}
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="absolute top-0 right-0 w-48 h-48 rounded-full pointer-events-none"
-          animate={{
-            background: [
-              'radial-gradient(circle, rgba(167,139,250,0.08), transparent 70%)',
-              'radial-gradient(circle, rgba(167,139,250,0.15), transparent 70%)',
-              'radial-gradient(circle, rgba(167,139,250,0.08), transparent 70%)',
-            ],
-            opacity: [0.5, 0.8, 0.5],
-          }}
-          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ filter: 'blur(50px)' }}
-        />
-      </div>
-    </motion.div>
-  )
-}
+// ── 擴展狀態卡組 ──
 
 // ── 長期關注項目 ──
 const FOCUS_AREAS = [
@@ -502,9 +376,6 @@ export default function NowPage() {
             ))}
           </div>
         </motion.div>
-
-        {/* ── 🎨 Design Festa 56 即時應援 ── */}
-        <DesignFestaBanner />
 
         {/* ── 關於本頁 ── */}
         <motion.div {...fadeUp} className="text-center">

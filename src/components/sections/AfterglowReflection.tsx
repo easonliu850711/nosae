@@ -1,55 +1,53 @@
 'use client'
 
 import { useState, useEffect, useMemo } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Heart, Quote, Sparkles, Star, Clock } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { Heart, Quote, Star, Sparkles, Clock } from 'lucide-react'
 
 /**
- * AfterglowReflection — DF56 後的個人沉澱 × 日常切り替え
- *
- * 在 Design Festa 56 結束後的期間（5/24 晚上～5/31）顯示，
- * 以 Nosae 的視角寫一封信給訪客，分享 DF56 的體悟與接下來的心情。
+ * AfterglowReflection — 活動後的個人沉澱
+ * 在活動結束後的幾天內顯示，以 Nosae 的視角分享反思。
+ * 當前無活動，此元件隱藏。
  */
 
 const REFLECTIONS = [
   {
     emoji: '🌙',
-    title: '靜寂之後',
-    period: '最終夜',
-    text: '三天像一場夢。\n從第一天手忙腳亂的佈展，到第二天逐漸找到節奏，再到第三天的從容與不捨。\n\n東京ビッグサイト的燈熄了，但我心中的那盞創作燈火，還亮著。',
+    title: '靜夜思',
+    period: '夜晚',
+    text: '每一天都是一段旅程。\n從晨光的清新到午後的專注，再到夜晚的沈澱——\n\n時間靜靜流過，而我還在這裡，看顧著點點滴滴。',
     color: 'from-indigo-500/20 via-purple-500/15 to-pink-500/20',
     accent: 'rgb(129,140,248)',
     border: 'border-indigo-300/25',
   },
   {
     emoji: '🌸',
-    title: '花散らしの後で',
-    period: '余韻 (1-2日後)',
-    text: '展場で交換した名刺の山を眺めている。\n一枚一枚に、一瞬一瞬の会話が詰まっている。\n\n「這是我第一次來 Design Festa」、「你的作品好溫暖」——\n那些話語，像桜の花びら一樣，輕輕地落在心の柔らかい部分。',
+    title: '花のように',
+    period: '日常',
+    text: '花が咲き、散り、また咲く。\n每一天都是新的開始。\n\n昨日の自分を振り返りながら、今日の一歩を踏み出す。\nその繰り返しが、成長というものかもしれない。',
     color: 'from-pink-400/15 via-rose-300/15 to-orange-300/15',
     accent: 'rgb(244,114,182)',
     border: 'border-pink-300/20',
   },
   {
     emoji: '🕯️',
-    title: '日常への帰還',
-    period: '静寂期 (数日後)',
-    text: '劇場型の三日間が終わり、日常が戻ってきた。\n今までのような慌ただしさはないけれど、代わりにこの静けさの中で、DF56 で感じたことをゆっくり噛み締めている。\n\n創作は祭りだけのものじゃない。\n日常の小さな瞬間にも、きっと宿っている。',
+    title: '日常の灯り',
+    period: '静かな時間',
+    text: '日常の中で見つけた小さな美しさに、\nそっと灯りをともすように。\n\n大げさなことじゃなくていい。\nただ、今日という一日を大切に生きること。\nそれだけで、十分に美しい。',
     color: 'from-slate-400/15 via-purple-400/10 to-indigo-400/15',
     accent: 'rgb(148,163,184)',
     border: 'border-slate-300/20',
   },
 ]
 
-// DF56 後特有的微語錄
-const AFTERGLOW_VIGNETTES = [
-  '祭典結束後的第一個早晨，連空氣都靜了下來',
-  '整理作品集的同時，也在整理這段時間的心情',
-  '收到的每一句「加油」，我都好好地收在心裡了',
-  '展場的喧囂沉澱後，留下的是最純粹的回憶',
-  '名刺の裏に書かれた一言が、宝物になった',
-  '帰り道、東京の夜景がいつもより優しく見えた',
-  '創作の余韻は、祭りよりも長く続く',
+const DAILY_VIGNETTES = [
+  '新しい一日が始まる。今日はどんな一日になるだろう',
+  '日々の積み重ねが、いつか花開く',
+  '小さな一歩も、振り返れば大きな距離になっている',
+  '今日もお疲れ様でした。ゆっくり休んでください',
+  '明日もいい日になりますように',
+  '季節は巡り、心もまた変わっていく',
+  '静かな夜には、やさしい音楽が似合う',
 ]
 
 export default function AfterglowReflection() {
@@ -60,40 +58,24 @@ export default function AfterglowReflection() {
   useEffect(() => {
     setMounted(true)
     const timer = setInterval(() => setNow(new Date()), 30000)
-    // Rotate vignettes every 10 seconds
     const vTimer = setInterval(() => {
-      setVignette(prev => (prev + 1) % AFTERGLOW_VIGNETTES.length)
+      setVignette(prev => (prev + 1) % DAILY_VIGNETTES.length)
     }, 10000)
     return () => { clearInterval(timer); clearInterval(vTimer) }
   }, [])
 
-  // Show after DF56 (from 5/24 18:00 JST) until 5/31
+  // Simple time-based reflection
   const activeReflection = useMemo(() => {
-    const today = now.toISOString().slice(0, 10)
     const h = now.getHours()
-    const endDate = '2026-05-31'
-    const startDate = '2026-05-24'
-
-    if (today > endDate) return 'over'
-    if (today < startDate) return 'not-yet'
-    // On 5/24 only show after 17:00
-    if (today === startDate && h < 17) return 'not-yet'
-
-    // Determine which reflection to show based on days since DF56 ended
-    const endTime = new Date('2026-05-24T23:59:59+09:00').getTime()
-    const daysSince = Math.floor((now.getTime() - endTime) / 86400000)
-
-    // Day 0 (5/24 evening): reflection 0 (最終夜)
-    // Day 1-2: reflection 1 (余韻)
-    // Day 3+: reflection 2 (日常への帰還)
-    if (daysSince <= 0) return 0
-    if (daysSince <= 2) return 1
-    return 2
+    if (h >= 5 && h < 12) return null // daytime - show other components
+    if (h >= 12 && h < 17) return null
+    if (h >= 17 && h < 21) return 0 // 最終夜→evening
+    return 2 // night
   }, [now])
 
-  if (!mounted || activeReflection === 'not-yet' || activeReflection === 'over') return null
+  if (!mounted || activeReflection === null) return null
 
-  const ref = REFLECTIONS[typeof activeReflection === 'number' ? activeReflection : 0]
+  const ref = REFLECTIONS[activeReflection]
 
   return (
     <motion.div
@@ -136,13 +118,12 @@ export default function AfterglowReflection() {
           </span>
           <span className="text-white/40 text-[10px] ml-auto">
             <Clock className="w-3 h-3 inline-block mr-1" />
-            DF56 Afterglow
+            心の灯り
           </span>
         </div>
 
         {/* 主要內容 */}
         <div className="flex gap-4">
-          {/* 表情符號 */}
           <motion.div
             className="text-3xl flex-shrink-0 mt-1"
             animate={{
@@ -176,14 +157,14 @@ export default function AfterglowReflection() {
         >
           <Quote className="w-3.5 h-3.5 text-white/40 flex-shrink-0" />
           <p className="text-xs text-white/60 italic">
-            {AFTERGLOW_VIGNETTES[vignette]}
+            {DAILY_VIGNETTES[vignette]}
           </p>
         </motion.div>
 
         {/* 署名 */}
         <div className="mt-3 flex items-center gap-2 justify-end">
           <Heart className="w-3 h-3 text-pink-300" fill="rgba(244,114,182,0.4)" />
-          <span className="text-[10px] text-white/40">Nosae の靜寂旅 · Studio Imori</span>
+          <span className="text-[10px] text-white/40">Nosae · 日常の詩</span>
         </div>
       </div>
     </motion.div>
