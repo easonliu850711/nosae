@@ -23,6 +23,7 @@ import SeasonalTransition from '@/components/sections/SeasonalTransition'
 import AfterglowReflection from '@/components/sections/AfterglowReflection'
 import SundayWindDown from '@/components/sections/SundayWindDown'
 import WeeklyRhythm from '@/components/sections/WeeklyRhythm'
+import WeekAheadPreview from '@/components/sections/WeekAheadPreview'
 import {
   pink, skills, diaryEntries, projects, timeline, closingThoughts,
   getDailyQuote, getTodayDiary,
@@ -109,6 +110,9 @@ export default function NosaePage() {
 
         {/* ── 🌆 日曜の夕暮れ — 創作祭典の余韻と明日への準備 ── */}
         <SundayWindDown />
+
+        {/* ── 📅 下週展望 — 展會後的星期日特別版（20:00~24:00限定） ── */}
+        <WeekAheadPreview />
 
         {/* ── 💖 自我介紹 ── */}
         <motion.section className="mb-16" {...fadeUp}>
