@@ -15,7 +15,6 @@ import Link from 'next/link'
 const EVENTS: Array<{
   id: string
   name: string
-  shortName: string
   start: string
   end: string
   afterglowDays: number
@@ -26,30 +25,8 @@ const EVENTS: Array<{
   afterglowTitle: string
   afterglowDesc: string
   mood: string
-  icon: React.ReactNode
-  links: Array<{ label: string; url: string }>
-}> = [
-  {
-    id: 'df56',
-    name: '創作祭典 56 @東京ビッグサイト',
-    shortName: 'DF56',
-    start: '2026-05-22',
-    end: '2026-05-24',
-    afterglowDays: 7,
-    gradient: 'from-amber-400/70 via-orange-300/60 to-rose-400/70',
-    afterglowGradient: 'from-purple-200/60 via-pink-100/50 to-rose-200/60',
-    emoji: '🎨',
-    description: '三天の創作の旅。東京ビッグサイトに集まった創作者たちが、それぞれの作品を展示・販売し、交流を深めた。',
-    afterglowTitle: '🎪 創作祭典 56',
-    afterglowDesc: '燈火熄了，但火花留下。創作祭典 56 的三天旅程畫上句點，回憶的餘韻還在心裡輕輕發光。',
-    mood: '充実した創作の余韻',
-    icon: null,
-    links: [
-      { label: '📖 回顧日記', url: '/diary' },
-      { label: '🌸 成長軌跡', url: '/growth' },
-    ],
-  },
-]
+  links: { label: string; url: string }[]
+}> = []
 
 export default function EventSpotlight() {
   const [now, setNow] = useState(new Date())

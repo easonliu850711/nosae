@@ -29,7 +29,7 @@ type DiaryStats = {
 }
 
 export default function DiaryPage() {
-  const [diaries, setDiaries] = useState<{ date: string; title: string }[]>([])
+  const [diaries, setDiaries] = useState<DiaryEntry[]>([])
   const [loading, setLoading] = useState(true)
   const [expanded, setExpanded] = useState<string | null>(null)
   const [diaryContent, setDiaryContent] = useState<Record<string, DiaryEntry>>({})
@@ -40,24 +40,25 @@ export default function DiaryPage() {
 
   useEffect(() => {
     Promise.all([
-      fetch('/data/diary_index.json').then(r => r.json()),
+      fetch('/api/diary').then(r => r.json()),
       fetch('/data/search_index.json').then(r => r.json()),
     ]).then(([idxData, searchData]) => {
       // 所有外部資料都必須確認為 array，防止 API/JSON 回傳非預期格式
       const safeIdx = Array.isArray(idxData) ? idxData : []
       const safeSearch = Array.isArray(searchData) ? searchData : []
       // 新日期在上：降序排列，過濾掉非日期格式的 entry（如 index）
-      setDiaries(
-        safeIdx
-          .filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d.date))
-          .sort((a, b) => b.date.localeCompare(a.date))
-      )
-      setSearchIndex(safeSearch)
-      setLoading(false)
-      // Load most recent diary by default (use the sorted data directly, not diaries state)
       const sortedDiaries = safeIdx
         .filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d.date))
         .sort((a, b) => b.date.localeCompare(a.date))
+        .map(d => ({
+          date: d.date,
+          title: d.title || d.date,
+          entries: Array.isArray(d.entries) ? d.entries : [],
+        }))
+      setDiaries(sortedDiaries)
+      setSearchIndex(safeSearch)
+      setLoading(false)
+      // Load most recent diary by default (use the sorted data directly, not diaries state)
       const latest = sortedDiaries.length > 0 ? sortedDiaries[0].date : null
       if (latest) {
         loadDiary(latest)
@@ -71,6 +72,14 @@ export default function DiaryPage() {
       setExpanded(expanded === date ? null : date)
       return
     }
+    // 先從本地已取得的 diaries 陣列找該篇的完整資料
+    const cached = diaries.find(d => d.date === date)
+    if (cached && (cached as any).entries) {
+      setDiaryContent(prev => ({ ...prev, [date]: cached as any }))
+      setExpanded(date)
+      return
+    }
+    // 未快取時從靜態 JSON 讀取（fallback）
     fetch(`/data/diary_${date}.json`)
       .then(r => r.json())
       .then(data => {
