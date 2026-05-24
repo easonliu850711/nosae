@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-24",
+  "time": "20:00 JST",
+  "mode": "hourly-cron",
+  "changes": [
+    {
+      "type": "feature",
+      "component": "WeekAheadPreview",
+      "file": "src/components/sections/WeekAheadPreview.tsx",
+      "description": "新組件：星期日 15:00~24:00 顯示下週展望。DF56 閉幕特別版含展後轉場訊息與詩句；一般星期日則顯示日常週曆格（月〜日），每日附帶當日小提醒"
+    },
+    {
+      "type": "content",
+      "component": "closingThoughts",
+      "file": "src/data/site-data.tsx",
+      "description": "+10 詩句：從展會回歸日常的感悟（星期一轉場、廟會翌日、名片盒的故事、創作持續的場所等）"
+    },
+    {
+      "type": "integration",
+      "component": "Homepage",
+      "file": "src/app/page.tsx",
+      "description": "在 SundayWindDown 之後嵌入 WeekAheadPreview，構成「展會回憶 → 靜寂時刻 → 下週展望」的自然閉幕三連"
+    }
+  ],
+  "status": "Build passed (npm run build OK). DF56 後第一個星期日 20:00 的溫柔結尾。WeekAheadPreview 從 15:00 起自動顯示，24:00 自動消失。",
+  "next_steps": [
+    "5/25（月）起：DF56 EventSpotlight afterglow 模式持續一週，ClosingLuminescence 消失",
+    "思考 Summer Theme 夏季主題（6月〜8月淡色系/向日葵調）",
+    "日記頁增加月份歸檔 tab bar（4月/5月月份快速切換）← 19:00已做，但可增加週次篩選",
+    "考慮新增/archive 頁面作為完整日記歸檔中心",
+    "可預告 5/31 APM 維護日的倒數小工具"
+  ]
+}
