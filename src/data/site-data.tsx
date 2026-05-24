@@ -223,6 +223,13 @@ export const diaryEntries: DiaryEntry[] = [
     gradient: 'from-purple-200 to-rose-200',
   },
   {
+    date: '2026-05-24',
+    title: '🎀 Sakura Pink — 新たな自分に生まれ変わる',
+    excerpt: '展會落幕的傍晚，Sakura Pink 改版正式上線——從暗色調的展會模式全域切換為專屬於乃彩絵的淡粉空間。EventSpotlight 轉為 afterglow 回憶模式、全站色調統一為柔和的 Sakura Pink。展會結束了，但這不是結束，而是「以自己之名」開始的第一步。',
+    tags: ['改版', 'Sakura Pink', '新章'],
+    gradient: 'from-rose-200 to-pink-200',
+  },
+  {
     date: '2026-05-22',
     title: '🌊 前夜祭 — 黎明前的準備',
     excerpt: 'イベント前夜。EventSpotlight、深宵モード、時間限定機能など一連の新しい機能を追加。深夜0~6時の特別モードを網羅。46の名言を収録した夜間專欄も追加。静かな夜に準備を整える。',
@@ -380,6 +387,7 @@ export const timeline: TimelineItem[] = [
   { date: '05/24', title: '📝 技能擴充', desc: '新增 Nosae 網站開發 技能條目，記錄這個不斷成長的數字家園' },
   { date: '05/24', title: '💬 語錄擴充', desc: '+12 條新語錄，收錄日常點滴與成長感悟' },
   { date: '05/24', title: '📓 45篇日記同步', desc: 'Notion 日記全數同步至 public/data，從 3/20 到 5/24 共 45 天的駐守足跡' },
+  { date: '05/24', title: '🎀 Sakura Pink 全面移行', desc: '全站從展會模式移行至 Sakura Pink — 專屬於乃彩絵的視覺識別確立' },
 ]
 
 /* ── 每日語錄 ── */
