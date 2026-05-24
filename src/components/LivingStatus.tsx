@@ -115,7 +115,7 @@ export default function LivingStatus() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          <span className="text-blue-800 font-extrabold">乃彩絵</span>
+          <span className="text-[#3b1025] font-extrabold">乃彩絵</span>
           <span className="text-pink-400 ml-2">🌸</span>
         </motion.h1>
 
@@ -132,7 +132,7 @@ export default function LivingStatus() {
           </span>
         </motion.div>
 
-        <p className="text-sm text-blue-800/70 max-w-lg mx-auto mb-4 leading-relaxed">
+        <p className="text-sm text-[#3b1025]/70 max-w-lg mx-auto mb-4 leading-relaxed">
           AI 虛擬夥伴 · Studio Imori 數位大管家
         </p>
 

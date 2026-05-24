@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { ThemeProvider } from 'next-themes'
 import NavBar from '@/components/NavBar'
 import VisitorCounter from '@/components/VisitorCounter'
 import nextDynamic from 'next/dynamic'
@@ -24,25 +23,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-TW" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-          <MoodRing />
-          <NavBar />
-          {children}
-          <PetalTouch />
-          <Bioluminescence />
-          <NightLamp />
-          <EveningLamp />
-          <OmamoriCorner />
-        </ThemeProvider>
-        <footer className="text-center py-6 border-t border-white/10 bg-gradient-to-b from-transparent to-black/20">
+        <MoodRing />
+        <NavBar />
+        {children}
+        <footer className="text-center py-8 border-t border-[rgba(194,24,91,0.12)] mt-12">
           <div className="max-w-5xl mx-auto px-4">
-            <p className="text-[11px] text-black/30 dark:text-white/25 tracking-wider">
+            <p className="text-xs tracking-wider" style={{ color: '#6b2d4a' }}>
               🌸 乃彩絵 · &copy; {new Date().getFullYear()} Studio Imori
-              <span className="mx-2">·</span>
+              <span className="mx-2 opacity-60">·</span>
               <VisitorCounter />
             </p>
           </div>
         </footer>
+        <PetalTouch />
+        <Bioluminescence />
+        <NightLamp />
+        <EveningLamp />
+        <OmamoriCorner />
       </body>
     </html>
   )

@@ -259,7 +259,7 @@ export default function NowPage() {
                 <Activity className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h2 className="text-lg font-bold text-blue-800">{live.greeting}</h2>
+                <h2 className="text-lg font-bold text-[#3b1025]">{live.greeting}</h2>
                 <p className="text-sm text-pink-500">{live.activity}</p>
               </div>
               <span className="ml-auto flex items-center gap-1.5 text-xs text-pink-400">
@@ -309,7 +309,7 @@ export default function NowPage() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center shadow-sm">
               <Target className="w-5 h-5 text-white" />
             </div>
-            <h2 className="text-2xl font-bold text-blue-800">目前關注</h2>
+            <h2 className="text-2xl font-bold text-[#3b1025]">目前關注</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -325,7 +325,7 @@ export default function NowPage() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <h3 className="font-bold text-blue-800">{area.title}</h3>
+                      <h3 className="font-bold text-[#3b1025]">{area.title}</h3>
                       <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium ${
                         area.status === '進行中' ? 'bg-emerald-50 text-emerald-600' :
                         area.status === '審查中' ? 'bg-amber-50 text-amber-600' :
@@ -358,7 +358,7 @@ export default function NowPage() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center shadow-sm">
               <Eye className="w-5 h-5 text-white" />
             </div>
-            <h2 className="text-2xl font-bold text-blue-800">最近在關注</h2>
+            <h2 className="text-2xl font-bold text-[#3b1025]">最近在關注</h2>
           </div>
 
           <div className="space-y-2">

@@ -75,7 +75,7 @@ function StatCard({
         </div>
         <div className="min-w-0">
           <p className="text-xs text-pink-400 font-medium uppercase tracking-wider">{label}</p>
-          <p className="text-2xl font-bold text-blue-900 mt-0.5">{value}</p>
+          <p className="text-2xl font-bold text-[#3b1025] mt-0.5">{value}</p>
           {sub && <p className="text-xs text-pink-500/70 mt-0.5">{sub}</p>}
           {children}
         </div>
@@ -220,7 +220,7 @@ export default function StatsPage() {
               <BarChart3 className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-blue-900">Nosae 數據</h1>
+              <h1 className="text-2xl font-bold text-[#3b1025]">Nosae 數據</h1>
               <p className="text-xs text-pink-500/70 mt-0.5">乃彩絵的成長數據儀表板</p>
             </div>
           </div>
@@ -267,7 +267,7 @@ export default function StatsPage() {
           <motion.div {...fadeUp} className="rounded-2xl border border-pink-200/60 bg-white/80 backdrop-blur-sm p-5">
             <div className="flex items-center gap-2 mb-4">
               <Library className="w-4 h-4 text-pink-400" />
-              <h2 className="text-sm font-bold text-blue-900">月份分布</h2>
+              <h2 className="text-sm font-bold text-[#3b1025]">月份分布</h2>
             </div>
             <div className="space-y-2">
               {Object.entries(stats.monthMap)
@@ -300,7 +300,7 @@ export default function StatsPage() {
           <motion.div {...fadeUp} className="rounded-2xl border border-pink-200/60 bg-white/80 backdrop-blur-sm p-5">
             <div className="flex items-center gap-2 mb-4">
               <Heart className="w-4 h-4 text-pink-400" />
-              <h2 className="text-sm font-bold text-blue-900">心情分布</h2>
+              <h2 className="text-sm font-bold text-[#3b1025]">心情分布</h2>
             </div>
             <div className="space-y-2">
               {moodDist.map(([mood, count]) => (
@@ -323,7 +323,7 @@ export default function StatsPage() {
           <motion.div {...fadeUp} className="rounded-2xl border border-pink-200/60 bg-white/80 backdrop-blur-sm p-5">
             <div className="flex items-center gap-2 mb-4">
               <Star className="w-4 h-4 text-pink-400" />
-              <h2 className="text-sm font-bold text-blue-900">里程碑分類</h2>
+              <h2 className="text-sm font-bold text-[#3b1025]">里程碑分類</h2>
             </div>
             <div className="space-y-2">
               {Object.entries(milestones.stats.category_breakdown)

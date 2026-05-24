@@ -51,7 +51,7 @@ export default function WeekAheadPreview() {
             <Compass className="w-4 h-4 text-white" />
           </div>
           <div>
-            <h3 className="text-sm font-bold text-blue-800">📆 下週展望</h3>
+            <h3 className="text-sm font-bold text-[#3b1025]">📆 下週展望</h3>
             <p className="text-xs text-pink-600/70">星期日 · 為明日做好準備</p>
           </div>
         </div>
