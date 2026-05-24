@@ -20,6 +20,7 @@ import EventSpotlight from '@/components/sections/EventSpotlight'
 import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
 import SeasonalTransition from '@/components/sections/SeasonalTransition'
 import AfterglowReflection from '@/components/sections/AfterglowReflection'
+import LateNightLetter from '@/components/sections/LateNightLetter'
 import SundayWindDown from '@/components/sections/SundayWindDown'
 import WeeklyRhythm from '@/components/sections/WeeklyRhythm'
 import WeekAheadPreview from '@/components/sections/WeekAheadPreview'
@@ -103,6 +104,9 @@ export default function NosaePage() {
 
         {/* ── 🕯️ Afterglow — 靜寂時刻 ── */}
         <AfterglowReflection />
+
+        {/* ── 📮 深夜の手紙 ── */}
+        <LateNightLetter />
 
         {/* ── 🌆 日曜の夕暮れ ── */}
         <SundayWindDown />
