@@ -16,6 +16,7 @@ import DiaryWhisper from '@/components/sections/DiaryWhisper'
 import DawnOracle from '@/components/sections/DawnOracle'
 import StatsGrid from '@/components/sections/StatsGrid'
 import LivingStatus from '@/components/LivingStatus'
+import MorningVoice from '@/components/sections/MorningVoice'
 import EventSpotlight from '@/components/sections/EventSpotlight'
 import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
 import SeasonalTransition from '@/components/sections/SeasonalTransition'
@@ -89,6 +90,9 @@ export default function NosaePage() {
 
         {/* ── 🌸 英雄區 ── */}
         <LivingStatus />
+
+        {/* ── 🌅 晨間絮語 (04:00-12:00 顯示) ── */}
+        <MorningVoice />
 
         {/* ── 📆 週日の詩 ── */}
         <WeeklyRhythm />
