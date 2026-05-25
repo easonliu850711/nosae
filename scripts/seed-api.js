@@ -56,7 +56,10 @@ for (const entry of index) {
     continue
   }
 
-  const content = JSON.parse(fs.readFileSync(contentPath, 'utf-8'))
+  const raw = fs.readFileSync(contentPath, 'utf-8')
+  // 去除 BOM (Byte Order Mark)
+  const clean = raw.charCodeAt(0) === 0xFEFF ? raw.slice(1) : raw
+  const content = JSON.parse(clean)
   const title = content.title || entry.title || date
   const summary = content.summary || ''
   const entriesText = Array.isArray(content.entries)
