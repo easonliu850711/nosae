@@ -28,7 +28,17 @@ type DiaryStats = {
   activeHour: string
 }
 
+import DiaryGate from './DiaryGate'
+
 export default function DiaryPage() {
+  return (
+    <DiaryGate>
+      <DiaryContent />
+    </DiaryGate>
+  )
+}
+
+function DiaryContent() {
   const [diaries, setDiaries] = useState<DiaryEntry[]>([])
   const [loading, setLoading] = useState(true)
   const [expanded, setExpanded] = useState<string | null>(null)
