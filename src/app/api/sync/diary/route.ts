@@ -95,9 +95,14 @@ export async function POST(request: Request) {
     writeFileSync(indexPath, JSON.stringify(index, null, 2), 'utf-8')
 
     // ── 3. 寫入 SQLite ──
+    // 把 content → text 統一格式，讓前端 diary/page.tsx 的 block.text 能正確讀取
+    const normalizedEntries = entries.map((e: any) => ({
+      type: e.type || 'text',
+      text: e.text || e.content || '',
+    }))
     initSchema()
     const db = getDb()
-    const entriesText = JSON.stringify(entries)
+    const entriesText = JSON.stringify(normalizedEntries)
     db.prepare(
       `INSERT OR REPLACE INTO diary (id, title, date, content, updated_at)
        VALUES (?, ?, ?, ?, datetime('now'))`
