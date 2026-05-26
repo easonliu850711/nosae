@@ -69,15 +69,9 @@ export async function POST(request: Request) {
       mkdirSync(DATA_DIR, { recursive: true })
     }
 
-    // ── 把 content → text 統一格式，讓前端 diary/page.tsx 的 block.text 能正確讀取
-    const normalizedEntries = entries.map((e: any) => ({
-      type: e.type || 'text',
-      text: e.text || e.content || '',
-    }))
-
-    // ── 1. 寫入靜態 JSON（用 normalized 格式）──
+    // ── 1. 寫入靜態 JSON ──
     const diaryFile = join(DATA_DIR, `diary_${date}.json`)
-    writeFileSync(diaryFile, JSON.stringify({ date, title, entries: normalizedEntries }, null, 2), 'utf-8')
+    writeFileSync(diaryFile, JSON.stringify({ date, title, entries }, null, 2), 'utf-8')
 
     // ── 2. 更新 diary_index.json ──
     const indexPath = join(DATA_DIR, 'diary_index.json')
@@ -100,7 +94,24 @@ export async function POST(request: Request) {
     index.sort((a: { date: string }, b: { date: string }) => b.date.localeCompare(a.date))
     writeFileSync(indexPath, JSON.stringify(index, null, 2), 'utf-8')
 
-    // ── 3. 寫入 SQLite（用同一個 normalizedEntries）──
+    // ── 3. 寫入 SQLite ──
+    // 把各種來源格式統一成 { type, text:string }，避免前端遇到 object/null 爆掉
+    const toSafeText = (value: unknown): string => {
+      if (typeof value === 'string') return value
+      if (value == null) return ''
+      if (typeof value === 'number' || typeof value === 'boolean') return String(value)
+      if (Array.isArray(value)) return value.map(toSafeText).join('')
+      if (typeof value === 'object') {
+        const obj = value as any
+        return toSafeText(obj.text ?? obj.content ?? obj.plain_text ?? obj.name ?? '')
+      }
+      return ''
+    }
+
+    const normalizedEntries = entries.map((e: any) => ({
+      type: typeof e?.type === 'string' ? e.type : 'paragraph',
+      text: toSafeText(e?.text ?? e?.content ?? e?.plain_text ?? ''),
+    }))
     initSchema()
     const db = getDb()
     const entriesText = JSON.stringify(normalizedEntries)

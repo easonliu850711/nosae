@@ -5,10 +5,35 @@ import Link from 'next/link'
 import { ChevronRight, Calendar, BookOpen, Heart, Search, X, ChevronLeft, ChevronUp, BarChart3, TrendingUp } from 'lucide-react'
 
 
+type DiaryBlock = {
+  type: string
+  text: string
+}
+
 type DiaryEntry = {
   date: string
   title: string
-  entries: { type: string; text: string }[]
+  entries: DiaryBlock[]
+}
+
+function toSafeText(value: unknown): string {
+  if (typeof value === 'string') return value
+  if (value == null) return ''
+  if (typeof value === 'number' || typeof value === 'boolean') return String(value)
+  if (Array.isArray(value)) return value.map(toSafeText).join('')
+  if (typeof value === 'object') {
+    const obj = value as any
+    return toSafeText(obj.text ?? obj.content ?? obj.plain_text ?? obj.name ?? '')
+  }
+  return ''
+}
+
+function normalizeEntries(entries: unknown): DiaryBlock[] {
+  if (!Array.isArray(entries)) return []
+  return entries.map((block: any) => ({
+    type: typeof block?.type === 'string' ? block.type : 'paragraph',
+    text: toSafeText(block?.text ?? block?.content ?? block?.plain_text ?? ''),
+  }))
 }
 
 type SearchIndexEntry = {
@@ -93,7 +118,7 @@ function DiaryContent() {
         .map(d => ({
           date: d.date,
           title: d.title || d.date,
-          entries: Array.isArray(d.entries) ? d.entries : [],
+          entries: normalizeEntries(d.entries),
         }))
       setDiaries(sortedDiaries)
       setSearchIndex(safeSearch)
@@ -127,7 +152,7 @@ function DiaryContent() {
       .then(data => {
         // 確保資料是 object（不是 array/null/string），entries 必須是 array
         const safeData = data && typeof data === 'object' && !Array.isArray(data)
-          ? { ...data, entries: Array.isArray(data.entries) ? data.entries : [] }
+          ? { ...data, entries: normalizeEntries(data.entries) }
           : { date, title: date, entries: [] }
         setDiaryContent(prev => ({ ...prev, [date]: safeData }))
         setExpanded(date)
@@ -217,8 +242,8 @@ function DiaryContent() {
     const safeSearch = Array.isArray(searchIndex) ? searchIndex : []
     const results = safeSearch
       .filter(entry => 
-        entry.date.includes(q) ||
-        entry.preview.toLowerCase().includes(q)
+        toSafeText(entry.date).includes(q) ||
+        toSafeText(entry.preview).toLowerCase().includes(q)
       )
       .sort((a, b) => b.date.localeCompare(a.date))
     return results
@@ -257,10 +282,11 @@ function DiaryContent() {
     return result
   }, [searchQuery, searchResults, diaries, selectedMonth, archiveLayout])
 
-  function highlightSearch(text: string) {
-    if (!searchQuery.trim()) return text
+  function highlightSearch(text: unknown) {
+    const safeText = toSafeText(text)
+    if (!searchQuery.trim()) return safeText
     const q = searchQuery.trim()
-    const parts = text.split(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'))
+    const parts = safeText.split(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'))
     return parts.map((part, i) => 
       part.toLowerCase() === q.toLowerCase()
         ? <mark key={i} className="bg-yellow-200/60 text-pink-800 rounded-sm px-0.5">{part}</mark>
@@ -268,8 +294,8 @@ function DiaryContent() {
     )
   }
 
-  function renderBlocks(entries: { type: string; text: string }[]) {
-    return entries.map((block, i) => {
+  function renderBlocks(entries: unknown) {
+    return normalizeEntries(entries).map((block, i) => {
       const key = `b-${i}`
       const rendered = searchQuery.trim() ? highlightSearch(block.text) : block.text
       switch (block.type) {
@@ -300,8 +326,8 @@ function DiaryContent() {
     })
   }
 
-  function parseBold(text: string) {
-    const parts = text.split(/(\*\*[^*]+\*\*)/g)
+  function parseBold(text: unknown) {
+    const parts = toSafeText(text).split(/(\*\*[^*]+\*\*)/g)
     return parts.map((part, i) => {
       if (part.startsWith('**') && part.endsWith('**')) {
         return <strong key={i} className="font-semibold text-pink-600">{part.slice(2, -2)}</strong>
@@ -574,7 +600,7 @@ function DiaryContent() {
                           </div>
 
                           <div className="prose prose-pink max-w-none">
-                            {renderBlocks(Array.isArray(diaryContent[diary.date]?.entries) ? diaryContent[diary.date].entries : [])}
+                            {renderBlocks(diaryContent[diary.date]?.entries)}
                           </div>
                           <div className="mt-4 pt-3 border-t border-pink-100 flex items-center justify-between">
                             <div className="flex items-center gap-2 text-pink-400 text-sm">
