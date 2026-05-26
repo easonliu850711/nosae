@@ -49,6 +49,18 @@
     background: linear-gradient(180deg, #1a0a1a 0%, #2a1025 50%, #1a0d25 100%);
   }
 
+  /* 暗色模式：所有文字 */
+  .dark p, .dark li, .dark span, .dark div,
+  body.dark-mode p, body.dark-mode li, body.dark-mode span, body.dark-mode div {
+    color: #e8d5e0;
+  }
+
+  /* 暗色模式：section 背景 */
+  .dark section, .dark .card,
+  body.dark-mode section, body.dark-mode .card {
+    background-color: rgba(26, 10, 26, 0.6);
+  }
+
   /* 暗色模式：body::before */
   .dark body::before,
   body.dark-mode::before {
