@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import './globals.css'
 import NavBar from '@/components/NavBar'
 import VisitorCounter from '@/components/VisitorCounter'
-import ThemeToggleFixed from '@/components/ThemeToggle'
 import nextDynamic from 'next/dynamic'
 
 export const dynamic = 'force-dynamic'
@@ -25,7 +24,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-TW" suppressHydrationWarning>
       <body>
         <MoodRing />
-        <ThemeToggleFixed />
         <NavBar />
         {children}
         <footer className="text-center py-8 border-t border-[rgba(194,24,91,0.12)] mt-12">

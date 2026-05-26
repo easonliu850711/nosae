@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
 import { ChevronRight, Calendar, BookOpen, Heart, Search, X, ChevronLeft, ChevronUp, BarChart3, TrendingUp } from 'lucide-react'
-import ThemeToggleInline from '@/components/ThemeToggleInline'
+
 
 type DiaryEntry = {
   date: string
@@ -339,7 +339,6 @@ function DiaryContent() {
               <BarChart3 className="w-3.5 h-3.5" />
               <span>寫作統計</span>
             </button>
-            <ThemeToggleInline />
           </div>
         </div>
 

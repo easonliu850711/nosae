@@ -1,11 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Heart, BookOpen, Quote, TrendingUp, Clock, CalendarDays, User, Sun, Moon, Smile, BarChart3 } from 'lucide-react'
-import { useTheme } from 'next-themes'
 
 const navLinks = [
   { href: '/', label: '首頁', icon: <Heart className="w-3.5 h-3.5" /> },
@@ -21,14 +20,25 @@ const navLinks = [
 
 export default function NavBar() {
   const pathname = usePathname()
-  const { theme, setTheme } = useTheme()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [isDark, setIsDark] = useState(true)
   const [mounted, setMounted] = useState(false)
-  if (typeof window !== 'undefined' && !mounted) {
-    setTimeout(() => setMounted(true), 0)
-  }
 
-  const isDark = mounted && theme === 'dark'
+  useEffect(() => {
+    setMounted(true)
+    const stored = localStorage.getItem('theme')
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const dark = stored ? stored === 'dark' : prefersDark
+    setIsDark(dark)
+    document.documentElement.classList.toggle('dark', dark)
+  }, [])
+
+  const toggleTheme = () => {
+    const next = !isDark
+    setIsDark(next)
+    document.documentElement.classList.toggle('dark', next)
+    localStorage.setItem('theme', next ? 'dark' : 'light')
+  }
 
   return (
     <>
@@ -68,7 +78,7 @@ export default function NavBar() {
             {/* 右側操作 */}
             <div className="flex items-center gap-2">
               <button
-                onClick={() => setTheme(isDark ? 'light' : 'dark')}
+                onClick={toggleTheme}
                 className="p-1.5 rounded-lg text-pink-400 hover:text-pink-600 hover:bg-pink-50 transition-all"
                 aria-label="切換主題"
               >
