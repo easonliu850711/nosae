@@ -69,9 +69,15 @@ export async function POST(request: Request) {
       mkdirSync(DATA_DIR, { recursive: true })
     }
 
-    // ── 1. 寫入靜態 JSON ──
+    // ── 把 content → text 統一格式，讓前端 diary/page.tsx 的 block.text 能正確讀取
+    const normalizedEntries = entries.map((e: any) => ({
+      type: e.type || 'text',
+      text: e.text || e.content || '',
+    }))
+
+    // ── 1. 寫入靜態 JSON（用 normalized 格式）──
     const diaryFile = join(DATA_DIR, `diary_${date}.json`)
-    writeFileSync(diaryFile, JSON.stringify({ date, title, entries }, null, 2), 'utf-8')
+    writeFileSync(diaryFile, JSON.stringify({ date, title, entries: normalizedEntries }, null, 2), 'utf-8')
 
     // ── 2. 更新 diary_index.json ──
     const indexPath = join(DATA_DIR, 'diary_index.json')
@@ -94,12 +100,7 @@ export async function POST(request: Request) {
     index.sort((a: { date: string }, b: { date: string }) => b.date.localeCompare(a.date))
     writeFileSync(indexPath, JSON.stringify(index, null, 2), 'utf-8')
 
-    // ── 3. 寫入 SQLite ──
-    // 把 content → text 統一格式，讓前端 diary/page.tsx 的 block.text 能正確讀取
-    const normalizedEntries = entries.map((e: any) => ({
-      type: e.type || 'text',
-      text: e.text || e.content || '',
-    }))
+    // ── 3. 寫入 SQLite（用同一個 normalizedEntries）──
     initSchema()
     const db = getDb()
     const entriesText = JSON.stringify(normalizedEntries)

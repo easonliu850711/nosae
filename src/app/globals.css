@@ -35,35 +35,37 @@
   }
 
   body {
-    @apply text-[#1a0a10] font-space-grotesk;
-    background: linear-gradient(180deg, #ffe4ef 0%, #ffd6ea 100%);
+    @apply font-space-grotesk;
     min-height: 100vh;
     height: auto;
     position: relative;
     overflow-x: hidden;
   }
 
-  .dark body,
-  body.dark-mode {
+  /* 明模式：body 背景 + 字色 */
+  body {
+    color: #1a0a10;
+    background: linear-gradient(180deg, #ffe4ef 0%, #ffd6ea 100%);
+  }
+
+  /* 暗模式：body 背景 + 字色 — 更高權重靠 html.dark */
+  html.dark body {
     color: #fce4ec;
     background: linear-gradient(180deg, #1a0a1a 0%, #2a1025 50%, #1a0d25 100%);
   }
 
   /* 暗色模式：所有文字 */
-  .dark p, .dark li, .dark span, .dark div,
-  body.dark-mode p, body.dark-mode li, body.dark-mode span, body.dark-mode div {
+  html.dark p, html.dark li, html.dark span, html.dark div {
     color: #e8d5e0;
   }
 
   /* 暗色模式：section 背景 */
-  .dark section, .dark .card,
-  body.dark-mode section, body.dark-mode .card {
+  html.dark section, html.dark .card {
     background-color: rgba(26, 10, 26, 0.6);
   }
 
   /* 暗色模式：body::before */
-  .dark body::before,
-  body.dark-mode::before {
+  html.dark body::before {
     background:
       radial-gradient(ellipse at 20% 30%, rgba(194, 24, 91, 0.15), transparent 50%),
       radial-gradient(ellipse at 80% 70%, rgba(100, 50, 150, 0.1), transparent 50%);
@@ -92,8 +94,7 @@
     color: #2a0d1a;
   }
 
-  .dark h1, .dark h2, .dark h3,
-  body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+  html.dark h1, html.dark h2, html.dark h3 {
     color: #ffd6ea;
   }
   
@@ -109,10 +110,10 @@
     @apply text-[#ff4f93];
   }
 
-  .dark a {
+  html.dark a {
     color: #ff8eb3;
   }
-  .dark a:hover {
+  html.dark a:hover {
     color: #ffb3cc;
   }
 
@@ -156,8 +157,7 @@
     color: #3b1025;
   }
 
-  .dark .sakura-card,
-  body.dark-mode .sakura-card {
+  html.dark .sakura-card {
     background: rgba(30, 15, 35, 0.72);
     border-color: rgba(194, 24, 91, 0.25);
     color: #fce4ec;
