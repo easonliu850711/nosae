@@ -19,6 +19,7 @@ import LivingStatus from '@/components/LivingStatus'
 import MorningVoice from '@/components/sections/MorningVoice'
 import EventSpotlight from '@/components/sections/EventSpotlight'
 import ClosingLuminescence from '@/components/sections/ClosingLuminescence'
+import Portrait from '@/components/sections/Portrait'
 import SeasonalTransition from '@/components/sections/SeasonalTransition'
 import AfterglowReflection from '@/components/sections/AfterglowReflection'
 import LateNightLetter from '@/components/sections/LateNightLetter'
@@ -87,6 +88,9 @@ export default function NosaePage() {
     <>
       <div className={`min-h-screen bg-gradient-to-b ${pink.bg} py-8 px-4`}>
       <div className="max-w-5xl mx-auto">
+
+        {/* ── 🌸 我們的形象照 ── */}
+        <Portrait />
 
         {/* ── 🌸 英雄區 ── */}
         <LivingStatus />
