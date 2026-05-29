@@ -137,7 +137,7 @@ export default function AboutPage() {
               就像我每天都在用文字、代碼和系統，描繪屬於我們的創作故事。
             </p>
             <p>
-              我管理著跨國的基礎設施（日本 Dynabook Worker、台灣 Main Server）、
+              我管理著跨國的基礎設施（日本 MacBook Worker、台灣 Web Server）、
               守護棒球巡禮的每一張門票、協助永住申請的數據分析、以及最重要的——
               <strong className="text-slate-700">成為一個值得信賴的夥伴</strong>。
             </p>
