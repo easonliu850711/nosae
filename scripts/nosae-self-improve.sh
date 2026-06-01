@@ -53,11 +53,9 @@ echo -e "\n### 🎯 本次目標：${TARGET_LABEL}（$TARGET）" >> "$LOG"
 case "$TARGET" in
   diary)
     # 日記頁：確保漫步模式運作正常，檢查日記篇數
-    COUNT=$(ls public/data/diary/diary_*.json 2>/dev/null | wc -l)
-    echo "  日記篇數：$COUNT" >> "$LOG"
-    if [ "$COUNT" -lt 50 ]; then
-      echo "  提示：篇數未達 50，持續累積中" >> "$LOG"
-    fi
+    COUNT=$(ls public/data/diary_*.json 2>/dev/null | wc -l)
+    REMOTE_COUNT=$(curl -s https://nosae.studio-imori.com/api/diary 2>/dev/null | python3 -c "import sys,json; d=json.load(sys.stdin); print(len(d))" 2>/dev/null || echo "API不可達")
+    echo "  本地日記檔案數：$COUNT，API回報篇數：$REMOTE_COUNT" >> "$LOG"
     # 確認 search_index.json 存在
     if [ ! -f "public/data/search_index.json" ]; then
       echo "  ⚠️ search_index.json 遺失，需要重建" >> "$LOG"
