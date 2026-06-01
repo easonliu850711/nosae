@@ -49,7 +49,7 @@ const payload = {
   token: SYNC_TOKEN,
   date: diary.date || date,
   title: diary.title || `乃彩絵日記 - ${date}`,
-  entries: Array.isArray(diary.entries) ? diary.entries : [],
+  entries: Array.isArray(diary.entries) ? diary.entries : (Array.isArray(diary.content) ? diary.content : []),
 }
 
 console.log(`📤 正在推送 ${date} 日記到 ${BASE_URL} ...`)
