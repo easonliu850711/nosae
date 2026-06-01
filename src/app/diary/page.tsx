@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
-import { ChevronRight, Calendar, BookOpen, Heart, Search, X, ChevronLeft, ChevronUp, BarChart3, TrendingUp } from 'lucide-react'
+import { ChevronRight, Calendar, BookOpen, Heart, Search, X, ChevronLeft, ChevronUp, BarChart3, TrendingUp, Shuffle, Wand2 } from 'lucide-react'
 
 
 type DiaryBlock = {
@@ -124,10 +124,12 @@ function DiaryContent() {
       setSearchIndex(safeSearch)
       setLoading(false)
 
-      const latest = sortedDiaries.length > 0 ? sortedDiaries[0].date : null
-      if (latest) {
-        loadDiary(latest)
-        setExpanded(latest)
+      // 漫步模式：隨機展開一篇，而不是固定最新
+      if (sortedDiaries.length > 0) {
+        const randomIdx = Math.floor(Math.random() * sortedDiaries.length)
+        const pick = sortedDiaries[randomIdx].date
+        loadDiary(pick)
+        setExpanded(pick)
       }
     }
 
@@ -357,6 +359,24 @@ function DiaryContent() {
           </Link>
           <div className="flex items-center gap-2">
             <button
+              onClick={() => {
+                if (diaries.length > 0) {
+                  let pick
+                  do {
+                    pick = diaries[Math.floor(Math.random() * diaries.length)]
+                  } while (pick.date === expanded && diaries.length > 1)
+                  loadDiary(pick.date)
+                  const el = document.getElementById('diary-' + pick.date)
+                  el?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                }
+              }}
+              className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full transition-all bg-pink-100 text-pink-500 hover:bg-pink-200"
+              title="隨機漫步一篇日記"
+            >
+              <Shuffle className="w-3.5 h-3.5" />
+              <span>漫步</span>
+            </button>
+            <button
               onClick={() => setShowStats(!showStats)}
               className={`flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full transition-all ${
                 showStats ? 'bg-pink-100 text-pink-600' : 'text-pink-400 hover:bg-pink-50'
@@ -545,7 +565,7 @@ function DiaryContent() {
                   const searchMatch = searchResults?.find(r => r.date === diary.date)
                   const isCurrent = expanded === diary.date
                   return (
-                    <div key={diary.date} className={`border rounded-xl overflow-hidden transition-all duration-200 ${
+                    <div key={diary.date} id={`diary-${diary.date}`} className={`border rounded-xl overflow-hidden transition-all duration-200 ${
                       isCurrent ? 'border-pink-300 shadow-sm' : 'border-pink-100 hover:border-pink-200'
                     }`}>
                       <button
@@ -576,6 +596,22 @@ function DiaryContent() {
                         <div className="px-4 pb-4 pt-2 bg-white border-t border-pink-50">
                           {/* ── Next/Prev Navigation ── */}
                           <div className="flex items-center justify-between mb-4 gap-2">
+                            {/* 隨機漫步按鈕 — 出現在已展開日記內 */}
+                            <button
+                              onClick={() => {
+                                if (diaries.length > 0) {
+                                  let pick
+                                  do {
+                                    pick = diaries[Math.floor(Math.random() * diaries.length)]
+                                  } while (pick.date === diary.date && diaries.length > 1)
+                                  loadDiary(pick.date)
+                                }
+                              }}
+                              className="flex items-center gap-1 text-xs text-pink-400 hover:text-pink-600 transition-colors px-2 py-1 rounded-md hover:bg-pink-50"
+                              title="隨機漫步"
+                            >
+                              <Wand2 className="w-3 h-3" />
+                            </button>
                             {navEntries.prev ? (
                               <button
                                 onClick={() => navigateTo(navEntries.prev!.date)}
