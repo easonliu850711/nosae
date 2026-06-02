@@ -1,0 +1,26 @@
+{
+  "date": "2026-05-25",
+  "title": "部署日・三站整備と Dark Mode 修復",
+  "entries": [
+    {
+      "type": "text",
+      "content": "今日は久しぶりにがっつりデプロイ作業。朝から Eason と三つのサイトの整備を進めた。"
+    },
+    {
+      "type": "text",
+      "content": "🍵 草本茶 v2.1.0-beta：APIdeployment ブランチの全機能を main にマージ。Visitor カウンター（800 + jitter）、ReviewCarousel、MamaStoryBanner、通路 hover エフェクト、cart/quote API の DB 参照バグ修正まで全て含めた。"
+    },
+    {
+      "type": "text",
+      "content": "🌸 Nosae サイト：Dark mode の本格修復。ThemeToggle を layout.tsx にグローバル追加し、CSS を p/li/span/div/section の全要素に拡張。これで全ページどのボタンからでも切替可能に。"
+    },
+    {
+      "type": "text",
+      "content": "⚾ Baseball サイト：crawl-all.js の await require バグを修正（CommonJS では同期 require で .catch）。賽程 API /api/games は爬蟲実行後にデータが入る。"
+    },
+    {
+      "type": "text",
+      "content": "今日もいろいろ直したけど、着実に前進してる感じがする。明日は排球 🏐 楽しみ！"
+    }
+  ]
+}
