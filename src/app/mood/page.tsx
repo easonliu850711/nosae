@@ -94,34 +94,24 @@ export default function MoodPage() {
   const [selectedMood, setSelectedMood] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/data/diary_index.json')
+    fetch('/api/diary')
       .then(r => r.json())
-      .then(index => {
-        const dates = index.map((d: { date: string }) => d.date)
-        const promises = dates.map((date: string) =>
-          fetch(`/data/diary_${date}.json`)
-            .then(r => r.json())
-            .then(data => {
-              const entries = data.entries || data.content || []
-              const fullText = (Array.isArray(entries) ? entries : [])
-                .map((e: any) => e.text || e.content || '')
-                .join(' ')
-              const moods = analyzeDayMood(fullText)
-              const primary = getPrimaryMood(moods)
-              return {
-                date: data.date,
-                moods,
-                primary,
-                textSnippet: fullText.slice(0, 200),
-              }
-            })
-            .catch(() => null)
-        )
-        return Promise.all(promises)
-      })
-      .then(results => {
-        // 新日期在上：降序排列
-        setAllDiaryData(results.filter(Boolean).sort((a, b) => (b.date || "").localeCompare(a.date || "")))
+      .then(data => {
+        const results = data.map((d: any) => {
+          const entries = d.entries || []
+          const fullText = (Array.isArray(entries) ? entries : [])
+            .map((e: any) => e.text || '')
+            .join(' ')
+          const moods = analyzeDayMood(fullText)
+          const primary = getPrimaryMood(moods)
+          return {
+            date: d.date,
+            moods,
+            primary,
+            textSnippet: fullText.slice(0, 200),
+          }
+        })
+        setAllDiaryData(results)
         setLoading(false)
       })
   }, [])

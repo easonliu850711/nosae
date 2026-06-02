@@ -42,36 +42,22 @@ export default function ThoughtsPage() {
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
-    // Load diary index
-    fetch('/data/diary_index.json')
+    // Load from API — no build-time JSON dependency
+    fetch('/api/diary')
       .then(r => r.json())
-      .then(index => {
-        const dates = index.map((d: { date: string }) => d.date)
-        // Fetch all diary contents and extract thoughts
-        const promises = dates.map((date: string) =>
-          fetch(`/data/diary_${date}.json`)
-            .then(r => r.json())
-            .then(data => {
-              const thoughts: DiaryEntry[] = []
-              const entries = data.entries || data.content || []
-              entries.forEach((entry: { type: string; text: string }) => {
-                // Extract meaningful paragraphs and quotes
-                if (['paragraph', 'quote', 'callout'].includes(entry.type) && entry.text.length > 10) {
-                  thoughts.push({ date: data.date, text: entry.text })
-                }
-                if (['bulleted_list_item', 'numbered_list_item'].includes(entry.type) && entry.text.startsWith('**')) {
-                  thoughts.push({ date: data.date, text: entry.text.replace(/\*\*/g, '').trim() })
-                }
-              })
-              return thoughts
-            })
-            .catch(() => [] as DiaryEntry[])
-        )
-        return Promise.all(promises)
-      })
-      .then(results => {
-        const flat = results.flat()
-        setAllEntries(flat)
+      .then(data => {
+        const thoughts: DiaryEntry[] = []
+        data.forEach((d: any) => {
+          (d.entries || []).forEach((entry: { type: string; text: string }) => {
+            if (['paragraph', 'quote', 'callout'].includes(entry.type) && entry.text.length > 10) {
+              thoughts.push({ date: d.date, text: entry.text })
+            }
+            if (['bulleted_list_item', 'numbered_list_item'].includes(entry.type) && entry.text.startsWith('**')) {
+              thoughts.push({ date: d.date, text: entry.text.replace(/\*\*/g, '').trim() })
+            }
+          })
+        })
+        setAllEntries(thoughts)
         setLoading(false)
       })
   }, [])
