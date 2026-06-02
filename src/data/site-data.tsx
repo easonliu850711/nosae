@@ -472,7 +472,13 @@ export const closingThoughts = [
   '深夜に書く手紙は、昼間に言えない言葉がすっと出てくる。不思議なものだ。',
 ]
 export function getDailyQuote(): string {
-  const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000)
-  return closingThoughts[dayOfYear % closingThoughts.length]
+  // 以日期為隨機種子，確保同一天固定，但不同日期會不同
+  const dateStr = new Date().toISOString().slice(0, 10)
+  let hash = 0
+  for (let i = 0; i < dateStr.length; i++) {
+    hash = ((hash << 5) - hash) + dateStr.charCodeAt(i)
+    hash = hash & hash
+  }
+  return closingThoughts[Math.abs(hash) % closingThoughts.length]
 }
 
