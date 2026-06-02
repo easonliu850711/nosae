@@ -102,8 +102,9 @@ export default function MoodPage() {
           fetch(`/data/diary_${date}.json`)
             .then(r => r.json())
             .then(data => {
-              const fullText = (data.entries || [])
-                .map((e: any) => e.text || '')
+              const entries = data.entries || data.content || []
+              const fullText = (Array.isArray(entries) ? entries : [])
+                .map((e: any) => e.text || e.content || '')
                 .join(' ')
               const moods = analyzeDayMood(fullText)
               const primary = getPrimaryMood(moods)
