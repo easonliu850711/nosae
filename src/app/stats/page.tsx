@@ -112,24 +112,20 @@ export default function StatsPage() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    Promise.all([
-      fetch('/data/diary_index.json').then(r => r.json()),
-      fetch('/data/diary_mood_analysis.json').then(r => r.json()),
-      fetch('/data/milestones.json').then(r => r.json()),
-    ])
-    .then(([idx, moodData, mstone]) => {
-      const safeIdx = Array.isArray(idx) ? idx : []
-      const safeMood = Array.isArray(moodData) ? moodData : []
-      setDiaries(safeIdx.filter((d: DiaryEntry) => /^\d{4}-\d{2}-\d{2}$/.test(d.date)))
-      setMoods(safeMood)
-      setMilestones(mstone)
-      setLoading(false)
-    })
-    .catch(err => {
-      console.error('Failed to load stats data:', err)
-      setError('資料讀取失敗')
-      setLoading(false)
-    })
+    fetch('/api/stats')
+      .then(r => r.json())
+      .then(res => {
+        const idx = res.index || []
+        setDiaries(idx.filter((d: DiaryEntry) => /^\d{4}-\d{2}-\d{2}$/.test(d.date)))
+        setMoods(res.moodData || {})
+        setMilestones(res.milestones)
+        setLoading(false)
+      })
+      .catch(err => {
+        console.error('Failed to load stats data:', err)
+        setError('資料讀取失敗')
+        setLoading(false)
+      })
   }, [])
 
   /* ── 計算指標 ── */
