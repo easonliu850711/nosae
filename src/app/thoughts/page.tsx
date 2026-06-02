@@ -79,7 +79,14 @@ export default function ThoughtsPage() {
   useEffect(() => {
     if (autoPlay && allEntries.length > 0) {
       intervalRef.current = setInterval(() => {
-        setDisplayIndex(prev => (prev + 1) % allEntries.length)
+        // 每次隨機跳轉，不要順序循環
+        setDisplayIndex(prev => {
+          let next = Math.floor(Math.random() * allEntries.length)
+          while (next === prev && allEntries.length > 1) {
+            next = Math.floor(Math.random() * allEntries.length)
+          }
+          return next
+        })
       }, 8000)
     }
     return () => {
