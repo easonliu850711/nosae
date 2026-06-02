@@ -113,7 +113,7 @@ export default function GrowthPage() {
       .filter(([_, v]) => v)
       .map(([k]) => k)
 
-    return data.timeline
+    return [...data.timeline].reverse()
       .map(entry => ({
         ...entry,
         milestones: entry.milestones.filter(m => activeCategories.includes(m.category))

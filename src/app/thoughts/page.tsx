@@ -53,7 +53,8 @@ export default function ThoughtsPage() {
             .then(r => r.json())
             .then(data => {
               const thoughts: DiaryEntry[] = []
-              data.entries.forEach((entry: { type: string; text: string }) => {
+              const entries = data.entries || data.content || []
+              entries.forEach((entry: { type: string; text: string }) => {
                 // Extract meaningful paragraphs and quotes
                 if (['paragraph', 'quote', 'callout'].includes(entry.type) && entry.text.length > 10) {
                   thoughts.push({ date: data.date, text: entry.text })
