@@ -100,11 +100,104 @@ export default function GrowthPage() {
   const [showFilters, setShowFilters] = useState(false)
 
   useEffect(() => {
-    fetch('/data/milestones.json')
-      .then(r => r.json())
-      .then(setData)
-      .catch(console.error)
-      .finally(() => setLoading(false))
+    const normalizeCategory = (category: string): string => {
+      const map: Record<string, string> = {
+        '成就': '技術成就',
+        '部署': '技術成就',
+        '修復': '技術成就',
+        '創新': '技術成就',
+        '成長': '學習成長',
+        '學習': '學習成長',
+        '首次': '自我實現',
+        '感謝': '關係進展',
+        '感動': '關係進展',
+        '合作': '關係進展',
+        '挑戰': '自我實現',
+      }
+      return map[category] ?? category ?? '其他'
+    }
+
+    const weekdayOf = (date: string): string => {
+      const weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+      const d = new Date(`${date}T00:00:00+08:00`)
+      return Number.isNaN(d.getTime()) ? '' : weekdays[d.getDay()]
+    }
+
+    const buildFromApiStats = (payload: any): MilestoneData | null => {
+      const rows = payload?.milestones?.timeline
+      if (!Array.isArray(rows)) return null
+
+      const grouped = new Map<string, MilestoneItem[]>()
+      for (const row of rows) {
+        if (!row?.date || !row?.text) continue
+        const category = normalizeCategory(row.category || '其他')
+        grouped.set(row.date, [
+          ...(grouped.get(row.date) ?? []),
+          { category, text: row.text, score: row.score ?? 1 },
+        ])
+      }
+
+      const categoryBreakdown: Record<string, number> = Object.fromEntries(
+        CATEGORY_ORDER.map(cat => [cat, 0])
+      )
+
+      const timeline: TimelineEntry[] = Array.from(grouped.entries())
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([date, milestones]) => {
+          for (const item of milestones) {
+            categoryBreakdown[item.category] = (categoryBreakdown[item.category] ?? 0) + 1
+          }
+          const theme = [...milestones]
+            .sort((a, b) => (categoryBreakdown[b.category] ?? 0) - (categoryBreakdown[a.category] ?? 0))[0]?.category ?? '其他'
+          return { date, weekday: weekdayOf(date), theme, milestones }
+        })
+
+      const topMilestoneDates = timeline
+        .map(entry => ({ date: entry.date, count: entry.milestones.length }))
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 10)
+
+      return {
+        generated_at: payload?.milestones?.generated_at ?? new Date().toISOString(),
+        stats: {
+          total_milestones: timeline.reduce((sum, entry) => sum + entry.milestones.length, 0),
+          total_dates_with_milestones: timeline.length,
+          category_breakdown: categoryBreakdown,
+          top_milestone_dates: topMilestoneDates,
+        },
+        timeline,
+      }
+    }
+
+    const loadMilestones = async () => {
+      try {
+        const apiRes = await fetch('/api/stats', { cache: 'no-store' })
+        if (apiRes.ok) {
+          const apiPayload = await apiRes.json()
+          const normalized = buildFromApiStats(apiPayload)
+          if (normalized) {
+            setData(normalized)
+            return
+          }
+        }
+
+        // Backward-compatible fallback for old static exports.
+        const staticRes = await fetch('/data/milestones.json', { cache: 'no-store' })
+        if (staticRes.ok) {
+          setData(await staticRes.json())
+          return
+        }
+
+        setData(null)
+      } catch (error) {
+        console.error(error)
+        setData(null)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadMilestones()
   }, [])
 
   const filteredTimeline = useMemo(() => {
