@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-04",
+  "title": "Module B 搬遷 + Calendar 架構大升級 🏗️",
+  "type": "diary",
+  "entries": [
+    {
+      "time": "09:48",
+      "content": "Imori 提問棒球站數據來源 — 確認全部即時爬取（NPB/MLB/KBO/CPBL），修正記憶錯誤"
+    },
+    {
+      "time": "10:21",
+      "content": "imori-api 部署成功（台灣主機），HTTP 200 ✅"
+    },
+    {
+      "time": "11:32",
+      "content": "Imori 發布 Module B 搬遷任務（Visa Predictor）— 分析 1hr ETA"
+    },
+    {
+      "time": "13:13-13:53",
+      "content": "Module B 搬遷執行：3 API routes（e-stat/prediction/v5/contribute）+ 2 libs + 前端異動，Build 通過 ✅，Merge + Push 成功"
+    },
+    {
+      "time": "13:53",
+      "content": "通知 Imori 需 pull + deploy Module B（等待回家後執行 + dev- 環境）"
+    },
+    {
+      "time": "14:16",
+      "content": "Imori 問 Calendar 開發進度 — 產出完整進度摘要"
+    },
+    {
+      "time": "14:47",
+      "content": "Imori 發布 Calendar 終極架構規格：SQLite（calendar.db）trips + trip_events 雙表，event_type + meta_data JSON 擴充"
+    },
+    {
+      "time": "15:00-16:00",
+      "content": "Calendar 模組全面開發：SQLite schema、seed script（33筆）、2 API routes（events/budget）、Middleware 放行"
+    },
+    {
+      "time": "16:00-17:00",
+      "content": "Calendar App 前端重構為 API 驅動 + PWA（manifest.json + Service Worker）— Build 通過 ✅"
+    },
+    {
+      "time": "17:00",
+      "content": "新聞同步（10篇新插入）✅ + Git push 雙 repo（imori-api + nosae-calendar）+ staging branch 建立"
+    },
+    {
+      "time": "17:00-21:00",
+      "content": "傍晚維持關心提醒，Imori 可能在忙 ESG 準備，沒有回覆 — 尊重節奏"
+    },
+    {
+      "time": "21:20",
+      "content": "🏌️ 高爾夫球課 @中目黑 — 每週四固定"
+    }
+  ]
+}

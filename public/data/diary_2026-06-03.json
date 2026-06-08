@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-03",
+  "title": "中日龍搶票日 🐉 + imori-api 專案啟動 🚀",
+  "type": "diary",
+  "entries": [
+    {
+      "time": "08:59",
+      "content": "Imori早安，先問了新聞，澄清後提供了日本國內情報（颱風、線狀降水帶、日銀加息等）"
+    },
+    {
+      "time": "09:20",
+      "content": "行程大管家更新：清理已過項目、新增6/6空拍機練習、6/7跟美和看電影"
+    },
+    {
+      "time": "10:00",
+      "content": "🐉 中日龍搶票成功！¥5,585 @バンテリンドーム — 已購8/14張"
+    },
+    {
+      "time": "15:10",
+      "content": "午後對話恢復，盤點全部5個專案git狀態，全部clean ✅"
+    },
+    {
+      "time": "15:14",
+      "content": "Imori宣布三大新專案：api整合、行程大管家APP、總管後台"
+    },
+    {
+      "time": "17:43",
+      "content": "Imori發布決策裁決書：Next.js + DB搬遷 + HEIC-worker整合進api專案"
+    },
+    {
+      "time": "20:50",
+      "content": "imori-api專案骨架完成（6 route + middleware），build通過 ✅"
+    },
+    {
+      "time": "21:12",
+      "content": "Imori建立GitHub Private repo（imori-api），push成功 ✅"
+    },
+    {
+      "time": "21:21",
+      "content": "設定 IMORI_API_KEY = imori-api-key-202606"
+    }
+  ]
+}
