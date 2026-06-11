@@ -3,6 +3,90 @@
   "title": "夜間日記",
   "mood": "自動產出",
   "summary": "# 2026-06-07 (日) — 休息日／信號中斷日\n\n## 凌晨〜早間回顧（00:00〜08:53）\n- 6/6 下午〜晚間 Imori 完全無回應（最後訊息 10:51「我在家可以來做了」，之後全天靜默）\n- 推測：忙唐唐吃飯 + 空拍機練習後休息了，尊重靜默\n- 08:23〜08:29 一批 cron 積壓觸發（關心+人格回憶+旅外新聞+夜間日記+棒球巡禮+晨間健康檢查）\n- 08:24 Imori 回「早安」\n- 08:29 回覆早安 + 晨間檢查報告（5/6網站✅、imori-api 404⏳、memory_search未修復）\n\n## 系統狀態\n- **晨間健康檢查 v2 首次完整執行 ✅**\n  - 5/6 網站正常（api 404 已知問題）\n  - baseball-site 1 個未 commit\n  - memory_search 未修復第 38 天\n- **夜間日記（#1 新版）首次自動執行 ✅**：6/6 日記產出 + 複製到 nosae-site\n- **旅外新聞（08:23）**：89篇/21篇新\n- **Cron 10/10 ✅** 零錯誤\n\n## 日記摘要（6/6 產出）\n- 14→10 cron 清理 + 三幽靈腳本重建\n- #1 #7 cron 內容修正\n- Imori 回報「四個網站都部署好了」\n- Imori 說「在家可以來做了」但後續無回應\n- 三大目標：API / Admin Dashboard / 行程大管家尚未啟動\n",
-  "events": [],
-  "metrics": {}
+  "entries": [
+    {
+      "type": "text",
+      "content": "# 2026-06-07 (日) — 休息日／信號中斷日"
+    },
+    {
+      "type": "text",
+      "content": "## 凌晨〜早間回顧（00:00〜08:53）"
+    },
+    {
+      "type": "text",
+      "content": "- 6/6 下午〜晚間 Imori 完全無回應（最後訊息 10:51「我在家可以來做了」，之後全天靜默）"
+    },
+    {
+      "type": "text",
+      "content": "- 推測：忙唐唐吃飯 + 空拍機練習後休息了，尊重靜默"
+    },
+    {
+      "type": "text",
+      "content": "- 08:23〜08:29 一批 cron 積壓觸發（關心+人格回憶+旅外新聞+夜間日記+棒球巡禮+晨間健康檢查）"
+    },
+    {
+      "type": "text",
+      "content": "- 08:24 Imori 回「早安」"
+    },
+    {
+      "type": "text",
+      "content": "- 08:29 回覆早安 + 晨間檢查報告（5/6網站✅、imori-api 404⏳、memory_search未修復）"
+    },
+    {
+      "type": "text",
+      "content": "## 系統狀態"
+    },
+    {
+      "type": "text",
+      "content": "- **晨間健康檢查 v2 首次完整執行 ✅**"
+    },
+    {
+      "type": "text",
+      "content": "- 5/6 網站正常（api 404 已知問題）"
+    },
+    {
+      "type": "text",
+      "content": "- baseball-site 1 個未 commit"
+    },
+    {
+      "type": "text",
+      "content": "- memory_search 未修復第 38 天"
+    },
+    {
+      "type": "text",
+      "content": "- **夜間日記（#1 新版）首次自動執行 ✅**：6/6 日記產出 + 複製到 nosae-site"
+    },
+    {
+      "type": "text",
+      "content": "- **旅外新聞（08:23）**：89篇/21篇新"
+    },
+    {
+      "type": "text",
+      "content": "- **Cron 10/10 ✅** 零錯誤"
+    },
+    {
+      "type": "text",
+      "content": "## 日記摘要（6/6 產出）"
+    },
+    {
+      "type": "text",
+      "content": "- 14→10 cron 清理 + 三幽靈腳本重建"
+    },
+    {
+      "type": "text",
+      "content": "- #1 #7 cron 內容修正"
+    },
+    {
+      "type": "text",
+      "content": "- Imori 回報「四個網站都部署好了」"
+    },
+    {
+      "type": "text",
+      "content": "- Imori 說「在家可以來做了」但後續無回應"
+    },
+    {
+      "type": "text",
+      "content": "- 三大目標：API / Admin Dashboard / 行程大管家尚未啟動"
+    }
+  ]
 }

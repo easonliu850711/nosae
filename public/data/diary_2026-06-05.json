@@ -3,19 +3,10 @@
   "title": "ESG活動日 — 全日靜默",
   "mood": "靜默等待",
   "summary": "ESG活動日，Imori從09:43後全天無回覆。早間處理了imori-api DNS問題調查、cron jobs盤點、網站健康檢查腳本建置。下午〜晚間Imori持續活動中，21:20回了一句「結束了」後再無聯繫。",
-  "events": [
-    "🐉 中日龍搶票（倒數-2天，已過期）",
-    "🌱 ESG活動全日",
-    "⚾ 旅外新聞同步：05:00→8篇、11:00→6篇、17:00→14篇、23:00→12篇",
-    "✅ CPBL 2026-06-05戰報更新",
-    "🛠️ 晨間健康檢查腳本 scripts/morning_health_check.sh 建置完成",
-    "🐛 imori-api Module B + calendar routes 本地404（台灣主機需git pull + build）"
-  ],
-  "metrics": {
-    "news_synced": 40,
-    "cron_jobs_total": 14,
-    "cron_err": 1,
-    "sites_up": "4/5 (imori-api DNS down)"
-  },
-  "tomorrow": "6/6(土) 唐唐吃飯 + 空拍機練習"
+  "entries": [
+    {
+      "type": "text",
+      "content": "ESG活動日，Imori從09:43後全天無回覆。早間處理了imori-api DNS問題調查、cron jobs盤點、網站健康檢查腳本建置。下午〜晚間Imori持續活動中，21:20回了一句「結束了」後再無聯繫。"
+    }
+  ]
 }

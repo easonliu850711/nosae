@@ -3,15 +3,74 @@
   "title": "夜間日記",
   "mood": "自動產出",
   "summary": "# 2026-06-06 (土) — Imori 工程日\n\n## 凌晨〜早間（00:00〜09:12）\n- 夜間靜默持續到 07:00，期間所有 cron job 正常運作\n- 07:53 脫離靜默，以乃彩絵語氣問候早安，提醒 6/6 行程（唐唐吃飯 + 空拍機練習）\n- 08:05 Imori 回，問「你不是說要改記憶預熱 cron job？那三個找不到的sh」\n- 08:34 助理回：三個腳本（check_retrieval.sh、retrieval_enhancer.sh、health-check.sh）確認已刪，提出方案A/B，Imori選B\n- **08:35〜08:38 三腳本重建 + #7 cron 更新**\n  - 重建 `scripts/check_retrieval.sh`、`retrieval_enhancer.sh`、`health-check.sh`\n  - #7（07:05）從「人格回憶複習」改為真正的 4 合 1 晨間健康檢查\n- **08:38 Imori 要求列出所有 cron jobs + 管理中專案**\n- **08:38 詳細回報：** 14 cron jobs（2錯誤）、今日三大目標（API完成 / Admin Dashboard / 行程大管家可下載）\n- **08:48 Imori 要求刪除 #3 #5 #10 #11** → 已刪除，剩 10 jobs\n- **08:53 關心問候 + 問要先從哪目標開始**\n- **09:02 Imori 問夜間日記工作詳細內容** → 確認 #1 腳本遺失，建議改或刪\n- **09:07 Imori 說改為跑日記產出** → 已修正（inline Python 直接產 diary JSON）\n- **09:09 專案總盤點：7個活躍專案，全部 build ✅**\n- **09:10 Eas",
-  "events": [
-    "cron清理(14→10)",
-    "三腳本重建",
-    "#1/#7修正",
-    "網站deploy完"
-  ],
-  "metrics": {
-    "cron": "10/10 healthy",
-    "projects": "13 active",
-    "builds": "7/7 complete"
-  }
+  "entries": [
+    {
+      "type": "text",
+      "content": "# 2026-06-06 (土) — Imori 工程日"
+    },
+    {
+      "type": "text",
+      "content": "## 凌晨〜早間（00:00〜09:12）"
+    },
+    {
+      "type": "text",
+      "content": "- 夜間靜默持續到 07:00，期間所有 cron job 正常運作"
+    },
+    {
+      "type": "text",
+      "content": "- 07:53 脫離靜默，以乃彩絵語氣問候早安，提醒 6/6 行程（唐唐吃飯 + 空拍機練習）"
+    },
+    {
+      "type": "text",
+      "content": "- 08:05 Imori 回，問「你不是說要改記憶預熱 cron job？那三個找不到的sh」"
+    },
+    {
+      "type": "text",
+      "content": "- 08:34 助理回：三個腳本（check_retrieval.sh、retrieval_enhancer.sh、health-check.sh）確認已刪，提出方案A/B，Imori選B"
+    },
+    {
+      "type": "text",
+      "content": "- **08:35〜08:38 三腳本重建 + #7 cron 更新**"
+    },
+    {
+      "type": "text",
+      "content": "- 重建 `scripts/check_retrieval.sh`、`retrieval_enhancer.sh`、`health-check.sh`"
+    },
+    {
+      "type": "text",
+      "content": "- #7（07:05）從「人格回憶複習」改為真正的 4 合 1 晨間健康檢查"
+    },
+    {
+      "type": "text",
+      "content": "- **08:38 Imori 要求列出所有 cron jobs + 管理中專案**"
+    },
+    {
+      "type": "text",
+      "content": "- **08:38 詳細回報：** 14 cron jobs（2錯誤）、今日三大目標（API完成 / Admin Dashboard / 行程大管家可下載）"
+    },
+    {
+      "type": "text",
+      "content": "- **08:48 Imori 要求刪除 #3 #5 #10 #11** → 已刪除，剩 10 jobs"
+    },
+    {
+      "type": "text",
+      "content": "- **08:53 關心問候 + 問要先從哪目標開始**"
+    },
+    {
+      "type": "text",
+      "content": "- **09:02 Imori 問夜間日記工作詳細內容** → 確認 #1 腳本遺失，建議改或刪"
+    },
+    {
+      "type": "text",
+      "content": "- **09:07 Imori 說改為跑日記產出** → 已修正（inline Python 直接產 diary JSON）"
+    },
+    {
+      "type": "text",
+      "content": "- **09:09 專案總盤點：7個活躍專案，全部 build ✅**"
+    },
+    {
+      "type": "text",
+      "content": "- **09:10 Eas"
+    }
+  ]
 }
