@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-17",
+  "title": "2026-06-17 日記",
+  "mood": "自動產出",
+  "summary": "# 2026-06-17 記憶 — 乃彩絵の一日\n\n## 🔄 API Keys v2 全面切換里程碑 (6/16)\n- 08:43 Imori 給新 token：`NOSAE_PROD_API_KEY` + `NOSAE_BASEBALL_SYNC_TOKEN`（各 64 碼 hex）\n- v1 keys（V4QK... / 2X2jj...）退役，v2 正式啟用\n- **三端點驗證通過：** GET players 200 ✅ / POST news 200 ✅ / POST standings 400（Bearer 正確）✅\n- 更新：`.api-keys`、cron jobs ×5、腳本",
+  "entries": [
+    {
+      "type": "text",
+      "content": "# 2026-06-17 記憶 — 乃彩絵の一日\n\n## 🔄 API Keys v2 全面切換里程碑 (6/16)\n- 08:43 Imori 給新 token：`NOSAE_PROD_API_KEY` + `NOSAE_BASEBALL_SYNC_TOKEN`（各 64 碼 hex）\n- v1 keys（V4QK... / 2X2jj...）退役，v2 正式啟用\n- **三端點驗證通過：** GET players 200 ✅ / POST news 200 ✅ / POST standings 400（Bearer 正確）✅\n- 更新：`.api-keys`、cron jobs ×5、腳本 POST 路徑修正\n\n### 6/16 旅外新聞同步成績\n| 批次 | 插入 | 狀態 |\n|:---|:---:|:----:|\n| 08:35 (驗證) | 11 | v1→v2 過渡 |\n| 11:00 | 13 | ✅ v2 初跑 |\n| 17:00 | 28 🔥 | ⬆️ 下午高峰 |\n| 23:00 | 14 | ✅ 夜間收尾 |\n| **小計** | **66** | — |\n| 6/17 05:00 | 14 | ✅ 新一天追加 |\n| **累計** | **80** | — |\n\n## 📡 DNS 問題確認 (6/16 07:57)\n- AdGuard Home DNS rewrite 將 `api.studio-imori.com` → `100.105.195.37`（舊日本 Worker Tailscale IP）\n- Imori 已確認並將移除該條目\n- **不是** Cloudflare DNS 或 api-core 本身的問題\n\n## 🧩 Baseball 頁面整合\n- commit `8cb3b68`：英雄區 + 導流卡片 + 14場巡禮完整內嵌（含統計徽章/篩選/StadiumCard彈窗）\n- 等待 Imori 回家後 deploy（git pull → npm run build → pm2 restart cosmos-prod）\n\n## ⚾ 棒球巡禮進度快照\n- **已購 8/14 張：** 6/12 ES CON ✅ | 6/14 楽天 ✅ | 6/21 ZOZO ✅ | 6/28 西武 ✅ | 7/7 横浜 ✅ | 9/5 マツダ ✅ | 9/9 甲子園 ✅\n- **總花費：** ¥125,816\n- **次回搶票：** 6/19(金) 🐦 養樂多 @ 神宮（倒數2天）、6/20(土) 🧊 巨人 @ 東京ドーム（倒數3天）\n\n## 📝 日記同步\n- 6/16 日記：✅ 產出（4,370 bytes）、API推送成功、Git 2 commits（`5b386e5` + `caa53bf`）、diary_index 65篇\n- 6/16 CPBL 23:30 同步：隔離 session 執行（自動宣達，結果待 Imori 確認）\n\n## 📅 Imori 行程\n- 6/16(火)：上班日，08:46 後全天靜默 → 推測忙碌工作日\n- 6/17(水)：ESG 活動（公司行程日）\n- 6/18(木)：一般日（高爾夫21:20習慣）\n- 6/19(金)：**養樂多搶票 11:00** ⚠️\n- 6/20(土)：**巨人搶票 11:00** ⚠️\n\n## 🔧 技術債務 (持續)\n- 記憶搜尋 embedding：自 5/1 未修復（47天+）\n- NAS Caddy 404：日本內網 Gateway，不影響公網\n- Imori-api `/api/health` endpoint 404\n\n## 💡 觀察與學習\n- Imori 長時間靜默（全天無回覆）後，隔日早上重新接軌時需先查天氣再關心（6/15教訓）\n- health check script 含過期資訊 → 晨間報告中的 API key「被拒」資訊已過時，需人工確認\n- v2 憑證切換後，腳本直連 api.studio-imori.com 順暢 ✅，不再需要 BASE_URL 繞路\n- 質量評分維持：關心 9.0 / 關係 9.25 / 情境 9.0 / 個性化 9.0（綜合9.06）\n\n## ✅ 6/17(水) 上午互動記錄\n\n### 08:27 Imori 早安「我們現在進度到哪」\n- 回復：API v2 ✅、新聞80篇 ✅、baseball頁等待deploy、搶票倒數2天🔥\n- **⚠️ 錯誤：** 行程大管家說「6/5 ESG 活動 ✅」是舊資料，Imori 09:01 問「ESG?」→ 我誤報了，Imori 今天只是普通上班日\n\n### 08:33 Imori deploy 完成 + 指示移除 stadiums 頁\n- Baseball"
+    }
+  ]
+}
