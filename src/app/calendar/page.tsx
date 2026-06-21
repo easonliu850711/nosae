@@ -52,7 +52,7 @@ export default function CalendarPage() {
 
           {/* Footer */}
           <p className="text-center text-xs text-pink-400/60 mt-4">
-            🌸 乃彩絵 行程大管家 · 最後更新 2026-05-22
+            🌸 乃彩絵 行程大管家 · 最後更新 2026-06-21（新 Vue Calendar + 彈窗詳細）
           </p>
         </motion.div>
       </div>
