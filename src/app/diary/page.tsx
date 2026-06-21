@@ -322,8 +322,7 @@ function DiaryContent() {
         case 'code':
           return <pre key={key} className="bg-gray-50 p-3 rounded-lg overflow-x-auto text-sm my-2">{block.text}</pre>
         default:
-          const content = searchQuery.trim() ? highlightSearch(block.text) : parseBold(block.text)
-          return <p key={key} className="text-gray-700 my-2 leading-relaxed">{content}</p>
+          return <RenderMarkdown key={key} text={block.text} searchQuery={searchQuery.trim()} highlightSearch={highlightSearch} parseBold={parseBold} />
       }
     })
   }
@@ -336,6 +335,122 @@ function DiaryContent() {
       }
       return part
     })
+  }
+
+  /** 解析純文字 block 內的行級 markdown → 多個 JSX 區塊 */
+  function RenderMarkdown({ text, searchQuery: sq, highlightSearch: hs, parseBold: pb }: {
+    text: unknown
+    searchQuery: string
+    highlightSearch: (v: unknown) => React.ReactNode
+    parseBold: (v: unknown) => React.ReactNode
+  }) {
+    const raw = toSafeText(text)
+    if (!raw.trim()) return null
+
+    const lines = raw.split('\n')
+    const blocks: React.ReactNode[] = []
+    let listStack: { type: 'ul' | 'ol'; items: React.ReactNode[] } | null = null
+
+    function flushList() {
+      if (!listStack) return
+      const Tag = listStack.type === 'ul' ? 'ul' : 'ol'
+      blocks.push(
+        <Tag key={`list-${blocks.length}`} className="list-inside my-2 space-y-1 text-gray-700">
+          {listStack.items}
+        </Tag>
+      )
+      listStack = null
+    }
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i]
+      const trimmed = line.trim()
+
+      // ── 水平線 ──
+      if (/^[-*_]{3,}\s*$/.test(trimmed)) {
+        flushList()
+        blocks.push(<hr key={`l-${i}`} className="my-4 border-pink-100" />)
+        continue
+      }
+
+      // ── 空行 ──
+      if (!trimmed) {
+        flushList()
+        continue
+      }
+
+      // ── Heading (## / ###) ──
+      const hMatch = trimmed.match(/^(#{1,3})\s+(.+)$/)
+      if (hMatch) {
+        flushList()
+        const level = hMatch[1].length
+        const inner = sq ? hs(hMatch[2]) : pb(hMatch[2])
+        if (level === 1)
+          blocks.push(<h2 key={`h-${i}`} className="text-2xl font-bold text-pink-700 mt-6 mb-3 pb-1 border-b border-pink-200">{inner}</h2>)
+        else if (level === 2)
+          blocks.push(<h3 key={`h-${i}`} className="text-lg font-semibold text-pink-600 mt-5 mb-2">{inner}</h3>)
+        else
+          blocks.push(<h4 key={`h-${i}`} className="text-base font-medium text-pink-500 mt-4 mb-1">{inner}</h4>)
+        continue
+      }
+
+      // ── 無序列表 - 開頭 ──
+      const ulMatch = trimmed.match(/^[-*+]\s+(.+)$/)
+      if (ulMatch) {
+        if (!listStack || listStack.type !== 'ul') {
+          flushList()
+          listStack = { type: 'ul', items: [] }
+        }
+        const inner = sq ? hs(ulMatch[1]) : pb(ulMatch[1])
+        listStack.items.push(<li key={`li-${listStack.items.length}`} className="ml-4 list-disc">{inner}</li>)
+        continue
+      }
+
+      // ── 有序列表 1. 開頭 ──
+      const olMatch = trimmed.match(/^\d+\.\s+(.+)$/)
+      if (olMatch) {
+        if (!listStack || listStack.type !== 'ol') {
+          flushList()
+          listStack = { type: 'ol', items: [] }
+        }
+        const inner = sq ? hs(olMatch[1]) : pb(olMatch[1])
+        listStack.items.push(<li key={`li-${listStack.items.length}`} className="ml-4 list-decimal">{inner}</li>)
+        continue
+      }
+
+      // ── 引用 > ──
+      const qMatch = trimmed.match(/^>\s*(.*)$/)
+      if (qMatch) {
+        flushList()
+        const inner = sq ? hs(qMatch[1]) : pb(qMatch[1])
+        blocks.push(<blockquote key={`q-${i}`} className="border-l-4 border-pink-300 pl-4 my-3 italic text-gray-600">{inner}</blockquote>)
+        continue
+      }
+
+      // ── 任務清單 - [ ] / [x] ──
+      const tdMatch = trimmed.match(/^- \[([ xX])\]\s+(.+)$/)
+      if (tdMatch) {
+        flushList()
+        const checked = tdMatch[1].toLowerCase() === 'x'
+        const inner = sq ? hs(tdMatch[2]) : pb(tdMatch[2])
+        blocks.push(
+          <div key={`td-${i}`} className="flex items-start gap-2 my-1 text-gray-700">
+            {checked ? '☑' : '☐'} {inner}
+          </div>
+        )
+        continue
+      }
+
+      // ── 純段落 ──
+      flushList()
+      const inner = sq ? hs(line) : pb(line)
+      blocks.push(<p key={`p-${i}`} className="text-gray-700 my-1 leading-relaxed">{inner}</p>)
+    }
+
+    // flush 殘留 list
+    flushList()
+
+    return <>{blocks}</>
   }
 
   const displayDate = (date: string) => {
