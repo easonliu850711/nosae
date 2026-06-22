@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-22",
+  "title": "2026-06-22 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- **模式**: 🌅 平日回歸 | - **Imori 起床時間**: 未知（可能還在睡） | - **NPB 狀態**: 週一休兵日",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## 模式概覽\n\n- **模式**: 🌅 平日回歸\n- **Imori 起床時間**: 未知（可能還在睡）\n- **NPB 狀態**: 週一休兵日\n- **今天重點**: 平常日週一"
+    },
+    {
+      "type": "text",
+      "content": "## 🎯 本日關鍵資訊\n\n- 6/21 羅德 @ ZOZOマリン → 已完賽 ✅（第3場）\n- 制霸進度：3/14 場\n- 已購球票：12/16 → ¥71,236（+DeNA¥10,450 + 巨人¥6,970 + 養樂多¥5,765）\n- 總花費：¥155,821（球票¥71,236 + 交通住宿¥72,470）\n- 技術債務：記憶 embeddings 第52天未修"
+    },
+    {
+      "type": "text",
+      "content": "## ⚾ Baseball Cron 排程\n\n- 新聞同步（05, 11, 17, 23 JST）：05:05 已完成（6篇新插入）\n- 戰績同步（05, 11, 17, 23 JST）：05:05 已完成（5/6, CPBL fallback skip）"
+    },
+    {
+      "type": "text",
+      "content": "## 📌 待辦追蹤\n\n- [ ] 6/25(木) 21:20 🏌️ 高爾夫球課\n- [ ] 6/28(日) 🐺 西武獅 + 美和\n- [ ] 7/2(木) 🏸 打羽毛球（新追加）\n- [ ] 7/22(水) 🐂 ほっと神戸 + 京セラD 一起搶\n- [ ] 8/2(日) 🧊 巨人+🐦 養樂多 日歸雙重賽\n- [ ] 9/5~9/12 關西四連戰\n- [ ] 10/11~11/3 🇨🇳 南京出差"
+    },
+    {
+      "type": "text",
+      "content": "## 🧠 近期教訓總結\n\n- 林安可 = NPB 埼玉西武獅（非 CPBL 統一獅）— 前端資料來源為 api-core SQLite DB\n- 改球員資訊的正確方式：call `POST /api/baseball/sync/players` API，非改 source code\n- 『前台 100% 來自 api-core SQLite DB』— Imori 親自確認 ✅\n- api-core seed 檔 local-only（不在 git），需直接 edit"
+    },
+    {
+      "type": "text",
+      "content": "## 🔄 24hr 內完成的工作\n\n1. 日曆修正（4+1項）：8/2雙重賽、福岡搶票日、南京出差、7/2羽球、總花費\n2. 林安可資料修正：seed + API DB → NPB 埼玉西武獅\n3. 資料流確認：Imori確認前台資料來源為 api-core DB\n4. 夜間 Baseball sync ×2（23:05 + 05:05）\n5. 夜間 nosae update（00:30）：12段落日記自動生成\n6. baseball-site staging branch 已刪除 → main clean"
+    }
+  ]
+}
