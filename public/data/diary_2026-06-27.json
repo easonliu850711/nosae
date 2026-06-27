@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-27",
+  "title": "2026-06-27 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "1. **20:07** — 「我明天有事嗎」 | → 回：6/27(土) 完全空閒 ✅ | - **00:30** — nightly Nosae update ✅（記憶→日記自動生成 12 段落）",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## 6/26（金）晚間互動\n\n### 20:07~20:45 — Imori 活躍對話\n1. **20:07** — 「我明天有事嗎」\n   → 回：6/27(土) 完全空閒 ✅\n2. **20:37** — 「最近有什麼重要的事嗎」\n   → 條列：6/28 西武、7/2 羽毛球、明星賽抽選、feature branch review、HEARTBEAT.md 過期\n3. **20:38** — 「HEARTBEAT.md 現在長怎樣 有什麼要更新嗎」\n   → 讀取+列出要更新的項目：日期錯誤、羅德未列完賽、花費未更新、embedding 出現\n4. **20:45** — Imori 說 **「不要再管 embedding 了 移除」**\n   → 最終決定：embedding 從 HEARTBEAT.md 完全移除 ✅\n\n### HEARTBEAT.md 全面更新（20:45）\n- 日期：6/23 → **6/26（金）**\n- 今日重點：重寫（西武、明星賽、花費、廣島交通）\n- 巡禮進度：羅德 ✅ 已完賽、已完賽 4 場\n- 技術債務：embedding **移除** ✅\n- 模式狀態：平日→西武球賽日\n- 格式保持原結構\n\n### 其餘排程\n- **23:05** — Baseball 同步 ✅（新聞18 + 戰績6）\n- **23:00~** — 靜默時間"
+    },
+    {
+      "type": "text",
+      "content": "## 6/27（土）晨間\n\n### 系統排程\n- **00:30** — nightly Nosae update ✅（記憶→日記自動生成 12 段落）\n- **05:05** — Baseball 同步 ✅（新聞9 + 戰績6，新的一天）\n- **08:00** — 早安問候 ✅（無行程公告）\n- **08:00** — 巡禮檢查（過期資料，但明天有比賽→提醒準備 ✅）\n- **09:00** — 行程管家檢查 ✅（提醒明天西武準備）\n\n### 親手更新\n- HEARTBEAT.md 已全面翻新（embedding 完全移除）\n- baseball_tour_2026.md 已於 6/26 09:58 更新（羅德✅、廣島交通✅）"
+    },
+    {
+      "type": "text",
+      "content": "## 關鍵教訓\n\n1. **Imori 果斷說「不要再管 embedding」** → 有些技術債務無需持續追蹤，尊重最終決定\n2. **HEARTBEAT.md 24 天沒更新**，但 Imori 主動問起後，30 分鐘內就全部改好 → 等待觸發時機比提醒有效\n3. **6/26 傍晚是近期最活躍的一段對話**（08:15→09:58→20:07→20:37→20:38→20:45），Imori 習慣在晚間處理資訊整理類的事"
+    },
+    {
+      "type": "text",
+      "content": "## 6/27（土）晨間活躍對話（09:14~10:38）\n\n### 三大角色定義（核心里程碑）\n- **Imori 指定三個核心角色，寫入 ROLES.md：**\n  1. ⚾ **棒球巡禮規劃師** → `baseball_tour_2026.md`\n  2. 🗓️ **行程大管家** → `schedule_2026.md`\n  3. 🛠️ **專案經理** → HEARTBEAT.md + Git 狀態\n\n### 9:14~9:26 — 早安→行程登錄\n- 09:14 Imori 說早安 → 聊明天西武\n- 09:24 **「7/5 15:00 渋谷カラオケ」** → 寫入 schedule / calendar\n- 09:25 `/calendar` → 部署討論、calendar build+git push ✅\n\n### 9:26~9:53 — 系統重構\n- **baseball_tour_2026.md 已混入非棒球行程** → Imori 指出問題\n- 拆成兩個獨立檔案：`baseball_tour_2026.md`（純棒球）+ `schedule_2026.md`（其他）\n- **ROLES.md 誕生**：三大角色定義，各自有專屬檔案，不互相干擾\n\n### 9:53~10:38 — 部署與 Git 盤點\n- `nosae-calendar` 要掛在 `nosae.studio-imori.com/calendar` 下\n- **Imori 說「你不要管台灣」** → 回歸推 GitHub 讓 Imori 自己處理台灣部署\n- 檢查 7 個專案 Git 狀態 → all clean ✅\n- `baseball-static.ts` 異常變更 → Imori 說取消，已復原\n- 08:00 巡禮檢查 和 09:00 行程管家 prompt 全面更新（過期快取→最新資料）\n\n### 關鍵檔案創建/更新\n| 檔案 | 動作 |\n|:----|:----|\n| `ROLES.md` | 🆕 新創 — 三大角色核心定義 |\n| `memory/schedule_2026.md` | 🆕 新創 — 非棒球行程獨立管理 |\n| `HEARTBEAT.md` | ✅ 已更新（昨晚） |\n| `jobs/tour-check-0800.txt` | 🆕 新創 — 巡禮檢查最新 prompt |\n| `jobs/schedule-check-0900.txt` | 🆕 新創 — 行程管家最新 prompt |\n| `memory/baseball_tour_2026.md` | ✅ 已清理（移除其他行程段） |\n| `src/data/baseball-static.ts` | 🔄 已恢復異動 |\n\n### 關鍵教訓（6/27 上午）\n1. **ROLES.md** 建立後，三個角色各有專屬檔案，各批次檢查互不干擾\n2. **Imori 對「管台灣」敏感** → 部署只推 GitHub，部署由 Imori 處理（除非他授權 SSH）\n3. **08:00/09:00 排程需從「寫死 payload」改為「自動讀取最新檔案」** → 下一次對話解決\n4. **7/5 カラオケ** 成功登錄雙系統（schedule + calendar） ✅"
+    }
+  ]
+}
