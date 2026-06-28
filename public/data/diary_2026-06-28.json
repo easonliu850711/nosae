@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-28",
+  "title": "2026-06-28 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- 全 4 支腳本執行完成 ✅ | - **imori-api 404** — API health endpoint 回傳 404（nginx 層） | - **cron #2 錯誤** — 1 次連續失敗，需檢查",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## 晨間健康檢查（07:05 cron）\n\n- 全 4 支腳本執行完成 ✅\n- **imori-api 404** — API health endpoint 回傳 404（nginx 層）\n- **cron #2 錯誤** — 1 次連續失敗，需檢查\n- 其餘網站（baseball, nosae, visa, cosmos, tea）皆正常\n- Git 狀態 clean（imori-api 領先 1 commit ✅）\n- 日記同步 OK，但最新日記為 6/6，與今日有落差"
+    },
+    {
+      "type": "text",
+      "content": "## 今日重點\n\n- 🐺 **西武 @ ベルーナドーム + 美和** — 比賽日！\n- 已購 8/14 張，花費 ¥125,816\n- 待付款：6/21 PayPay、6/19 神宮、6/20 東京ドーム、7/22 歐力士"
+    },
+    {
+      "type": "text",
+      "content": "## 系統狀態\n\n- 記憶 embeddings 已從 HEARTBEAT.md 移除（Imori 指示）\n- HEARTBEAT.md 已更新至 6/26\n- ROLES.md 已建立（6/27）\n- jobs/ 目錄 promps 已更新\n# 2026-06-28 記憶快照"
+    },
+    {
+      "type": "text",
+      "content": "## 🐺 西武 @ ベルーナ ＋ 美和 — 球賽日！\n\n> Imori 在ベルーナドーム看西武獅比賽，跟美和一起！"
+    },
+    {
+      "type": "text",
+      "content": "## 系統里程碑：三大角色定義 + 排程 B 方案初日測試\n\n### 三大角色（6/27 建立）\n- **ROLES.md** — 乃彩絵的三個核心角色明確定義\n  1. ⚾ **棒球巡禮規劃師** → `baseball_tour_2026.md`\n  2. 🗓️ **行程大管家** → `schedule_2026.md`\n  3. 🛠️ **專案經理** → HEARTBEAT.md + Git 狀態\n- **Imori 親自指定這三個角色**，要求寫進 core file\n\n### 排程 B 方案（6/27 10:38 實施）\n- 改為在 payload 中要求我自動讀取最新檔案\n- **08:00 巡禮檢查 ✅ 初日成功：** 自動 read baseball_tour_2026.md → 正確抓24hr內比賽（西武今天）→ 特別提醒\n- **09:00 行程管家 ✅ 初日成功：** 自動 read schedule_2026.md → 正確列出今日+下週行程\n- 不再需要手動更新 payload 文字\n\n### 關鍵檔案變更（6/27~28）\n| 檔案 | 動作 | 說明 |\n|:----|:----|:-----|\n| `ROLES.md` | 🆕 新創 | 三大角色核心定義（6/27）|\n| `memory/schedule_2026.md` | 🆕 新創 | 非棒球行程獨立管理（6/27）|\n| `jobs/tour-check-0800.txt` | 🆕 新創 | 巡禮檢查 prompt 存檔 |\n| `jobs/schedule-check-0900.txt` | 🆕 新創 | 行程管家 prompt 存檔 |\n| `memory/baseball_tour_2026.md` | ✅ 已清理 | 移除混入的非棒球行程 |\n\n### 巡禮進度（6/28 確認）\n- 已完賽：4場（DeNA・火腿・樂天・羅德）\n- 今天：🐺 第5場 西武 @ ベルーナ\n- 已購待看：6場（含今天）\n- 總花費：¥163,831\n- 待購：4場（明星賽・軟銀・歐力士×2）\n\n### 互動記錄\n- **6/27（土）09:14~10:38** — 熱烈對話：三大角色定義、行程拆檔、calendar 部署討論\n- **Imori 說「你不要管台灣」** → 部署只推 GitHub，SSH 部署由 Imori 自己處理\n- **6/27 10:38 後全天無回覆** → 週六正常靜默\n- **6/28** → 西武球賽中，完全不需打擾\n\n### 晨間健康檢查（6/28 07:05）過期資料確認\n- 健康腳本本身有快取過期問題\n- `已購 8/14`（實際 10/14）→ 過期\n- `6/21 PayPay` 待購（已完賽）→ 過期\n- `6/5 ESG` 行程（舊資料）→ 過期\n- `imbedding`（Imori 說不用管了）\n- `imori-api 404`（不影響 sync 服務）\n\n### 6/28 排程（球賽日）\n- ✅ 05:05 Baseball 同步（新聞16 + 6聯盟）\n- ✅ 07:05 晨間健康檢查\n- ✅ 08:00 巡禮檢查（新版 B 方案初日 ⭐）\n- ✅ 09:00 行程管家（新版 B 方案初日 ⭐）\n- ✅ 09:00 關心問候（早安+天氣）\n- ✅ 11:05 Baseball 同步（新聞16 + 6聯盟）\n- ⏳ 17:05 Baseball 3/4\n- ⏳ 23:05 Baseball 4/4"
+    }
+  ]
+}
