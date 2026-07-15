@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-15",
+  "title": "2026-07-15 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- `fetch-overseas-news.py` 中使用的 `news.google.com/rss/topics/...` API 路由失效 | - 影響 Baseball #3、#4（07/14），#1（07/15）無法執行新聞同步 | - **7/15（水）🍽️ 中野台灣料理** — 今天！",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## ⚠️ 系統問題\n\n### Google News RSS 404（07/14 17:05 起）\n- `fetch-overseas-news.py` 中使用的 `news.google.com/rss/topics/...` API 路由失效\n- 影響 Baseball #3、#4（07/14），#1（07/15）無法執行新聞同步\n- 戰績同步（`sync-all-standings.py`）不受影響，可正常執行\n- 待修：更新 RSS URL 或用替代來源\n\n### Sandbox 出站網路不穩（07/14 23:00 起）\n- GitHub SSH (port 22) refused → 夜間更新 git push 失敗\n- `api.studio-imori.com` 部分請求 timeout（IPv4/IPv6 皆不穩）\n- 00:30 夜間更新 Git commit 成功（5912756），push 失敗\n- 預計再下一輪夜間更新自動重試\n\n### cron #2 連續錯誤（晨間報告發現）\n- 07/14 晨間健康報告標記，尚未確認原因\n\n### api.studio-imori.com/health 404\n- 晨間健康報告發現，可能 endpoint 路徑變更\n\n### imori-api 未推送 commit\n- `feature/games-db-first-sync-v1` branch 領先 origin/main 1 commit\n\n### 日記最後日期 6/6\n- 距離 7/15 已超過一個月，可能需檢查 diary sync 是否正常運作\n\n---"
+    },
+    {
+      "type": "text",
+      "content": "## 📋 近期行程\n\n- **7/15（水）🍽️ 中野台灣料理** — 今天！\n- **7/16（木）高爾夫球課 21:20 ⛳**\n- 7/18（土）🍽️ 跟小蔡吃飯\n- 7/19（日）⚾ 千葉看球 + PayPay 購票（軟銀）\n- 7/20（月）🏖️ 鎌倉（海の日）\n- 7/30（木）🍽️ 跟柏含吃飯\n\n---"
+    },
+    {
+      "type": "text",
+      "content": "## ⚾ 棒球巡禮進度（截至 07/15）\n\n- 進度：5/14 完賽、5 場已購待看、4 場待購\n- 已花球票：10 張 = ¥71,051\n- 待購：明星賽、軟銀 PayPay（7/19 購票）、歐力士×2\n- 07/14 單日 Baseball 新聞同步共 48 篇（CLE #1-4）\n\n---"
+    },
+    {
+      "type": "text",
+      "content": "## 追加 — 22:41 JST 快閃\n\n### 當日回顧\n- **07/15 中野台灣料理 🍜** — 當晚 Imori 前往中野，有主動聊到這行程\n- **Baseball #1（05:05）、#2（11:05）** — Google News RSS 404 持續，新聞同步全失敗。戰績同步也因 sandbox 網路不穩 timeout\n- **Baseball #3（17:05）** — 部分成功：NPB 中央✅、NPB 太平洋✅、CPBL✅；MLB❌（remote closed）、KBO❌（DNS fail）\n- **Sandbox 網路** — 間歇性恢復但 DNS 與 SSL 連線仍不穩定\n- **Imori 主動聯絡** — 13:15 傳來訊息「你怎麼從昨天開始沒消息了」，已解釋 sandbox 狀況\n\n### ⚾ 棒球同步狀態（07/15 全天）\n- Google News RSS 404 問題仍未修復，影響全天 4 輪新聞同步\n- 戰績同步：NPB+CPBL 正常，MLB+KBO 因 sandbox 網路間歇性中斷失敗\n- 下一輪 23:05 #4 將再嘗試\n\n### 🔧 待修項目（整理）\n1. **Google News RSS URL 更新** — 首要修復\n2. **Sandbox git push** — commit 已存在（5912756），需手動或下輪夜間重試\n3. **cron #2 錯誤確認**\n4. **api/health 404 確認**\n5. **imori-api feature branch 推送**\n6. **diary sync 最後日期 6/6 — 需確認是否正常**"
+    }
+  ]
+}
