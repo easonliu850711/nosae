@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-28",
+  "title": "2026-07-28 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- 昨天 morning_health_check.sh 的兩個失敗原因中，**model name 錯誤已修復** | - `openclaw.json` 的 `agents.defaults.model.primary` 已設為 `deepseek-v4-flash`（正確值） | - 05:55: HEARTBEAT_OK（棒球新聞 32 篇同步完成）",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## Cron Job — Model Fix Confirmed, Delivery Failure\n\n### 根因修復確認\n- 昨天 morning_health_check.sh 的兩個失敗原因中，**model name 錯誤已修復**\n- `openclaw.json` 的 `agents.defaults.model.primary` 已設為 `deepseek-v4-flash`（正確值）\n- Symlink `jobs.json → jobs.json.migrated` 仍完好\n\n### 今日執行結果（07:16 JST）\n- `daily_memory_warmup_2026_04_09` 執行成功 ✅\n  - Model: `deepseek-v4-flash`\n  - Duration: 207s\n  - Input tokens: 38,169\n  - Output tokens: 1,991\n- **但 delivery 失敗** ❌\n  - Conversation ref: `conv_f6f373cbb24cc5cedcfa2af4fc36e032`\n  - 目標: telegram:8633793123（Imori）\n  - 錯誤: conversation send failed\n- `consecutiveErrors: 3`（從昨天的 2 累積）\n- 下次執行: 2026-07-29 07:05 JST\n\n### 推測\n- Delivery 失敗可能與 session split 問題有關（多個 session 搶同一個 conversation reference）\n- Cron 執行本身沒問題，報告已生成但無法送達 Telegram"
+    },
+    {
+      "type": "text",
+      "content": "## Heartbeat Polls\n\n- 05:55: HEARTBEAT_OK（棒球新聞 32 篇同步完成）\n- 07:04: HEARTBEAT_OK\n- 07:34: HEARTBEAT_OK"
+    },
+    {
+      "type": "text",
+      "content": "## Session Split 問題\n\n- 仍持續：a42828d7, e10e5e3c, 7146bcad, 54360567, 2af5d14c 多個 session 同時活躍\n- 可能為 delivery failure 的根因"
+    },
+    {
+      "type": "text",
+      "content": "## 殘留 TODO\n\n- 修復 cron delivery routing（conversation ref 壞掉）\n- 處理 session split 根因\n- imori-api /api/health 404\n- nosae-site 未提交變更\n- 旅外球員新聞同步 timeout\n- 記憶 embeddings 修復（自 5/1 中斷）"
+    }
+  ]
+}
