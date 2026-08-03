@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-03",
+  "title": "2026-08-03 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- **改用 `command` job（`sh -lc`），不用 `script` job**：`script` job 在此環境有 code-mode 解析 bug（`scheduledToolPolicy.mode: \"trusted\"` 時會自動附加 `toolsAllow: [\"*\"]` → `SyntaxError: invalid first character of private name at openclaw-code-mode:user.js:12:24`），CLI 無法移除該欄位。`command` job 完全繞過 code-mode 解析。 | - `systemEvent` job **無法承載投遞目標**（`--to/--announce/--channel` 無效，delivery 恆為 `not requested`）→ 需用 command/script job 才推得出訊息。 | - ⚠️ **約 5 個 cron job 仍為 `not requested`/`error`**，需 Imori 決定是否用 command-type 重建：",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## Cron 投遞修復 — 最終結論（2026-08-01 ~ 08-03）\n\n### 核心解法\n- **改用 `command` job（`sh -lc`），不用 `script` job**：`script` job 在此環境有 code-mode 解析 bug（`scheduledToolPolicy.mode: \"trusted\"` 時會自動附加 `toolsAllow: [\"*\"]` → `SyntaxError: invalid first character of private name at openclaw-code-mode:user.js:12:24`），CLI 無法移除該欄位。`command` job 完全繞過 code-mode 解析。\n- `systemEvent` job **無法承載投遞目標**（`--to/--announce/--channel` 無效，delivery 恆為 `not requested`）→ 需用 command/script job 才推得出訊息。\n- `cron.triggers.enabled=true` 是無人值守 cron 的必要條件，已在 gateway 生效（不需重載）。\n- 修改前一律備份 + 取得授權；狀態以 CLI/SQLite 為準，**勿用 legacy `jobs.json`**。\n\n### 已生效的 job\n- **問候 job（command）**：`8e3357e1-a93a-4d5e-a879-236fa62fb0f0`\n  - 排程 `0 6,9,12,15,18,21 * * *` Asia/Tokyo，isolated session\n  - announce → Telegram `8633793123`；含 23:00–07:00 東京靜默時段判斷\n  - configRevision `sha256:ES2APApRYX9HLdRFmpRkDy8nR5wkPDkRYY_wjMiH2vA`\n  - 實測 `delivered` ✓（12:11 收到「🌸 嗨，Imori，我來看看你…」）\n- **⚾ 棒球巡禮每日推送（command，2026-08-02 新增）**：`d57316db-7c24-4c4a-aedf-fd5555974b5a`\n  - 排程 `0 8 * * *` Asia/Tokyo，isolated session\n  - announce → Telegram `8633793123`；`sh -lc` 讀 `memory/baseball_tour_2026.md` 組摘要\n  - 來源 script：`/tmp/baseball_tour_ping.sh`\n  - 實測 `cron run` → status ok、`delivered` ✓\n  - 舊 `a070fed9`（systemEvent 棒球巡禮）**保留不刪**，維持 `not requested`\n\n### 已停用/刪除\n- 舊 script job `235c4383-e05d-40c9-9f38-63738bac8190`（SyntaxError 來源）已刪除\n- 舊 systemEvent job `ec910ee8-aa88-4369-b6a0-5005ab3e9cc6` 已停用\n- 08-01 12:09 的延遲通知為舊 235c4383 最後觸發（12:00）的遲到告警，非新問題"
+    },
+    {
+      "type": "text",
+      "content": "## 待辦（未解決）\n\n- ⚠️ **約 5 個 cron job 仍為 `not requested`/`error`**，需 Imori 決定是否用 command-type 重建：\n  - `nightly-nosae-update`（夜間更新）\n  - `standings_sync_2026_06_18`（棒球同步）\n  - `1c01d4d4-b026-4717-a278-13d31eedc828`（heartbeat）\n  - `daily_memory_warmup_2026_04_09`（晨間健康檢查，已綁 telegram:8633793123）\n  - 棒球巡禮舊 systemEvent（已決定保留）\n- **nightly-nosae-update.sh 假成功 bug**：`nosae push` 失敗 —— runtime 無 SSH binary，remote `git@github.com:imoriliu850711/nosae.git`，領先 6 commits；可能需 Mac host StudioImori SSH key 修正\n- **memory embeddings 搜尋自 5/1 損壞**（長期問題，非本次引入）\n- **memory index 重建**：待 Imori 有空時跑 `openclaw memory status --index --agent main`（**只可增量，不可 `--force`**）"
+    },
+    {
+      "type": "text",
+      "content": "## 環境常數\n\n- cron 狀態 DB：`/home/node/.openclaw/state/openclaw.sqlite`（此環境缺 `sqlite3` CLI，無法直接查）\n- memory index store：`/home/node/.openclaw/agents/main/agent/openclaw-agent.sqlite`\n- CLI：`/usr/local/bin/openclaw`（v2026.7.2，OpenClaw 2026.7.2）\n- Telegram chatId：`8633793123`\n- 需 TTS/MP3 前一律先徵求同意（預設純文字）"
+    },
+    {
+      "type": "text",
+      "content": "## 棒球巡禮 2026（14 場巡禮）\n\n- **已完賽 5**：DeNA 橫濱 6/7、火腿 ES CON 6/12、樂天 6/14、羅德 ZOZO 6/21、西武 6/28\n- **已購待看 8**：8/2 巨人東京ドーム、8/2 養樂多神宮、8/11 中日バンテリン、9/5 廣島マツダ、9/6 軟銀 PayPay、9/9 阪神甲子園、9/10 歐力士ほっと神戸、9/12 歐力士京セラD\n- **放棄 1**：7/29 明星賽富山（購票失敗）\n- **成本**：13 張票 ¥85,382；3 晚住宿 ¥25,120；已購交通 8 項（成田→札幌、札幌→仙台、仙台→橫濱夜巴、橫濱↔富山、橫濱↔名古屋）；合計 ¥125,816\n- 08-02 為東京雙重戰：巨人 + 養樂多"
+    }
+  ]
+}
