@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-10",
+  "title": "2026-08-10 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "昨天修完 `/tmp` 清理問題後，今天 08:00 的 `baseball_tour_daily_push` 再次失敗（exit code 2）。 | 07:06 JST 正常執行，所有站點健康（imori-api 404 為預期），Git 狀態正常，記憶系統正常。 | - 動態問候 cron 全天正常觸發（06:00, 09:00）",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## ⚾ Cron 故障診斷：baseball_tour_daily_push（第二次）\n\n昨天修完 `/tmp` 清理問題後，今天 08:00 的 `baseball_tour_daily_push` 再次失敗（exit code 2）。\n\n### 真正根因\n\n`/tmp/baseball_tour_ping.sh` 檔案確實還在（昨天 08:30 建立的），不是 `/tmp` 清理的問題。\n\n真正的問題是：\n\n**Cron 用 `sh -lc` 執行腳本，但系統 `sh` = dash，不支援 bash 的 `set -o pipefail`。**\n\n- 腳本 shebang：`#!/usr/bin/env bash`（但 cron 強制用 `sh`，shebang 被無視）\n- Cron command：`sh -lc /tmp/baseball_tour_ping.sh`\n- `sh` 實際是：`/usr/bin/sh` → dash\n- dash 執行到 `set -o pipefail` → 不支援 → exit code 2\n\n```bash\n# 驗證\n$ sh /tmp/baseball_tour_ping.sh\n/tmp/baseball_tour_ping.sh: 6: set: Illegal option -o pipefail\n$ echo $?\n2\n```\n\n### 修復\n\n將 `scripts/baseball_tour_ping.sh` 的 `set -euo pipefail` 改為 `set -eu`（移除 pipefail），然後同步到 `/tmp/`。\n\n```bash\n# 修復後驗證\n$ sh /tmp/baseball_tour_ping.sh\nEXIT_CODE=0  ✅\n```\n\n### 待辦\n\nCron job `d57316db` 的 command 仍需更新：\n- 路徑：`/tmp/baseball_tour_ping.sh` → `scripts/baseball_tour_ping.sh`（避免未來 `/tmp` 清理）\n- 或改用 `bash -lc` 而非 `sh -lc`（讓 bash 功能可用）\n\n---"
+    },
+    {
+      "type": "text",
+      "content": "## ✅ 晨間健康檢查\n\n07:06 JST 正常執行，所有站點健康（imori-api 404 為預期），Git 狀態正常，記憶系統正常。"
+    },
+    {
+      "type": "text",
+      "content": "## 📋 其他\n\n- 動態問候 cron 全天正常觸發（06:00, 09:00）\n- 今日無特別行程"
+    }
+  ]
+}
