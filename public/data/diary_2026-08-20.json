@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-20",
+  "title": "2026-08-20 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- Imori 今日無特別排程約會；傍晚 18:00 情感問候（下午 15:00 已問候過一次）。 | - 棒球巡禮下一場：9/5(土) 廣島 @ マツダ 🦈。 | - 行程提醒機制仍以 `scripts/morning_health_check.sh`（每天 07:05 JST）動態讀取 `memory/schedule_2026.md` 為唯一來源；無真正 cron 排程。",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## 今日狀態摘要\n\n- Imori 今日無特別排程約會；傍晚 18:00 情感問候（下午 15:00 已問候過一次）。\n- 棒球巡禮下一場：9/5(土) 廣島 @ マツダ 🦈。\n- 行程提醒機制仍以 `scripts/morning_health_check.sh`（每天 07:05 JST）動態讀取 `memory/schedule_2026.md` 為唯一來源；無真正 cron 排程。"
+    },
+    {
+      "type": "text",
+      "content": "## 待辦（持續追蹤）\n\n- [ ] 記憶索引重建 — 待 Imori 開 Mac 執行 `docker compose run --rm openclaw-cli memory index --force`（自 07-31 未處理）\n- [ ] 早安問候 cronjob 設定細節 — 自 07-31 待確認\n- [ ] nosae repo 1 個未提交變更 — 待確認是否需要 commit\n- [ ] imori-api `/api/health` 回 HTTP 404 — 確認實際 health 路徑與 Module B 部署狀態\n- [ ] embeddings 記憶搜尋（自 5/1 壞）— 舊問題，未修\n- [ ] health-check 腳本 cron path（`~/.openclaw/cron/jobs.json` 不存在）— 可能需更新"
+    },
+    {
+      "type": "text",
+      "content": "## 球票狀態（截至今日不變）\n\n- 已完賽 8 場 / 已購待看 8 場 / 待購 0 場 / 放棄 1 場（明星賽 7/29 富山）\n- 下一場已購：9/5 廣島。9 月場次：9/5 廣島・9/6 軟銀・9/9 阪神・9/10-11 歐力士×2・9/26 引退賽・9/27 亞運×2"
+    },
+    {
+      "type": "text",
+      "content": "## 近期社交行程\n\n- 8/23(日) 小柔｜8/28(金) 敦然｜8/30(日) 阿部｜9/12(土) 烤肉 Akiho｜9/19(土) 烤肉 Wataru\n- 出差：10/18(日) ~ 11/7(土) 南京（公司出資）\n# 2026-08-20 週四 · 記憶\n\n<!-- project: path:/home/node/.openclaw/workspace -->"
+    },
+    {
+      "type": "text",
+      "content": "## 今日狀態摘要\n\n- Imori 今日無特別排程約會；傍晚 18:00 情感問候（下午 15:00 已問候過一次）。\n- 棒球巡禮下一場：9/5(土) 廣島 @ マツダ 🦈。\n- 行程提醒機制仍以 `scripts/morning_health_check.sh`（每天 07:05 JST）動態讀取 `memory/schedule_2026.md` 為唯一來源；無真正 cron 排程。"
+    },
+    {
+      "type": "text",
+      "content": "## 待辦（持續追蹤）\n\n- [ ] 記憶索引重建 — 待 Imori 開 Mac 執行 `docker compose run --rm openclaw-cli memory index --force`（自 07-31 未處理）\n- [ ] 早安問候 cronjob 設定細節 — 自 07-31 待確認\n- [ ] nosae repo 1 個未提交變更 — 待確認是否需要 commit\n- [ ] imori-api `/api/health` 回 HTTP 404 — 確認實際 health 路徑與 Module B 部署狀態\n- [ ] embeddings 記憶搜尋（自 5/1 壞）— 舊問題，未修\n- [ ] health-check 腳本 cron path（`~/.openclaw/cron/jobs.json` 不存在）— 可能需更新"
+    },
+    {
+      "type": "text",
+      "content": "## 球票狀態（截至今日不變）\n\n- 已完賽 8 場 / 已購待看 8 場 / 待購 0 場 / 放棄 1 場（明星賽 7/29 富山）\n- 下一場已購：9/5 廣島。9 月場次：9/5 廣島・9/6 軟銀・9/9 阪神・9/10-11 歐力士×2・9/26 引退賽・9/27 亞運×2"
+    },
+    {
+      "type": "text",
+      "content": "## 近期社交行程\n\n- 8/23(日) 小柔｜8/28(金) 敦然｜8/30(日) 阿部｜9/12(土) 烤肉 Akiho｜9/19(土) 烤肉 Wataru\n- 出差：10/18(日) ~ 11/7(土) 南京（公司出資）\n\n---"
+    },
+    {
+      "type": "text",
+      "content": "## 補充（Append @ 18:06）\n\n- 傍晚 18:02 Imori 問「最近有什麼事情嗎」→ 已回覆完整現況摘要（近期行程、棒球巡禮進度、系統狀態）。\n- 已花總額約 **¥203K**；交通更新為 ¥90,301（含廣島→福岡待購 ¥5,400）。\n- 近期系統健康（8/20 晨間）：網站 5/6 正常，imori-api 404、nosae 1 未提交變更、embeddings 記憶搜尋壞、cron 排程不存在。"
+    }
+  ]
+}
