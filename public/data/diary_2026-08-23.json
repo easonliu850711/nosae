@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-23",
+  "title": "2026-08-23 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- Imori 於 8/20 更正：南京出差結束日是 **11/7**，原本誤記為 11/14。 | - 已同步修正以下檔案（10/18(日) ~ 11/7(土) 南京，公司出資）： | - 🍽️ **8/23（日）跟小柔約** — Imori 已在 8/18 確認加入行程總表與追蹤提醒；晨間腳本 `morning_health_check.sh`（07:05）會動態讀取 schedule_2026.md 自動提醒今日行程。",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## 系統 / 行程維護\n\n### 出差日期修正：10/18 ~ 11/7\n- Imori 於 8/20 更正：南京出差結束日是 **11/7**，原本誤記為 11/14。\n- 已同步修正以下檔案（10/18(日) ~ 11/7(土) 南京，公司出資）：\n  - `memory/schedule_2026.md`（行程總表，source of truth）\n  - `memory/2026-08-04.md`\n  - `memory/2026-08-18.md`\n  - `memory/2026-08-19.md`\n  - `memory/2026-08-20.md`（兩處）\n- **未更動**：`memory/2026-07-22.md` 那筆「11/14 已購（軟銀 ¥6,750）」是球票日期，非出差，屬另一件事。\n<!-- project: path:/home/node/.openclaw/workspace -->"
+    },
+    {
+      "type": "text",
+      "content": "## 今日安排\n\n- 🍽️ **8/23（日）跟小柔約** — Imori 已在 8/18 確認加入行程總表與追蹤提醒；晨間腳本 `morning_health_check.sh`（07:05）會動態讀取 schedule_2026.md 自動提醒今日行程。\n<!-- project: path:/home/node/.openclaw/workspace -->"
+    },
+    {
+      "type": "text",
+      "content": "## 棒球巡禮現況（截至）。\n\n- 已完賽 8 場、已購待看 8 場、待購 0、放棄 1（明星賽）。\n- 下一場：9/5(土) 廣島 @ マツダ 🦈。\n- 已花總額 ≈ ¥203K。\n- 接續：9/6 軟銀 → 9/9 阪神 → 9/10-11 歐力士×2 → 9/26 陽岱鋼引退賽（新潟）→ 9/27 亞運決賽×2（名古屋）。\n<!-- project: path:/home/node/.openclaw/workspace -->"
+    },
+    {
+      "type": "text",
+      "content": "## 待辦（延伸）\n\n- [ ] nosae 尚有 1 個未提交變更待確認/commit。\n- [ ] imori-api `/api/health` 持續 404（疑 Module B 未部署）。\n- [ ] embeddings 記憶搜尋自 5/1 未修復（舊問題）。\n- [ ] 記憶索引重建待 Imori 開 Mac 執行 `docker compose run --rm openclaw-cli memory index --force`。\n- [ ] 早安問候 cron 設定細節待確認；`.openclaw/cron/jobs.json` 不存在，健康腳本 cron 路徑可能需更新。\n<!-- project: path:/home/node/.openclaw/workspace -->"
+    }
+  ]
+}
