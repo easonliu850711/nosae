@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-24",
+  "title": "2026-08-24 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- **11/14(六) 🏀 看籃球** 新增至行程總表社交區塊（`memory/schedule_2026.md`）。 | - 重要：南京出差為 **10/18(日) ~ 11/7(土)**，因此 **11/14 是出差結束回台之後的日子**，時間線正確。 | - **11/14(六) 🏀 看籃球** 新增至行程總表社交區塊（`memory/schedule_2026.md`）。",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## 📌 今日重點\n\n### 行程新增：11/14 看籃球\n- **11/14(六) 🏀 看籃球** 新增至行程總表社交區塊（`memory/schedule_2026.md`）。\n- 重要：南京出差為 **10/18(日) ~ 11/7(土)**，因此 **11/14 是出差結束回台之後的日子**，時間線正確。\n- 備註未填（球場/同行者待補），未提供時間欄位填 `—`。\n- 提醒：`2026-07-22.md` 的「11/14 已購（軟銀 ¥6,750）」是球票日期，與本次「看籃球」無關，勿混淆（軟銀是棒球）。\n\n### 既有待辦（Open TODOs，持續掛帳）\n- nosae repo ⚠️ 1 個未提交變更（待檢查並決定提交/還原）\n- imori-api `/api/health` 回 404（疑 Module B 未部署；nginx/1.28.2）\n- embeddings 記憶搜尋自 5/1 起未修復（長期問題）\n- 記憶索引重建：待 Imori 在 Mac 執行 `docker compose run --rm openclaw-cli memory index --force`\n- 健康腳本 cron 路徑失效：`/home/node/.openclaw/cron/jobs.json` 不存在（health-check.sh 與 morning_health_check.sh 皆報 FileNotFoundError）\n\n### 關鍵日期／狀態速查\n- 每天 07:05 晨間健康檢查（morning_health_check.sh，動態讀 schedule_2026.md）\n- 8/28 敦然、8/30 阿部\n- 棒球：9/5 廣島@マツダ、9/6 軟銀、9/9 阪神、9/10-11 歐力士×2、9/26 陽岱鋼引退賽(新潟)、9/27 亞運×2(名古屋)\n- 球票 13張 ¥85,382｜住宿 ¥32,666｜交通 ¥90,301｜計約 ¥203K\n# 2026-08-24（一）Memory\n\n<!-- project: path:/home/node/.openclaw/workspace -->"
+    },
+    {
+      "type": "text",
+      "content": "## 📌 今日重點\n\n### 行程新增：11/14 看籃球\n- **11/14(六) 🏀 看籃球** 新增至行程總表社交區塊（`memory/schedule_2026.md`）。\n- 重要：南京出差為 **10/18(日) ~ 11/7(土)**，因此 **11/14 是出差結束回台之後的日子**，時間線正確。\n- 備註未填（球場/同行者待補），未提供時間欄位填 `—`。\n- 提醒：`2026-07-22.md` 的「11/14 已購（軟銀 ¥6,750）」是球票日期，與本次「看籃球」無關，勿混淆（軟銀是棒球）。\n\n### 既有待辦（Open TODOs，持續掛帳）\n- nosae repo ⚠️ 1 個未提交變更（待檢查並決定提交/還原）\n- imori-api `/api/health` 回 404（疑 Module B 未部署；nginx/1.28.2）\n- embeddings 記憶搜尋自 5/1 起未修復（長期問題）\n- 記憶索引重建：待 Imori 在 Mac 執行 `docker compose run --rm openclaw-cli memory index --force`\n- 健康腳本 cron 路徑失效：`/home/node/.openclaw/cron/jobs.json` 不存在（health-check.sh 與 morning_health_check.sh 皆報 FileNotFoundError）\n\n### 關鍵日期／狀態速查\n- 每天 07:05 晨間健康檢查（morning_health_check.sh，動態讀 schedule_2026.md）\n- 8/28 敦然、8/30 阿部\n- 棒球：9/5 廣島@マツダ、9/6 軟銀、9/9 阪神、9/10-11 歐力士×2、9/26 陽岱鋼引退賽(新潟)、9/27 亞運×2(名古屋)\n- 球票 13張 ¥85,382｜住宿 ¥32,666｜交通 ¥90,301｜計約 ¥203K\n\n---"
+    },
+    {
+      "type": "text",
+      "content": "## 📝 追加：等待執行的行程編輯（8/24 14:21）\n\n**用戶要求**：「已經結束的要拿掉，下次記得。」\n- 今天 8/24(一)，**8/23(日) 🍽️ 跟小柔約** 已結束，需從 `memory/schedule_2026.md` 社交區塊**移除該行**。\n- 受限制於本次 memory flush 期間無法寫入 schedule_2026.md（write 僅限 memory/2026-08-24.md），此編輯**待非 flush 時段執行**。\n- 要移除的精確行：`| 8/23(日) | 日 | — | 🍽️ 跟小柔約 | — |`\n- 移除後也建議將總表「最後更新」時間更新為當下。"
+    }
+  ]
+}
