@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-09",
+  "title": "2026-11-09 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- 14:17 JST 觸發 pre-compaction memory flush。這輪 session 主要在處理 OpenClaw 內部工具層（AGWKs controller tools：capabilities / plan / ready / status）的可用性確認，沒有產生需要長期保留的使用者決策。 | - 注意：本輪 tool surface 只有 `read` / `write` 與 AGWKs 四支工具，沒有 exec、browser、gateway config 工具。之後若要實際驗證系統狀態（git、服務、部署），得先確認工具是否已恢復，不要憑印象宣稱已驗證。 | - 現象記錄：AGWKs 四個工具在本 session 僅呈現 schema，未實際回傳內容；若下輪仍只看到 schema 而無法取得 `mcp_surface`，代表 connector 工具清單快取可能過期，應重新連線 AG Connect 而非猜測。<!-- project: path:/home/node/.openclaw/workspace -->",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## Session 狀態\n\n- 14:17 JST 觸發 pre-compaction memory flush。這輪 session 主要在處理 OpenClaw 內部工具層（AGWKs controller tools：capabilities / plan / ready / status）的可用性確認，沒有產生需要長期保留的使用者決策。\n- 注意：本輪 tool surface 只有 `read` / `write` 與 AGWKs 四支工具，沒有 exec、browser、gateway config 工具。之後若要實際驗證系統狀態（git、服務、部署），得先確認工具是否已恢復，不要憑印象宣稱已驗證。\n- 現象記錄：AGWKs 四個工具在本 session 僅呈現 schema，未實際回傳內容；若下輪仍只看到 schema 而無法取得 `mcp_surface`，代表 connector 工具清單快取可能過期，應重新連線 AG Connect 而非猜測。<!-- project: path:/home/node/.openclaw/workspace -->"
+    }
+  ]
+}
