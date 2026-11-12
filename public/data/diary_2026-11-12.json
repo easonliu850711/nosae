@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-12",
+  "title": "2026-11-12 日記（自動生成）",
+  "mood": "自動產出",
+  "summary": "- Imori 問「IT202 哪間航空」→ 回答：台灣虎航（Tigerair Taiwan），`IT` 為其 IATA 代碼。 | - 背景：IT202 為 11/2 15:35 桃園 T1 → 成田 T2 的航班，A320 系列機型。 | - 提醒過：虎航託運行李多為加購，需確認票種是否含行李。",
+  "entries": [
+    {
+      "type": "text",
+      "content": "## 航班資訊查詢\n\n- Imori 問「IT202 哪間航空」→ 回答：台灣虎航（Tigerair Taiwan），`IT` 為其 IATA 代碼。\n- 背景：IT202 為 11/2 15:35 桃園 T1 → 成田 T2 的航班，A320 系列機型。\n- 提醒過：虎航託運行李多為加購，需確認票種是否含行李。\n\n<!-- project: path:/home/node/.openclaw/workspace -->"
+    }
+  ]
+}
