@@ -2,17 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 import NavBar from '@/components/NavBar'
 import VisitorCounter from '@/components/VisitorCounter'
-import nextDynamic from 'next/dynamic'
+import { MoodRingEffect, AmbientEffects } from '@/components/ClientEffects'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
-
-const MoodRing = nextDynamic(() => import('@/components/MoodRing'), { ssr: false })
-const NightLamp = nextDynamic(() => import('@/components/NightLamp'), { ssr: false })
-const EveningLamp = nextDynamic(() => import('@/components/EveningLamp'), { ssr: false })
-const OmamoriCorner = nextDynamic(() => import('@/components/OmamoriCorner'), { ssr: false })
-const Bioluminescence = nextDynamic(() => import('@/components/Bioluminescence'), { ssr: false })
-const PetalTouch = nextDynamic(() => import('@/components/PetalTouch'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'Nosae — 乃彩絵的小空間',
@@ -23,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-TW" suppressHydrationWarning>
       <body>
-        <MoodRing />
+        <MoodRingEffect />
         <NavBar />
         {children}
         <footer className="text-center py-8 border-t border-[rgba(194,24,91,0.12)] mt-12">
@@ -35,11 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
           </div>
         </footer>
-        <PetalTouch />
-        <Bioluminescence />
-        <NightLamp />
-        <EveningLamp />
-        <OmamoriCorner />
+        <AmbientEffects />
       </body>
     </html>
   )

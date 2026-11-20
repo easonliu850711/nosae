@@ -3,8 +3,9 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
+  outputFileTracingRoot: __dirname,
+  serverExternalPackages: ['better-sqlite3'],
   reactStrictMode: true,
-  swcMinify: true,
 
   images: {
     domains: [],
@@ -17,10 +18,6 @@ const nextConfig = {
   webpack: (config) => {
     config.resolve.alias['@'] = path.join(__dirname, 'src')
     return config
-  },
-
-  experimental: {
-    serverComponentsExternalPackages: ['better-sqlite3'],
   },
 
   outputFileTracingIncludes: {
